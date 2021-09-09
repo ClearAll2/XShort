@@ -247,6 +247,14 @@ namespace XShort
             }
             if (r.GetValue("UseIndex") != null)
                 checkBoxUseIndex.Checked = true;
+            if (r.GetValue("Personal") != null)
+            {
+                radioButtonPersonal.Checked = true;
+            }
+            else
+            {
+                radioButtonAllDrives.Checked = true;
+            }
 
             if (r.GetValue("Interval") != null)
             {
@@ -616,6 +624,31 @@ namespace XShort
             for (int i = 0; i < listViewExclusion.Items.Count; i++)
             {
                 File.AppendAllText(Path.Combine(dataPath, "exclusion"), listViewExclusion.Items[i].Text + Environment.NewLine);
+            }
+        }
+
+        private void buttonIndexOption_Click(object sender, EventArgs e)
+        {
+            panelIndexOption.Show();
+        }
+
+        private void buttonBackIndex_Click(object sender, EventArgs e)
+        {
+            panelIndexOption.Hide();
+        }
+
+        private void radioButtonPersonal_CheckedChanged(object sender, EventArgs e)
+        {
+            using (RegistryKey rk = Registry.CurrentUser.OpenSubKey("SOFTWARE\\ClearAll\\XShort\\Data", true))
+            {
+                if (radioButtonPersonal.Checked)
+                {
+                    rk.SetValue("Personal", true);
+                }
+                else
+                {
+                    rk.DeleteValue("Personal", false);
+                }
             }
         }
     }

@@ -49,6 +49,7 @@ namespace XShort
         private bool showResult = false;
         private bool excludeResult = false;
         private bool useIndex = false;
+        private bool isPersonal = false;
 
         private bool detect = false;
         private bool hide = false;
@@ -104,8 +105,19 @@ namespace XShort
             
             loadSettings();
             if (useIndex)
+            {
                 if (File.Exists(Path.Combine(Application.StartupPath, "XShortCoreIndex.exe")))
-                    Process.Start(Path.Combine(Application.StartupPath, "XShortCoreIndex.exe"), dataPath + " " + Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) + " " + interval.ToString());
+                {
+                    if (isPersonal)
+                    {
+                        Process.Start(Path.Combine(Application.StartupPath, "XShortCoreIndex.exe"), dataPath + " " + Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) + " " + interval.ToString());
+                    }
+                    else
+                    {
+                        Process.Start(Path.Combine(Application.StartupPath, "XShortCoreIndex.exe"), dataPath + " Enhanced " + interval.ToString());
+                    }
+                }
+            }
 
             for (int i = 0; i < listViewData.Columns.Count; i++)
                 listViewData.Columns[i].Width = listViewData.Width / listViewData.Columns.Count;
@@ -300,6 +312,10 @@ namespace XShort
                 useIndex = true;
             else
                 useIndex = false;
+            if (r.GetValue("Personal") != null)
+                isPersonal = true;
+            else
+                isPersonal = false;
             if (r.GetValue("Interval") != null)
                 Double.TryParse((string)r.GetValue("Interval"), out interval);
 
