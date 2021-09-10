@@ -1615,24 +1615,15 @@ namespace XShort
         {
             if (comboBoxRun.Text.Contains("+") != true)
             {
-                if (Directory.Exists(listViewResult.FocusedItem.ToolTipText))
+                try
                 {
-                    comboBoxRun.Text += "\\";
-                    //searchDir(comboBoxRun.Text);
-                    //ShowResult();
+                    ProcessStartInfo proc = new ProcessStartInfo();
+                    proc.FileName = listViewResult.FocusedItem.ToolTipText;
+                    Process.Start(proc);
                 }
-                else
+                catch (Exception ex)
                 {
-                    try
-                    {
-                        ProcessStartInfo proc = new ProcessStartInfo();
-                        proc.FileName = listViewResult.FocusedItem.ToolTipText;
-                        Process.Start(proc);
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
+                    MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
@@ -1650,18 +1641,10 @@ namespace XShort
             {
                 if (listViewResult.FocusedItem.Bounds.Contains(e.Location) == true)
                 {
-                    if (comboBoxRun.Text.Contains("+") != true && comboBoxRun.Text.Contains("#") != true && comboBoxRun.Text.Contains("!") != true)
-                    {
-                        if (comboBoxRun.SelectedText.Length > 0)
-                            comboBoxRun.SelectedText = listViewResult.FocusedItem.Text;
-                        else
-                            comboBoxRun.Text = listViewResult.FocusedItem.ToolTipText;
-                    }
-
-
+                    toolTip1.Show(listViewResult.FocusedItem.ToolTipText, comboBoxRun, 2000);
                 }
             }
-            
+
         }
 
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
