@@ -42,6 +42,7 @@ namespace XShort
                 checkBoxUseIndex.Enabled = false;
                 labelBuildIndexInterval.Enabled = false;
                 numericUpDownInterval.Enabled = false;
+                buttonIndexOption.Enabled = false;
                 labelError.Show();
             }
             if (File.Exists(Path.Combine(dataPath, "index")))

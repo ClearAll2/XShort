@@ -32,6 +32,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Settings));
             this.panelSetting = new System.Windows.Forms.Panel();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.panelIndexOption = new System.Windows.Forms.Panel();
+            this.buttonBackIndex = new System.Windows.Forms.Button();
+            this.labelExplainAllDrives = new System.Windows.Forms.Label();
+            this.labelExplainPersonalIndex = new System.Windows.Forms.Label();
+            this.radioButtonAllDrives = new System.Windows.Forms.RadioButton();
+            this.radioButtonPersonal = new System.Windows.Forms.RadioButton();
+            this.buttonIndexOption = new System.Windows.Forms.Button();
             this.numericUpDownInterval = new System.Windows.Forms.NumericUpDown();
             this.labelBuildIndexInterval = new System.Windows.Forms.Label();
             this.labelLastUpdate = new System.Windows.Forms.Label();
@@ -86,15 +93,9 @@
             this.checkBox8 = new System.Windows.Forms.CheckBox();
             this.buttonHotkeySetting = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.buttonIndexOption = new System.Windows.Forms.Button();
-            this.panelIndexOption = new System.Windows.Forms.Panel();
-            this.radioButtonPersonal = new System.Windows.Forms.RadioButton();
-            this.radioButtonAllDrives = new System.Windows.Forms.RadioButton();
-            this.labelExplainPersonalIndex = new System.Windows.Forms.Label();
-            this.labelExplainAllDrives = new System.Windows.Forms.Label();
-            this.buttonBackIndex = new System.Windows.Forms.Button();
             this.panelSetting.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            this.panelIndexOption.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownInterval)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.panelExIntro.SuspendLayout();
@@ -103,7 +104,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMaxSuggestNum)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.panelHotkey.SuspendLayout();
-            this.panelIndexOption.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelSetting
@@ -129,6 +129,63 @@
             this.groupBox4.Controls.Add(this.checkBoxUseIndex);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.TabStop = false;
+            // 
+            // panelIndexOption
+            // 
+            this.panelIndexOption.Controls.Add(this.buttonBackIndex);
+            this.panelIndexOption.Controls.Add(this.labelExplainAllDrives);
+            this.panelIndexOption.Controls.Add(this.labelExplainPersonalIndex);
+            this.panelIndexOption.Controls.Add(this.radioButtonAllDrives);
+            this.panelIndexOption.Controls.Add(this.radioButtonPersonal);
+            resources.ApplyResources(this.panelIndexOption, "panelIndexOption");
+            this.panelIndexOption.Name = "panelIndexOption";
+            // 
+            // buttonBackIndex
+            // 
+            this.buttonBackIndex.BackColor = System.Drawing.SystemColors.Control;
+            this.buttonBackIndex.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.buttonBackIndex, "buttonBackIndex");
+            this.buttonBackIndex.ForeColor = System.Drawing.Color.Black;
+            this.buttonBackIndex.Name = "buttonBackIndex";
+            this.buttonBackIndex.UseVisualStyleBackColor = false;
+            this.buttonBackIndex.Click += new System.EventHandler(this.buttonBackIndex_Click);
+            // 
+            // labelExplainAllDrives
+            // 
+            resources.ApplyResources(this.labelExplainAllDrives, "labelExplainAllDrives");
+            this.labelExplainAllDrives.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.labelExplainAllDrives.Name = "labelExplainAllDrives";
+            // 
+            // labelExplainPersonalIndex
+            // 
+            resources.ApplyResources(this.labelExplainPersonalIndex, "labelExplainPersonalIndex");
+            this.labelExplainPersonalIndex.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.labelExplainPersonalIndex.Name = "labelExplainPersonalIndex";
+            // 
+            // radioButtonAllDrives
+            // 
+            resources.ApplyResources(this.radioButtonAllDrives, "radioButtonAllDrives");
+            this.radioButtonAllDrives.Name = "radioButtonAllDrives";
+            this.radioButtonAllDrives.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonPersonal
+            // 
+            resources.ApplyResources(this.radioButtonPersonal, "radioButtonPersonal");
+            this.radioButtonPersonal.Checked = true;
+            this.radioButtonPersonal.Name = "radioButtonPersonal";
+            this.radioButtonPersonal.TabStop = true;
+            this.radioButtonPersonal.UseVisualStyleBackColor = true;
+            this.radioButtonPersonal.CheckedChanged += new System.EventHandler(this.radioButtonPersonal_CheckedChanged);
+            // 
+            // buttonIndexOption
+            // 
+            this.buttonIndexOption.BackColor = System.Drawing.Color.White;
+            this.buttonIndexOption.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.buttonIndexOption, "buttonIndexOption");
+            this.buttonIndexOption.ForeColor = System.Drawing.Color.Black;
+            this.buttonIndexOption.Name = "buttonIndexOption";
+            this.buttonIndexOption.UseVisualStyleBackColor = false;
+            this.buttonIndexOption.Click += new System.EventHandler(this.buttonIndexOption_Click);
             // 
             // numericUpDownInterval
             // 
@@ -636,63 +693,6 @@
             this.buttonHotkeySetting.UseVisualStyleBackColor = false;
             this.buttonHotkeySetting.Click += new System.EventHandler(this.buttonHotkeySetting_Click);
             // 
-            // buttonIndexOption
-            // 
-            this.buttonIndexOption.BackColor = System.Drawing.Color.White;
-            this.buttonIndexOption.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.buttonIndexOption, "buttonIndexOption");
-            this.buttonIndexOption.ForeColor = System.Drawing.Color.Black;
-            this.buttonIndexOption.Name = "buttonIndexOption";
-            this.buttonIndexOption.UseVisualStyleBackColor = false;
-            this.buttonIndexOption.Click += new System.EventHandler(this.buttonIndexOption_Click);
-            // 
-            // panelIndexOption
-            // 
-            this.panelIndexOption.Controls.Add(this.buttonBackIndex);
-            this.panelIndexOption.Controls.Add(this.labelExplainAllDrives);
-            this.panelIndexOption.Controls.Add(this.labelExplainPersonalIndex);
-            this.panelIndexOption.Controls.Add(this.radioButtonAllDrives);
-            this.panelIndexOption.Controls.Add(this.radioButtonPersonal);
-            resources.ApplyResources(this.panelIndexOption, "panelIndexOption");
-            this.panelIndexOption.Name = "panelIndexOption";
-            // 
-            // radioButtonPersonal
-            // 
-            resources.ApplyResources(this.radioButtonPersonal, "radioButtonPersonal");
-            this.radioButtonPersonal.Checked = true;
-            this.radioButtonPersonal.Name = "radioButtonPersonal";
-            this.radioButtonPersonal.TabStop = true;
-            this.radioButtonPersonal.UseVisualStyleBackColor = true;
-            this.radioButtonPersonal.CheckedChanged += new System.EventHandler(this.radioButtonPersonal_CheckedChanged);
-            // 
-            // radioButtonAllDrives
-            // 
-            resources.ApplyResources(this.radioButtonAllDrives, "radioButtonAllDrives");
-            this.radioButtonAllDrives.Name = "radioButtonAllDrives";
-            this.radioButtonAllDrives.UseVisualStyleBackColor = true;
-            // 
-            // labelExplainPersonalIndex
-            // 
-            resources.ApplyResources(this.labelExplainPersonalIndex, "labelExplainPersonalIndex");
-            this.labelExplainPersonalIndex.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.labelExplainPersonalIndex.Name = "labelExplainPersonalIndex";
-            // 
-            // labelExplainAllDrives
-            // 
-            resources.ApplyResources(this.labelExplainAllDrives, "labelExplainAllDrives");
-            this.labelExplainAllDrives.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.labelExplainAllDrives.Name = "labelExplainAllDrives";
-            // 
-            // buttonBackIndex
-            // 
-            this.buttonBackIndex.BackColor = System.Drawing.SystemColors.Control;
-            this.buttonBackIndex.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.buttonBackIndex, "buttonBackIndex");
-            this.buttonBackIndex.ForeColor = System.Drawing.Color.Black;
-            this.buttonBackIndex.Name = "buttonBackIndex";
-            this.buttonBackIndex.UseVisualStyleBackColor = false;
-            this.buttonBackIndex.Click += new System.EventHandler(this.buttonBackIndex_Click);
-            // 
             // Settings
             // 
             resources.ApplyResources(this, "$this");
@@ -708,6 +708,8 @@
             this.panelSetting.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
+            this.panelIndexOption.ResumeLayout(false);
+            this.panelIndexOption.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownInterval)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.panelExIntro.ResumeLayout(false);
@@ -719,8 +721,6 @@
             this.groupBox1.PerformLayout();
             this.panelHotkey.ResumeLayout(false);
             this.panelHotkey.PerformLayout();
-            this.panelIndexOption.ResumeLayout(false);
-            this.panelIndexOption.PerformLayout();
             this.ResumeLayout(false);
 
         }
