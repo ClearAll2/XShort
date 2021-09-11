@@ -652,5 +652,10 @@ namespace XShort
                 }
             }
         }
+
+        private void buttonBackExclusion_Click(object sender, EventArgs e)
+        {
+            panelExIntro.Show();
+        }
     }
 }

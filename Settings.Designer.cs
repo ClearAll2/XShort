@@ -93,6 +93,7 @@
             this.checkBox8 = new System.Windows.Forms.CheckBox();
             this.buttonHotkeySetting = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.buttonBackExclusion = new System.Windows.Forms.Button();
             this.panelSetting.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.panelIndexOption.SuspendLayout();
@@ -243,6 +244,7 @@
             // 
             resources.ApplyResources(this.groupBox3, "groupBox3");
             this.groupBox3.Controls.Add(this.panelExIntro);
+            this.groupBox3.Controls.Add(this.buttonBackExclusion);
             this.groupBox3.Controls.Add(this.buttonExBack);
             this.groupBox3.Controls.Add(this.label2);
             this.groupBox3.Controls.Add(this.comboBoxRunningProcesses);
@@ -693,6 +695,16 @@
             this.buttonHotkeySetting.UseVisualStyleBackColor = false;
             this.buttonHotkeySetting.Click += new System.EventHandler(this.buttonHotkeySetting_Click);
             // 
+            // buttonBackExclusion
+            // 
+            this.buttonBackExclusion.BackColor = System.Drawing.SystemColors.Control;
+            this.buttonBackExclusion.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.buttonBackExclusion, "buttonBackExclusion");
+            this.buttonBackExclusion.ForeColor = System.Drawing.Color.Black;
+            this.buttonBackExclusion.Name = "buttonBackExclusion";
+            this.buttonBackExclusion.UseVisualStyleBackColor = false;
+            this.buttonBackExclusion.Click += new System.EventHandler(this.buttonBackExclusion_Click);
+            // 
             // Settings
             // 
             resources.ApplyResources(this, "$this");
@@ -790,5 +802,6 @@
         private System.Windows.Forms.Button buttonBackIndex;
         private System.Windows.Forms.Label labelExplainAllDrives;
         private System.Windows.Forms.Label labelExplainPersonalIndex;
+        private System.Windows.Forms.Button buttonBackExclusion;
     }
 }
