@@ -128,7 +128,13 @@
     <value>NoControl</value>
   </data>
   <data name="textBoxChangelog.Text" xml:space="preserve">
-    <value>#0.9.0.0
+    <value>#1.0.0.0
+-Improved search speed.
+-Improved shortcut suggestion.
+-Added option for indexing.
+-Updated XShort Core Index.
+
+#0.9.0.0
 -Improved performance of Index search.
 -Fixed some bugs.
 
@@ -148,7 +154,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAAQ
-        DwAAAk1TRnQBSQFMAwEBAAEYAQoBGAEKARkBAAEZAQAE/wEhAQAI/wFCAU0BNgcAATYDAAEoAwABZAMA
+        DwAAAk1TRnQBSQFMAwEBAAEoAQoBKAEKARkBAAEZAQAE/wEhAQAI/wFCAU0BNgcAATYDAAEoAwABZAMA
         ARkDAAEBAQABIAUAARABJy0AAQEDAgEDAwQEBQEHAwYBCAMHAQkDBwEJAwcBCQMGAQgDBQEHAwQBBQMC
         AQMDAAEB/wBVAAMBAQIDBgEIAwwBEAMSARkDFwEgAxoBJAMcAScDHAEoAxwBKAMcASgDHAEnAxoBJAMY
         ASEDEwEaAw4BEwMHAQkDAgED/wBJAAMCAQMDDQESAxoBJAMoAT0DQgF0A1ABngJYAVYBuQJdAVoBygJg
@@ -2428,8 +2434,5 @@
         kxZxy6Ie0sQ7T7uyqZZEjhmQArlF458RUMkVORC3aBaLyDCAOAEsdmISs+fe9PB9BdDH+sT/B2Trtxh6
         smYvAAAAAElFTkSuQmCC
 </value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
 </root>

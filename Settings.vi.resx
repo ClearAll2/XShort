@@ -117,7 +117,31 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="buttonBackIndex.Text" xml:space="preserve">
+    <value>Quay lại</value>
+  </data>
+  <data name="labelExplainAllDrives.Text" xml:space="preserve">
+    <value>Tìm kiếm toàn bộ máy tính</value>
+  </data>
+  <data name="labelExplainPersonalIndex.Text" xml:space="preserve">
+    <value>Chỉ tìm kiếm thư mục cá nhân</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="radioButtonAllDrives.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 22</value>
+  </data>
+  <data name="radioButtonAllDrives.Text" xml:space="preserve">
+    <value>Tất cả ổ cứng</value>
+  </data>
+  <data name="radioButtonPersonal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>140, 22</value>
+  </data>
+  <data name="radioButtonPersonal.Text" xml:space="preserve">
+    <value>Thư mục cá nhân</value>
+  </data>
+  <data name="buttonIndexOption.Text" xml:space="preserve">
+    <value>Tuỳ chọn tạo mục lục</value>
+  </data>
   <data name="labelBuildIndexInterval.Size" type="System.Drawing.Size, System.Drawing">
     <value>157, 18</value>
   </data>
@@ -125,7 +149,7 @@
     <value>Tạo mục lục mỗi (giờ):</value>
   </data>
   <data name="labelError.Location" type="System.Drawing.Point, System.Drawing">
-    <value>138, 285</value>
+    <value>238, 42</value>
   </data>
   <data name="labelError.Size" type="System.Drawing.Size, System.Drawing">
     <value>255, 20</value>
@@ -156,6 +180,9 @@ Nếu gợi ý kết quả bị tắt, chức năng này sẽ không hoạt đ�
     <value>Loại trừ những ứng dụng &amp;&amp; game được chọn tránh gọi nhầm XShort Run.
 
 </value>
+  </data>
+  <data name="buttonBackExclusion.Text" xml:space="preserve">
+    <value>Quay lại</value>
   </data>
   <data name="buttonExBack.Text" xml:space="preserve">
     <value>Lưu</value>
