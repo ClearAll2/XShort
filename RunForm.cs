@@ -84,21 +84,24 @@ namespace XShort
             bw.RunWorkerAsync();
             bw.RunWorkerCompleted += Bw_RunWorkerCompleted;
 
-            _filter = new BackgroundWordFilter
-            (
-                items: indexData,
-                maxItemsToMatch: 15,
-                callback: results => this.Invoke(new Action(() => 
-                {
-                      matches.Clear();
-                      matches = results;
-                })),
-                imageList: imageResults => this.Invoke(new Action(() =>
-                {
-                    imageList1.Images.Clear();
-                    imageList1 = imageResults;
-                }))
-            );
+            if (ui)//reduce memory usage if not used
+            {
+                _filter = new BackgroundWordFilter
+                (
+                    items: indexData,
+                    maxItemsToMatch: 15,
+                    callback: results => this.Invoke(new Action(() =>
+                    {
+                        matches.Clear();
+                        matches = results;
+                    })),
+                    imageList: imageResults => this.Invoke(new Action(() =>
+                    {
+                        imageList1.Images.Clear();
+                        imageList1 = imageResults;
+                    }))
+                );
+            }
             _getdir = new BackgroundWordFilter
             (
                 callback: results => this.Invoke(new Action(() =>
@@ -1400,7 +1403,8 @@ namespace XShort
 
         private void comboBox1_TextChanged(object sender, EventArgs e)
         {
-            _filter.SetCurrentEntry(comboBoxRun.Text);
+            if (ui)
+                _filter.SetCurrentEntry(comboBoxRun.Text);
             _getdir.SetCurrentEntry(comboBoxRun.Text);
             if (comboBoxRun.Text.Length == 0)
             {

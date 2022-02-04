@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>XShort</RootNamespace>
     <AssemblyName>XShortCore</AssemblyName>
-    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <TargetFrameworkProfile />
@@ -52,6 +52,9 @@
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>xshort.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="CircularProgressBar, Version=2.5.6403.13419, Culture=neutral, processorArchitecture=MSIL">
@@ -164,6 +167,8 @@
     <None Include="bin\Release\data2.data" />
     <None Include="bin\Release\data3.data" />
     <None Include="packages.config" />
+    <None Include="Properties\App.config" />
+    <None Include="Properties\app.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

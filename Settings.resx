@@ -180,9 +180,6 @@
   <data name="checkBox3.Text" xml:space="preserve">
     <value>Automatically search Google if no data</value>
   </data>
-  <data name="&gt;&gt;checkBox5.Name" xml:space="preserve">
-    <value>checkBox5</value>
-  </data>
   <data name="&gt;&gt;numericUpDownInterval.Type" xml:space="preserve">
     <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -282,12 +279,6 @@
   <data name="label2.TabIndex" type="System.Int32, mscorlib">
     <value>23</value>
   </data>
-  <data name="&gt;&gt;buttonBackExclusion.Name" xml:space="preserve">
-    <value>buttonBackExclusion</value>
-  </data>
-  <data name="&gt;&gt;checkBox2.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
   <data name="&gt;&gt;listViewBlocklist.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
@@ -323,6 +314,9 @@
   </data>
   <data name="checkBoxSuggestions.Text" xml:space="preserve">
     <value>Show shortcut suggestions</value>
+  </data>
+  <data name="buttonBackExclusion.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="&gt;&gt;radioButtonPersonal.Type" xml:space="preserve">
     <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -384,8 +378,8 @@ or click button ... to add other applications.
   <data name="checkBoxUseIndex.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;buttonSaveBlocklist.ZOrder" xml:space="preserve">
-    <value>5</value>
+  <data name="label9.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
   <data name="labelExplainPersonalIndex.ToolTip" xml:space="preserve">
     <value />
@@ -429,9 +423,6 @@ or click button ... to add other applications.
   <data name="&gt;&gt;radioButtonAlt.Parent" xml:space="preserve">
     <value>panelHotkey</value>
   </data>
-  <data name="buttonBackIndex.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
   <data name="listViewExclusion.Size" type="System.Drawing.Size, System.Drawing">
     <value>205, 190</value>
   </data>
@@ -456,8 +447,8 @@ or click button ... to add other applications.
   <data name="&gt;&gt;groupBox2.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="buttonBlocklist.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
+  <data name="buttonHotkeySetting.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11.25pt</value>
   </data>
   <data name="labelExplainBlocklist.ToolTip" xml:space="preserve">
     <value />
@@ -498,11 +489,8 @@ or click button ... to add other applications.
   <data name="comboBoxHotkey.Items29" xml:space="preserve">
     <value>T</value>
   </data>
-  <data name="checkBox3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>280, 22</value>
-  </data>
-  <data name="buttonExBack.TabIndex" type="System.Int32, mscorlib">
-    <value>26</value>
+  <data name="&gt;&gt;buttonExBack.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="buttonBackExclusion.Size" type="System.Drawing.Size, System.Drawing">
     <value>72, 27</value>
@@ -569,6 +557,9 @@ or click button ... to add other applications.
   <data name="&gt;&gt;labelInfo1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="listViewExclusion.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
   <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
     <value>109, 84</value>
   </data>
@@ -593,11 +584,11 @@ or click button ... to add other applications.
   <data name="comboBoxHotkey.Items28" xml:space="preserve">
     <value>S</value>
   </data>
+  <data name="buttonRemoveEx.Text" xml:space="preserve">
+    <value>&gt;&gt;</value>
+  </data>
   <data name="labelExplainPersonalIndex.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9.75pt</value>
-  </data>
-  <data name="buttonExclusionList.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 11.25pt</value>
   </data>
   <data name="checkBox8.Location" type="System.Drawing.Point, System.Drawing">
     <value>258, 34</value>
@@ -610,12 +601,6 @@ or click button ... to add other applications.
   </data>
   <data name="buttonHotkeySetting.ToolTip" xml:space="preserve">
     <value />
-  </data>
-  <data name="checkBox7.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;labelInfoForNewHotkey.Name" xml:space="preserve">
-    <value>labelInfoForNewHotkey</value>
   </data>
   <data name="&gt;&gt;labelExplainBlocklistBlockResult.Name" xml:space="preserve">
     <value>labelExplainBlocklistBlockResult</value>
@@ -676,6 +661,9 @@ or click button ... to add other applications.
   </data>
   <data name="comboBoxHotkey.ToolTip" xml:space="preserve">
     <value />
+  </data>
+  <data name="labelLastUpdate.Text" xml:space="preserve">
+    <value>Last update: N/A</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
     <value>If enabled, an app will run with XShort upon opening. This background app will build index of user's folder. XShort will use that data and add them to result suggestions.
@@ -753,8 +741,8 @@ If result suggestions is disabled, this feature will not work.</value>
   <data name="&gt;&gt;checkBox8.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="panelBlocklist.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="checkBoxSuggestions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 113</value>
   </data>
   <data name="&gt;&gt;radioButtonAllDrives.Name" xml:space="preserve">
     <value>radioButtonAllDrives</value>
@@ -804,8 +792,8 @@ If result suggestions is disabled, this feature will not work.</value>
   <data name="labelBuildIndexInterval.Location" type="System.Drawing.Point, System.Drawing">
     <value>23, 206</value>
   </data>
-  <data name="labelLastUpdate.Text" xml:space="preserve">
-    <value>Last update: N/A</value>
+  <data name="&gt;&gt;buttonBlocklist.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="radioButtonAllDrives.Text" xml:space="preserve">
     <value>All Drives</value>
@@ -830,8 +818,8 @@ If result suggestions is disabled, this feature will not work.</value>
   <data name="&gt;&gt;labelMaxSuggest.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="labelInfo.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9.75pt</value>
+  <data name="&gt;&gt;labelInfoForNewHotkey.Name" xml:space="preserve">
+    <value>labelInfoForNewHotkey</value>
   </data>
   <data name="labelInfo1.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -936,8 +924,8 @@ If result suggestions is disabled, this feature will not work.</value>
   <data name="labelInfo1.Location" type="System.Drawing.Point, System.Drawing">
     <value>20, 74</value>
   </data>
-  <data name="listViewExclusion.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
+  <data name="buttonExclusionList.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11.25pt</value>
   </data>
   <data name="groupBox1.Text" xml:space="preserve">
     <value>General</value>
@@ -987,17 +975,17 @@ If result suggestions is disabled, this feature will not work.</value>
   <data name="checkBox5.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="buttonRemoveEx.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
   <data name="radioButtonAlt.Location" type="System.Drawing.Point, System.Drawing">
     <value>168, 40</value>
+  </data>
+  <data name="&gt;&gt;buttonBrowseExe.Name" xml:space="preserve">
+    <value>buttonBrowseExe</value>
   </data>
   <data name="checkBox1.ToolTip" xml:space="preserve">
     <value>Automatically run this application when you start Windows</value>
   </data>
-  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9.75pt</value>
+  <data name="&gt;&gt;buttonSaveBlocklist.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
   <data name="&gt;&gt;labelLastUpdate.ZOrder" xml:space="preserve">
     <value>4</value>
@@ -1019,6 +1007,9 @@ If result suggestions is disabled, this feature will not work.</value>
   </data>
   <data name="panelSetting.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
+  </data>
+  <data name="comboBoxRunningProcesses.Location" type="System.Drawing.Point, System.Drawing">
+    <value>317, 35</value>
   </data>
   <data name="buttonExBack.Location" type="System.Drawing.Point, System.Drawing">
     <value>411, 196</value>
@@ -1047,11 +1038,8 @@ If result suggestions is disabled, this feature will not work.</value>
   <data name="&gt;&gt;groupBox3.Parent" xml:space="preserve">
     <value>panelSetting</value>
   </data>
-  <data name="&gt;&gt;buttonIndexOption.Name" xml:space="preserve">
-    <value>buttonIndexOption</value>
-  </data>
-  <data name="labelExplainBlocklist.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
+  <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
+    <value>groupBox2</value>
   </data>
   <data name="buttonBlocklist.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -3332,11 +3320,11 @@ If result suggestions is disabled, this feature will not work.</value>
   <data name="&gt;&gt;buttonRemoveEx.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="panelHotkey.ToolTip" xml:space="preserve">
-    <value />
+  <data name="labelExplainPersonalIndex.Location" type="System.Drawing.Point, System.Drawing">
+    <value>59, 82</value>
   </data>
-  <data name="&gt;&gt;buttonExBack.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="labelInfo.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt</value>
   </data>
   <data name="&gt;&gt;radioButtonAlt.Name" xml:space="preserve">
     <value>radioButtonAlt</value>
@@ -3386,8 +3374,8 @@ If result suggestions is disabled, this feature will not work.</value>
   <data name="labelInfo.Location" type="System.Drawing.Point, System.Drawing">
     <value>20, 147</value>
   </data>
-  <data name="labelExplainPersonalIndex.Location" type="System.Drawing.Point, System.Drawing">
-    <value>59, 82</value>
+  <data name="checkBox7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;labelExplainPersonalIndex.ZOrder" xml:space="preserve">
     <value>2</value>
@@ -3446,8 +3434,8 @@ If result suggestions is disabled, this feature will not work.</value>
   <data name="&gt;&gt;label3.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
-    <value>groupBox2</value>
+  <data name="comboBoxHotkey.Items13" xml:space="preserve">
+    <value>D</value>
   </data>
   <data name="comboBoxHotkey.Items23" xml:space="preserve">
     <value>N</value>
@@ -3509,17 +3497,23 @@ If result suggestions is disabled, this feature will not work.</value>
   <data name="labelBuildIndexInterval.ToolTip" xml:space="preserve">
     <value />
   </data>
+  <data name="checkBoxSuggestions.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="checkBox7.Location" type="System.Drawing.Point, System.Drawing">
     <value>23, 118</value>
   </data>
-  <data name="comboBoxHotkey.Items13" xml:space="preserve">
-    <value>D</value>
+  <data name="comboBoxRunningProcesses.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="buttonBlocklist.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
   <data name="labelLastUpdate.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
+  </data>
+  <data name="&gt;&gt;checkBox7.Parent" xml:space="preserve">
+    <value>groupBox1</value>
   </data>
   <data name="label3.ToolTip" xml:space="preserve">
     <value />
@@ -3554,9 +3548,6 @@ If result suggestions is disabled, this feature will not work.</value>
   <data name="comboBoxRunningProcesses.TabIndex" type="System.Int32, mscorlib">
     <value>22</value>
   </data>
-  <data name="&gt;&gt;buttonBlocklist.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
   <data name="&gt;&gt;panelBlocklist.Parent" xml:space="preserve">
     <value>groupBox2</value>
   </data>
@@ -3589,6 +3580,9 @@ If result suggestions is disabled, this feature will not work.</value>
   </data>
   <data name="labelError.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
+  </data>
+  <data name="&gt;&gt;labelMaxSuggest.Parent" xml:space="preserve">
+    <value>groupBox2</value>
   </data>
   <data name="labelMaxSuggest.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -3647,14 +3641,14 @@ If result suggestions is disabled, this feature will not work.</value>
   <data name="panelSetting.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="buttonHotkeySetting.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 11.25pt</value>
+  <data name="panelHotkey.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
   </data>
   <data name="&gt;&gt;labelExplainAllDrives.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="comboBoxRunningProcesses.ToolTip" xml:space="preserve">
-    <value />
+  <data name="numericUpDownMaxSuggestNum.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
   </data>
   <data name="&gt;&gt;buttonAddEx.ZOrder" xml:space="preserve">
     <value>6</value>
@@ -3710,11 +3704,11 @@ If result suggestions is disabled, this feature will not work.</value>
   <data name="&gt;&gt;buttonIndexOption.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="buttonBlocklist.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 254</value>
-  </data>
   <data name="groupBox4.TabIndex" type="System.Int32, mscorlib">
     <value>23</value>
+  </data>
+  <data name="panelIndexOption.Size" type="System.Drawing.Size, System.Drawing">
+    <value>498, 285</value>
   </data>
   <data name="buttonCancelBlocklist.ToolTip" xml:space="preserve">
     <value />
@@ -3803,6 +3797,9 @@ If result suggestions is disabled, this feature will not work.</value>
   <data name="comboBoxHotkey.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
   </data>
+  <data name="&gt;&gt;labelError.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
   <data name="labelExplainBlocklistBlockResult.Size" type="System.Drawing.Size, System.Drawing">
     <value>207, 42</value>
   </data>
@@ -3830,9 +3827,6 @@ If result suggestions is disabled, this feature will not work.</value>
   <data name="checkBox1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="checkBoxSuggestions.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 113</value>
-  </data>
   <data name="&gt;&gt;labelInfo1.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
@@ -3844,9 +3838,6 @@ If result suggestions is disabled, this feature will not work.</value>
   </data>
   <data name="buttonIndexOption.Location" type="System.Drawing.Point, System.Drawing">
     <value>19, 263</value>
-  </data>
-  <data name="numericUpDownMaxSuggestNum.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
   </data>
   <data name="buttonRemoveEx.TabIndex" type="System.Int32, mscorlib">
     <value>25</value>
@@ -3893,6 +3884,9 @@ If result suggestions is disabled, this feature will not work.</value>
   <data name="panelBlocklist.Size" type="System.Drawing.Size, System.Drawing">
     <value>482, 285</value>
   </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt</value>
+  </data>
   <data name="buttonIndexOption.TabIndex" type="System.Int32, mscorlib">
     <value>23</value>
   </data>
@@ -3913,9 +3907,6 @@ If result suggestions is disabled, this feature will not work.</value>
   </data>
   <data name="checkBoxUseIndex.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
-  </data>
-  <data name="label9.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
   </data>
   <data name="numericUpDownInterval.Location" type="System.Drawing.Point, System.Drawing">
     <value>202, 207</value>
@@ -3975,8 +3966,8 @@ If result suggestions is disabled, this feature will not work.</value>
   <data name="&gt;&gt;label9.Name" xml:space="preserve">
     <value>label9</value>
   </data>
-  <data name="comboBoxRunningProcesses.Location" type="System.Drawing.Point, System.Drawing">
-    <value>317, 35</value>
+  <data name="&gt;&gt;checkBox2.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
   <data name="numericUpDownInterval.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
@@ -4065,14 +4056,17 @@ If result suggestions is disabled, this feature will not work.</value>
   <data name="comboBoxHotkey.Size" type="System.Drawing.Size, System.Drawing">
     <value>96, 26</value>
   </data>
-  <data name="buttonRemoveEx.Text" xml:space="preserve">
-    <value>&gt;&gt;</value>
+  <data name="&gt;&gt;buttonBackExclusion.Name" xml:space="preserve">
+    <value>buttonBackExclusion</value>
   </data>
   <data name="checkBoxSuggestions.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
   </data>
   <data name="listViewExclusion.ToolTip" xml:space="preserve">
     <value />
+  </data>
+  <data name="buttonExBack.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
   </data>
   <data name="&gt;&gt;label1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -4161,8 +4155,8 @@ If result suggestions is disabled, this feature will not work.</value>
   <data name="comboBoxHotkey.Items16" xml:space="preserve">
     <value>G</value>
   </data>
-  <data name="&gt;&gt;checkBox7.Parent" xml:space="preserve">
-    <value>groupBox1</value>
+  <data name="labelExplainBlocklist.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
   </data>
   <data name="&gt;&gt;buttonAddEx.Parent" xml:space="preserve">
     <value>groupBox3</value>
@@ -4218,11 +4212,14 @@ If result suggestions is disabled, this feature will not work.</value>
   <data name="labelExplainAllDrives.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;labelMaxSuggest.Parent" xml:space="preserve">
-    <value>groupBox2</value>
+  <data name="&gt;&gt;buttonIndexOption.Name" xml:space="preserve">
+    <value>buttonIndexOption</value>
   </data>
   <data name="checkBox4.Size" type="System.Drawing.Size, System.Drawing">
     <value>124, 22</value>
+  </data>
+  <data name="panelHotkey.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="&gt;&gt;groupBox4.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -4253,6 +4250,9 @@ If result suggestions is disabled, this feature will not work.</value>
   </data>
   <data name="checkBox1.Text" xml:space="preserve">
     <value>Run at Windows startup</value>
+  </data>
+  <data name="buttonBlocklist.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
   </data>
   <data name="checkBox5.Size" type="System.Drawing.Size, System.Drawing">
     <value>117, 22</value>
@@ -4290,9 +4290,6 @@ If result suggestions is disabled, this feature will not work.</value>
   <data name="&gt;&gt;checkBoxSuggestions.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="panelHotkey.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
   <data name="&gt;&gt;buttonExclusionList.Name" xml:space="preserve">
     <value>buttonExclusionList</value>
   </data>
@@ -4326,17 +4323,17 @@ If result suggestions is disabled, this feature will not work.</value>
   <data name="checkBox5.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
-  <data name="buttonBackIndex.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9.75pt</value>
+  <data name="checkBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>280, 22</value>
   </data>
   <data name="checkBox4.Text" xml:space="preserve">
     <value>Case-sensitive</value>
   </data>
-  <data name="buttonBackExclusion.ToolTip" xml:space="preserve">
-    <value />
+  <data name="buttonBlocklist.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 254</value>
   </data>
-  <data name="&gt;&gt;labelError.ZOrder" xml:space="preserve">
-    <value>5</value>
+  <data name="panelBlocklist.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="panelExIntro.TabIndex" type="System.Int32, mscorlib">
     <value>26</value>
@@ -4347,8 +4344,8 @@ If result suggestions is disabled, this feature will not work.</value>
   <data name="&gt;&gt;buttonAddEx.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="checkBoxSuggestions.ToolTip" xml:space="preserve">
-    <value />
+  <data name="buttonRemoveEx.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="radioButtonAllDrives.ToolTip" xml:space="preserve">
     <value />
@@ -4356,11 +4353,14 @@ If result suggestions is disabled, this feature will not work.</value>
   <data name="checkBox8.Size" type="System.Drawing.Size, System.Drawing">
     <value>180, 22</value>
   </data>
+  <data name="buttonBackIndex.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt</value>
+  </data>
   <data name="label9.Text" xml:space="preserve">
     <value>Modifiers:</value>
   </data>
-  <data name="panelIndexOption.Size" type="System.Drawing.Size, System.Drawing">
-    <value>498, 285</value>
+  <data name="buttonBackIndex.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
   </data>
   <data name="checkBox5.Text" xml:space="preserve">
     <value>Hide tray icon</value>
@@ -4368,8 +4368,8 @@ If result suggestions is disabled, this feature will not work.</value>
   <data name="labelError.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
   </data>
-  <data name="&gt;&gt;buttonBrowseExe.Name" xml:space="preserve">
-    <value>buttonBrowseExe</value>
+  <data name="&gt;&gt;checkBox5.Name" xml:space="preserve">
+    <value>checkBox5</value>
   </data>
   <data name="&gt;&gt;checkBox7.Name" xml:space="preserve">
     <value>checkBox7</value>
@@ -4403,8 +4403,5 @@ If result suggestions is disabled, this feature will not work.</value>
   </metadata>
   <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
-  </metadata>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>vi</value>
   </metadata>
 </root>

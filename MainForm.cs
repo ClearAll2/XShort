@@ -343,6 +343,21 @@ namespace XShort
                 f2.Close();
                 f2 = new RunForm(Shortcuts, ggs, cases, suggestions, showResult, excludeResult, suggestNum, useIndex);
             }
+
+            if (useIndex)
+            {
+                if (File.Exists(Path.Combine(Application.StartupPath, "XShortCoreIndex.exe")))
+                {
+                    if (isPersonal)
+                    {
+                        Process.Start(Path.Combine(Application.StartupPath, "XShortCoreIndex.exe"), dataPath + " " + Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) + " " + interval.ToString());
+                    }
+                    else
+                    {
+                        Process.Start(Path.Combine(Application.StartupPath, "XShortCoreIndex.exe"), dataPath + " Enhanced " + interval.ToString());
+                    }
+                }
+            }
         }
 
 
