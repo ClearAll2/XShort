@@ -16,6 +16,7 @@ namespace XShort
     public partial class RunForm : Form
     {
         private int suggestNum = 4;
+        private int resultNum = 15;
         private int index = 0;
         private int rel = 0;
         private List<String> dir = new List<String>();
@@ -42,7 +43,7 @@ namespace XShort
         private readonly BackgroundWordFilter _getdir;
         private List<String> matches = new List<string>();
         public bool loaded = false;
-        public RunForm(List<Shortcut> shortcuts, bool _gg, bool _csen, bool _ss, bool _sr, bool _er, int maxss, bool _ui)
+        public RunForm(List<Shortcut> shortcuts, bool _gg, bool _csen, bool _ss, bool _sr, bool _er, int maxss, int maxrs, bool _ui)
         {
             InitializeComponent();
             if (maxss >= 2 && maxss <= 8)
@@ -64,6 +65,7 @@ namespace XShort
                     sImage.ImageSize = new Size(30, 30);
                 }
             }
+            resultNum = maxrs;
             ggSearch = _gg;
             csen = _csen;
             sr = _sr;
@@ -89,7 +91,7 @@ namespace XShort
                 _filter = new BackgroundWordFilter
                 (
                     items: indexData,
-                    maxItemsToMatch: 15,
+                    maxItemsToMatch: resultNum,
                     callback: results => this.Invoke(new Action(() =>
                     {
                         matches.Clear();
@@ -1589,6 +1591,7 @@ namespace XShort
         {
             this.Hide();
             comboBoxRun.Text = String.Empty;
+            
         }
 
         private void RunForm_Paint(object sender, PaintEventArgs e)

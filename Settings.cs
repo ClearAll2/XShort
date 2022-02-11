@@ -246,6 +246,10 @@ namespace XShort
             {
                 numericUpDownMaxSuggestNum.Value = Decimal.Parse((string)r.GetValue("MaxSuggest"));
             }
+            if (r.GetValue("MaxResult") != null)
+            {
+                numericUpDownMaxResultNum.Value = Decimal.Parse((string)r.GetValue("MaxResult"));
+            }
             if (r.GetValue("UseIndex") != null)
                 checkBoxUseIndex.Checked = true;
             if (r.GetValue("Personal") != null)
@@ -531,6 +535,7 @@ namespace XShort
             r1 = Registry.CurrentUser.OpenSubKey("SOFTWARE\\ClearAll\\XShort\\Data", true);
             r1.SetValue("Interval", numericUpDownInterval.Value);
             r1.SetValue("MaxSuggest", numericUpDownMaxSuggestNum.Value);
+            r1.SetValue("MaxResult", numericUpDownMaxResultNum.Value);
             r1.Close();
             r1.Dispose();
             File.WriteAllText(Path.Combine(dataPath, "interval"), String.Empty);
@@ -656,6 +661,11 @@ namespace XShort
         private void buttonBackExclusion_Click(object sender, EventArgs e)
         {
             panelExIntro.Show();
+        }
+
+        private void labelError_MouseClick(object sender, MouseEventArgs e)
+        {
+            Process.Start("https://drive.google.com/file/d/1l6W2PtzAdp7pFyY2iP_V9bJqxIygl3bn/view?usp=sharing");
         }
     }
 }

@@ -58,7 +58,8 @@ namespace XShort
         private double interval = 24;
         private BackgroundWorker bw2;
         private int back;
-        private int suggestNum = 4;//default = 4
+        private int suggestNum = 4;//default 4
+        private int resultNum = 15;//default 15
 
         private ImageList img;
         private ImageList img2;
@@ -126,7 +127,7 @@ namespace XShort
 
         private void Bw2_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
-            f2 = new RunForm(Shortcuts, ggs, cases, suggestions, showResult, excludeResult, suggestNum, useIndex);
+            f2 = new RunForm(Shortcuts, ggs, cases, suggestions, showResult, excludeResult, suggestNum, resultNum, useIndex);
             //f2.ChangeSetting(ggs, cases, suggestions, showResult, excludeResult, suggestNum, useIndex);
             loadIcon();
         }
@@ -181,7 +182,7 @@ namespace XShort
             if (!f2.IsDisposed && f2 != null)
             {
                 f2.Close();
-                f2 = new RunForm(Shortcuts, ggs, cases, suggestions, showResult, excludeResult, suggestNum, useIndex);
+                f2 = new RunForm(Shortcuts, ggs, cases, suggestions, showResult, excludeResult, suggestNum, resultNum, useIndex);
                 //f2.ChangeSetting(ggs, cases, suggestions, showResult, excludeResult, suggestNum, useIndex);
 
             }
@@ -308,6 +309,10 @@ namespace XShort
             {
                 suggestNum = Int32.Parse((string)r.GetValue("MaxSuggest"));
             }
+            if (r.GetValue("MaxResult") != null)
+            {
+                resultNum = Int32.Parse((string)r.GetValue("MaxResult"));
+            }
             if (r.GetValue("UseIndex") != null)
                 useIndex = true;
             else
@@ -341,7 +346,7 @@ namespace XShort
             if (f2 != null && f2.IsDisposed != true)
             {
                 f2.Close();
-                f2 = new RunForm(Shortcuts, ggs, cases, suggestions, showResult, excludeResult, suggestNum, useIndex);
+                f2 = new RunForm(Shortcuts, ggs, cases, suggestions, showResult, excludeResult, suggestNum, resultNum, useIndex);
             }
 
             if (useIndex)
@@ -443,7 +448,7 @@ namespace XShort
                 if (f2.IsDisposed != true && f2 != null)
                 {
                     f2.Close();
-                    f2 = new RunForm(Shortcuts, ggs, cases, suggestions, showResult, excludeResult, suggestNum, useIndex);
+                    f2 = new RunForm(Shortcuts, ggs, cases, suggestions, showResult, excludeResult, suggestNum, resultNum, useIndex);
                     //f2.ChangeSetting(ggs, cases, suggestions, showResult, excludeResult, suggestNum, useIndex);
                 }
             }
@@ -1189,7 +1194,7 @@ namespace XShort
             {
                 f2.Close();
             }
-            f2 = new RunForm(Shortcuts, ggs, cases, suggestions, showResult, excludeResult, suggestNum, useIndex);
+            f2 = new RunForm(Shortcuts, ggs, cases, suggestions, showResult, excludeResult, suggestNum, resultNum, useIndex);
             //f2.ChangeSetting(ggs, cases, suggestions, showResult, excludeResult, suggestNum, useIndex);
             f2.ReloadSuggestions();
         }
@@ -1371,7 +1376,7 @@ namespace XShort
             }
             else
             {
-                f2 = new RunForm(Shortcuts, ggs, cases, suggestions, showResult, excludeResult, suggestNum, useIndex);
+                f2 = new RunForm(Shortcuts, ggs, cases, suggestions, showResult, excludeResult, suggestNum, resultNum, useIndex);
                 f2.Show();
                 f2.Activate();
             }

@@ -84,35 +84,6 @@ namespace XShort
             }
         }
 
-        public void LoadIcon(ImageList imageList, List<String> path)
-        {
-            imageList.Images.Clear();
-            for (int i = 0; i < path.Count; i++)
-            {
-                try
-                {
-                    imageList.Images.Add(Icon.ExtractAssociatedIcon(path[i]));
-                }
-                catch
-                {
-                    if (path[i].Contains("http"))
-                        imageList.Images.Add(Properties.Resources.internet);
-                    else if (path[i].Contains("\\"))
-                    {
-                        if (Directory.Exists(path[i]))
-                            imageList.Images.Add(Properties.Resources.dir);
-                        else
-                            imageList.Images.Add(Properties.Resources.error);
-                    }
-                    else
-                    {
-                        imageList.Images.Add(Properties.Resources.question_help_mark_balloon_512);
-                    }
-
-                }
-            }
-        }
-
 
         void WorkerLoop2()
         {
