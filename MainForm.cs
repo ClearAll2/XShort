@@ -25,7 +25,7 @@ namespace XShort
         private KeyboardHook hook = new KeyboardHook();
         private List<Shortcut> Shortcuts = new List<Shortcut>();
         private List<String> exclusion = new List<String>();
-        private ObservableCollection<String> startup = new ObservableCollection<string>();
+        private List<String> startup = new List<string>();
         private global::ModifierKeys gmk;
         private Keys k;
         private RunForm f2;
