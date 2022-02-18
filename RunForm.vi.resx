@@ -118,23 +118,20 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="contextMenuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>196, 26</value>
-  </data>
   <data name="openAsAdministratorToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>195, 22</value>
   </data>
   <data name="openAsAdministratorToolStripMenuItem.Text" xml:space="preserve">
     <value>Mở bằng quyền admin</value>
   </data>
+  <data name="contextMenuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>196, 26</value>
+  </data>
   <data name="labelInstruction.Size" type="System.Drawing.Size, System.Drawing">
     <value>161, 15</value>
   </data>
   <data name="labelInstruction.Text" xml:space="preserve">
     <value>Bấm Tab để tìm tên tương tự</value>
-  </data>
-  <data name="contextMenuStrip2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>196, 92</value>
   </data>
   <data name="openToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>195, 22</value>
@@ -159,6 +156,9 @@
   </data>
   <data name="propertiesToolStripMenuItem.Text" xml:space="preserve">
     <value>Thông tin chi tiết</value>
+  </data>
+  <data name="contextMenuStrip2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>196, 92</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
