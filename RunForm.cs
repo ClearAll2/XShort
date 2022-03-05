@@ -19,10 +19,12 @@ namespace XShort
         private int resultNum = 15;
         private int index = 0;
         private int rel = 0;
+        private int clipBttIndex = 0;
         private List<String> dir = new List<String>();
         private List<Shortcut> Shortcuts;
         private List<String> blockList = new List<string>();
         private ImageList sImage = new ImageList();
+        private Queue<ClipboardItem> cB = new Queue<ClipboardItem>();
         private List<Suggestions> suggestions = new List<Suggestions>();
         private List<Suggestions> timeSuggestions = new List<Suggestions>();
         private string dataPath;
@@ -240,6 +242,68 @@ namespace XShort
             ReloadSuggestions();
         }
 
+        private void CheckClipboard()
+        {
+            if (Clipboard.ContainsText())
+            {
+                labelInfo.Hide();
+                string text = Clipboard.GetText();
+                if (cB.ToList().FindIndex(f => f.Text == text) < 0)
+                {
+                    AddNewClipboardItem(text);
+                }
+            }
+            else
+            {
+                labelInfo.Show();
+            }
+        }
+
+        private void AddNewClipboardItem(string text)
+        {
+            int clipBttWidth = 1 + (panelClipboard.Width - 1) / 4;
+            Button clipBtt = new Button
+            {
+                ForeColor = Color.Black,
+                BackColor = SystemColors.InactiveBorder,
+                FlatStyle = FlatStyle.Flat
+            };
+            clipBtt.Left = clipBttIndex * clipBttWidth;
+            clipBtt.FlatAppearance.BorderSize = 0;
+            clipBtt.FlatAppearance.BorderColor = SystemColors.ControlDark;
+            clipBtt.Tag = text;
+            clipBtt.Text = text;
+            clipBtt.AutoEllipsis = true;
+            clipBtt.TabStop = false;
+            clipBtt.Height = panelClipboard.Height;
+            clipBtt.Width = clipBttWidth;
+            clipBtt.Click += ClipBtt_Click;
+            panelClipboard.Controls.Add(clipBtt);
+            if (clipBttIndex < 4)
+                clipBttIndex++;
+            var item = new ClipboardItem
+            {
+                Text = text,
+                Item = clipBtt
+            };
+            if (cB.Count >= 4)
+            {
+                var top = cB.Dequeue();
+                panelClipboard.Controls.Remove(top.Item);
+                top.Item.Dispose();
+            }
+            cB.Enqueue(item);
+            for ( int i = 0; i < cB.Count; i++)
+            {
+                cB.ElementAt(i).Item.Left = i * clipBttWidth;
+            }
+        }
+
+        private void ClipBtt_Click(object sender, EventArgs e)
+        {
+            Button btt = (Button)sender;
+            Clipboard.SetText(btt.Text);
+        }
 
         private void timerSuggestions_Tick(object sender, EventArgs e)
         {
@@ -1147,6 +1211,7 @@ namespace XShort
         {
             comboBoxRun.Focus();
             comboBoxRun.SelectAll();
+            CheckClipboard();
         }
 
         private void comboBox1_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
