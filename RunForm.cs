@@ -259,13 +259,28 @@ namespace XShort
             }
         }
 
+        private Color DifferentColorItem(int value)
+        {
+            switch(value)
+            {
+                case 1:
+                    return SystemColors.InactiveBorder;
+                case 2:
+                    return SystemColors.Info;
+                case 3:
+                    return SystemColors.GradientInactiveCaption;
+                default:
+                    return Color.White;
+            }
+        }
+
         private void AddNewClipboardItem(string text)
         {
             int clipBttWidth = 1 + (panelClipboard.Width - 1) / 4;
             Button clipBtt = new Button
             {
                 ForeColor = Color.Black,
-                BackColor = SystemColors.InactiveBorder,
+                BackColor = DifferentColorItem(new Random().Next(0, 3)),
                 FlatStyle = FlatStyle.Flat
             };
             clipBtt.Left = clipBttIndex * clipBttWidth;
@@ -403,6 +418,7 @@ namespace XShort
                     }
                 }
             }
+            CheckClipboard();
         }
 
         /// <summary>
@@ -706,9 +722,6 @@ namespace XShort
                 }
             }
         }
-
-
-        
 
 
         public int LoadData()
