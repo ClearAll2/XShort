@@ -20,6 +20,7 @@ namespace XShort
         private int index = 0;
         private int rel = 0;
         private int clipBttIndex = 0;
+        private int colorClipIndex = 1;
         private List<String> dir = new List<String>();
         private List<Shortcut> Shortcuts;
         private List<String> blockList = new List<string>();
@@ -244,15 +245,20 @@ namespace XShort
 
         private void CheckClipboard()
         {
-            if (Clipboard.ContainsText())
+            try
             {
-                labelInfo.Hide();
-                string text = Clipboard.GetText();
-                if (cB.ToList().FindIndex(f => f.Text == text) < 0)
+                if (Clipboard.ContainsText())
                 {
-                    AddNewClipboardItem(text);
+                    labelInfo.Hide();
+                    string text = Clipboard.GetText();
+                    if (cB.ToList().FindIndex(f => f.Text == text) < 0)
+                    {
+                        AddNewClipboardItem(text);
+                    }
                 }
             }
+            catch
+            { }
         }
 
         private Color DifferentColorItem(int value)
@@ -276,7 +282,7 @@ namespace XShort
             Button clipBtt = new Button
             {
                 ForeColor = Color.Black,
-                BackColor = DifferentColorItem(new Random().Next(0, 3)),
+                BackColor = DifferentColorItem(colorClipIndex),
                 FlatStyle = FlatStyle.Flat
             };
             clipBtt.Left = clipBttIndex * clipBttWidth;
@@ -297,17 +303,22 @@ namespace XShort
                 Text = text,
                 Item = clipBtt
             };
-            if (cB.Count >= 4)
+            if (cB.Count >= 4)//remove the first if any new value
             {
                 var top = cB.Dequeue();
                 panelClipboard.Controls.Remove(top.Item);
                 top.Item.Dispose();
             }
-            cB.Enqueue(item);
+            cB.Enqueue(item);//add new value to bottom
             for ( int i = 0; i < cB.Count; i++)
             {
-                cB.ElementAt(i).Item.Left = i * clipBttWidth;
+                cB.ElementAt(i).Item.Left = i * clipBttWidth;//move all item forward
             }
+            //calculate for color
+            if (colorClipIndex > 3)
+                colorClipIndex = 1;
+            else
+                colorClipIndex++;
         }
 
         private void ClipBtt_Click(object sender, EventArgs e)
