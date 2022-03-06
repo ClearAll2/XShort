@@ -254,11 +254,56 @@ namespace XShort
                     if (cB.ToList().FindIndex(f => f.Text == text) < 0)
                     {
                         AddNewClipboardItem(text);
+                        List<String> linkify = Linkify(text);
+                        if (linkify.Count > 0)
+                        {
+                            for (int i = 0; i < linkify.Count; i++)
+                            {
+                                if (cB.ToList().FindIndex(f => f.Text == linkify[i]) < 0)
+                                {
+                                    AddNewClipboardItem(linkify[i]);
+                                }
+                            }
+                        }
+                        List<int> textify = Textify(text);
+                        if (textify.Count > 0)
+                        {
+                            for (int i = 0; i < textify.Count; i++)
+                            {
+                                if (cB.ToList().FindIndex(f => f.Text == textify[i].ToString()) < 0)
+                                {
+                                    AddNewClipboardItem(textify[i].ToString());
+                                }
+                            }
+                        }
                     }
                 }
             }
             catch
             { }
+        }
+
+        private List<int> Textify(string text)
+        {
+            List<int> ret = new List<int>();
+            var linkParser = new Regex(@"(\d)+", RegexOptions.Compiled | RegexOptions.IgnoreCase);
+            foreach (Match m in linkParser.Matches(text))
+            {
+                if (Int32.TryParse(m.Value, out int tmp))
+                    ret.Add(tmp);
+            }
+            return ret;
+        }
+
+        private List<String> Linkify(string text)
+        {
+            List<String> ret = new List<string>();
+            var linkParser = new Regex(@"\b(?:https?://|www\.)\S+\b", RegexOptions.Compiled | RegexOptions.IgnoreCase);
+            foreach (Match m in linkParser.Matches(text))
+            {
+                ret.Add(m.Value);
+            }
+            return ret;
         }
 
         private Color DifferentColorItem(int value)
@@ -278,7 +323,7 @@ namespace XShort
 
         private void AddNewClipboardItem(string text)
         {
-            int clipBttWidth = 1 + (panelClipboard.Width - 1) / 4;
+            int clipBttWidth = 1 + (panelClipboard.Width - 1) / 6;
             Button clipBtt = new Button
             {
                 ForeColor = Color.Black,
@@ -296,14 +341,14 @@ namespace XShort
             clipBtt.Width = clipBttWidth;
             clipBtt.Click += ClipBtt_Click;
             panelClipboard.Controls.Add(clipBtt);
-            if (clipBttIndex < 4)
+            if (clipBttIndex < 6)
                 clipBttIndex++;
             var item = new ClipboardItem
             {
                 Text = text,
                 Item = clipBtt
             };
-            if (cB.Count >= 4)//remove the first if any new value
+            if (cB.Count >= 6)//remove the first if any new value
             {
                 var top = cB.Dequeue();
                 panelClipboard.Controls.Remove(top.Item);
@@ -325,6 +370,7 @@ namespace XShort
         {
             Button btt = (Button)sender;
             Clipboard.SetText(btt.Text);
+            this.Hide();
         }
 
         private void timerSuggestions_Tick(object sender, EventArgs e)
