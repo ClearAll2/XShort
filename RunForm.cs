@@ -253,10 +253,6 @@ namespace XShort
                     AddNewClipboardItem(text);
                 }
             }
-            else
-            {
-                labelInfo.Show();
-            }
         }
 
         private Color DifferentColorItem(int value)
