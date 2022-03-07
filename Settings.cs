@@ -260,6 +260,19 @@ namespace XShort
             {
                 radioButtonAllDrives.Checked = true;
             }
+            if (r.GetValue("Clipboard") != null)
+            {
+                checkBoxClipboard.Checked = true;
+            }
+            else
+            {
+                checkBoxExtractUrl.Enabled = false;
+                checkBoxExtractNum.Enabled = false;
+            }
+            if (r.GetValue("ExtractURL") != null)
+                checkBoxExtractUrl.Checked = true;
+            if (r.GetValue("ExtractNum") != null)
+                checkBoxExtractNum.Checked = true;
 
             if (r.GetValue("Interval") != null)
             {
@@ -666,6 +679,55 @@ namespace XShort
         private void labelError_MouseClick(object sender, MouseEventArgs e)
         {
             Process.Start("https://drive.google.com/file/d/1l6W2PtzAdp7pFyY2iP_V9bJqxIygl3bn/view?usp=sharing");
+        }
+
+        private void checkBoxClipboard_CheckedChanged(object sender, EventArgs e)
+        {
+            using (RegistryKey rk = Registry.CurrentUser.OpenSubKey("SOFTWARE\\ClearAll\\XShort\\Data", true))
+            {
+                if (checkBoxClipboard.Checked)
+                {
+                    rk.SetValue("Clipboard", true);
+                    checkBoxExtractUrl.Enabled = true;
+                    checkBoxExtractNum.Enabled = true;
+                }
+                else
+                {
+                    rk.DeleteValue("Clipboard", false);
+                    checkBoxExtractUrl.Enabled = false;
+                    checkBoxExtractNum.Enabled = false;
+                }
+            }
+        }
+
+        private void checkBoxExtractUrl_CheckedChanged(object sender, EventArgs e)
+        {
+            using (RegistryKey rk = Registry.CurrentUser.OpenSubKey("SOFTWARE\\ClearAll\\XShort\\Data", true))
+            {
+                if (checkBoxExtractUrl.Checked)
+                {
+                    rk.SetValue("ExtractURL", true);
+                }
+                else
+                {
+                    rk.DeleteValue("ExtractURL", false);
+                }
+            }
+        }
+
+        private void checkBoxExtractNum_CheckedChanged(object sender, EventArgs e)
+        {
+            using (RegistryKey rk = Registry.CurrentUser.OpenSubKey("SOFTWARE\\ClearAll\\XShort\\Data", true))
+            {
+                if (checkBoxExtractNum.Checked)
+                {
+                    rk.SetValue("ExtractNum", true);
+                }
+                else
+                {
+                    rk.DeleteValue("ExtractNum", false);
+                }
+            }
         }
     }
 }

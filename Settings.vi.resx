@@ -117,18 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="groupBox4.Text" xml:space="preserve">
-    <value>Kết quả mục lục</value>
-  </data>
-  <data name="groupBox3.Text" xml:space="preserve">
-    <value>Loại trừ</value>
-  </data>
-  <data name="groupBox2.Text" xml:space="preserve">
-    <value>Gợi ý</value>
-  </data>
-  <data name="groupBox1.Text" xml:space="preserve">
-    <value>Chung</value>
-  </data>
   <data name="buttonBackIndex.Text" xml:space="preserve">
     <value>Quay lại</value>
   </data>
@@ -185,6 +173,29 @@ Nếu gợi ý kết quả bị tắt, chức năng này sẽ không hoạt đ�
   <data name="checkBoxUseIndex.Text" xml:space="preserve">
     <value>Sử dụng XShort Core Index</value>
   </data>
+  <data name="groupBox4.Text" xml:space="preserve">
+    <value>Kết quả mục lục</value>
+  </data>
+  <data name="checkBoxExtractNum.Size" type="System.Drawing.Size, System.Drawing">
+    <value>233, 22</value>
+  </data>
+  <data name="checkBoxExtractNum.Text" xml:space="preserve">
+    <value>Tách số từ bộ nhớ đệm</value>
+  </data>
+  <data name="checkBoxExtractUrl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>278, 22</value>
+  </data>
+  <data name="checkBoxExtractUrl.Text" xml:space="preserve">
+    <value>Tách địa chỉ web từ bộ nhớ đệm</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>XShort sẽ hiển thị nhưng gì bạn sao chép trên cửa sổ Run.
+
+</value>
+  </data>
+  <data name="checkBoxClipboard.Text" xml:space="preserve">
+    <value>Sử dụng bộ nhớ đệm văn bản</value>
+  </data>
   <data name="buttonExclusionList.Text" xml:space="preserve">
     <value>Mở danh sách loại trừ</value>
   </data>
@@ -213,6 +224,9 @@ hoặc bấm nút ... để thêm những ứng dụng khác.
   </data>
   <data name="buttonBrowseExe.ToolTip" xml:space="preserve">
     <value>Tìm và chọn những ứng dụng khác</value>
+  </data>
+  <data name="groupBox3.Text" xml:space="preserve">
+    <value>Loại trừ</value>
   </data>
   <data name="labelExplainBlocklist.Text" xml:space="preserve">
     <value>Khi một lối tắt được chọn vào danh sách này, nó sẽ không hiển thị trên cửa sổ Run.
@@ -273,6 +287,9 @@ hoặc bấm nút ... để thêm những ứng dụng khác.
   <data name="checkBoxSuggestions.Text" xml:space="preserve">
     <value>Hiển thị gợi ý lối tắt</value>
   </data>
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value>Gợi ý</value>
+  </data>
   <data name="buttonHotkeyCancel.Text" xml:space="preserve">
     <value>Huỷ</value>
   </data>
@@ -329,6 +346,9 @@ hoặc bấm nút ... để thêm những ứng dụng khác.
   </data>
   <data name="buttonHotkeySetting.Text" xml:space="preserve">
     <value>Cài đặt phím</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>Chung</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

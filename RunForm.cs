@@ -35,6 +35,9 @@ namespace XShort
         private bool sr = false;
         private bool er = false;
         private bool ui = false;
+        private bool cb = false;
+        private bool eu = false;
+        private bool en = false;
         private string text = String.Empty;
         private string text1, part = String.Empty;
         private string[] sysCmd = { "utilman", "hdwwiz", "appwiz.cpl", "netplwz", "azman.msc", "sdctl", "fsquirt", "calc", "certmgr.msc", "charmap", "chkdsk", "cttune", "colorcpl.exe", "cmd", "dcomcnfg", "comexp.msc", "compmgmt.msc", "control", "credwiz", "timedate.cpl", "hdwwiz", "devmgmt.msc", "tabcal", "directx.cpl", "dxdiag", "cleanmgr", "dfrgui", "diskmgmt.msc", "diskpart", "dccw", "dpiscaling", "control desktop", "desk.cpl", "control color", "documents", "downloads", "verifier", "dvdplay", "sysdm.cpl", "	rekeywiz", "eventvwr.msc", "sigverif", "control folders", "control fonts", "joy.cpl", "gpedit.msc", "inetcpl.cpl", "ipconfig", "iscsicpl", "control keyboard", "lpksetup", "secpol.msc", "lusrmgr.msc", "logoff", "mrt", "mmc", "mspaint", "msdt", "control mouse", "main.cpl", "ncpa.cpl", "notepad", "perfmon.msc", "powercfg.cpl", "control printers", "regedit", "snippingtool", "wscui.cpl", "services.msc", "mmsys.cpl", "mmsys.cpl", "sndvol", "msconfig", "sfc", "msinfo32", "sysdm.cpl", "taskmgr", "explorer", "firewall.cpl", "wf.msc", "magnify", "powershell", "winver", "telnet", "rstrui" };
@@ -46,7 +49,7 @@ namespace XShort
         private readonly BackgroundWordFilter _getdir;
         private List<String> matches = new List<string>();
         public bool loaded = false;
-        public RunForm(List<Shortcut> shortcuts, bool _gg, bool _csen, bool _ss, bool _sr, bool _er, int maxss, int maxrs, bool _ui)
+        public RunForm(List<Shortcut> shortcuts, bool _gg, bool _csen, bool _ss, bool _sr, bool _er, int maxss, int maxrs, bool _ui, bool _cb, bool _eu, bool _en)
         {
             InitializeComponent();
             if (maxss >= 2 && maxss <= 8)
@@ -75,6 +78,9 @@ namespace XShort
             er = _er;
             ss = _ss;
             ui = _ui;
+            cb = _cb;
+            eu = _eu;
+            en = _en;
 
             Shortcuts = new List<Shortcut>(shortcuts);
             dataPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "XShort");
@@ -245,42 +251,50 @@ namespace XShort
 
         private void CheckClipboard()
         {
-            try
+            if (cb)
             {
-                if (Clipboard.ContainsText())
+                try
                 {
-                    labelInfo.Hide();
-                    string text = Clipboard.GetText();
-                    if (cB.ToList().FindIndex(f => f.Text == text) < 0)
+                    if (Clipboard.ContainsText())
                     {
-                        AddNewClipboardItem(text);
-                        List<String> linkify = Linkify(text);
-                        if (linkify.Count > 0)
+                        string text = Clipboard.GetText();
+                        if (cB.ToList().FindIndex(f => f.Text == text) < 0)
                         {
-                            for (int i = 0; i < linkify.Count; i++)
+                            AddNewClipboardItem(text);
+                            if (eu)
                             {
-                                if (cB.ToList().FindIndex(f => f.Text == linkify[i]) < 0)
+                                List<String> linkify = Linkify(text);
+                                if (linkify.Count > 0)
                                 {
-                                    AddNewClipboardItem(linkify[i]);
+                                    for (int i = 0; i < linkify.Count; i++)
+                                    {
+                                        if (cB.ToList().FindIndex(f => f.Text == linkify[i]) < 0)
+                                        {
+                                            AddNewClipboardItem(linkify[i]);
+                                        }
+                                    }
                                 }
                             }
-                        }
-                        List<int> textify = Textify(text);
-                        if (textify.Count > 0)
-                        {
-                            for (int i = 0; i < textify.Count; i++)
+                            if (en)
                             {
-                                if (cB.ToList().FindIndex(f => f.Text == textify[i].ToString()) < 0)
+                                List<int> textify = Textify(text);
+                                if (textify.Count > 0)
                                 {
-                                    AddNewClipboardItem(textify[i].ToString());
+                                    for (int i = 0; i < textify.Count; i++)
+                                    {
+                                        if (cB.ToList().FindIndex(f => f.Text == textify[i].ToString()) < 0)
+                                        {
+                                            AddNewClipboardItem(textify[i].ToString());
+                                        }
+                                    }
                                 }
                             }
                         }
                     }
                 }
+                catch
+                { }
             }
-            catch
-            { }
         }
 
         private List<int> Textify(string text)

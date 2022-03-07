@@ -50,6 +50,9 @@ namespace XShort
         private bool excludeResult = false;
         private bool useIndex = false;
         private bool isPersonal = false;
+        private bool useClipboard = false;
+        private bool extractUrl = false;
+        private bool extractNum = false;
 
         private bool detect = false;
         private bool hide = false;
@@ -127,7 +130,7 @@ namespace XShort
 
         private void Bw2_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
-            f2 = new RunForm(Shortcuts, ggs, cases, suggestions, showResult, excludeResult, suggestNum, resultNum, useIndex);
+            f2 = new RunForm(Shortcuts, ggs, cases, suggestions, showResult, excludeResult, suggestNum, resultNum, useIndex, useClipboard, extractUrl, extractNum);
             //f2.ChangeSetting(ggs, cases, suggestions, showResult, excludeResult, suggestNum, useIndex);
             loadIcon();
         }
@@ -182,7 +185,7 @@ namespace XShort
             if (!f2.IsDisposed && f2 != null)
             {
                 f2.Close();
-                f2 = new RunForm(Shortcuts, ggs, cases, suggestions, showResult, excludeResult, suggestNum, resultNum, useIndex);
+                f2 = new RunForm(Shortcuts, ggs, cases, suggestions, showResult, excludeResult, suggestNum, resultNum, useIndex, useClipboard, extractUrl, extractNum);
                 //f2.ChangeSetting(ggs, cases, suggestions, showResult, excludeResult, suggestNum, useIndex);
 
             }
@@ -321,6 +324,18 @@ namespace XShort
                 isPersonal = true;
             else
                 isPersonal = false;
+            if (r.GetValue("Clipboard") != null)
+                useClipboard = true;
+            else
+                useClipboard = false;
+            if (r.GetValue("ExtractUrl") != null)
+                extractUrl = true;
+            else
+                extractUrl = false;
+            if (r.GetValue("ExtractNum") != null)
+                extractNum = true;
+            else
+                extractNum = false;
             if (r.GetValue("Interval") != null)
                 Double.TryParse((string)r.GetValue("Interval"), out interval);
 
@@ -346,7 +361,7 @@ namespace XShort
             if (f2 != null && f2.IsDisposed != true)
             {
                 f2.Close();
-                f2 = new RunForm(Shortcuts, ggs, cases, suggestions, showResult, excludeResult, suggestNum, resultNum, useIndex);
+                f2 = new RunForm(Shortcuts, ggs, cases, suggestions, showResult, excludeResult, suggestNum, resultNum, useIndex, useClipboard, extractUrl, extractNum);
             }
 
             if (useIndex)
@@ -448,7 +463,7 @@ namespace XShort
                 if (f2.IsDisposed != true && f2 != null)
                 {
                     f2.Close();
-                    f2 = new RunForm(Shortcuts, ggs, cases, suggestions, showResult, excludeResult, suggestNum, resultNum, useIndex);
+                    f2 = new RunForm(Shortcuts, ggs, cases, suggestions, showResult, excludeResult, suggestNum, resultNum, useIndex, useClipboard, extractUrl, extractNum);
                     //f2.ChangeSetting(ggs, cases, suggestions, showResult, excludeResult, suggestNum, useIndex);
                 }
             }
@@ -1194,7 +1209,7 @@ namespace XShort
             {
                 f2.Close();
             }
-            f2 = new RunForm(Shortcuts, ggs, cases, suggestions, showResult, excludeResult, suggestNum, resultNum, useIndex);
+            f2 = new RunForm(Shortcuts, ggs, cases, suggestions, showResult, excludeResult, suggestNum, resultNum, useIndex, useClipboard, extractUrl, extractNum);
             //f2.ChangeSetting(ggs, cases, suggestions, showResult, excludeResult, suggestNum, useIndex);
             f2.ReloadSuggestions();
         }
@@ -1376,7 +1391,7 @@ namespace XShort
             }
             else
             {
-                f2 = new RunForm(Shortcuts, ggs, cases, suggestions, showResult, excludeResult, suggestNum, resultNum, useIndex);
+                f2 = new RunForm(Shortcuts, ggs, cases, suggestions, showResult, excludeResult, suggestNum, resultNum, useIndex, useClipboard, extractUrl, extractNum);
                 f2.Show();
                 f2.Activate();
             }
