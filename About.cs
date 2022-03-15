@@ -25,7 +25,7 @@ namespace XShort
                 object[] attributes = Assembly.GetExecutingAssembly().GetCustomAttributes(typeof(AssemblyDescriptionAttribute), false);
                 if (attributes.Length == 0)
                 {
-                    return "";
+                    return String.Empty;
                 }
                 return ((AssemblyDescriptionAttribute)attributes[0]).Description;
             }
@@ -44,10 +44,10 @@ namespace XShort
         {
             if ((int)e.Result == 0)
             {
-                MessageBox.Show("No newer version available!\nPlease check again later.", "No update", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("No newer version available.", "No update", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 buttonCheckUpdate.Enabled = true;
             }
-            else
+            else if ((int)e.Result == 1)
             {
                 if (MessageBox.Show(String.Join(" ", "New version is available (", latest, ").\nChangelog:\n", changelog, "\nDo you want to update now?"), "New update", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
                 {
@@ -61,36 +61,55 @@ namespace XShort
                     buttonCheckUpdate.Enabled = true;
                 }
             }
+            else
+            {
+                MessageBox.Show("Couldn't reach server!\nPlease try again later.", "No update", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                buttonCheckUpdate.Enabled = true;
+            }
         }
 
         private void BackgroundWorker_DoWork(object sender, DoWorkEventArgs e)
         {
-            WebClient wc = new WebClient();
-            latest = wc.DownloadString("https://release.clearallsoft.cf/download/XShortCore/version");
-            changelog = wc.DownloadString("https://release.clearallsoft.cf/download/XShortCore/changelog");
-            if (latest.CompareTo(Application.ProductVersion) > 0)
+            try
             {
-                e.Result = 1;
+                WebClient wc = new WebClient();
+                latest = wc.DownloadString("https://release.clearallsoft.cf/download/XShortCore/version");
+                changelog = wc.DownloadString("https://release.clearallsoft.cf/download/XShortCore/changelog");
+                if (latest.CompareTo(Application.ProductVersion) > 0)
+                {
+                    e.Result = 1;
+                }
+                else
+                {
+                    e.Result = 0;
+                }
+                wc.Dispose();
             }
-            else
+            catch
             {
-                e.Result = 0;
+                e.Result = -1;
             }
-            wc.Dispose(); 
         }
 
         private void Wc_DownloadFileCompleted(object sender, AsyncCompletedEventArgs e)
         {
-            File.WriteAllText(Application.StartupPath + "\\update.bat", String.Empty);
-            StreamWriter sw = new StreamWriter(Application.StartupPath + "\\update.bat");
-            sw.WriteLine("start powershell.exe" + " " + "Expand-Archive -Force -Path " + Application.StartupPath + "\\xshortcore.zip" + " -DestinationPath " + Application.StartupPath);
-            sw.WriteLine("timeout /T 2");
-            sw.WriteLine("start " + Application.ExecutablePath);
-            sw.WriteLine("del \"xshortcore.zip\"");
-            sw.Close();
-            exit = true;
-            buttonCheckUpdate.Enabled = true;
-            this.Close();
+            try
+            {
+                File.WriteAllText(Application.StartupPath + "\\update.bat", String.Empty);
+                StreamWriter sw = new StreamWriter(Application.StartupPath + "\\update.bat");
+                sw.WriteLine("start powershell.exe" + " " + "Expand-Archive -Force -Path " + Application.StartupPath + "\\xshortcore.zip" + " -DestinationPath " + Application.StartupPath);
+                sw.WriteLine("timeout /T 2");
+                sw.WriteLine("start " + Application.ExecutablePath);
+                sw.WriteLine("del \"xshortcore.zip\"");
+                sw.Close();
+                exit = true;
+                buttonCheckUpdate.Enabled = true;
+                this.Close();
+            }
+            catch
+            {
+                MessageBox.Show("Failed to update!", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void Wc_DownloadProgressChanged(object sender, DownloadProgressChangedEventArgs e)
