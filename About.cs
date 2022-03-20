@@ -97,10 +97,14 @@ namespace XShort
             {
                 File.WriteAllText(Application.StartupPath + "\\update.bat", String.Empty);
                 StreamWriter sw = new StreamWriter(Application.StartupPath + "\\update.bat");
-                sw.WriteLine("start powershell.exe" + " " + "Expand-Archive -Force -Path " + Application.StartupPath + "\\xshortcore.zip" + " -DestinationPath " + Application.StartupPath);
+                sw.WriteLine("@echo Start updating XShort Core...");
+                sw.WriteLine("start powershell.exe" + " " + "Expand-Archive -Force -Path xshortcore.zip" + " -DestinationPath " + Application.StartupPath);
                 sw.WriteLine("timeout /T 2");
                 sw.WriteLine("start " + Application.ExecutablePath);
+                sw.WriteLine("echo Cleaning up...");
                 sw.WriteLine("del \"xshortcore.zip\"");
+                sw.WriteLine("@echo Completed");
+                sw.WriteLine("pause");
                 sw.Close();
                 exit = true;
                 buttonCheckUpdate.Enabled = true;
