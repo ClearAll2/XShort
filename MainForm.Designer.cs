@@ -53,7 +53,7 @@
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.propertiesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.button13 = new System.Windows.Forms.Button();
+            this.buttonBrowseDirectory = new System.Windows.Forms.Button();
             this.buttonSave = new System.Windows.Forms.Button();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.buttonAddURL = new System.Windows.Forms.Button();
@@ -92,8 +92,8 @@
             this.textBoxPara = new System.Windows.Forms.TextBox();
             this.textBoxPath = new System.Windows.Forms.TextBox();
             this.textBoxName = new System.Windows.Forms.TextBox();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
+            this.buttonCancelEdit = new System.Windows.Forms.Button();
+            this.buttonOkEdit = new System.Windows.Forms.Button();
             this.labelShortcutType = new System.Windows.Forms.Label();
             this.contextMenuStrip1.SuspendLayout();
             this.contextMenuStrip2.SuspendLayout();
@@ -104,13 +104,12 @@
             // 
             // notifyIcon1
             // 
-            resources.ApplyResources(this.notifyIcon1, "notifyIcon1");
             this.notifyIcon1.ContextMenuStrip = this.contextMenuStrip1;
+            resources.ApplyResources(this.notifyIcon1, "notifyIcon1");
             this.notifyIcon1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.notifyIcon1_MouseClick);
             // 
             // contextMenuStrip1
             // 
-            resources.ApplyResources(this.contextMenuStrip1, "contextMenuStrip1");
             this.contextMenuStrip1.BackColor = System.Drawing.Color.White;
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.aboutToolStripMenuItem,
@@ -120,12 +119,12 @@
             this.exitToolStripMenuItem1});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
-            this.toolTip1.SetToolTip(this.contextMenuStrip1, resources.GetString("contextMenuStrip1.ToolTip"));
+            resources.ApplyResources(this.contextMenuStrip1, "contextMenuStrip1");
             // 
             // aboutToolStripMenuItem
             // 
-            resources.ApplyResources(this.aboutToolStripMenuItem, "aboutToolStripMenuItem");
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            resources.ApplyResources(this.aboutToolStripMenuItem, "aboutToolStripMenuItem");
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // mainWindowToolStripMenuItem
@@ -136,26 +135,26 @@
             // 
             // settingsToolStripMenuItem
             // 
-            resources.ApplyResources(this.settingsToolStripMenuItem, "settingsToolStripMenuItem");
             this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
+            resources.ApplyResources(this.settingsToolStripMenuItem, "settingsToolStripMenuItem");
             this.settingsToolStripMenuItem.Click += new System.EventHandler(this.settingsToolStripMenuItem_Click);
             // 
             // runBoxToolStripMenuItem
             // 
-            resources.ApplyResources(this.runBoxToolStripMenuItem, "runBoxToolStripMenuItem");
             this.runBoxToolStripMenuItem.Name = "runBoxToolStripMenuItem";
+            resources.ApplyResources(this.runBoxToolStripMenuItem, "runBoxToolStripMenuItem");
             this.runBoxToolStripMenuItem.Click += new System.EventHandler(this.runBoxToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem1
             // 
-            resources.ApplyResources(this.exitToolStripMenuItem1, "exitToolStripMenuItem1");
             this.exitToolStripMenuItem1.Name = "exitToolStripMenuItem1";
+            resources.ApplyResources(this.exitToolStripMenuItem1, "exitToolStripMenuItem1");
             this.exitToolStripMenuItem1.Click += new System.EventHandler(this.exitToolStripMenuItem1_Click);
             // 
             // contextMenuStrip2
             // 
-            resources.ApplyResources(this.contextMenuStrip2, "contextMenuStrip2");
             this.contextMenuStrip2.BackColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.contextMenuStrip2, "contextMenuStrip2");
             this.contextMenuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.openToolStripMenuItem1,
             this.openAsAdministratorToolStripMenuItem,
@@ -173,103 +172,102 @@
             this.propertiesToolStripMenuItem});
             this.contextMenuStrip2.Name = "contextMenuStrip2";
             this.contextMenuStrip2.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
-            this.toolTip1.SetToolTip(this.contextMenuStrip2, resources.GetString("contextMenuStrip2.ToolTip"));
             // 
             // openToolStripMenuItem1
             // 
-            resources.ApplyResources(this.openToolStripMenuItem1, "openToolStripMenuItem1");
             this.openToolStripMenuItem1.Name = "openToolStripMenuItem1";
+            resources.ApplyResources(this.openToolStripMenuItem1, "openToolStripMenuItem1");
             this.openToolStripMenuItem1.Click += new System.EventHandler(this.openToolStripMenuItem1_Click);
             // 
             // openAsAdministratorToolStripMenuItem
             // 
-            resources.ApplyResources(this.openAsAdministratorToolStripMenuItem, "openAsAdministratorToolStripMenuItem");
             this.openAsAdministratorToolStripMenuItem.Name = "openAsAdministratorToolStripMenuItem";
+            resources.ApplyResources(this.openAsAdministratorToolStripMenuItem, "openAsAdministratorToolStripMenuItem");
             this.openAsAdministratorToolStripMenuItem.Click += new System.EventHandler(this.openAsAdministratorToolStripMenuItem_Click);
             // 
             // openFileLocationToolStripMenuItem1
             // 
-            resources.ApplyResources(this.openFileLocationToolStripMenuItem1, "openFileLocationToolStripMenuItem1");
             this.openFileLocationToolStripMenuItem1.Name = "openFileLocationToolStripMenuItem1";
+            resources.ApplyResources(this.openFileLocationToolStripMenuItem1, "openFileLocationToolStripMenuItem1");
             this.openFileLocationToolStripMenuItem1.Click += new System.EventHandler(this.openFileLocationToolStripMenuItem1_Click);
             // 
             // toolStripSeparator3
             // 
-            resources.ApplyResources(this.toolStripSeparator3, "toolStripSeparator3");
             this.toolStripSeparator3.ForeColor = System.Drawing.Color.White;
             this.toolStripSeparator3.Name = "toolStripSeparator3";
+            resources.ApplyResources(this.toolStripSeparator3, "toolStripSeparator3");
             // 
             // detailsToolStripMenuItem
             // 
-            resources.ApplyResources(this.detailsToolStripMenuItem, "detailsToolStripMenuItem");
             this.detailsToolStripMenuItem.Name = "detailsToolStripMenuItem";
+            resources.ApplyResources(this.detailsToolStripMenuItem, "detailsToolStripMenuItem");
             this.detailsToolStripMenuItem.Click += new System.EventHandler(this.detailsToolStripMenuItem_Click);
             // 
             // checkValidPathToolStripMenuItem
             // 
-            resources.ApplyResources(this.checkValidPathToolStripMenuItem, "checkValidPathToolStripMenuItem");
             this.checkValidPathToolStripMenuItem.Name = "checkValidPathToolStripMenuItem";
+            resources.ApplyResources(this.checkValidPathToolStripMenuItem, "checkValidPathToolStripMenuItem");
             this.checkValidPathToolStripMenuItem.Click += new System.EventHandler(this.checkValidPathToolStripMenuItem_Click);
             // 
             // toolStripSeparator4
             // 
-            resources.ApplyResources(this.toolStripSeparator4, "toolStripSeparator4");
             this.toolStripSeparator4.ForeColor = System.Drawing.Color.White;
             this.toolStripSeparator4.Name = "toolStripSeparator4";
+            resources.ApplyResources(this.toolStripSeparator4, "toolStripSeparator4");
             // 
             // openAtWindowsStartupToolStripMenuItem
             // 
-            resources.ApplyResources(this.openAtWindowsStartupToolStripMenuItem, "openAtWindowsStartupToolStripMenuItem");
             this.openAtWindowsStartupToolStripMenuItem.Name = "openAtWindowsStartupToolStripMenuItem";
+            resources.ApplyResources(this.openAtWindowsStartupToolStripMenuItem, "openAtWindowsStartupToolStripMenuItem");
             this.openAtWindowsStartupToolStripMenuItem.Click += new System.EventHandler(this.openAtWindowsStartupToolStripMenuItem_Click);
             // 
             // createShortcutOnDesktopToolStripMenuItem
             // 
-            resources.ApplyResources(this.createShortcutOnDesktopToolStripMenuItem, "createShortcutOnDesktopToolStripMenuItem");
             this.createShortcutOnDesktopToolStripMenuItem.Name = "createShortcutOnDesktopToolStripMenuItem";
+            resources.ApplyResources(this.createShortcutOnDesktopToolStripMenuItem, "createShortcutOnDesktopToolStripMenuItem");
             this.createShortcutOnDesktopToolStripMenuItem.Click += new System.EventHandler(this.createShortcutOnDesktopToolStripMenuItem_Click);
             // 
             // toolStripSeparator6
             // 
-            resources.ApplyResources(this.toolStripSeparator6, "toolStripSeparator6");
             this.toolStripSeparator6.ForeColor = System.Drawing.Color.White;
             this.toolStripSeparator6.Name = "toolStripSeparator6";
+            resources.ApplyResources(this.toolStripSeparator6, "toolStripSeparator6");
             // 
             // cloneToolStripMenuItem
             // 
-            resources.ApplyResources(this.cloneToolStripMenuItem, "cloneToolStripMenuItem");
             this.cloneToolStripMenuItem.Name = "cloneToolStripMenuItem";
+            resources.ApplyResources(this.cloneToolStripMenuItem, "cloneToolStripMenuItem");
             this.cloneToolStripMenuItem.Click += new System.EventHandler(this.cloneToolStripMenuItem_Click);
             // 
             // addToolStripMenuItem1
             // 
-            resources.ApplyResources(this.addToolStripMenuItem1, "addToolStripMenuItem1");
             this.addToolStripMenuItem1.Name = "addToolStripMenuItem1";
+            resources.ApplyResources(this.addToolStripMenuItem1, "addToolStripMenuItem1");
             this.addToolStripMenuItem1.Click += new System.EventHandler(this.removeToolStripMenuItem_Click);
             // 
             // toolStripSeparator5
             // 
-            resources.ApplyResources(this.toolStripSeparator5, "toolStripSeparator5");
             this.toolStripSeparator5.ForeColor = System.Drawing.Color.White;
             this.toolStripSeparator5.Name = "toolStripSeparator5";
+            resources.ApplyResources(this.toolStripSeparator5, "toolStripSeparator5");
             // 
             // propertiesToolStripMenuItem
             // 
-            resources.ApplyResources(this.propertiesToolStripMenuItem, "propertiesToolStripMenuItem");
             this.propertiesToolStripMenuItem.Name = "propertiesToolStripMenuItem";
+            resources.ApplyResources(this.propertiesToolStripMenuItem, "propertiesToolStripMenuItem");
             this.propertiesToolStripMenuItem.Click += new System.EventHandler(this.propertiesToolStripMenuItem_Click);
             // 
-            // button13
+            // buttonBrowseDirectory
             // 
-            resources.ApplyResources(this.button13, "button13");
-            this.button13.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button13.FlatAppearance.BorderSize = 0;
-            this.button13.ForeColor = System.Drawing.Color.White;
-            this.button13.Name = "button13";
-            this.button13.TabStop = false;
-            this.toolTip1.SetToolTip(this.button13, resources.GetString("button13.ToolTip"));
-            this.button13.UseVisualStyleBackColor = false;
-            this.button13.Click += new System.EventHandler(this.button13_Click);
+            resources.ApplyResources(this.buttonBrowseDirectory, "buttonBrowseDirectory");
+            this.buttonBrowseDirectory.BackColor = System.Drawing.Color.DodgerBlue;
+            this.buttonBrowseDirectory.FlatAppearance.BorderSize = 0;
+            this.buttonBrowseDirectory.ForeColor = System.Drawing.Color.White;
+            this.buttonBrowseDirectory.Name = "buttonBrowseDirectory";
+            this.buttonBrowseDirectory.TabStop = false;
+            this.toolTip1.SetToolTip(this.buttonBrowseDirectory, resources.GetString("buttonBrowseDirectory.ToolTip"));
+            this.buttonBrowseDirectory.UseVisualStyleBackColor = false;
+            this.buttonBrowseDirectory.Click += new System.EventHandler(this.button13_Click);
             // 
             // buttonSave
             // 
@@ -348,8 +346,8 @@
             // 
             // menuStrip1
             // 
-            resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.controlToolStripMenuItem,
             this.appToolStripMenuItem,
@@ -358,164 +356,162 @@
             this.aboutToolStripMenuItem2});
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.toolTip1.SetToolTip(this.menuStrip1, resources.GetString("menuStrip1.ToolTip"));
             // 
             // controlToolStripMenuItem
             // 
-            resources.ApplyResources(this.controlToolStripMenuItem, "controlToolStripMenuItem");
             this.controlToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.minimizeHideToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.controlToolStripMenuItem.Name = "controlToolStripMenuItem";
+            resources.ApplyResources(this.controlToolStripMenuItem, "controlToolStripMenuItem");
             // 
             // minimizeHideToolStripMenuItem
             // 
-            resources.ApplyResources(this.minimizeHideToolStripMenuItem, "minimizeHideToolStripMenuItem");
             this.minimizeHideToolStripMenuItem.BackColor = System.Drawing.Color.White;
             this.minimizeHideToolStripMenuItem.Name = "minimizeHideToolStripMenuItem";
+            resources.ApplyResources(this.minimizeHideToolStripMenuItem, "minimizeHideToolStripMenuItem");
             this.minimizeHideToolStripMenuItem.Click += new System.EventHandler(this.button7_Click);
             // 
             // exitToolStripMenuItem
             // 
-            resources.ApplyResources(this.exitToolStripMenuItem, "exitToolStripMenuItem");
             this.exitToolStripMenuItem.BackColor = System.Drawing.Color.White;
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            resources.ApplyResources(this.exitToolStripMenuItem, "exitToolStripMenuItem");
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem1_Click);
             // 
             // appToolStripMenuItem
             // 
-            resources.ApplyResources(this.appToolStripMenuItem, "appToolStripMenuItem");
             this.appToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.addAppToolStripMenuItem,
             this.addDirToolStripMenuItem,
             this.addUrlToolStripMenuItem,
             this.saveToolStripMenuItem});
             this.appToolStripMenuItem.Name = "appToolStripMenuItem";
+            resources.ApplyResources(this.appToolStripMenuItem, "appToolStripMenuItem");
             // 
             // addAppToolStripMenuItem
             // 
-            resources.ApplyResources(this.addAppToolStripMenuItem, "addAppToolStripMenuItem");
             this.addAppToolStripMenuItem.BackColor = System.Drawing.Color.White;
             this.addAppToolStripMenuItem.Name = "addAppToolStripMenuItem";
+            resources.ApplyResources(this.addAppToolStripMenuItem, "addAppToolStripMenuItem");
             this.addAppToolStripMenuItem.Click += new System.EventHandler(this.addToolStripMenuItem_Click);
             // 
             // addDirToolStripMenuItem
             // 
-            resources.ApplyResources(this.addDirToolStripMenuItem, "addDirToolStripMenuItem");
             this.addDirToolStripMenuItem.BackColor = System.Drawing.Color.White;
             this.addDirToolStripMenuItem.Name = "addDirToolStripMenuItem";
+            resources.ApplyResources(this.addDirToolStripMenuItem, "addDirToolStripMenuItem");
             this.addDirToolStripMenuItem.Click += new System.EventHandler(this.addDirectoryToolStripMenuItem_Click);
             // 
             // addUrlToolStripMenuItem
             // 
-            resources.ApplyResources(this.addUrlToolStripMenuItem, "addUrlToolStripMenuItem");
             this.addUrlToolStripMenuItem.BackColor = System.Drawing.Color.White;
             this.addUrlToolStripMenuItem.Name = "addUrlToolStripMenuItem";
+            resources.ApplyResources(this.addUrlToolStripMenuItem, "addUrlToolStripMenuItem");
             this.addUrlToolStripMenuItem.Click += new System.EventHandler(this.addURLToolStripMenuItem_Click);
             // 
             // saveToolStripMenuItem
             // 
-            resources.ApplyResources(this.saveToolStripMenuItem, "saveToolStripMenuItem");
             this.saveToolStripMenuItem.BackColor = System.Drawing.Color.White;
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
+            resources.ApplyResources(this.saveToolStripMenuItem, "saveToolStripMenuItem");
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveShortcutsToolStripMenuItem_Click);
             // 
             // actToolStripMenuItem
             // 
-            resources.ApplyResources(this.actToolStripMenuItem, "actToolStripMenuItem");
             this.actToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.reloadDataToolStripMenuItem1,
             this.importToolStripMenuItem,
             this.exportToolStripMenuItem,
             this.openSettingsToolStripMenuItem});
             this.actToolStripMenuItem.Name = "actToolStripMenuItem";
+            resources.ApplyResources(this.actToolStripMenuItem, "actToolStripMenuItem");
             // 
             // reloadDataToolStripMenuItem1
             // 
-            resources.ApplyResources(this.reloadDataToolStripMenuItem1, "reloadDataToolStripMenuItem1");
             this.reloadDataToolStripMenuItem1.BackColor = System.Drawing.Color.White;
             this.reloadDataToolStripMenuItem1.Name = "reloadDataToolStripMenuItem1";
+            resources.ApplyResources(this.reloadDataToolStripMenuItem1, "reloadDataToolStripMenuItem1");
             this.reloadDataToolStripMenuItem1.Click += new System.EventHandler(this.buttonReload_Click);
             // 
             // importToolStripMenuItem
             // 
-            resources.ApplyResources(this.importToolStripMenuItem, "importToolStripMenuItem");
             this.importToolStripMenuItem.BackColor = System.Drawing.Color.White;
             this.importToolStripMenuItem.Name = "importToolStripMenuItem";
+            resources.ApplyResources(this.importToolStripMenuItem, "importToolStripMenuItem");
             this.importToolStripMenuItem.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // exportToolStripMenuItem
             // 
-            resources.ApplyResources(this.exportToolStripMenuItem, "exportToolStripMenuItem");
             this.exportToolStripMenuItem.BackColor = System.Drawing.Color.White;
             this.exportToolStripMenuItem.Name = "exportToolStripMenuItem";
+            resources.ApplyResources(this.exportToolStripMenuItem, "exportToolStripMenuItem");
             this.exportToolStripMenuItem.Click += new System.EventHandler(this.buttonExport_Click);
             // 
             // openSettingsToolStripMenuItem
             // 
-            resources.ApplyResources(this.openSettingsToolStripMenuItem, "openSettingsToolStripMenuItem");
             this.openSettingsToolStripMenuItem.BackColor = System.Drawing.Color.White;
             this.openSettingsToolStripMenuItem.Name = "openSettingsToolStripMenuItem";
+            resources.ApplyResources(this.openSettingsToolStripMenuItem, "openSettingsToolStripMenuItem");
             this.openSettingsToolStripMenuItem.Click += new System.EventHandler(this.buttonSettings_Click);
             // 
             // languageToolStripMenuItem
             // 
-            resources.ApplyResources(this.languageToolStripMenuItem, "languageToolStripMenuItem");
             this.languageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.englishToolStripMenuItem,
             this.vietnameseToolStripMenuItem});
             this.languageToolStripMenuItem.Name = "languageToolStripMenuItem";
+            resources.ApplyResources(this.languageToolStripMenuItem, "languageToolStripMenuItem");
             // 
             // englishToolStripMenuItem
             // 
-            resources.ApplyResources(this.englishToolStripMenuItem, "englishToolStripMenuItem");
             this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
+            resources.ApplyResources(this.englishToolStripMenuItem, "englishToolStripMenuItem");
             this.englishToolStripMenuItem.Click += new System.EventHandler(this.englishToolStripMenuItem_Click);
             // 
             // vietnameseToolStripMenuItem
             // 
-            resources.ApplyResources(this.vietnameseToolStripMenuItem, "vietnameseToolStripMenuItem");
             this.vietnameseToolStripMenuItem.Name = "vietnameseToolStripMenuItem";
+            resources.ApplyResources(this.vietnameseToolStripMenuItem, "vietnameseToolStripMenuItem");
             this.vietnameseToolStripMenuItem.Click += new System.EventHandler(this.vietnameseToolStripMenuItem_Click);
             // 
             // aboutToolStripMenuItem2
             // 
-            resources.ApplyResources(this.aboutToolStripMenuItem2, "aboutToolStripMenuItem2");
             this.aboutToolStripMenuItem2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.homepageToolStripMenuItem,
             this.openAboutToolStripMenuItem});
             this.aboutToolStripMenuItem2.Name = "aboutToolStripMenuItem2";
+            resources.ApplyResources(this.aboutToolStripMenuItem2, "aboutToolStripMenuItem2");
             // 
             // homepageToolStripMenuItem
             // 
-            resources.ApplyResources(this.homepageToolStripMenuItem, "homepageToolStripMenuItem");
             this.homepageToolStripMenuItem.BackColor = System.Drawing.Color.White;
             this.homepageToolStripMenuItem.Name = "homepageToolStripMenuItem";
+            resources.ApplyResources(this.homepageToolStripMenuItem, "homepageToolStripMenuItem");
             this.homepageToolStripMenuItem.Click += new System.EventHandler(this.homepageToolStripMenuItem_Click);
             // 
             // openAboutToolStripMenuItem
             // 
-            resources.ApplyResources(this.openAboutToolStripMenuItem, "openAboutToolStripMenuItem");
             this.openAboutToolStripMenuItem.BackColor = System.Drawing.Color.White;
             this.openAboutToolStripMenuItem.Name = "openAboutToolStripMenuItem";
+            resources.ApplyResources(this.openAboutToolStripMenuItem, "openAboutToolStripMenuItem");
             this.openAboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // listViewData
             // 
-            resources.ApplyResources(this.listViewData, "listViewData");
             this.listViewData.AllowDrop = true;
             this.listViewData.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.listViewData.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2,
             this.columnHeader3});
+            resources.ApplyResources(this.listViewData, "listViewData");
             this.listViewData.FullRowSelect = true;
             this.listViewData.HideSelection = false;
             this.listViewData.MultiSelect = false;
             this.listViewData.Name = "listViewData";
             this.listViewData.ShowItemToolTips = true;
             this.listViewData.TabStop = false;
-            this.toolTip1.SetToolTip(this.listViewData, resources.GetString("listViewData.ToolTip"));
             this.listViewData.UseCompatibleStateImageBehavior = false;
             this.listViewData.View = System.Windows.Forms.View.Details;
             this.listViewData.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.listView1_ColumnClick);
@@ -541,25 +537,23 @@
             resources.ApplyResources(this.panelData, "panelData");
             this.panelData.Controls.Add(this.listViewData);
             this.panelData.Name = "panelData";
-            this.toolTip1.SetToolTip(this.panelData, resources.GetString("panelData.ToolTip"));
             // 
             // panelEditShortcut
             // 
             resources.ApplyResources(this.panelEditShortcut, "panelEditShortcut");
             this.panelEditShortcut.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelEditShortcut.Controls.Add(this.comboBox1);
-            this.panelEditShortcut.Controls.Add(this.button13);
+            this.panelEditShortcut.Controls.Add(this.buttonBrowseDirectory);
             this.panelEditShortcut.Controls.Add(this.labelPara);
             this.panelEditShortcut.Controls.Add(this.labelPath);
             this.panelEditShortcut.Controls.Add(this.labelName);
             this.panelEditShortcut.Controls.Add(this.textBoxPara);
             this.panelEditShortcut.Controls.Add(this.textBoxPath);
             this.panelEditShortcut.Controls.Add(this.textBoxName);
-            this.panelEditShortcut.Controls.Add(this.button12);
-            this.panelEditShortcut.Controls.Add(this.button10);
+            this.panelEditShortcut.Controls.Add(this.buttonCancelEdit);
+            this.panelEditShortcut.Controls.Add(this.buttonOkEdit);
             this.panelEditShortcut.Controls.Add(this.labelShortcutType);
             this.panelEditShortcut.Name = "panelEditShortcut";
-            this.toolTip1.SetToolTip(this.panelEditShortcut, resources.GetString("panelEditShortcut.ToolTip"));
             // 
             // comboBox1
             // 
@@ -572,26 +566,22 @@
             resources.GetString("comboBox1.Items2")});
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.TabStop = false;
-            this.toolTip1.SetToolTip(this.comboBox1, resources.GetString("comboBox1.ToolTip"));
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // labelPara
             // 
             resources.ApplyResources(this.labelPara, "labelPara");
             this.labelPara.Name = "labelPara";
-            this.toolTip1.SetToolTip(this.labelPara, resources.GetString("labelPara.ToolTip"));
             // 
             // labelPath
             // 
             resources.ApplyResources(this.labelPath, "labelPath");
             this.labelPath.Name = "labelPath";
-            this.toolTip1.SetToolTip(this.labelPath, resources.GetString("labelPath.ToolTip"));
             // 
             // labelName
             // 
             resources.ApplyResources(this.labelName, "labelName");
             this.labelName.Name = "labelName";
-            this.toolTip1.SetToolTip(this.labelName, resources.GetString("labelName.ToolTip"));
             // 
             // textBoxPara
             // 
@@ -599,7 +589,6 @@
             this.textBoxPara.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxPara.Name = "textBoxPara";
             this.textBoxPara.TabStop = false;
-            this.toolTip1.SetToolTip(this.textBoxPara, resources.GetString("textBoxPara.ToolTip"));
             // 
             // textBoxPath
             // 
@@ -607,7 +596,6 @@
             this.textBoxPath.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxPath.Name = "textBoxPath";
             this.textBoxPath.TabStop = false;
-            this.toolTip1.SetToolTip(this.textBoxPath, resources.GetString("textBoxPath.ToolTip"));
             // 
             // textBoxName
             // 
@@ -615,44 +603,40 @@
             this.textBoxName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.TabStop = false;
-            this.toolTip1.SetToolTip(this.textBoxName, resources.GetString("textBoxName.ToolTip"));
             // 
-            // button12
+            // buttonCancelEdit
             // 
-            resources.ApplyResources(this.button12, "button12");
-            this.button12.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button12.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.button12.FlatAppearance.BorderSize = 0;
-            this.button12.ForeColor = System.Drawing.Color.White;
-            this.button12.Name = "button12";
-            this.button12.TabStop = false;
-            this.toolTip1.SetToolTip(this.button12, resources.GetString("button12.ToolTip"));
-            this.button12.UseVisualStyleBackColor = false;
-            this.button12.Click += new System.EventHandler(this.button12_Click);
+            resources.ApplyResources(this.buttonCancelEdit, "buttonCancelEdit");
+            this.buttonCancelEdit.BackColor = System.Drawing.Color.DodgerBlue;
+            this.buttonCancelEdit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.buttonCancelEdit.FlatAppearance.BorderSize = 0;
+            this.buttonCancelEdit.ForeColor = System.Drawing.Color.White;
+            this.buttonCancelEdit.Name = "buttonCancelEdit";
+            this.buttonCancelEdit.TabStop = false;
+            this.buttonCancelEdit.UseVisualStyleBackColor = false;
+            this.buttonCancelEdit.Click += new System.EventHandler(this.button12_Click);
             // 
-            // button10
+            // buttonOkEdit
             // 
-            resources.ApplyResources(this.button10, "button10");
-            this.button10.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button10.FlatAppearance.BorderSize = 0;
-            this.button10.ForeColor = System.Drawing.Color.White;
-            this.button10.Name = "button10";
-            this.button10.TabStop = false;
-            this.toolTip1.SetToolTip(this.button10, resources.GetString("button10.ToolTip"));
-            this.button10.UseVisualStyleBackColor = false;
-            this.button10.Click += new System.EventHandler(this.button10_Click_1);
+            resources.ApplyResources(this.buttonOkEdit, "buttonOkEdit");
+            this.buttonOkEdit.BackColor = System.Drawing.Color.DodgerBlue;
+            this.buttonOkEdit.FlatAppearance.BorderSize = 0;
+            this.buttonOkEdit.ForeColor = System.Drawing.Color.White;
+            this.buttonOkEdit.Name = "buttonOkEdit";
+            this.buttonOkEdit.TabStop = false;
+            this.buttonOkEdit.UseVisualStyleBackColor = false;
+            this.buttonOkEdit.Click += new System.EventHandler(this.button10_Click_1);
             // 
             // labelShortcutType
             // 
             resources.ApplyResources(this.labelShortcutType, "labelShortcutType");
             this.labelShortcutType.Name = "labelShortcutType";
-            this.toolTip1.SetToolTip(this.labelShortcutType, resources.GetString("labelShortcutType.ToolTip"));
             // 
             // MainForm
             // 
-            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
+            resources.ApplyResources(this, "$this");
             this.Controls.Add(this.panelEditShortcut);
             this.Controls.Add(this.buttonSave);
             this.Controls.Add(this.buttonAddURL);
@@ -662,7 +646,6 @@
             this.Controls.Add(this.menuStrip1);
             this.DoubleBuffered = true;
             this.Name = "MainForm";
-            this.toolTip1.SetToolTip(this, resources.GetString("$this.ToolTip"));
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseClick);
@@ -723,15 +706,15 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
         private System.Windows.Forms.Panel panelEditShortcut;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Button buttonBrowseDirectory;
         private System.Windows.Forms.Label labelPara;
         private System.Windows.Forms.Label labelPath;
         private System.Windows.Forms.Label labelName;
         private System.Windows.Forms.TextBox textBoxPara;
         private System.Windows.Forms.TextBox textBoxPath;
         private System.Windows.Forms.TextBox textBoxName;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button buttonCancelEdit;
+        private System.Windows.Forms.Button buttonOkEdit;
         private System.Windows.Forms.Label labelShortcutType;
         private System.Windows.Forms.ToolStripMenuItem reloadDataToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem2;

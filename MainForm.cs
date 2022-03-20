@@ -1858,21 +1858,21 @@ namespace XShort
             if (comboBox1.SelectedIndex == 0)
             {
                 what = "app";
-                button13.Enabled = true;
+                buttonBrowseDirectory.Enabled = true;
                 textBoxPara.ReadOnly = false;
                 textBoxPara.Text = String.Empty;
             }
             else if (comboBox1.SelectedIndex == 1)
             {
                 what = "dir";
-                button13.Enabled = true;
+                buttonBrowseDirectory.Enabled = true;
                 textBoxPara.Text = "Not Available";
                 textBoxPara.ReadOnly = true;
             }
             else if (comboBox1.SelectedIndex == 2)
             {
                 what = "url";
-                button13.Enabled = false;
+                buttonBrowseDirectory.Enabled = false;
                 textBoxPara.Text = "Not Available";
                 textBoxPara.ReadOnly = true;
                 if (textBoxPath.Text == String.Empty)

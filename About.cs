@@ -101,7 +101,7 @@ namespace XShort
                 sw.WriteLine("start powershell.exe" + " " + "Expand-Archive -Force -Path xshortcore.zip" + " -DestinationPath " + Application.StartupPath);
                 sw.WriteLine("timeout /T 2");
                 sw.WriteLine("start " + Application.ExecutablePath);
-                sw.WriteLine("echo Cleaning up...");
+                sw.WriteLine("@echo Cleaning up...");
                 sw.WriteLine("del \"xshortcore.zip\"");
                 sw.WriteLine("@echo Completed");
                 sw.WriteLine("pause");
@@ -112,7 +112,7 @@ namespace XShort
             }
             catch
             {
-                MessageBox.Show("Failed to update!", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("An error has occurred, please try again!", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
