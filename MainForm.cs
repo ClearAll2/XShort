@@ -107,7 +107,7 @@ namespace XShort
 
             f3 = new ProgressForm();
             
-            loadSettings();
+            LoadSettings();
             if (useIndex)
             {
                 if (File.Exists(Path.Combine(Application.StartupPath, "XShortCoreIndex.exe")))
@@ -138,7 +138,7 @@ namespace XShort
         private void Bw2_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
             LoadRunForm();
-            loadIcon();
+            LoadIcon();
         }
 
         internal struct LASTINPUTINFO
@@ -220,7 +220,7 @@ namespace XShort
             return false;
         }
 
-        private void loadSettings()
+        private void LoadSettings()
         {
             r = Registry.CurrentUser.OpenSubKey("SOFTWARE\\ClearAll\\XShort\\Data", true);
             if (r == null)
@@ -557,7 +557,7 @@ namespace XShort
 
         }
 
-        private void loadIcon()
+        private void LoadIcon()
         {
             listViewData.SmallImageList = img;
             img.ImageSize = new Size(25, 25);
@@ -573,7 +573,7 @@ namespace XShort
                         img.Images.Add(Properties.Resources.internet);
                     else if (Shortcuts[i].Path.Contains("\\"))
                     {
-                        if (checkValid(Shortcuts[i].Path) == 0)
+                        if (CheckValid(Shortcuts[i].Path) == 0)
                             img.Images.Add(Properties.Resources.dir);
                         else
                             img.Images.Add(Properties.Resources.error);
@@ -589,12 +589,12 @@ namespace XShort
 
             }
             if (detect)
-                autoCheckValid();
+                AutoCheckValid();
 
         }
 
         //auto detect invalid path
-        private void autoCheckValid()
+        private void AutoCheckValid()
         {
             BackgroundWorker abw = new BackgroundWorker();
             abw.DoWork += Abw_DoWork;
@@ -607,7 +607,7 @@ namespace XShort
             for (int i = 0; i < listViewData.Items.Count; i++)
             {
                 if (!Shortcuts[i].Path.Contains("http"))
-                    if (checkValid(Shortcuts[i].Path) == -1)
+                    if (CheckValid(Shortcuts[i].Path) == -1)
                         changeColorListViewItem(Color.Red, i);
 
 
@@ -619,7 +619,7 @@ namespace XShort
             listViewData.Items[i].ForeColor = cl;
         }
 
-        private int checkValid(string text)
+        private int CheckValid(string text)
         {
             if (File.Exists(text))
             {
@@ -667,7 +667,7 @@ namespace XShort
             int i = 0;
             FileStream fs;
             StreamReader sr;
-            f3.changeDisplay(1);
+            f3.ChangeDisplay(1);
             try
             {
                 fs = new FileStream(Path.Combine(dataPath, "data1.data"), FileMode.Open, FileAccess.Read);
@@ -690,7 +690,7 @@ namespace XShort
             sr.Close();
 
             //
-            f3.changeDisplay(2);
+            f3.ChangeDisplay(2);
             try
             {
                 fs = new FileStream(Path.Combine(dataPath, "data2.data"), FileMode.Open, FileAccess.Read);
@@ -709,7 +709,7 @@ namespace XShort
             sr.Close();
 
             //
-            f3.changeDisplay(3);
+            f3.ChangeDisplay(3);
             i = 0;
             try
             {
@@ -1189,7 +1189,7 @@ namespace XShort
             if (buttonSave.Enabled)
             {
                 yet = String.Empty;
-                f3.changeDisplay(4);
+                f3.ChangeDisplay(4);
                 f3.TopMost = false;
                 f3.Show();
 
@@ -1246,7 +1246,7 @@ namespace XShort
             }
 
             if (detect)
-                autoCheckValid();
+                AutoCheckValid();
 
             //reload startup shortcuts
             for (int i = 0; i < listViewData.Items.Count; i++)
@@ -1264,7 +1264,7 @@ namespace XShort
             img = new ImageList();
             img.ColorDepth = ColorDepth.Depth32Bit;
             img.Images.Clear();
-            loadIcon();
+            LoadIcon();
 
             f3.Hide();
 
@@ -1273,7 +1273,7 @@ namespace XShort
             if (exit == true)
             {
                 exit = true;
-                f3.closeForm();
+                f3.CloseForm();
                 Application.Exit();
             }
         }
@@ -1347,7 +1347,7 @@ namespace XShort
                 else
                 {
                     exit = true;
-                    f3.closeForm();
+                    f3.CloseForm();
                     Application.Exit();
                 }
 
@@ -1356,7 +1356,7 @@ namespace XShort
             {
 
                 exit = true;
-                f3.closeForm();
+                f3.CloseForm();
                 Application.Exit();
             }
         }
@@ -1978,7 +1978,7 @@ namespace XShort
 
         private void Stt_FormClosed(object sender, FormClosedEventArgs e)
         {
-            loadSettings();
+            LoadSettings();
             if (!dontload && listViewData.Items.Count == 0)
                 buttonReload_Click(null, null);
         }
@@ -2031,7 +2031,7 @@ namespace XShort
                 if (File.Exists(Path.Combine(dataPath, "data1.data")))
                 {
                     LoadData();
-                    loadIcon();
+                    LoadIcon();
                 }
                 listViewData.Enabled = true;
                 f3.Show();

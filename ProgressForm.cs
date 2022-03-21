@@ -9,51 +9,35 @@ namespace XShort
         {
             InitializeComponent();
             circularProgressBar1.Text = "Loading...";
-
         }
 
 
-        public void changeDisplay(int phase)
+        public void ChangeDisplay(int phase)
         {
-            if (phase == 1)
+            switch (phase)
             {
-
-                circularProgressBar1.Text = "Loading name";
-
-            }
-            else if (phase == 2)
-            {
-
-                circularProgressBar1.Text = "Loading path";
-
-            }
-            else if (phase == 3)
-            {
-
-                circularProgressBar1.Text = "Loading para";
-
-            }
-            else if (phase == 4)
-            {
-
-                circularProgressBar1.Text = "Saving...";
-
-            }
-            else if (phase == 5)
-            {
-
-                circularProgressBar1.Text = "Scanning...";
-
-            }
-            else if (phase == 6)
-            {
-
-                circularProgressBar1.Text = "Checking...";
-
+                case 1:
+                    circularProgressBar1.Text = "Loading name";
+                    return;
+                case 2:
+                    circularProgressBar1.Text = "Loading path";
+                    return;
+                case 3:
+                    circularProgressBar1.Text = "Loading para";
+                    return;
+                case 4:
+                    circularProgressBar1.Text = "Saving...";
+                    return;
+                case 5:
+                    circularProgressBar1.Text = "Scanning...";
+                    return;
+                default:
+                    circularProgressBar1.Text = "Checking...";
+                    return;
             }
         }
 
-        public void closeForm()
+        public void CloseForm()
         {
             close = true;
             this.Close();
