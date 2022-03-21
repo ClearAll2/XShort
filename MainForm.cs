@@ -128,10 +128,16 @@ namespace XShort
 
         }
 
+        private void LoadRunForm(bool forceClose = false)
+        {
+            if (forceClose)
+                f2.Close();
+            f2 = new RunForm(Shortcuts, ggs, cases, suggestions, showResult, excludeResult, suggestNum, resultNum, useIndex, useClipboard, extractUrl, extractNum);
+        }
+
         private void Bw2_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
-            f2 = new RunForm(Shortcuts, ggs, cases, suggestions, showResult, excludeResult, suggestNum, resultNum, useIndex, useClipboard, extractUrl, extractNum);
-            //f2.ChangeSetting(ggs, cases, suggestions, showResult, excludeResult, suggestNum, useIndex);
+            LoadRunForm();
             loadIcon();
         }
 
@@ -184,10 +190,7 @@ namespace XShort
             }
             if (!f2.IsDisposed && f2 != null)
             {
-                f2.Close();
-                f2 = new RunForm(Shortcuts, ggs, cases, suggestions, showResult, excludeResult, suggestNum, resultNum, useIndex, useClipboard, extractUrl, extractNum);
-                //f2.ChangeSetting(ggs, cases, suggestions, showResult, excludeResult, suggestNum, useIndex);
-
+                LoadRunForm(true);
             }
         }
 
@@ -360,8 +363,7 @@ namespace XShort
             LoadExclusion();
             if (f2 != null && f2.IsDisposed != true)
             {
-                f2.Close();
-                f2 = new RunForm(Shortcuts, ggs, cases, suggestions, showResult, excludeResult, suggestNum, resultNum, useIndex, useClipboard, extractUrl, extractNum);
+                LoadRunForm(true);
             }
 
             if (useIndex)
@@ -462,9 +464,7 @@ namespace XShort
             {
                 if (f2.IsDisposed != true && f2 != null)
                 {
-                    f2.Close();
-                    f2 = new RunForm(Shortcuts, ggs, cases, suggestions, showResult, excludeResult, suggestNum, resultNum, useIndex, useClipboard, extractUrl, extractNum);
-                    //f2.ChangeSetting(ggs, cases, suggestions, showResult, excludeResult, suggestNum, useIndex);
+                    LoadRunForm(true);
                 }
             }
             base.WndProc(ref m);
@@ -1209,8 +1209,7 @@ namespace XShort
             {
                 f2.Close();
             }
-            f2 = new RunForm(Shortcuts, ggs, cases, suggestions, showResult, excludeResult, suggestNum, resultNum, useIndex, useClipboard, extractUrl, extractNum);
-            //f2.ChangeSetting(ggs, cases, suggestions, showResult, excludeResult, suggestNum, useIndex);
+            LoadRunForm();
             f2.ReloadSuggestions();
         }
 
@@ -1391,7 +1390,7 @@ namespace XShort
             }
             else
             {
-                f2 = new RunForm(Shortcuts, ggs, cases, suggestions, showResult, excludeResult, suggestNum, resultNum, useIndex, useClipboard, extractUrl, extractNum);
+                LoadRunForm();
                 f2.Show();
                 f2.Activate();
             }
