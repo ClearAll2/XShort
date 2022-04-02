@@ -407,8 +407,9 @@ namespace XShort
                 {
                     if (suggestions[i].lasttime.Hour == DateTime.Now.Hour || suggestions[i].lasttime.Hour == DateTime.Now.Hour + 1 && suggestions[i].lasttime.Minute <= 30 || suggestions[i].lasttime.Hour == DateTime.Now.Hour - 1 && suggestions[i].lasttime.Minute >= 30)
                     {
-                        if (!blockList.Contains(suggestions[i].loc))//if it's not in blocklist
-                            timeSuggestions.Add(suggestions[i]);
+                        if ((DateTime.Now.Date - suggestions[i].lasttime.Date).TotalDays <= 30)//stop showing items that haven't been called over 1 month
+                            if (!blockList.Contains(suggestions[i].loc))//if it's not in blocklist
+                                timeSuggestions.Add(suggestions[i]);
                     }
                 }
 
