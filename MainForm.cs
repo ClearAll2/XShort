@@ -25,7 +25,7 @@ namespace XShort
         private KeyboardHook hook = new KeyboardHook();
         private List<Shortcut> Shortcuts = new List<Shortcut>();
         private List<String> exclusion = new List<String>();
-        private List<String> startup = new List<string>();
+        private ObservableCollection<String> startup = new ObservableCollection<string>();
         private global::ModifierKeys gmk;
         private Keys k;
         private RunForm f2;
@@ -103,7 +103,7 @@ namespace XShort
             img2 = new ImageList();
             img2.ColorDepth = ColorDepth.Depth32Bit;
 
-
+            startup.CollectionChanged += Startup_CollectionChanged;
 
             f3 = new ProgressForm();
             
@@ -128,6 +128,18 @@ namespace XShort
 
         }
 
+        private void Startup_CollectionChanged(object sender, System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
+        {
+            File.WriteAllText(Path.Combine(dataPath, "startup.txt"), string.Empty);
+            StreamWriter sw;
+            sw = new StreamWriter(Path.Combine(dataPath, "startup.txt"));
+            for (int i = 0; i < startup.Count; i++)
+            {
+                sw.WriteLine(startup[i]);
+            }
+            sw.Close();
+        }
+
         private void LoadRunForm(bool forceClose = false)
         {
             if (forceClose)
@@ -139,6 +151,21 @@ namespace XShort
         {
             LoadRunForm();
             LoadIcon();
+            //fix not opening startup shortcuts
+            for (int i = 0; i < Shortcuts.Count; i++)
+            {
+                if (startup.Contains(Shortcuts[i].Name))
+                {
+                    listViewData.Items[i].ForeColor = Color.SlateBlue;
+                    if (Program.FileName == "startup")
+                    {
+                        if (Shortcuts[i].Para != "None" && Shortcuts[i].Para != "Not Available")
+                            Process.Start(Shortcuts[i].Path, Shortcuts[i].Para);
+                        else
+                            Process.Start(Shortcuts[i].Path);
+                    }
+                }
+            }
         }
 
         internal struct LASTINPUTINFO
@@ -413,23 +440,7 @@ namespace XShort
                 }
                 sr.Close();
                 fs.Close();
-                sr.Dispose();
-                fs.Dispose();
 
-                for (int i = 0; i < Shortcuts.Count; i++)
-                {
-                    if (startup.Contains(Shortcuts[i].Name))
-                    {
-                        listViewData.Items[i].ForeColor = Color.SlateBlue;
-                        if (Program.FileName == "startup")
-                        {
-                            if (Shortcuts[i].Para != "None" && Shortcuts[i].Para != "Not Available")
-                                Process.Start(Shortcuts[i].Path, Shortcuts[i].Para);
-                            else
-                                Process.Start(Shortcuts[i].Path);
-                        }
-                    }
-                }
                 
             }
 
@@ -1454,14 +1465,6 @@ namespace XShort
                 minimizeToolStripMenuItem_Click(null, null);
                 return;
             }
-            File.WriteAllText(Path.Combine(dataPath, "startup.txt"), string.Empty);
-            StreamWriter sw;
-            sw = new StreamWriter(Path.Combine(dataPath, "startup.txt"));
-            for (int i = 0; i < startup.Count; i++)
-            {
-                sw.WriteLine(startup[i]);
-            }
-            sw.Close();
 
             r = Registry.CurrentUser.OpenSubKey("SOFTWARE\\ClearAll\\XShort\\Data", true);
             if (englishToolStripMenuItem.Checked)
