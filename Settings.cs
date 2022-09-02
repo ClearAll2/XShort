@@ -19,17 +19,16 @@ namespace XShort
         private Keys k;
         private List<Shortcut> Shortcuts;
         private ImageList sImage = new ImageList();
-        private List<String> blockList = new List<string>();
+        private List<String> blockList;
         private List<String> exclusion = new List<string>();
         private string dataPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "XShort");
-        private string[] sysCmd = { "utilman", "hdwwiz", "appwiz.cpl", "netplwz", "azman.msc", "sdctl", "fsquirt", "calc", "certmgr.msc", "charmap", "chkdsk", "cttune", "colorcpl.exe", "cmd", "dcomcnfg", "comexp.msc", "compmgmt.msc", "control", "credwiz", "timedate.cpl", "hdwwiz", "devmgmt.msc", "tabcal", "directx.cpl", "dxdiag", "cleanmgr", "dfrgui", "diskmgmt.msc", "diskpart", "dccw", "dpiscaling", "control desktop", "desk.cpl", "control color", "documents", "downloads", "verifier", "dvdplay", "sysdm.cpl", "	rekeywiz", "eventvwr.msc", "sigverif", "control folders", "control fonts", "joy.cpl", "gpedit.msc", "inetcpl.cpl", "ipconfig", "iscsicpl", "control keyboard", "lpksetup", "secpol.msc", "lusrmgr.msc", "logoff", "mrt", "mmc", "mspaint", "msdt", "control mouse", "main.cpl", "ncpa.cpl", "notepad", "perfmon.msc", "powercfg.cpl", "control printers", "regedit", "snippingtool", "wscui.cpl", "services.msc", "mmsys.cpl", "mmsys.cpl", "sndvol", "msconfig", "sfc", "msinfo32", "sysdm.cpl", "taskmgr", "explorer", "firewall.cpl", "wf.msc", "magnify", "powershell", "winver", "telnet", "rstrui" };
         private CultureInfo culture = CultureInfo.CurrentUICulture;
 
-
-        public Settings(List<Shortcut> shortcuts)
+        public Settings(List<Shortcut> shortcuts, List<string> blocklist)
         {
             InitializeComponent();
             Shortcuts = new List<Shortcut>(shortcuts);
+            blockList = new List<string>(blocklist);
             sImage.ImageSize = new Size(20, 20);
             sImage.ColorDepth = ColorDepth.Depth32Bit;
             listViewBlocklist.SmallImageList = sImage;
@@ -58,7 +57,8 @@ namespace XShort
         private void BackgroundWorker_DoWork(object sender, DoWorkEventArgs e)
         {
             //LoadData();
-            ReloadBlocklist();
+            //ReloadBlocklist();
+            LoadBLStatus();
             LoadIcon();
 
         }
@@ -131,6 +131,25 @@ namespace XShort
             }
         }
 
+        private void LoadBLStatus()
+        {
+            if (blockList.Count > 0)
+            {
+                if (culture.Name == "en")
+                    buttonBlocklist.Text = "Blocklist - " + blockList.Count.ToString() + " shortcut(s) selected";
+                else
+                    buttonBlocklist.Text = "Dánh sách chặn - " + blockList.Count.ToString() + " lối tắt đã chọn";
+
+            }
+            else
+            {
+                if (culture.Name == "en")
+                    buttonBlocklist.Text = "Blocklist";
+                else
+                    buttonBlocklist.Text = "Dánh sách chặn";
+            }
+        }
+
         private void ReloadBlocklist()
         {
             blockList.Clear();
@@ -149,20 +168,13 @@ namespace XShort
             while (!sr.EndOfStream)
             {
                 string read = sr.ReadLine();
-                if (Shortcuts.FindIndex(f => f.Name == read) > 0 || sysCmd.Contains(read))
+                if (Shortcuts.FindIndex(f => f.Name == read) > 0 || SysCommand.sysCmd.Contains(read))
                     blockList.Add(read);
             }
             fs.Close();
             sr.Close();
 
-            if (blockList.Count > 0)
-            {
-                if (culture.Name == "en")
-                    buttonBlocklist.Text = "Blocklist - " + blockList.Count.ToString() + " shortcut(s) selected";
-                else
-                    buttonBlocklist.Text = "Dánh sách chặn - " + blockList.Count.ToString() + " lối tắt đã chọn";
-
-            }
+            LoadBLStatus();
         }
 
         private void LoadSettings()

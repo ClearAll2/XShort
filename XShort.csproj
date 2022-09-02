@@ -120,6 +120,7 @@
     </Compile>
     <Compile Include="Shortcut.cs" />
     <Compile Include="Suggestions.cs" />
+    <Compile Include="SysCommand.cs" />
     <EmbeddedResource Include="About.en.resx">
       <DependentUpon>About.cs</DependentUpon>
     </EmbeddedResource>

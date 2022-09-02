@@ -85,6 +85,7 @@
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panelData = new System.Windows.Forms.Panel();
             this.panelEditShortcut = new System.Windows.Forms.Panel();
+            this.checkBoxIsInBlocklist = new System.Windows.Forms.CheckBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.labelPara = new System.Windows.Forms.Label();
             this.labelPath = new System.Windows.Forms.Label();
@@ -542,6 +543,7 @@
             // 
             resources.ApplyResources(this.panelEditShortcut, "panelEditShortcut");
             this.panelEditShortcut.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelEditShortcut.Controls.Add(this.checkBoxIsInBlocklist);
             this.panelEditShortcut.Controls.Add(this.comboBox1);
             this.panelEditShortcut.Controls.Add(this.buttonBrowseDirectory);
             this.panelEditShortcut.Controls.Add(this.labelPara);
@@ -554,6 +556,12 @@
             this.panelEditShortcut.Controls.Add(this.buttonOkEdit);
             this.panelEditShortcut.Controls.Add(this.labelShortcutType);
             this.panelEditShortcut.Name = "panelEditShortcut";
+            // 
+            // checkBoxIsInBlocklist
+            // 
+            resources.ApplyResources(this.checkBoxIsInBlocklist, "checkBoxIsInBlocklist");
+            this.checkBoxIsInBlocklist.Name = "checkBoxIsInBlocklist";
+            this.checkBoxIsInBlocklist.UseVisualStyleBackColor = true;
             // 
             // comboBox1
             // 
@@ -728,6 +736,7 @@
         private System.Windows.Forms.ToolStripMenuItem languageToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem englishToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem vietnameseToolStripMenuItem;
+        private System.Windows.Forms.CheckBox checkBoxIsInBlocklist;
     }
 }
 

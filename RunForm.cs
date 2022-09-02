@@ -23,7 +23,7 @@ namespace XShort
         private int colorClipIndex = 1;
         private List<String> dir = new List<String>();
         private List<Shortcut> Shortcuts;
-        private List<String> blockList = new List<string>();
+        private List<String> blockList;
         private ImageList sImage = new ImageList();
         private Queue<ClipboardItem> cB = new Queue<ClipboardItem>();
         private List<Suggestions> suggestions = new List<Suggestions>();
@@ -40,7 +40,6 @@ namespace XShort
         private bool en = false;
         private string text = String.Empty;
         private string text1, part = String.Empty;
-        private string[] sysCmd = { "utilman", "hdwwiz", "appwiz.cpl", "netplwz", "azman.msc", "sdctl", "fsquirt", "calc", "certmgr.msc", "charmap", "chkdsk", "cttune", "colorcpl.exe", "cmd", "dcomcnfg", "comexp.msc", "compmgmt.msc", "control", "credwiz", "timedate.cpl", "hdwwiz", "devmgmt.msc", "tabcal", "directx.cpl", "dxdiag", "cleanmgr", "dfrgui", "diskmgmt.msc", "diskpart", "dccw", "dpiscaling", "control desktop", "desk.cpl", "control color", "documents", "downloads", "verifier", "dvdplay", "sysdm.cpl", "	rekeywiz", "eventvwr.msc", "sigverif", "control folders", "control fonts", "joy.cpl", "gpedit.msc", "inetcpl.cpl", "ipconfig", "iscsicpl", "control keyboard", "lpksetup", "secpol.msc", "lusrmgr.msc", "logoff", "mrt", "mmc", "mspaint", "msdt", "control mouse", "main.cpl", "ncpa.cpl", "notepad", "perfmon.msc", "powercfg.cpl", "control printers", "regedit", "snippingtool", "wscui.cpl", "services.msc", "mmsys.cpl", "mmsys.cpl", "sndvol", "msconfig", "sfc", "msinfo32", "sysdm.cpl", "taskmgr", "explorer", "firewall.cpl", "wf.msc", "magnify", "powershell", "winver", "telnet", "rstrui" };
         private string lastcalled = String.Empty;
         private BackgroundWorker bw;
         private int originalSize;
@@ -49,7 +48,7 @@ namespace XShort
         private readonly BackgroundWordFilter _getdir;
         private List<String> matches = new List<string>();
         public bool loaded = false;
-        public RunForm(List<Shortcut> shortcuts, bool _gg, bool _csen, bool _ss, bool _sr, bool _er, int maxss, int maxrs, bool _ui, bool _cb, bool _eu, bool _en)
+        public RunForm(List<Shortcut> shortcuts, List<string> blocklist, bool _gg, bool _csen, bool _ss, bool _sr, bool _er, int maxss, int maxrs, bool _ui, bool _cb, bool _eu, bool _en)
         {
             InitializeComponent();
             if (maxss >= 2 && maxss <= 8)
@@ -83,6 +82,7 @@ namespace XShort
             en = _en;
 
             Shortcuts = new List<Shortcut>(shortcuts);
+            blockList = new List<string>(blocklist);
             dataPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "XShort");
             comboBoxRun.DropDownHeight = comboBoxRun.Font.Height * 5;
             originalSize = this.Height;
@@ -240,9 +240,9 @@ namespace XShort
         {
             for (int i = 0; i < suggestions.Count; i++)
             {
-                if (Shortcuts.FindIndex(f => f.Name == suggestions[i].loc) < 0 && !sysCmd.Contains(suggestions[i].loc))
+                if (Shortcuts.FindIndex(f => f.Name == suggestions[i].loc) < 0 && ! SysCommand.sysCmd.Contains(suggestions[i].loc))
                     suggestions.RemoveAt(i);
-                if (Shortcuts.FindIndex(f => f.Name == suggestions[i].nextcall) < 0 && !sysCmd.Contains(suggestions[i].nextcall))
+                if (Shortcuts.FindIndex(f => f.Name == suggestions[i].nextcall) < 0 && !SysCommand.sysCmd.Contains(suggestions[i].nextcall))
                     suggestions[i].nextcall = String.Empty;
             }
             LoadIcon();
@@ -769,7 +769,7 @@ namespace XShort
             }
             else
             {
-                if (sysCmd.Contains(s))
+                if (SysCommand.sysCmd.Contains(s))
                 {
                     try
                     {
@@ -925,7 +925,7 @@ namespace XShort
             while (!sr.EndOfStream)
             {
                 string read = sr.ReadLine();
-                if (Shortcuts.FindIndex(f => f.Name == read) >= 0 || sysCmd.Contains(read))//check if it's not an invalid shortcut
+                if (Shortcuts.FindIndex(f => f.Name == read) >= 0 || SysCommand.sysCmd.Contains(read))//check if it's not an invalid shortcut
                     blockList.Add(read);
             }
             fs.Close();
@@ -936,7 +936,7 @@ namespace XShort
         {
             if (comboBoxRun.Text == String.Empty) //do nothing if comboBox is empty
                 return;
-            if (sysCmd.Contains(tmp))
+            if (SysCommand.sysCmd.Contains(tmp))
             {
                 this.Hide();
                 ProcessStartInfo proc = new ProcessStartInfo();
@@ -1301,12 +1301,12 @@ namespace XShort
             {
                 if (text.Contains("#"))
                 {
-                    for (int i = index + 1; i < sysCmd.Count(); i++)
+                    for (int i = index + 1; i <SysCommand.sysCmd.Count(); i++)
                     {
-                        if (sysCmd[i].Contains(part) || sysCmd[i].ToLower().Contains(part.ToLower()) && !csen)
+                        if (SysCommand.sysCmd[i].Contains(part) || SysCommand.sysCmd[i].ToLower().Contains(part.ToLower()) && !csen)
                         {
 
-                            comboBoxRun.Text = text1 + sysCmd[i];
+                            comboBoxRun.Text = text1 + SysCommand.sysCmd[i];
                             index = i;
                             //select text which not belong to "text"
                             comboBoxRun.SelectionStart = comboBoxRun.Text.IndexOf(part) + part.Length; //index of "text" + length => position to start selection
@@ -1645,9 +1645,9 @@ namespace XShort
                         if (rel < suggestNum)//add syscmd to search
                         {
                             int remain = suggestNum - rel;
-                            for (int i = 0; i < sysCmd.Length; i++)
+                            for (int i = 0; i < SysCommand.sysCmd.Length; i++)
                             {
-                                if (sysCmd[i].Contains(cut) || sysCmd[i].ToLower().Contains(cut.ToLower()) && !csen)
+                                if (SysCommand.sysCmd[i].Contains(cut) || SysCommand.sysCmd[i].ToLower().Contains(cut.ToLower()) && !csen)
                                 {
                                     if (!ifAny)//prevent reload when nothing match
                                     {
@@ -1657,7 +1657,7 @@ namespace XShort
                                     }
                                     if (remain > 0)
                                     {
-                                        AddNewSuggestionsItems(sysCmd[i], false);
+                                        AddNewSuggestionsItems(SysCommand.sysCmd[i], false);
                                         remain -= 1;
                                     }
                                     else//break if no more space => reduce loop time

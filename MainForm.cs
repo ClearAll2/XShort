@@ -26,6 +26,7 @@ namespace XShort
         private List<Shortcut> Shortcuts = new List<Shortcut>();
         private List<String> exclusion = new List<String>();
         private List<String> startup = new List<string>();
+        private List<String> blockList = new List<string>();
         private global::ModifierKeys gmk;
         private Keys k;
         private RunForm f2;
@@ -127,27 +128,15 @@ namespace XShort
 
         }
 
-        private void Startup_CollectionChanged(object sender, System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
-        {
-            File.WriteAllText(Path.Combine(dataPath, "startup.txt"), string.Empty);
-            StreamWriter sw;
-            sw = new StreamWriter(Path.Combine(dataPath, "startup.txt"));
-            for (int i = 0; i < startup.Count; i++)
-            {
-                sw.WriteLine(startup[i]);
-            }
-            sw.Close();
-        }
-
         private void LoadRunForm(bool forceClose = false)
         {
             if (forceClose)
                 f2.Close();
-            f2 = new RunForm(Shortcuts, ggs, cases, suggestions, showResult, excludeResult, suggestNum, resultNum, useIndex, useClipboard, extractUrl, extractNum);
+            f2 = new RunForm(Shortcuts, blockList, ggs, cases, suggestions, showResult, excludeResult, suggestNum, resultNum, useIndex, useClipboard, extractUrl, extractNum);
         }
 
         private void Bw2_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
-        {
+        { 
             LoadRunForm();
             LoadIcon();
             //fix not opening startup shortcuts
@@ -387,6 +376,7 @@ namespace XShort
             r.Dispose();
 
             LoadExclusion();
+            LoadBlocklist();
             if (f2 != null && f2.IsDisposed != true)
             {
                 LoadRunForm(true);
@@ -408,6 +398,29 @@ namespace XShort
             }
         }
 
+        public void LoadBlocklist()
+        {
+            FileStream fs;
+            StreamReader sr;
+            blockList.Clear();
+            try
+            {
+                fs = new FileStream(Path.Combine(dataPath, "blocklist"), FileMode.Open, FileAccess.Read);
+            }
+            catch
+            {
+                return;
+            }
+            sr = new StreamReader(fs);
+            while (!sr.EndOfStream)
+            {
+                string read = sr.ReadLine();
+                if (Shortcuts.FindIndex(f => f.Name == read) >= 0 || SysCommand.sysCmd.Contains(read))//check if it's not an invalid shortcut
+                    blockList.Add(read);
+            }
+            fs.Close();
+            sr.Close();
+        }
 
         //load data
         private void Bw2_DoWork(object sender, DoWorkEventArgs e)
@@ -425,6 +438,7 @@ namespace XShort
                     MessageBox.Show("Missing data to complete operation", "Missing data", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
             }
+            LoadBlocklist();
 
             //load and run startup shortcuts
             if (File.Exists(Path.Combine(dataPath, "startup.txt")))
@@ -439,8 +453,6 @@ namespace XShort
                 }
                 sr.Close();
                 fs.Close();
-
-                
             }
 
             f3.Show();
@@ -1041,13 +1053,24 @@ namespace XShort
                     }
                 }
             }
+            if (checkBoxIsInBlocklist.Checked)
+            {
+                if (!blockList.Contains(listViewData.FocusedItem.SubItems[0].Text))
+                    blockList.Add(listViewData.FocusedItem.SubItems[0].Text);
+                yet = "edit";
+
+            }
+            else
+            {
+                blockList.Remove(listViewData.FocusedItem.SubItems[0].Text);
+                yet = "rm";
+            }
             if (edit)
             {
                 panelEditShortcut.Hide();
                 listViewData.Enabled = true;
                 edit = false;
             }
-
         }
 
         private void button12_Click(object sender, EventArgs e)
@@ -1245,6 +1268,14 @@ namespace XShort
                 
             }
 
+            File.WriteAllText(Path.Combine(dataPath, "startup.txt"), string.Empty);
+            StreamWriter sw = new StreamWriter(Path.Combine(dataPath, "startup.txt"));
+            for (int i = 0; i < startup.Count; i++)
+            {
+                sw.WriteLine(startup[i]);
+            }
+            sw.Close();
+
             listViewData.Items.Clear();
             for (int j = 0; j < Shortcuts.Count; j++)
             {
@@ -1255,8 +1286,16 @@ namespace XShort
                 
             }
 
+            //Save blocklist to update list if any changes
+            File.WriteAllText(Path.Combine(dataPath, "blocklist"), String.Empty);
+            for (int i = 0; i < blockList.Count; i++)
+            {
+               File.AppendAllText(Path.Combine(dataPath, "blocklist"), blockList[i] + Environment.NewLine);
+            }
+
             if (detect)
                 AutoCheckValid();
+
 
             //reload startup shortcuts
             for (int i = 0; i < listViewData.Items.Count; i++)
@@ -1461,18 +1500,10 @@ namespace XShort
             if (exit != true)
             {
                 e.Cancel = true;
+                CheckUnsaved();
                 minimizeToolStripMenuItem_Click(null, null);
                 return;
             }
-
-            File.WriteAllText(Path.Combine(dataPath, "startup.txt"), string.Empty);
-            StreamWriter sw;
-            sw = new StreamWriter(Path.Combine(dataPath, "startup.txt"));
-            for (int i = 0; i < startup.Count; i++)
-            {
-                sw.WriteLine(startup[i]);
-            }
-            sw.Close();
 
             r = Registry.CurrentUser.OpenSubKey("SOFTWARE\\ClearAll\\XShort\\Data", true);
             if (englishToolStripMenuItem.Checked)
@@ -1547,7 +1578,14 @@ namespace XShort
 
         private void button7_Click(object sender, EventArgs e)
         {
+            CheckUnsaved();
+            Application.Exit();
 
+        }
+
+
+        private void CheckUnsaved()
+        {
             if (yet != String.Empty)
             {
                 if (yet == "rm")
@@ -1594,8 +1632,7 @@ namespace XShort
                 }
 
             }
-            Application.Exit();
-
+            
         }
 
         private void buttonData_Click()
@@ -1852,6 +1889,10 @@ namespace XShort
             textBoxName.Text = listViewData.FocusedItem.SubItems[0].Text;
             textBoxPath.Text = listViewData.FocusedItem.SubItems[1].Text;
             textBoxPara.Text = listViewData.FocusedItem.SubItems[2].Text;
+            if (blockList.Contains(listViewData.FocusedItem.SubItems[0].Text))
+                checkBoxIsInBlocklist.Checked = true;
+            else
+                checkBoxIsInBlocklist.Checked = false;
 
             //this for checking changes in edit
             old_Name = textBoxName.Text;
@@ -1942,6 +1983,7 @@ namespace XShort
                 else
                     listViewData.FocusedItem.ForeColor = Color.White;
             }
+            yet = "edit";
         }
 
 
@@ -1982,7 +2024,7 @@ namespace XShort
 
         private void buttonSettings_Click(object sender, EventArgs e)
         {
-            Settings stt = new Settings(Shortcuts);
+            Settings stt = new Settings(Shortcuts, blockList);
             stt.FormClosed += Stt_FormClosed;
             stt.ShowDialog();
         }
