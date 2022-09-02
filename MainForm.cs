@@ -25,7 +25,7 @@ namespace XShort
         private KeyboardHook hook = new KeyboardHook();
         private List<Shortcut> Shortcuts = new List<Shortcut>();
         private List<String> exclusion = new List<String>();
-        private ObservableCollection<String> startup = new ObservableCollection<string>();
+        private List<String> startup = new List<string>();
         private global::ModifierKeys gmk;
         private Keys k;
         private RunForm f2;
@@ -103,7 +103,6 @@ namespace XShort
             img2 = new ImageList();
             img2.ColorDepth = ColorDepth.Depth32Bit;
 
-            startup.CollectionChanged += Startup_CollectionChanged;
 
             f3 = new ProgressForm();
             
@@ -1465,6 +1464,15 @@ namespace XShort
                 minimizeToolStripMenuItem_Click(null, null);
                 return;
             }
+
+            File.WriteAllText(Path.Combine(dataPath, "startup.txt"), string.Empty);
+            StreamWriter sw;
+            sw = new StreamWriter(Path.Combine(dataPath, "startup.txt"));
+            for (int i = 0; i < startup.Count; i++)
+            {
+                sw.WriteLine(startup[i]);
+            }
+            sw.Close();
 
             r = Registry.CurrentUser.OpenSubKey("SOFTWARE\\ClearAll\\XShort\\Data", true);
             if (englishToolStripMenuItem.Checked)
