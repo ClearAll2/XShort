@@ -1056,14 +1056,19 @@ namespace XShort
             if (checkBoxIsInBlocklist.Checked)
             {
                 if (!blockList.Contains(listViewData.FocusedItem.SubItems[0].Text))
+                {
                     blockList.Add(listViewData.FocusedItem.SubItems[0].Text);
-                yet = "edit";
+                    yet = "edit";
+                }
 
             }
             else
             {
-                blockList.Remove(listViewData.FocusedItem.SubItems[0].Text);
-                yet = "rm";
+                if (blockList.Contains(listViewData.FocusedItem.SubItems[0].Text))
+                {
+                    blockList.Remove(listViewData.FocusedItem.SubItems[0].Text);
+                    yet = "rm";
+                }
             }
             if (edit)
             {
