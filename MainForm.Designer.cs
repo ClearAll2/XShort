@@ -261,6 +261,8 @@
             // buttonBrowseDirectory
             // 
             resources.ApplyResources(this.buttonBrowseDirectory, "buttonBrowseDirectory");
+            this.buttonBrowseDirectory.BackColor = System.Drawing.SystemColors.Control;
+            this.buttonBrowseDirectory.FlatAppearance.BorderSize = 0;
             this.buttonBrowseDirectory.Name = "buttonBrowseDirectory";
             this.buttonBrowseDirectory.TabStop = false;
             this.toolTip1.SetToolTip(this.buttonBrowseDirectory, resources.GetString("buttonBrowseDirectory.ToolTip"));
@@ -612,10 +614,9 @@
             // buttonCancelEdit
             // 
             resources.ApplyResources(this.buttonCancelEdit, "buttonCancelEdit");
-            this.buttonCancelEdit.BackColor = System.Drawing.Color.DodgerBlue;
+            this.buttonCancelEdit.BackColor = System.Drawing.SystemColors.Control;
             this.buttonCancelEdit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.buttonCancelEdit.FlatAppearance.BorderSize = 0;
-            this.buttonCancelEdit.ForeColor = System.Drawing.Color.White;
             this.buttonCancelEdit.Name = "buttonCancelEdit";
             this.buttonCancelEdit.TabStop = false;
             this.buttonCancelEdit.UseVisualStyleBackColor = false;
@@ -624,9 +625,8 @@
             // buttonOkEdit
             // 
             resources.ApplyResources(this.buttonOkEdit, "buttonOkEdit");
-            this.buttonOkEdit.BackColor = System.Drawing.Color.DodgerBlue;
+            this.buttonOkEdit.BackColor = System.Drawing.SystemColors.Control;
             this.buttonOkEdit.FlatAppearance.BorderSize = 0;
-            this.buttonOkEdit.ForeColor = System.Drawing.Color.White;
             this.buttonOkEdit.Name = "buttonOkEdit";
             this.buttonOkEdit.TabStop = false;
             this.buttonOkEdit.UseVisualStyleBackColor = false;
