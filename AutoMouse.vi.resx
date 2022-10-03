@@ -2036,6 +2036,12 @@
   <data name="labelInfo2.Text" xml:space="preserve">
     <value>giây</value>
   </data>
+  <data name="checkBoxTrayIcon.Size" type="System.Drawing.Size, System.Drawing">
+    <value>139, 20</value>
+  </data>
+  <data name="checkBoxTrayIcon.Text" xml:space="preserve">
+    <value>Ẩn biểu tượng khay</value>
+  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAYAEBAAAAEAIABoBAAAZgAAACAgAAABACAAqBAAAM4EAAAwMAAAAQAgAKglAAB2FQAAQEAAAAEA

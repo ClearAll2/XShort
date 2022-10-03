@@ -32,11 +32,12 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AutoMouse));
             this.checkBoxService = new System.Windows.Forms.CheckBox();
             this.labelExplainBlocklist = new System.Windows.Forms.Label();
-            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
+            this.notifyIconTray = new System.Windows.Forms.NotifyIcon(this.components);
             this.timerAutoCursor = new System.Windows.Forms.Timer(this.components);
             this.numericUpDownInterval = new System.Windows.Forms.NumericUpDown();
             this.labelInfo1 = new System.Windows.Forms.Label();
             this.labelInfo2 = new System.Windows.Forms.Label();
+            this.checkBoxTrayIcon = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownInterval)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,10 +54,10 @@
             this.labelExplainBlocklist.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.labelExplainBlocklist.Name = "labelExplainBlocklist";
             // 
-            // notifyIcon1
+            // notifyIconTray
             // 
-            resources.ApplyResources(this.notifyIcon1, "notifyIcon1");
-            this.notifyIcon1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.notifyIcon1_MouseClick);
+            resources.ApplyResources(this.notifyIconTray, "notifyIconTray");
+            this.notifyIconTray.MouseClick += new System.Windows.Forms.MouseEventHandler(this.notifyIcon1_MouseClick);
             // 
             // timerAutoCursor
             // 
@@ -93,11 +94,19 @@
             resources.ApplyResources(this.labelInfo2, "labelInfo2");
             this.labelInfo2.Name = "labelInfo2";
             // 
+            // checkBoxTrayIcon
+            // 
+            resources.ApplyResources(this.checkBoxTrayIcon, "checkBoxTrayIcon");
+            this.checkBoxTrayIcon.Name = "checkBoxTrayIcon";
+            this.checkBoxTrayIcon.UseVisualStyleBackColor = true;
+            this.checkBoxTrayIcon.CheckedChanged += new System.EventHandler(this.checkBoxTrayIcon_CheckedChanged);
+            // 
             // AutoMouse
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.checkBoxTrayIcon);
             this.Controls.Add(this.labelInfo2);
             this.Controls.Add(this.labelInfo1);
             this.Controls.Add(this.numericUpDownInterval);
@@ -117,10 +126,11 @@
         #endregion
         private System.Windows.Forms.CheckBox checkBoxService;
         private System.Windows.Forms.Label labelExplainBlocklist;
-        private System.Windows.Forms.NotifyIcon notifyIcon1;
+        private System.Windows.Forms.NotifyIcon notifyIconTray;
         private System.Windows.Forms.Timer timerAutoCursor;
         private System.Windows.Forms.NumericUpDown numericUpDownInterval;
         private System.Windows.Forms.Label labelInfo1;
         private System.Windows.Forms.Label labelInfo2;
+        private System.Windows.Forms.CheckBox checkBoxTrayIcon;
     }
 }

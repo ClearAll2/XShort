@@ -117,55 +117,78 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;numericUpDownInterval.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="checkBoxService.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="numericUpDownInterval.Location" type="System.Drawing.Point, System.Drawing">
-    <value>211, 112</value>
-  </data>
-  <data name="labelExplainBlocklist.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9.75pt</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;numericUpDownInterval.Name" xml:space="preserve">
-    <value>numericUpDownInterval</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="notifyIcon1.Visible" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="labelInfo2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;checkBoxService.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelInfo1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;checkBoxService.Name" xml:space="preserve">
-    <value>checkBoxService</value>
+  <data name="checkBoxService.Location" type="System.Drawing.Point, System.Drawing">
+    <value>47, 71</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="numericUpDownInterval.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
-    <value>Center</value>
+  <data name="checkBoxService.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
-  <data name="labelInfo2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>301, 114</value>
-  </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterScreen</value>
-  </data>
-  <data name="&gt;&gt;labelInfo1.Name" xml:space="preserve">
-    <value>labelInfo1</value>
+  <data name="checkBoxService.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 20</value>
   </data>
   <data name="checkBoxService.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="notifyIcon1.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="checkBoxService.Text" xml:space="preserve">
+    <value>Enable service</value>
+  </data>
+  <data name="&gt;&gt;checkBoxService.Name" xml:space="preserve">
+    <value>checkBoxService</value>
+  </data>
+  <data name="&gt;&gt;checkBoxService.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBoxService.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;checkBoxService.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="labelExplainBlocklist.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt</value>
+  </data>
+  <data name="labelExplainBlocklist.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelExplainBlocklist.Location" type="System.Drawing.Point, System.Drawing">
+    <value>44, 9</value>
+  </data>
+  <data name="labelExplainBlocklist.Size" type="System.Drawing.Size, System.Drawing">
+    <value>324, 58</value>
+  </data>
+  <data name="labelExplainBlocklist.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="labelExplainBlocklist.Text" xml:space="preserve">
+    <value>When enabled, this service will simulate a periodical user input by automatically moving the mouse cursor.
+
+</value>
+  </data>
+  <data name="labelExplainBlocklist.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;labelExplainBlocklist.Name" xml:space="preserve">
+    <value>labelExplainBlocklist</value>
+  </data>
+  <data name="&gt;&gt;labelExplainBlocklist.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelExplainBlocklist.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;labelExplainBlocklist.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <metadata name="notifyIconTray.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>25, 21</value>
+  </metadata>
+  <data name="notifyIconTray.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAYAEBAAAAEAIABoBAAAZgAAACAgAAABACAAqBAAAM4EAAAwMAAAAQAgAKglAAB2FQAAQEAAAAEA
         IAAoQgAAHjsAAICAAAABACAAKAgBAEZ9AAAAAAAAAQAgAKA1AABuhQEAKAAAABAAAAAgAAAAAQAgAAAA
@@ -2060,74 +2083,141 @@
         /wFE0HQ/fDH2VQAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="&gt;&gt;labelInfo1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="notifyIconTray.Text" xml:space="preserve">
+    <value>Auto Mouse Service - Off
+Click to turn on</value>
+  </data>
+  <data name="notifyIconTray.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <metadata name="timerAutoCursor.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>138, 21</value>
+  </metadata>
+  <data name="numericUpDownInterval.Location" type="System.Drawing.Point, System.Drawing">
+    <value>211, 138</value>
+  </data>
+  <data name="numericUpDownInterval.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 22</value>
   </data>
   <data name="numericUpDownInterval.TabIndex" type="System.Int32, mscorlib">
     <value>24</value>
   </data>
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+  <data name="numericUpDownInterval.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
   </data>
-  <data name="&gt;&gt;timerAutoCursor.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;numericUpDownInterval.Name" xml:space="preserve">
+    <value>numericUpDownInterval</value>
   </data>
-  <data name="&gt;&gt;timerAutoCursor.Name" xml:space="preserve">
-    <value>timerAutoCursor</value>
-  </data>
-  <data name="&gt;&gt;labelInfo1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;labelExplainBlocklist.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="labelExplainBlocklist.Location" type="System.Drawing.Point, System.Drawing">
-    <value>44, 9</value>
-  </data>
-  <data name="&gt;&gt;labelInfo2.Name" xml:space="preserve">
-    <value>labelInfo2</value>
-  </data>
-  <data name="labelInfo1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>125, 16</value>
-  </data>
-  <data name="&gt;&gt;checkBoxService.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;labelInfo2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="labelInfo1.Text" xml:space="preserve">
-    <value>Move mouse every:</value>
-  </data>
-  <data name="labelExplainBlocklist.Size" type="System.Drawing.Size, System.Drawing">
-    <value>324, 58</value>
-  </data>
-  <data name="checkBoxService.Text" xml:space="preserve">
-    <value>Enable service</value>
-  </data>
-  <data name="&gt;&gt;labelExplainBlocklist.Name" xml:space="preserve">
-    <value>labelExplainBlocklist</value>
-  </data>
-  <data name="labelInfo2.TabIndex" type="System.Int32, mscorlib">
-    <value>26</value>
-  </data>
-  <data name="labelExplainBlocklist.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
-  </data>
-  <data name="checkBoxService.Size" type="System.Drawing.Size, System.Drawing">
-    <value>116, 20</value>
+  <data name="&gt;&gt;numericUpDownInterval.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;numericUpDownInterval.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
+  <data name="&gt;&gt;numericUpDownInterval.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
   <data name="labelInfo1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="labelExplainBlocklist.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="labelInfo1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>44, 140</value>
+  </data>
+  <data name="labelInfo1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 16</value>
+  </data>
+  <data name="labelInfo1.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="labelInfo1.Text" xml:space="preserve">
+    <value>Move mouse every:</value>
+  </data>
+  <data name="&gt;&gt;labelInfo1.Name" xml:space="preserve">
+    <value>labelInfo1</value>
+  </data>
+  <data name="&gt;&gt;labelInfo1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelInfo1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;labelInfo1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="labelInfo2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelInfo2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Auto Mouse</value>
+  <data name="labelInfo2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>301, 140</value>
+  </data>
+  <data name="labelInfo2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 16</value>
+  </data>
+  <data name="labelInfo2.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="labelInfo2.Text" xml:space="preserve">
+    <value>second(s)</value>
+  </data>
+  <data name="&gt;&gt;labelInfo2.Name" xml:space="preserve">
+    <value>labelInfo2</value>
+  </data>
+  <data name="&gt;&gt;labelInfo2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelInfo2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;labelInfo2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="checkBoxTrayIcon.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBoxTrayIcon.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="checkBoxTrayIcon.Location" type="System.Drawing.Point, System.Drawing">
+    <value>47, 99</value>
+  </data>
+  <data name="checkBoxTrayIcon.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="checkBoxTrayIcon.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 20</value>
+  </data>
+  <data name="checkBoxTrayIcon.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="checkBoxTrayIcon.Text" xml:space="preserve">
+    <value>Hide tray icon</value>
+  </data>
+  <data name="&gt;&gt;checkBoxTrayIcon.Name" xml:space="preserve">
+    <value>checkBoxTrayIcon</value>
+  </data>
+  <data name="&gt;&gt;checkBoxTrayIcon.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBoxTrayIcon.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;checkBoxTrayIcon.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>96, 96</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>395, 189</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -4047,88 +4137,31 @@
         0i6mxMj/A8BvNBlPTAlxAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9.75pt</value>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>395, 157</value>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
   </data>
-  <data name="checkBoxService.Location" type="System.Drawing.Point, System.Drawing">
-    <value>47, 71</value>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Auto Mouse</value>
   </data>
-  <data name="labelInfo1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>44, 114</value>
+  <data name="&gt;&gt;notifyIconTray.Name" xml:space="preserve">
+    <value>notifyIconTray</value>
   </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>96, 96</value>
+  <data name="&gt;&gt;notifyIconTray.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NotifyIcon, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;checkBoxService.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="&gt;&gt;timerAutoCursor.Name" xml:space="preserve">
+    <value>timerAutoCursor</value>
   </data>
-  <data name="labelInfo1.TabIndex" type="System.Int32, mscorlib">
-    <value>25</value>
-  </data>
-  <data name="labelExplainBlocklist.Text" xml:space="preserve">
-    <value>When enabled, this service will simulate a periodical user input by automatically moving the mouse cursor.
-
-</value>
-  </data>
-  <data name="checkBoxService.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="labelInfo2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="labelExplainBlocklist.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;notifyIcon1.Name" xml:space="preserve">
-    <value>notifyIcon1</value>
-  </data>
-  <data name="&gt;&gt;numericUpDownInterval.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;timerAutoCursor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>AutoMouse</value>
   </data>
-  <data name="checkBoxService.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;labelExplainBlocklist.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="notifyIcon1.Text" xml:space="preserve">
-    <value>Auto Mouse Service - Off
-Click to turn on</value>
-  </data>
-  <data name="labelInfo2.Text" xml:space="preserve">
-    <value>second(s)</value>
-  </data>
-  <data name="&gt;&gt;notifyIcon1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NotifyIcon, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelExplainBlocklist.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="labelInfo2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 16</value>
-  </data>
-  <data name="numericUpDownInterval.Size" type="System.Drawing.Size, System.Drawing">
-    <value>84, 22</value>
-  </data>
-  <data name="&gt;&gt;labelInfo2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelInfo2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <metadata name="timerAutoCursor.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>138, 21</value>
-  </metadata>
-  <metadata name="notifyIcon1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>25, 21</value>
-  </metadata>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
 </root>

@@ -15,7 +15,11 @@ namespace XShort
             using (RegistryKey r = Registry.CurrentUser.OpenSubKey("SOFTWARE\\ClearAll\\XShort\\AMI", true))
             {
                 if (r != null)
+                {
                     numericUpDownInterval.Value = (int)r.GetValue("AMI");
+                    if (r.GetValue("AMITray") != null)
+                        checkBoxTrayIcon.Checked = true;
+                }
                 else
                     Registry.CurrentUser.CreateSubKey("SOFTWARE\\ClearAll\\XShort\\AMI");
             }
@@ -52,6 +56,10 @@ namespace XShort
             using (RegistryKey r = Registry.CurrentUser.OpenSubKey("SOFTWARE\\ClearAll\\XShort\\AMI", true))
             {
                 r.SetValue("AMI", (int)numericUpDownInterval.Value);
+                if (checkBoxTrayIcon.Checked)
+                    r.SetValue("AMITray", true);
+                else
+                    r.DeleteValue("AMITray", false);
             }
             if (!exit)
             {
@@ -91,16 +99,28 @@ namespace XShort
             {
                 timerAutoCursor.Interval = 1000 * (int)numericUpDownInterval.Value;
                 timerAutoCursor.Start();
-                notifyIcon1.Icon = Properties.Resources.favicon2;
-                notifyIcon1.Text = "Auto Mouse Service - On\nClick to turn off";
+                notifyIconTray.Icon = Properties.Resources.favicon2;
+                notifyIconTray.Text = "Auto Mouse Service - On\nClick to turn off";
                 numericUpDownInterval.Enabled = false;
             }
             else
             {
                 timerAutoCursor.Stop();
-                notifyIcon1.Icon = Properties.Resources.favicon1;
-                notifyIcon1.Text = "Auto Mouse Service - Off\nClick to turn on";
+                notifyIconTray.Icon = Properties.Resources.favicon1;
+                notifyIconTray.Text = "Auto Mouse Service - Off\nClick to turn on";
                 numericUpDownInterval.Enabled = true;
+            }
+        }
+
+        private void checkBoxTrayIcon_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBoxTrayIcon.Checked)
+            {
+                notifyIconTray.Visible = false;
+            }
+            else
+            {
+                notifyIconTray.Visible = true;
             }
         }
     }
