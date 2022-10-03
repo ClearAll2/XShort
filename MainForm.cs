@@ -209,6 +209,11 @@ namespace XShort
             {
                 LoadRunForm(true);
             }
+            if(!f4.IsDisposed && f4 != null)
+            {
+                f4.CloseForm();
+                f4 = new AutoMouse();
+            }
         }
 
         protected virtual bool IsFileLocked(FileInfo file)
@@ -2134,12 +2139,12 @@ namespace XShort
         {
             if (f4 != null && !f4.IsDisposed)
             {
-                f4.ShowDialog();
+                f4.Show();
             }
             else
             {
                 f4 = new AutoMouse();
-                f4.ShowDialog();
+                f4.Show();
             }
         }
     }

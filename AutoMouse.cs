@@ -1,28 +1,24 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using AutoMouseMover.WinHelper;
-using AutoMouseMover.WinWrapper;
+using Microsoft.Win32;
 
 namespace XShort
 {
     public partial class AutoMouse : Form
     {
         private bool exit = false;
+        private int sign = 1;
         public AutoMouse()
         {
             InitializeComponent();
-            BackgroundWorker moveCursor = new BackgroundWorker();
-            moveCursor.DoWork += MoveCursor_DoWork;
-            moveCursor.RunWorkerAsync();
+            using (RegistryKey r = Registry.CurrentUser.OpenSubKey("SOFTWARE\\ClearAll\\XShort\\AMI", true))
+            {
+                if (r != null)
+                    numericUpDownInterval.Value = (int)r.GetValue("AMI");
+                else
+                    Registry.CurrentUser.CreateSubKey("SOFTWARE\\ClearAll\\XShort\\AMI");
+            }
         }
 
         private void MoveCursor(int offset)
@@ -44,28 +40,19 @@ namespace XShort
         }
 
 
-        private void MoveCursor_DoWork(object sender, DoWorkEventArgs e)
-        {
-            while (!exit)
-            {
-                if (checkBoxService.Checked)
-                {
-                    Thread.Sleep(2500);
-                    MoveCursor(20);
-                    Thread.Sleep(2500);
-                    MoveCursor(-20);
-                }
-            }
-        }
-
         public void CloseForm()
         {
             exit = true;
+            timerAutoCursor.Stop();
             this.Close();
         }
 
         private void AutoMouse_FormClosing(object sender, FormClosingEventArgs e)
         {
+            using (RegistryKey r = Registry.CurrentUser.OpenSubKey("SOFTWARE\\ClearAll\\XShort\\AMI", true))
+            {
+                r.SetValue("AMI", (int)numericUpDownInterval.Value);
+            }
             if (!exit)
             {
                 e.Cancel = true;
@@ -80,13 +67,40 @@ namespace XShort
                 if (checkBoxService.Checked)
                 {
                     checkBoxService.Checked = false;
-                    notifyIcon1.Icon = Properties.Resources.favicon1;
                 }
                 else
                 {
                     checkBoxService.Checked = true;
-                    notifyIcon1.Icon = Properties.Resources.favicon2;
                 }
+            }
+            else if (e.Button == MouseButtons.Right)
+            {
+                this.Show();
+            }
+        }
+
+        private void timerAutoCursor_Tick(object sender, EventArgs e)
+        {
+            MoveCursor(sign * 20);
+            sign = -sign;
+        }
+
+        private void checkBoxService_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBoxService.Checked)
+            {
+                timerAutoCursor.Interval = 1000 * (int)numericUpDownInterval.Value;
+                timerAutoCursor.Start();
+                notifyIcon1.Icon = Properties.Resources.favicon2;
+                notifyIcon1.Text = "Auto Mouse Service - On\nClick to turn off";
+                numericUpDownInterval.Enabled = false;
+            }
+            else
+            {
+                timerAutoCursor.Stop();
+                notifyIcon1.Icon = Properties.Resources.favicon1;
+                notifyIcon1.Text = "Auto Mouse Service - Off\nClick to turn on";
+                numericUpDownInterval.Enabled = true;
             }
         }
     }
