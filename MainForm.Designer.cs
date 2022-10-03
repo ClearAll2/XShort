@@ -34,6 +34,7 @@
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mainWindowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.autoMouseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.runBoxToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -115,6 +116,7 @@
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.aboutToolStripMenuItem,
             this.mainWindowToolStripMenuItem,
+            this.autoMouseToolStripMenuItem,
             this.settingsToolStripMenuItem,
             this.runBoxToolStripMenuItem,
             this.exitToolStripMenuItem1});
@@ -133,6 +135,12 @@
             resources.ApplyResources(this.mainWindowToolStripMenuItem, "mainWindowToolStripMenuItem");
             this.mainWindowToolStripMenuItem.Name = "mainWindowToolStripMenuItem";
             this.mainWindowToolStripMenuItem.Click += new System.EventHandler(this.mainWindowToolStripMenuItem_Click);
+            // 
+            // autoMouseToolStripMenuItem
+            // 
+            this.autoMouseToolStripMenuItem.Name = "autoMouseToolStripMenuItem";
+            resources.ApplyResources(this.autoMouseToolStripMenuItem, "autoMouseToolStripMenuItem");
+            this.autoMouseToolStripMenuItem.Click += new System.EventHandler(this.autoMouseToolStripMenuItem_Click);
             // 
             // settingsToolStripMenuItem
             // 
@@ -639,9 +647,9 @@
             // 
             // MainForm
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this, "$this");
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.panelEditShortcut);
             this.Controls.Add(this.buttonSave);
             this.Controls.Add(this.buttonAddURL);
@@ -734,6 +742,7 @@
         private System.Windows.Forms.ToolStripMenuItem englishToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem vietnameseToolStripMenuItem;
         private System.Windows.Forms.CheckBox checkBoxIsInBlocklist;
+        private System.Windows.Forms.ToolStripMenuItem autoMouseToolStripMenuItem;
     }
 }
 

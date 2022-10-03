@@ -84,14 +84,26 @@
     <Compile Include="About.Designer.cs">
       <DependentUpon>About.cs</DependentUpon>
     </Compile>
+    <Compile Include="AutoMouse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutoMouse.Designer.cs">
+      <DependentUpon>AutoMouse.cs</DependentUpon>
+    </Compile>
     <Compile Include="BackgroundWordFilter.cs" />
     <Compile Include="Clipboard.cs" />
+    <Compile Include="CursorHelper.cs" />
+    <Compile Include="CursorPosition.cs" />
+    <Compile Include="CursorWrapper.cs" />
+    <Compile Include="DesktopHelper.cs" />
+    <Compile Include="GetWindowRectWrapper.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ResolutionInfo.cs" />
     <Compile Include="RunForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +124,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="SendInputWrapper.cs" />
     <Compile Include="Settings.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,6 +134,9 @@
     <Compile Include="Shortcut.cs" />
     <Compile Include="Suggestions.cs" />
     <Compile Include="SysCommand.cs" />
+    <Compile Include="WinBool.cs" />
+    <Compile Include="WinPoint.cs" />
+    <Compile Include="WinRect.cs" />
     <EmbeddedResource Include="About.en.resx">
       <DependentUpon>About.cs</DependentUpon>
     </EmbeddedResource>
@@ -129,6 +145,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="About.vi.resx">
       <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AutoMouse.resx">
+      <DependentUpon>AutoMouse.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.en.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -255,6 +274,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="favicon.ico" />
+    <None Include="Resources\favicon2.ico" />
+    <None Include="Resources\favicon1.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

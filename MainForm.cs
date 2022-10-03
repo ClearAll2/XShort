@@ -31,6 +31,7 @@ namespace XShort
         private Keys k;
         private RunForm f2;
         private ProgressForm f3;
+        private AutoMouse f4;
         private RegistryKey r;
         private string old_Name = String.Empty;
         private string old_Path = String.Empty;
@@ -106,6 +107,7 @@ namespace XShort
 
 
             f3 = new ProgressForm();
+            f4 = new AutoMouse();
             
             LoadSettings();
             if (useIndex)
@@ -1328,6 +1330,7 @@ namespace XShort
             {
                 exit = true;
                 f3.CloseForm();
+                f4.CloseForm();
                 Application.Exit();
             }
         }
@@ -1402,6 +1405,7 @@ namespace XShort
                 {
                     exit = true;
                     f3.CloseForm();
+                    f4.CloseForm();
                     Application.Exit();
                 }
 
@@ -1411,6 +1415,7 @@ namespace XShort
 
                 exit = true;
                 f3.CloseForm();
+                f4.CloseForm();
                 Application.Exit();
             }
         }
@@ -2123,6 +2128,19 @@ namespace XShort
         private void homepageToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Process.Start("https://clearallsoft.cf");
+        }
+
+        private void autoMouseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (f4 != null && !f4.IsDisposed)
+            {
+                f4.ShowDialog();
+            }
+            else
+            {
+                f4 = new AutoMouse();
+                f4.ShowDialog();
+            }
         }
     }
 

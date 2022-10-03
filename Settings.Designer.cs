@@ -779,7 +779,7 @@
             // Settings
             // 
             resources.ApplyResources(this, "$this");
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.panelSetting);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
