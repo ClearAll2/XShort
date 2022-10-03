@@ -2024,6 +2024,18 @@
         /wFE0HQ/fDH2VQAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="labelInfo1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 16</value>
+  </data>
+  <data name="labelInfo1.Text" xml:space="preserve">
+    <value>Di chuyển con trỏ mỗi:</value>
+  </data>
+  <data name="labelInfo2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 16</value>
+  </data>
+  <data name="labelInfo2.Text" xml:space="preserve">
+    <value>giây</value>
+  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAYAEBAAAAEAIABoBAAAZgAAACAgAAABACAAqBAAAM4EAAAwMAAAAQAgAKglAAB2FQAAQEAAAAEA
