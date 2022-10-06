@@ -30,27 +30,39 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AutoMouse));
-            this.checkBoxService = new System.Windows.Forms.CheckBox();
+            this.checkBoxMoveMouseService = new System.Windows.Forms.CheckBox();
             this.notifyIconTray = new System.Windows.Forms.NotifyIcon(this.components);
             this.timerAutoCursor = new System.Windows.Forms.Timer(this.components);
-            this.numericUpDownInterval = new System.Windows.Forms.NumericUpDown();
-            this.labelInfo1 = new System.Windows.Forms.Label();
+            this.numericUpDownIntervalMouse = new System.Windows.Forms.NumericUpDown();
+            this.labelIntervalMouse = new System.Windows.Forms.Label();
             this.checkBoxTrayIcon = new System.Windows.Forms.CheckBox();
-            this.checkBoxSendKey = new System.Windows.Forms.CheckBox();
+            this.checkBoxSendKeyService = new System.Windows.Forms.CheckBox();
             this.comboBoxKeys = new System.Windows.Forms.ComboBox();
-            this.labelExplainBlocklist = new System.Windows.Forms.Label();
+            this.labelExplainAutoMouse = new System.Windows.Forms.Label();
             this.labelOffset = new System.Windows.Forms.Label();
             this.numericUpDownOffset = new System.Windows.Forms.NumericUpDown();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownInterval)).BeginInit();
+            this.labelExplainAutoKey = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.labelKey2Press = new System.Windows.Forms.Label();
+            this.numericUpDownIntervalKey = new System.Windows.Forms.NumericUpDown();
+            this.labelIntervalKey = new System.Windows.Forms.Label();
+            this.timerAutoKey = new System.Windows.Forms.Timer(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownIntervalMouse)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownOffset)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownIntervalKey)).BeginInit();
             this.SuspendLayout();
             // 
-            // checkBoxService
+            // checkBoxMoveMouseService
             // 
-            resources.ApplyResources(this.checkBoxService, "checkBoxService");
-            this.checkBoxService.Name = "checkBoxService";
-            this.checkBoxService.UseVisualStyleBackColor = true;
-            this.checkBoxService.CheckedChanged += new System.EventHandler(this.checkBoxService_CheckedChanged);
+            resources.ApplyResources(this.checkBoxMoveMouseService, "checkBoxMoveMouseService");
+            this.checkBoxMoveMouseService.Name = "checkBoxMoveMouseService";
+            this.checkBoxMoveMouseService.UseVisualStyleBackColor = true;
+            this.checkBoxMoveMouseService.CheckedChanged += new System.EventHandler(this.checkBoxService_CheckedChanged);
             // 
             // notifyIconTray
             // 
@@ -62,30 +74,30 @@
             this.timerAutoCursor.Interval = 5000;
             this.timerAutoCursor.Tick += new System.EventHandler(this.timerAutoCursor_Tick);
             // 
-            // numericUpDownInterval
+            // numericUpDownIntervalMouse
             // 
-            resources.ApplyResources(this.numericUpDownInterval, "numericUpDownInterval");
-            this.numericUpDownInterval.Maximum = new decimal(new int[] {
+            resources.ApplyResources(this.numericUpDownIntervalMouse, "numericUpDownIntervalMouse");
+            this.numericUpDownIntervalMouse.Maximum = new decimal(new int[] {
             300,
             0,
             0,
             0});
-            this.numericUpDownInterval.Minimum = new decimal(new int[] {
+            this.numericUpDownIntervalMouse.Minimum = new decimal(new int[] {
             5,
             0,
             0,
             0});
-            this.numericUpDownInterval.Name = "numericUpDownInterval";
-            this.numericUpDownInterval.Value = new decimal(new int[] {
+            this.numericUpDownIntervalMouse.Name = "numericUpDownIntervalMouse";
+            this.numericUpDownIntervalMouse.Value = new decimal(new int[] {
             20,
             0,
             0,
             0});
             // 
-            // labelInfo1
+            // labelIntervalMouse
             // 
-            resources.ApplyResources(this.labelInfo1, "labelInfo1");
-            this.labelInfo1.Name = "labelInfo1";
+            resources.ApplyResources(this.labelIntervalMouse, "labelIntervalMouse");
+            this.labelIntervalMouse.Name = "labelIntervalMouse";
             // 
             // checkBoxTrayIcon
             // 
@@ -94,11 +106,12 @@
             this.checkBoxTrayIcon.UseVisualStyleBackColor = true;
             this.checkBoxTrayIcon.CheckedChanged += new System.EventHandler(this.checkBoxTrayIcon_CheckedChanged);
             // 
-            // checkBoxSendKey
+            // checkBoxSendKeyService
             // 
-            resources.ApplyResources(this.checkBoxSendKey, "checkBoxSendKey");
-            this.checkBoxSendKey.Name = "checkBoxSendKey";
-            this.checkBoxSendKey.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.checkBoxSendKeyService, "checkBoxSendKeyService");
+            this.checkBoxSendKeyService.Name = "checkBoxSendKeyService";
+            this.checkBoxSendKeyService.UseVisualStyleBackColor = true;
+            this.checkBoxSendKeyService.CheckedChanged += new System.EventHandler(this.checkBoxSendKey_CheckedChanged);
             // 
             // comboBoxKeys
             // 
@@ -107,11 +120,11 @@
             resources.ApplyResources(this.comboBoxKeys, "comboBoxKeys");
             this.comboBoxKeys.Name = "comboBoxKeys";
             // 
-            // labelExplainBlocklist
+            // labelExplainAutoMouse
             // 
-            resources.ApplyResources(this.labelExplainBlocklist, "labelExplainBlocklist");
-            this.labelExplainBlocklist.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.labelExplainBlocklist.Name = "labelExplainBlocklist";
+            resources.ApplyResources(this.labelExplainAutoMouse, "labelExplainAutoMouse");
+            this.labelExplainAutoMouse.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.labelExplainAutoMouse.Name = "labelExplainAutoMouse";
             // 
             // labelOffset
             // 
@@ -138,43 +151,123 @@
             0,
             0});
             // 
+            // labelExplainAutoKey
+            // 
+            resources.ApplyResources(this.labelExplainAutoKey, "labelExplainAutoKey");
+            this.labelExplainAutoKey.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.labelExplainAutoKey.Name = "labelExplainAutoKey";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.labelExplainAutoMouse);
+            this.groupBox1.Controls.Add(this.checkBoxMoveMouseService);
+            this.groupBox1.Controls.Add(this.numericUpDownOffset);
+            this.groupBox1.Controls.Add(this.numericUpDownIntervalMouse);
+            this.groupBox1.Controls.Add(this.labelOffset);
+            this.groupBox1.Controls.Add(this.labelIntervalMouse);
+            resources.ApplyResources(this.groupBox1, "groupBox1");
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.TabStop = false;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.numericUpDownIntervalKey);
+            this.groupBox2.Controls.Add(this.labelKey2Press);
+            this.groupBox2.Controls.Add(this.labelIntervalKey);
+            this.groupBox2.Controls.Add(this.labelExplainAutoKey);
+            this.groupBox2.Controls.Add(this.comboBoxKeys);
+            this.groupBox2.Controls.Add(this.checkBoxSendKeyService);
+            resources.ApplyResources(this.groupBox2, "groupBox2");
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.TabStop = false;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.checkBoxTrayIcon);
+            resources.ApplyResources(this.groupBox3, "groupBox3");
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.TabStop = false;
+            // 
+            // labelKey2Press
+            // 
+            resources.ApplyResources(this.labelKey2Press, "labelKey2Press");
+            this.labelKey2Press.Name = "labelKey2Press";
+            // 
+            // numericUpDownIntervalKey
+            // 
+            resources.ApplyResources(this.numericUpDownIntervalKey, "numericUpDownIntervalKey");
+            this.numericUpDownIntervalKey.Maximum = new decimal(new int[] {
+            300,
+            0,
+            0,
+            0});
+            this.numericUpDownIntervalKey.Minimum = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.numericUpDownIntervalKey.Name = "numericUpDownIntervalKey";
+            this.numericUpDownIntervalKey.Value = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            // 
+            // labelIntervalKey
+            // 
+            resources.ApplyResources(this.labelIntervalKey, "labelIntervalKey");
+            this.labelIntervalKey.Name = "labelIntervalKey";
+            // 
+            // timerAutoKey
+            // 
+            this.timerAutoKey.Interval = 5000;
+            this.timerAutoKey.Tick += new System.EventHandler(this.timerAutoKey_Tick);
+            // 
             // AutoMouse
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.numericUpDownOffset);
-            this.Controls.Add(this.labelOffset);
-            this.Controls.Add(this.labelExplainBlocklist);
-            this.Controls.Add(this.comboBoxKeys);
-            this.Controls.Add(this.checkBoxSendKey);
-            this.Controls.Add(this.checkBoxTrayIcon);
-            this.Controls.Add(this.labelInfo1);
-            this.Controls.Add(this.numericUpDownInterval);
-            this.Controls.Add(this.checkBoxService);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.groupBox3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "AutoMouse";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AutoMouse_FormClosing);
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownInterval)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownIntervalMouse)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownOffset)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownIntervalKey)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.CheckBox checkBoxService;
+        private System.Windows.Forms.CheckBox checkBoxMoveMouseService;
         private System.Windows.Forms.NotifyIcon notifyIconTray;
         private System.Windows.Forms.Timer timerAutoCursor;
-        private System.Windows.Forms.NumericUpDown numericUpDownInterval;
-        private System.Windows.Forms.Label labelInfo1;
+        private System.Windows.Forms.NumericUpDown numericUpDownIntervalMouse;
+        private System.Windows.Forms.Label labelIntervalMouse;
         private System.Windows.Forms.CheckBox checkBoxTrayIcon;
-        private System.Windows.Forms.CheckBox checkBoxSendKey;
+        private System.Windows.Forms.CheckBox checkBoxSendKeyService;
         private System.Windows.Forms.ComboBox comboBoxKeys;
-        private System.Windows.Forms.Label labelExplainBlocklist;
+        private System.Windows.Forms.Label labelExplainAutoMouse;
         private System.Windows.Forms.Label labelOffset;
         private System.Windows.Forms.NumericUpDown numericUpDownOffset;
+        private System.Windows.Forms.Label labelExplainAutoKey;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.NumericUpDown numericUpDownIntervalKey;
+        private System.Windows.Forms.Label labelKey2Press;
+        private System.Windows.Forms.Label labelIntervalKey;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Timer timerAutoKey;
     }
 }

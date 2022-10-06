@@ -19,7 +19,9 @@ namespace XShort
                 if (r != null)
                 {
                     if (r.GetValue("AMI") != null)
-                        numericUpDownInterval.Value = (int)r.GetValue("AMI");
+                        numericUpDownIntervalMouse.Value = (int)r.GetValue("AMI");
+                    if (r.GetValue("AMIK") != null)
+                        numericUpDownIntervalKey.Value = (int)r.GetValue("AMIK");
                     if (r.GetValue("AMIO") != null)
                         numericUpDownOffset.Value = (int)r.GetValue("AMIO");
                     if (r.GetValue("AMITray") != null)
@@ -57,11 +59,8 @@ namespace XShort
 
         private void SendKey(string k)
         {
-            if (checkBoxSendKey.Checked)
-            {
-                Enum.TryParse<SendInputWrapper.ScanCodeShort>(k, out SendInputWrapper.ScanCodeShort key);
-                CursorHelper.SendKey(key);
-            }
+            Enum.TryParse<SendInputWrapper.ScanCodeShort>(k, out SendInputWrapper.ScanCodeShort key);
+            CursorHelper.SendKey(key);
         }
 
 
@@ -76,7 +75,8 @@ namespace XShort
         {
             using (RegistryKey r = Registry.CurrentUser.OpenSubKey("SOFTWARE\\ClearAll\\XShort\\AMI", true))
             {
-                r.SetValue("AMI", (int)numericUpDownInterval.Value);
+                r.SetValue("AMI", (int)numericUpDownIntervalMouse.Value);
+                r.SetValue("AMIK", (int)numericUpDownIntervalKey.Value);
                 r.SetValue("AMIO", (int)numericUpDownOffset.Value);
                 if (checkBoxTrayIcon.Checked)
                     r.SetValue("AMITray", true);
@@ -95,16 +95,27 @@ namespace XShort
         {
             if (e.Button == MouseButtons.Left)
             {
-                if (checkBoxService.Checked)
+                if (checkBoxMoveMouseService.Checked)
                 {
-                    checkBoxService.Checked = false;
+                    checkBoxMoveMouseService.Checked = false;
                 }
                 else
                 {
-                    checkBoxService.Checked = true;
+                    checkBoxMoveMouseService.Checked = true;
                 }
             }
             else if (e.Button == MouseButtons.Right)
+            {
+                if (checkBoxSendKeyService.Checked)
+                {
+                    checkBoxSendKeyService.Checked = false;
+                }
+                else
+                {
+                    checkBoxSendKeyService.Checked = true;
+                }
+            }
+            else
             {
                 this.Show();
             }
@@ -113,26 +124,25 @@ namespace XShort
         private void timerAutoCursor_Tick(object sender, EventArgs e)
         {
             MoveCursor(sign * (int)numericUpDownOffset.Value);
-            SendKey(comboBoxKeys.SelectedValue.ToString());
             sign = -sign;
         }
 
         private void checkBoxService_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBoxService.Checked)
+            if (checkBoxMoveMouseService.Checked)
             {
-                timerAutoCursor.Interval = 1000 * (int)numericUpDownInterval.Value;
+                timerAutoCursor.Interval = 1000 * (int)numericUpDownIntervalMouse.Value;
                 timerAutoCursor.Start();
                 notifyIconTray.Icon = Properties.Resources.favicon2;
                 notifyIconTray.Text = "AIS - On\nClick to turn off";
-                numericUpDownInterval.Enabled = false;
+                numericUpDownIntervalMouse.Enabled = false;
             }
             else
             {
                 timerAutoCursor.Stop();
                 notifyIconTray.Icon = Properties.Resources.favicon1;
                 notifyIconTray.Text = "AIS - Off\nClick to turn on";
-                numericUpDownInterval.Enabled = true;
+                numericUpDownIntervalMouse.Enabled = true;
             }
         }
 
@@ -146,6 +156,26 @@ namespace XShort
             {
                 notifyIconTray.Visible = true;
             }
+        }
+
+        private void checkBoxSendKey_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBoxSendKeyService.Checked)
+            {
+                timerAutoKey.Interval = 1000 * (int)numericUpDownIntervalKey.Value;
+                timerAutoKey.Start();
+                comboBoxKeys.Enabled = false;
+            }
+            else
+            {
+                timerAutoKey.Stop();
+                comboBoxKeys.Enabled = true;
+            }
+        }
+
+        private void timerAutoKey_Tick(object sender, EventArgs e)
+        {
+            SendKey(comboBoxKeys.SelectedValue.ToString());
         }
     }
 }
