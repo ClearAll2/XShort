@@ -21,6 +21,7 @@
  */
 
 using AutoMouseMover.WinWrapper;
+using static AutoMouseMover.WinWrapper.SendInputWrapper;
 
 namespace AutoMouseMover.WinHelper
 {
@@ -33,6 +34,16 @@ namespace AutoMouseMover.WinHelper
         // Static methods
         //
         #region Static methods
+
+        public static bool SendKey(ScanCodeShort k)
+        {
+            var input = new SendInputWrapper.Input();
+            input.mType = SendInputWrapper.eInputTypes.INPUT_KEYBOARD;
+            input.mData.mKi.wScan = k;
+            input.mData.mKi.dwFlags = KEYEVENTF.SCANCODE;
+            return SendInputWrapper.SendInput(input);
+        }
+
 
         // Get current cursor position
         public static CursorPosition GetCurrentPosition()

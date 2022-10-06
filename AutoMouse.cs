@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using AutoMouseMover.WinHelper;
+using AutoMouseMover.WinWrapper;
 using Microsoft.Win32;
 
 namespace XShort
@@ -12,6 +13,7 @@ namespace XShort
         public AutoMouse()
         {
             InitializeComponent();
+            comboBoxKeys.DataSource = Enum.GetValues(typeof(SendInputWrapper.VirtualKeyShort));
             using (RegistryKey r = Registry.CurrentUser.OpenSubKey("SOFTWARE\\ClearAll\\XShort\\AMI", true))
             {
                 if (r != null)
@@ -19,6 +21,12 @@ namespace XShort
                     numericUpDownInterval.Value = (int)r.GetValue("AMI");
                     if (r.GetValue("AMITray") != null)
                         checkBoxTrayIcon.Checked = true;
+                    if (r.GetValue("AMIKey") != null)
+                    {
+                        string key = r.GetValue("AMIKey").ToString();
+                        Enum.TryParse<SendInputWrapper.VirtualKeyShort>(key, out SendInputWrapper.VirtualKeyShort vk);
+                        comboBoxKeys.SelectedItem = vk;
+                    }          
                 }
                 else
                     Registry.CurrentUser.CreateSubKey("SOFTWARE\\ClearAll\\XShort\\AMI");
@@ -41,6 +49,16 @@ namespace XShort
             {
                 CursorHelper.SetPositionRelative(offset, offset);
             }
+            
+        }
+
+        private void SendKey(string k)
+        {
+            if (checkBoxSendKey.Checked)
+            {
+                Enum.TryParse<SendInputWrapper.ScanCodeShort>(k, out SendInputWrapper.ScanCodeShort key);
+                CursorHelper.SendKey(key);
+            }
         }
 
 
@@ -60,6 +78,7 @@ namespace XShort
                     r.SetValue("AMITray", true);
                 else
                     r.DeleteValue("AMITray", false);
+                r.SetValue("AMIKey", comboBoxKeys.SelectedValue.ToString());
             }
             if (!exit)
             {
@@ -90,6 +109,7 @@ namespace XShort
         private void timerAutoCursor_Tick(object sender, EventArgs e)
         {
             MoveCursor(sign * 20);
+            SendKey(comboBoxKeys.SelectedValue.ToString());
             sign = -sign;
         }
 
