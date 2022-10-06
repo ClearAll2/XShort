@@ -115,9 +115,9 @@
             // 
             // comboBoxKeys
             // 
+            resources.ApplyResources(this.comboBoxKeys, "comboBoxKeys");
             this.comboBoxKeys.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxKeys.FormattingEnabled = true;
-            resources.ApplyResources(this.comboBoxKeys, "comboBoxKeys");
             this.comboBoxKeys.Name = "comboBoxKeys";
             // 
             // labelExplainAutoMouse
@@ -159,25 +159,25 @@
             // 
             // groupBox1
             // 
+            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Controls.Add(this.labelExplainAutoMouse);
             this.groupBox1.Controls.Add(this.checkBoxMoveMouseService);
             this.groupBox1.Controls.Add(this.numericUpDownOffset);
             this.groupBox1.Controls.Add(this.numericUpDownIntervalMouse);
             this.groupBox1.Controls.Add(this.labelOffset);
             this.groupBox1.Controls.Add(this.labelIntervalMouse);
-            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             // 
             // groupBox2
             // 
+            resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Controls.Add(this.numericUpDownIntervalKey);
             this.groupBox2.Controls.Add(this.labelKey2Press);
             this.groupBox2.Controls.Add(this.labelIntervalKey);
             this.groupBox2.Controls.Add(this.labelExplainAutoKey);
             this.groupBox2.Controls.Add(this.comboBoxKeys);
             this.groupBox2.Controls.Add(this.checkBoxSendKeyService);
-            resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.TabStop = false;
             // 
@@ -213,8 +213,8 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.checkBoxTrayIcon);
             resources.ApplyResources(this.groupBox3, "groupBox3");
+            this.groupBox3.Controls.Add(this.checkBoxTrayIcon);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.TabStop = false;
             // 
