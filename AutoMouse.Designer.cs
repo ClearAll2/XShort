@@ -122,12 +122,12 @@
             // 
             resources.ApplyResources(this.numericUpDownOffset, "numericUpDownOffset");
             this.numericUpDownOffset.Maximum = new decimal(new int[] {
-            300,
+            500,
             0,
             0,
             0});
             this.numericUpDownOffset.Minimum = new decimal(new int[] {
-            5,
+            1,
             0,
             0,
             0});

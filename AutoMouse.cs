@@ -18,7 +18,10 @@ namespace XShort
             {
                 if (r != null)
                 {
-                    numericUpDownInterval.Value = (int)r.GetValue("AMI");
+                    if (r.GetValue("AMI") != null)
+                        numericUpDownInterval.Value = (int)r.GetValue("AMI");
+                    if (r.GetValue("AMIO") != null)
+                        numericUpDownOffset.Value = (int)r.GetValue("AMIO");
                     if (r.GetValue("AMITray") != null)
                         checkBoxTrayIcon.Checked = true;
                     if (r.GetValue("AMIKey") != null)
@@ -74,6 +77,7 @@ namespace XShort
             using (RegistryKey r = Registry.CurrentUser.OpenSubKey("SOFTWARE\\ClearAll\\XShort\\AMI", true))
             {
                 r.SetValue("AMI", (int)numericUpDownInterval.Value);
+                r.SetValue("AMIO", (int)numericUpDownOffset.Value);
                 if (checkBoxTrayIcon.Checked)
                     r.SetValue("AMITray", true);
                 else
@@ -108,7 +112,7 @@ namespace XShort
 
         private void timerAutoCursor_Tick(object sender, EventArgs e)
         {
-            MoveCursor(sign * 20);
+            MoveCursor(sign * (int)numericUpDownOffset.Value);
             SendKey(comboBoxKeys.SelectedValue.ToString());
             sign = -sign;
         }
@@ -120,14 +124,14 @@ namespace XShort
                 timerAutoCursor.Interval = 1000 * (int)numericUpDownInterval.Value;
                 timerAutoCursor.Start();
                 notifyIconTray.Icon = Properties.Resources.favicon2;
-                notifyIconTray.Text = "Auto Mouse Service - On\nClick to turn off";
+                notifyIconTray.Text = "AIS - On\nClick to turn off";
                 numericUpDownInterval.Enabled = false;
             }
             else
             {
                 timerAutoCursor.Stop();
                 notifyIconTray.Icon = Properties.Resources.favicon1;
-                notifyIconTray.Text = "Auto Mouse Service - Off\nClick to turn on";
+                notifyIconTray.Text = "AIS - Off\nClick to turn on";
                 numericUpDownInterval.Enabled = true;
             }
         }
