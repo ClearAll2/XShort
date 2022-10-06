@@ -133,17 +133,14 @@ namespace XShort
             {
                 timerAutoCursor.Interval = 1000 * (int)numericUpDownIntervalMouse.Value;
                 timerAutoCursor.Start();
-                notifyIconTray.Icon = Properties.Resources.favicon2;
-                notifyIconTray.Text = "AIS - On\nClick to turn off";
                 numericUpDownIntervalMouse.Enabled = false;
             }
             else
             {
                 timerAutoCursor.Stop();
-                notifyIconTray.Icon = Properties.Resources.favicon1;
-                notifyIconTray.Text = "AIS - Off\nClick to turn on";
                 numericUpDownIntervalMouse.Enabled = true;
             }
+            UpdateStatus();
         }
 
         private void checkBoxTrayIcon_CheckedChanged(object sender, EventArgs e)
@@ -171,11 +168,38 @@ namespace XShort
                 timerAutoKey.Stop();
                 comboBoxKeys.Enabled = true;
             }
+            UpdateStatus();
         }
 
         private void timerAutoKey_Tick(object sender, EventArgs e)
         {
             SendKey(comboBoxKeys.SelectedValue.ToString());
+        }
+
+        private void UpdateStatus()
+        {
+            bool am = checkBoxMoveMouseService.Checked;
+            bool ak = checkBoxSendKeyService.Checked;
+            if (am && ak)
+            {
+                notifyIconTray.Icon = Properties.Resources.all_running;
+                notifyIconTray.Text = "Anti Idol - All services are running";
+            }
+            else if (am && !ak)
+            {
+                notifyIconTray.Icon = Properties.Resources.mouse_only;
+                notifyIconTray.Text = "Anti Idol - Auto Mouse service is running";
+            }
+            else if (!am && ak)
+            {
+                notifyIconTray.Icon = Properties.Resources.keyboard_only;
+                notifyIconTray.Text = "Anti Idol - Auto Key service running";
+            }
+            else
+            {
+                notifyIconTray.Icon = Properties.Resources.all_ready;
+                notifyIconTray.Text = "Idol/Idle";
+            }
         }
     }
 }

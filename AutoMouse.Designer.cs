@@ -44,17 +44,17 @@
             this.labelExplainAutoKey = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.labelKey2Press = new System.Windows.Forms.Label();
             this.numericUpDownIntervalKey = new System.Windows.Forms.NumericUpDown();
+            this.labelKey2Press = new System.Windows.Forms.Label();
             this.labelIntervalKey = new System.Windows.Forms.Label();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.timerAutoKey = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownIntervalMouse)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownOffset)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownIntervalKey)).BeginInit();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // checkBoxMoveMouseService
@@ -83,7 +83,7 @@
             0,
             0});
             this.numericUpDownIntervalMouse.Minimum = new decimal(new int[] {
-            5,
+            1,
             0,
             0,
             0});
@@ -181,18 +181,6 @@
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.TabStop = false;
             // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.checkBoxTrayIcon);
-            resources.ApplyResources(this.groupBox3, "groupBox3");
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.TabStop = false;
-            // 
-            // labelKey2Press
-            // 
-            resources.ApplyResources(this.labelKey2Press, "labelKey2Press");
-            this.labelKey2Press.Name = "labelKey2Press";
-            // 
             // numericUpDownIntervalKey
             // 
             resources.ApplyResources(this.numericUpDownIntervalKey, "numericUpDownIntervalKey");
@@ -202,7 +190,7 @@
             0,
             0});
             this.numericUpDownIntervalKey.Minimum = new decimal(new int[] {
-            5,
+            1,
             0,
             0,
             0});
@@ -213,10 +201,22 @@
             0,
             0});
             // 
+            // labelKey2Press
+            // 
+            resources.ApplyResources(this.labelKey2Press, "labelKey2Press");
+            this.labelKey2Press.Name = "labelKey2Press";
+            // 
             // labelIntervalKey
             // 
             resources.ApplyResources(this.labelIntervalKey, "labelIntervalKey");
             this.labelIntervalKey.Name = "labelIntervalKey";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.checkBoxTrayIcon);
+            resources.ApplyResources(this.groupBox3, "groupBox3");
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.TabStop = false;
             // 
             // timerAutoKey
             // 
@@ -235,6 +235,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "AutoMouse";
+            this.ShowIcon = false;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AutoMouse_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownIntervalMouse)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownOffset)).EndInit();
@@ -242,9 +243,9 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownIntervalKey)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownIntervalKey)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -277,6 +277,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="favicon.ico" />
+    <None Include="Resources\mouse_only.ico" />
+    <None Include="Resources\keyboard_only.ico" />
+    <None Include="Resources\all_running.ico" />
+    <None Include="Resources\all_ready.ico" />
     <None Include="Resources\favicon2.ico" />
     <None Include="Resources\favicon1.ico" />
   </ItemGroup>

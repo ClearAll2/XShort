@@ -139,10 +139,16 @@
   <data name="newlogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\newlogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="favicon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\favicon1.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="all_ready" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\all_ready.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="favicon2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\favicon2.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="all_running" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\all_running.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="keyboard_only" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\keyboard_only.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mouse_only" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mouse_only.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
