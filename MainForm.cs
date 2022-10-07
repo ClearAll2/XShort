@@ -158,23 +158,6 @@ namespace XShort
             }
         }
 
-        internal struct LASTINPUTINFO
-        {
-            public uint cbSize;
-
-            public uint dwTime;
-        }
-        [DllImport("User32.dll")]
-        private static extern bool GetLastInputInfo(ref LASTINPUTINFO plii);
-        public static uint GetIdleTime()
-        {
-            LASTINPUTINFO lastInPut = new LASTINPUTINFO();
-            lastInPut.cbSize = (uint)System.Runtime.InteropServices.Marshal.SizeOf(lastInPut);
-            GetLastInputInfo(ref lastInPut);
-
-            return ((uint)Environment.TickCount - lastInPut.dwTime);
-        }
-
         private void englishToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ChangeLanguage("en");
@@ -468,21 +451,6 @@ namespace XShort
 
         }
 
-
-        private void Run(string s)
-        {
-            for (int i = 0; i < Shortcuts.Count; i++)
-            {
-                if (s == Shortcuts[i].Name)
-                {
-                    if (Shortcuts[i].Para != "None" && Shortcuts[i].Para != "Not Available")
-                        Process.Start(Shortcuts[i].Path, Shortcuts[i].Para);
-                    else
-                        Process.Start(Shortcuts[i].Path);
-                }
-            }
-        }
-
         protected override void WndProc(ref Message m)
         {
             if (m.Msg == NativeMethods.WM_SHOWME)
@@ -505,48 +473,6 @@ namespace XShort
             WindowState = FormWindowState.Normal;
             this.TopMost = false;
         }
-
-        //check for update
-        private void Bw_DoWork(object sender, DoWorkEventArgs e)
-        {
-            //buttonC4U2.Enabled = false;
-            WebClient wc = new WebClient();
-            try
-            {
-                var tmp = wc.DownloadString("https://www.google.com.vn");
-            }
-            catch
-            {
-                wc.Dispose();
-                return;
-                //if (en)
-                //    MessageBox.Show("Make sure you have a valid internet connection!", "Can not connect to server", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
-                //else
-                //    MessageBox.Show("Hãy đảm bảo bạn có kết nối internet!", "Không thể kết nối tới máy chủ", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
-            }
-            string ver = "https://download-cas.000webhostapp.com/download/XShortCore/version";
-            string chlog = "https://download-cas.000webhostapp.com/download/XShortCore/changelog";
-            string sver = wc.DownloadString(ver);
-            string schlog = wc.DownloadString(chlog);
-            int isLatest = Application.ProductVersion.CompareTo(sver);
-            if (isLatest < 0) //if current version is less than latest version
-            {
-
-                if (MessageBox.Show("You are running old version!\nWould you like to download new version?\nChangelog:\n" + schlog, "XShort Updater", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
-                {
-                    //Process.Start("https://clearallsoft.cf/get/xshort_get");
-                    Process.Start(Application.StartupPath + "\\XShort Updater.exe", Application.ExecutablePath);
-                    yet = String.Empty;
-                    exit = true;
-                    exitToolStripMenuItem1_Click(null, null);
-                }
-
-            }
-            wc.Dispose();
-        }
-
 
         private void hook_KeyPressed(object sender, KeyPressedEventArgs e)
         {
