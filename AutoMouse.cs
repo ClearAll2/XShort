@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel;
 using System.Windows.Forms;
 using AutoMouseMover.WinHelper;
 using AutoMouseMover.WinWrapper;
@@ -10,10 +11,23 @@ namespace XShort
     {
         private bool exit = false;
         private int sign = 1;
+        
+        private enum TrayAction : int
+        {
+            NOTHING = 0,
+            AUTO_MOUSE = 1,
+            AUTO_KEY = 2,
+            OPEN_ANTI_IDOL = 3
+        }
+
         public AutoMouse()
         {
             InitializeComponent();
             comboBoxKeys.DataSource = Enum.GetValues(typeof(SendInputWrapper.VirtualKeyShort));
+            comboBoxLeftClickTray.DataSource = Enum.GetValues(typeof(TrayAction));
+            comboBoxMidClickTray.DataSource = Enum.GetValues(typeof(TrayAction));
+            comboBoxRighClickTray.DataSource = Enum.GetValues(typeof(TrayAction));
+            
             using (RegistryKey r = Registry.CurrentUser.OpenSubKey("SOFTWARE\\ClearAll\\XShort\\AMI", true))
             {
                 if (r != null)
@@ -31,7 +45,19 @@ namespace XShort
                         string key = r.GetValue("AMIKey").ToString();
                         Enum.TryParse<SendInputWrapper.VirtualKeyShort>(key, out SendInputWrapper.VirtualKeyShort vk);
                         comboBoxKeys.SelectedItem = vk;
-                    }          
+                    }
+                    if (r.GetValue("AMITrayLA") != null)
+                    {
+                        comboBoxLeftClickTray.SelectedIndex = (int)r.GetValue("AMITrayLA");
+                    }
+                    if (r.GetValue("AMITrayMA") != null)
+                    {
+                        comboBoxMidClickTray.SelectedIndex = (int)r.GetValue("AMITrayMA");
+                    }
+                    if (r.GetValue("AMITrayRA") != null)
+                    {
+                        comboBoxRighClickTray.SelectedIndex = (int)r.GetValue("AMITrayRA");
+                    }
                 }
                 else
                     Registry.CurrentUser.CreateSubKey("SOFTWARE\\ClearAll\\XShort\\AMI");
@@ -82,6 +108,9 @@ namespace XShort
                     r.SetValue("AMITray", true);
                 else
                     r.DeleteValue("AMITray", false);
+                r.SetValue("AMITrayLA", comboBoxLeftClickTray.SelectedIndex);
+                r.SetValue("AMITrayMA", comboBoxMidClickTray.SelectedIndex);
+                r.SetValue("AMITrayRA", comboBoxRighClickTray.SelectedIndex);
                 r.SetValue("AMIKey", comboBoxKeys.SelectedValue.ToString());
             }
             if (!exit)
@@ -95,6 +124,22 @@ namespace XShort
         {
             if (e.Button == MouseButtons.Left)
             {
+                NotifyIconClick(comboBoxLeftClickTray.SelectedIndex);
+            }
+            else if (e.Button == MouseButtons.Right)
+            {
+                NotifyIconClick(comboBoxRighClickTray.SelectedIndex);
+            }
+            else
+            {
+                NotifyIconClick(comboBoxMidClickTray.SelectedIndex);
+            }
+        }
+
+        private void NotifyIconClick(int index)
+        {
+            if (index == 1)
+            {
                 if (checkBoxMoveMouseService.Checked)
                 {
                     checkBoxMoveMouseService.Checked = false;
@@ -104,7 +149,7 @@ namespace XShort
                     checkBoxMoveMouseService.Checked = true;
                 }
             }
-            else if (e.Button == MouseButtons.Right)
+            else if (index == 2)
             {
                 if (checkBoxSendKeyService.Checked)
                 {
@@ -115,7 +160,7 @@ namespace XShort
                     checkBoxSendKeyService.Checked = true;
                 }
             }
-            else
+            else if (index == 3)
             {
                 this.Show();
             }
@@ -148,10 +193,16 @@ namespace XShort
             if (checkBoxTrayIcon.Checked)
             {
                 notifyIconTray.Visible = false;
+                comboBoxLeftClickTray.Enabled = false;
+                comboBoxMidClickTray.Enabled = false;
+                comboBoxRighClickTray.Enabled = false;
             }
             else
             {
                 notifyIconTray.Visible = true;
+                comboBoxLeftClickTray.Enabled = true;
+                comboBoxMidClickTray.Enabled = true;
+                comboBoxRighClickTray.Enabled = true;
             }
         }
 
@@ -161,12 +212,12 @@ namespace XShort
             {
                 timerAutoKey.Interval = 1000 * (int)numericUpDownIntervalKey.Value;
                 timerAutoKey.Start();
-                comboBoxKeys.Enabled = false;
+                numericUpDownIntervalKey.Enabled = false;
             }
             else
             {
                 timerAutoKey.Stop();
-                comboBoxKeys.Enabled = true;
+                numericUpDownIntervalKey.Enabled = true;
             }
             UpdateStatus();
         }

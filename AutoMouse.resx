@@ -117,146 +117,42 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="checkBoxMoveMouseService.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>409, 539</value>
-  </data>
-  <data name="&gt;&gt;checkBoxTrayIcon.Parent" xml:space="preserve">
-    <value>groupBox3</value>
-  </data>
-  <data name="&gt;&gt;checkBoxTrayIcon.Name" xml:space="preserve">
-    <value>checkBoxTrayIcon</value>
+  <data name="checkBoxMoveMouseService.Location" type="System.Drawing.Point, System.Drawing">
+    <value>33, 34</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="numericUpDownIntervalMouse.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
-    <value>Center</value>
-  </data>
-  <data name="labelExplainAutoKey.Location" type="System.Drawing.Point, System.Drawing">
-    <value>32, 61</value>
-  </data>
-  <data name="groupBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 442</value>
-  </data>
-  <data name="&gt;&gt;checkBoxSendKeyService.Name" xml:space="preserve">
-    <value>checkBoxSendKeyService</value>
-  </data>
-  <data name="labelOffset.Text" xml:space="preserve">
-    <value>Number of pixel to move mouse:</value>
-  </data>
-  <data name="checkBoxTrayIcon.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 20</value>
-  </data>
-  <data name="&gt;&gt;labelExplainAutoMouse.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;numericUpDownIntervalKey.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="labelIntervalMouse.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="groupBox3.TabIndex" type="System.Int32, mscorlib">
-    <value>37</value>
-  </data>
-  <data name="&gt;&gt;comboBoxKeys.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="checkBoxSendKeyService.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="labelIntervalKey.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="&gt;&gt;numericUpDownOffset.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;checkBoxMoveMouseService.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="labelIntervalMouse.Location" type="System.Drawing.Point, System.Drawing">
-    <value>30, 163</value>
-  </data>
-  <data name="&gt;&gt;labelIntervalKey.Name" xml:space="preserve">
-    <value>labelIntervalKey</value>
+  <data name="checkBoxMoveMouseService.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="checkBoxMoveMouseService.Size" type="System.Drawing.Size, System.Drawing">
     <value>116, 20</value>
   </data>
-  <data name="labelExplainAutoKey.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="checkBoxMoveMouseService.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
-  <data name="&gt;&gt;labelExplainAutoKey.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="checkBoxMoveMouseService.Text" xml:space="preserve">
+    <value>Enable service</value>
   </data>
-  <data name="checkBoxTrayIcon.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="&gt;&gt;checkBoxMoveMouseService.Name" xml:space="preserve">
+    <value>checkBoxMoveMouseService</value>
   </data>
-  <data name="&gt;&gt;comboBoxKeys.Parent" xml:space="preserve">
-    <value>groupBox2</value>
+  <data name="&gt;&gt;checkBoxMoveMouseService.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="labelKey2Press.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="labelExplainAutoKey.TabIndex" type="System.Int32, mscorlib">
-    <value>34</value>
-  </data>
-  <data name="&gt;&gt;labelOffset.Parent" xml:space="preserve">
+  <data name="&gt;&gt;checkBoxMoveMouseService.Parent" xml:space="preserve">
     <value>groupBox1</value>
   </data>
-  <data name="labelKey2Press.Text" xml:space="preserve">
-    <value>Key to press:</value>
-  </data>
-  <data name="&gt;&gt;numericUpDownOffset.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="checkBoxTrayIcon.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="checkBoxMoveMouseService.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="&gt;&gt;labelKey2Press.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;checkBoxMoveMouseService.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="notifyIconTray.Text" xml:space="preserve">
-    <value>Idol/Idle</value>
-  </data>
-  <data name="checkBoxSendKeyService.Location" type="System.Drawing.Point, System.Drawing">
-    <value>35, 37</value>
-  </data>
-  <data name="&gt;&gt;timerAutoKey.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;checkBoxSendKeyService.Parent" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="&gt;&gt;labelKey2Press.Parent" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>AutoMouse</value>
-  </data>
-  <data name="labelExplainAutoKey.Text" xml:space="preserve">
-    <value>When enabled, this service will simulate a periodical user input by automatically pressing a key.
-
-</value>
-  </data>
-  <data name="labelExplainAutoKey.Size" type="System.Drawing.Size, System.Drawing">
-    <value>322, 59</value>
-  </data>
-  <data name="&gt;&gt;numericUpDownIntervalMouse.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;labelIntervalMouse.Name" xml:space="preserve">
-    <value>labelIntervalMouse</value>
-  </data>
-  <data name="numericUpDownOffset.Size" type="System.Drawing.Size, System.Drawing">
-    <value>119, 22</value>
-  </data>
+  <metadata name="notifyIconTray.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>25, 21</value>
+  </metadata>
   <data name="notifyIconTray.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAYAEBAAAAEAIABoBAAAZgAAACAgAAABACAAqBAAAM4EAAAwMAAAAQAgAKglAAB2FQAAQEAAAAEA
@@ -1972,11 +1868,226 @@
         xEUjNesonarjtUgzNaRXtV736a/aJPI1ZP8HhUWOtr+4f4sAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="labelKey2Press.Size" type="System.Drawing.Size, System.Drawing">
-    <value>84, 16</value>
+  <data name="notifyIconTray.Text" xml:space="preserve">
+    <value>Idol/Idle</value>
   </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterScreen</value>
+  <data name="notifyIconTray.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <metadata name="timerAutoCursor.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>138, 21</value>
+  </metadata>
+  <data name="numericUpDownIntervalMouse.Location" type="System.Drawing.Point, System.Drawing">
+    <value>236, 161</value>
+  </data>
+  <data name="numericUpDownIntervalMouse.Size" type="System.Drawing.Size, System.Drawing">
+    <value>119, 22</value>
+  </data>
+  <data name="numericUpDownIntervalMouse.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="numericUpDownIntervalMouse.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownIntervalMouse.Name" xml:space="preserve">
+    <value>numericUpDownIntervalMouse</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownIntervalMouse.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownIntervalMouse.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownIntervalMouse.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="labelIntervalMouse.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelIntervalMouse.Location" type="System.Drawing.Point, System.Drawing">
+    <value>30, 163</value>
+  </data>
+  <data name="labelIntervalMouse.Size" type="System.Drawing.Size, System.Drawing">
+    <value>188, 16</value>
+  </data>
+  <data name="labelIntervalMouse.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="labelIntervalMouse.Text" xml:space="preserve">
+    <value>Move mouse every (seconds):</value>
+  </data>
+  <data name="&gt;&gt;labelIntervalMouse.Name" xml:space="preserve">
+    <value>labelIntervalMouse</value>
+  </data>
+  <data name="&gt;&gt;labelIntervalMouse.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelIntervalMouse.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;labelIntervalMouse.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="checkBoxTrayIcon.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBoxTrayIcon.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="checkBoxTrayIcon.Location" type="System.Drawing.Point, System.Drawing">
+    <value>33, 33</value>
+  </data>
+  <data name="checkBoxTrayIcon.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="checkBoxTrayIcon.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 20</value>
+  </data>
+  <data name="checkBoxTrayIcon.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="checkBoxTrayIcon.Text" xml:space="preserve">
+    <value>Hide tray icon</value>
+  </data>
+  <data name="&gt;&gt;checkBoxTrayIcon.Name" xml:space="preserve">
+    <value>checkBoxTrayIcon</value>
+  </data>
+  <data name="&gt;&gt;checkBoxTrayIcon.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBoxTrayIcon.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;checkBoxTrayIcon.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="checkBoxSendKeyService.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBoxSendKeyService.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="checkBoxSendKeyService.Location" type="System.Drawing.Point, System.Drawing">
+    <value>35, 37</value>
+  </data>
+  <data name="checkBoxSendKeyService.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="checkBoxSendKeyService.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 20</value>
+  </data>
+  <data name="checkBoxSendKeyService.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="checkBoxSendKeyService.Text" xml:space="preserve">
+    <value>Enable service</value>
+  </data>
+  <data name="&gt;&gt;checkBoxSendKeyService.Name" xml:space="preserve">
+    <value>checkBoxSendKeyService</value>
+  </data>
+  <data name="&gt;&gt;checkBoxSendKeyService.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBoxSendKeyService.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;checkBoxSendKeyService.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="comboBoxKeys.Location" type="System.Drawing.Point, System.Drawing">
+    <value>235, 120</value>
+  </data>
+  <data name="comboBoxKeys.Size" type="System.Drawing.Size, System.Drawing">
+    <value>119, 24</value>
+  </data>
+  <data name="comboBoxKeys.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="&gt;&gt;comboBoxKeys.Name" xml:space="preserve">
+    <value>comboBoxKeys</value>
+  </data>
+  <data name="&gt;&gt;comboBoxKeys.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBoxKeys.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;comboBoxKeys.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="labelExplainAutoMouse.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt</value>
+  </data>
+  <data name="labelExplainAutoMouse.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelExplainAutoMouse.Location" type="System.Drawing.Point, System.Drawing">
+    <value>33, 58</value>
+  </data>
+  <data name="labelExplainAutoMouse.Size" type="System.Drawing.Size, System.Drawing">
+    <value>322, 59</value>
+  </data>
+  <data name="labelExplainAutoMouse.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="labelExplainAutoMouse.Text" xml:space="preserve">
+    <value>When enabled, this service will simulate a periodical user input by automatically moving the mouse cursor.
+
+</value>
+  </data>
+  <data name="labelExplainAutoMouse.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;labelExplainAutoMouse.Name" xml:space="preserve">
+    <value>labelExplainAutoMouse</value>
+  </data>
+  <data name="&gt;&gt;labelExplainAutoMouse.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelExplainAutoMouse.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;labelExplainAutoMouse.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="labelOffset.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelOffset.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelOffset.Location" type="System.Drawing.Point, System.Drawing">
+    <value>30, 122</value>
+  </data>
+  <data name="labelOffset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>198, 16</value>
+  </data>
+  <data name="labelOffset.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="labelOffset.Text" xml:space="preserve">
+    <value>Number of pixel to move mouse:</value>
+  </data>
+  <data name="&gt;&gt;labelOffset.Name" xml:space="preserve">
+    <value>labelOffset</value>
+  </data>
+  <data name="&gt;&gt;labelOffset.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelOffset.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;labelOffset.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="numericUpDownOffset.Location" type="System.Drawing.Point, System.Drawing">
+    <value>236, 120</value>
+  </data>
+  <data name="numericUpDownOffset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>119, 22</value>
+  </data>
+  <data name="numericUpDownOffset.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
   </data>
   <data name="numericUpDownOffset.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
     <value>Center</value>
@@ -1984,363 +2095,441 @@
   <data name="&gt;&gt;numericUpDownOffset.Name" xml:space="preserve">
     <value>numericUpDownOffset</value>
   </data>
-  <data name="&gt;&gt;labelIntervalKey.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;numericUpDownOffset.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownOffset.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownOffset.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="numericUpDownIntervalMouse.Location" type="System.Drawing.Point, System.Drawing">
-    <value>236, 161</value>
+  <data name="labelExplainAutoKey.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt</value>
   </data>
-  <data name="checkBoxMoveMouseService.Location" type="System.Drawing.Point, System.Drawing">
-    <value>33, 34</value>
+  <data name="labelExplainAutoKey.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;labelOffset.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="labelExplainAutoKey.Location" type="System.Drawing.Point, System.Drawing">
+    <value>32, 61</value>
   </data>
-  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="labelExplainAutoKey.Size" type="System.Drawing.Size, System.Drawing">
+    <value>322, 59</value>
   </data>
-  <data name="&gt;&gt;labelIntervalMouse.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="labelExplainAutoKey.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
   </data>
-  <data name="checkBoxMoveMouseService.Text" xml:space="preserve">
-    <value>Enable service</value>
+  <data name="labelExplainAutoKey.Text" xml:space="preserve">
+    <value>When enabled, this service will simulate a periodical user input by automatically pressing a key.
+
+</value>
+  </data>
+  <data name="labelExplainAutoKey.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;labelExplainAutoKey.Name" xml:space="preserve">
+    <value>labelExplainAutoKey</value>
   </data>
   <data name="&gt;&gt;labelExplainAutoKey.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 223</value>
-  </data>
-  <data name="&gt;&gt;checkBoxMoveMouseService.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="labelIntervalKey.TabIndex" type="System.Int32, mscorlib">
-    <value>34</value>
-  </data>
-  <data name="checkBoxSendKeyService.Text" xml:space="preserve">
-    <value>Enable service</value>
-  </data>
-  <data name="groupBox1.Text" xml:space="preserve">
-    <value>Auto Mouse</value>
-  </data>
-  <data name="labelOffset.TabIndex" type="System.Int32, mscorlib">
-    <value>31</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;labelExplainAutoMouse.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="numericUpDownIntervalMouse.Size" type="System.Drawing.Size, System.Drawing">
-    <value>119, 22</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Anti Idol</value>
-  </data>
-  <data name="&gt;&gt;labelOffset.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;numericUpDownIntervalKey.Parent" xml:space="preserve">
+  <data name="&gt;&gt;labelExplainAutoKey.Parent" xml:space="preserve">
     <value>groupBox2</value>
   </data>
-  <data name="&gt;&gt;labelIntervalMouse.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;numericUpDownIntervalKey.Name" xml:space="preserve">
-    <value>numericUpDownIntervalKey</value>
-  </data>
-  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9.75pt</value>
-  </data>
-  <data name="labelIntervalKey.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="groupBox2.Text" xml:space="preserve">
-    <value>Auto Key</value>
-  </data>
-  <data name="labelKey2Press.TabIndex" type="System.Int32, mscorlib">
-    <value>33</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>96, 96</value>
-  </data>
-  <data name="&gt;&gt;labelKey2Press.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="labelKey2Press.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="&gt;&gt;labelExplainAutoMouse.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;checkBoxSendKeyService.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;checkBoxTrayIcon.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;labelIntervalMouse.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="labelIntervalMouse.Size" type="System.Drawing.Size, System.Drawing">
-    <value>188, 16</value>
+  <data name="&gt;&gt;labelExplainAutoKey.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 12</value>
   </data>
-  <data name="numericUpDownIntervalMouse.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
+  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>385, 205</value>
   </data>
-  <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
+  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>Auto Mouse</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownIntervalKey.Name" xml:space="preserve">
+    <value>numericUpDownIntervalKey</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownIntervalKey.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownIntervalKey.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownIntervalKey.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="&gt;&gt;labelKey2Press.Name" xml:space="preserve">
     <value>labelKey2Press</value>
   </data>
-  <data name="&gt;&gt;checkBoxTrayIcon.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;labelKey2Press.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="labelKey2Press.Location" type="System.Drawing.Point, System.Drawing">
-    <value>35, 123</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="groupBox3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>385, 85</value>
-  </data>
-  <data name="labelExplainAutoKey.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9.75pt</value>
-  </data>
-  <data name="labelExplainAutoKey.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="checkBoxTrayIcon.Text" xml:space="preserve">
-    <value>Hide tray icon</value>
-  </data>
-  <data name="labelExplainAutoMouse.TabIndex" type="System.Int32, mscorlib">
-    <value>30</value>
-  </data>
-  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>385, 205</value>
-  </data>
-  <data name="numericUpDownIntervalKey.Size" type="System.Drawing.Size, System.Drawing">
-    <value>119, 22</value>
-  </data>
-  <data name="checkBoxTrayIcon.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;timerAutoCursor.Name" xml:space="preserve">
-    <value>timerAutoCursor</value>
-  </data>
-  <data name="labelExplainAutoMouse.Text" xml:space="preserve">
-    <value>When enabled, this service will simulate a periodical user input by automatically moving the mouse cursor.
-
-</value>
-  </data>
-  <data name="groupBox3.Text" xml:space="preserve">
-    <value>Option</value>
-  </data>
-  <data name="labelExplainAutoMouse.Size" type="System.Drawing.Size, System.Drawing">
-    <value>322, 59</value>
-  </data>
-  <data name="comboBoxKeys.TabIndex" type="System.Int32, mscorlib">
-    <value>29</value>
-  </data>
-  <data name="&gt;&gt;numericUpDownIntervalMouse.Name" xml:space="preserve">
-    <value>numericUpDownIntervalMouse</value>
-  </data>
-  <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
-    <value>36</value>
-  </data>
-  <data name="&gt;&gt;groupBox3.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;numericUpDownIntervalKey.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="labelIntervalKey.Size" type="System.Drawing.Size, System.Drawing">
-    <value>170, 16</value>
-  </data>
-  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>35</value>
-  </data>
-  <data name="labelOffset.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="numericUpDownIntervalKey.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
-    <value>Center</value>
-  </data>
-  <data name="&gt;&gt;numericUpDownIntervalMouse.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;checkBoxMoveMouseService.Name" xml:space="preserve">
-    <value>checkBoxMoveMouseService</value>
-  </data>
-  <data name="&gt;&gt;labelExplainAutoKey.Parent" xml:space="preserve">
+  <data name="&gt;&gt;labelKey2Press.Parent" xml:space="preserve">
     <value>groupBox2</value>
   </data>
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="&gt;&gt;groupBox2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;labelKey2Press.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;groupBox3.Name" xml:space="preserve">
-    <value>groupBox3</value>
-  </data>
-  <data name="numericUpDownOffset.Location" type="System.Drawing.Point, System.Drawing">
-    <value>236, 120</value>
+  <data name="&gt;&gt;labelIntervalKey.Name" xml:space="preserve">
+    <value>labelIntervalKey</value>
   </data>
   <data name="&gt;&gt;labelIntervalKey.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;comboBoxKeys.Name" xml:space="preserve">
-    <value>comboBoxKeys</value>
-  </data>
-  <data name="labelIntervalMouse.Text" xml:space="preserve">
-    <value>Move mouse every (seconds):</value>
-  </data>
-  <data name="notifyIconTray.Visible" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;timerAutoKey.Name" xml:space="preserve">
-    <value>timerAutoKey</value>
-  </data>
-  <data name="labelIntervalMouse.TabIndex" type="System.Int32, mscorlib">
-    <value>25</value>
-  </data>
-  <data name="&gt;&gt;numericUpDownOffset.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="labelOffset.Size" type="System.Drawing.Size, System.Drawing">
-    <value>198, 16</value>
-  </data>
   <data name="&gt;&gt;labelIntervalKey.Parent" xml:space="preserve">
     <value>groupBox2</value>
   </data>
-  <data name="&gt;&gt;groupBox3.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;labelIntervalKey.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
-  <data name="&gt;&gt;notifyIconTray.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NotifyIcon, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="checkBoxTrayIcon.Location" type="System.Drawing.Point, System.Drawing">
-    <value>33, 37</value>
-  </data>
-  <data name="&gt;&gt;labelExplainAutoKey.Name" xml:space="preserve">
-    <value>labelExplainAutoKey</value>
-  </data>
-  <data name="labelIntervalKey.Text" xml:space="preserve">
-    <value>Press key every (seconds):</value>
-  </data>
-  <data name="checkBoxSendKeyService.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="labelExplainAutoMouse.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9.75pt</value>
-  </data>
-  <data name="&gt;&gt;checkBoxMoveMouseService.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="checkBoxSendKeyService.Size" type="System.Drawing.Size, System.Drawing">
-    <value>116, 20</value>
-  </data>
-  <data name="numericUpDownOffset.TabIndex" type="System.Int32, mscorlib">
-    <value>32</value>
-  </data>
-  <data name="checkBoxSendKeyService.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="comboBoxKeys.Size" type="System.Drawing.Size, System.Drawing">
-    <value>119, 24</value>
-  </data>
-  <data name="&gt;&gt;labelOffset.Name" xml:space="preserve">
-    <value>labelOffset</value>
-  </data>
-  <data name="labelIntervalKey.Location" type="System.Drawing.Point, System.Drawing">
-    <value>32, 166</value>
-  </data>
-  <data name="labelOffset.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="labelExplainAutoMouse.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="labelOffset.Location" type="System.Drawing.Point, System.Drawing">
-    <value>30, 122</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="labelExplainAutoMouse.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="checkBoxMoveMouseService.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 223</value>
   </data>
   <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
     <value>387, 213</value>
   </data>
-  <data name="checkBoxMoveMouseService.TabIndex" type="System.Int32, mscorlib">
+  <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value>Auto Key</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="&gt;&gt;labelExplainAutoMouse.Name" xml:space="preserve">
-    <value>labelExplainAutoMouse</value>
-  </data>
-  <data name="labelExplainAutoMouse.Location" type="System.Drawing.Point, System.Drawing">
-    <value>33, 58</value>
-  </data>
-  <data name="checkBoxSendKeyService.TabIndex" type="System.Int32, mscorlib">
-    <value>28</value>
-  </data>
-  <data name="numericUpDownIntervalKey.TabIndex" type="System.Int32, mscorlib">
-    <value>33</value>
-  </data>
-  <data name="&gt;&gt;notifyIconTray.Name" xml:space="preserve">
-    <value>notifyIconTray</value>
   </data>
   <data name="numericUpDownIntervalKey.Location" type="System.Drawing.Point, System.Drawing">
     <value>235, 164</value>
   </data>
-  <data name="&gt;&gt;comboBoxKeys.ZOrder" xml:space="preserve">
+  <data name="numericUpDownIntervalKey.Size" type="System.Drawing.Size, System.Drawing">
+    <value>119, 22</value>
+  </data>
+  <data name="numericUpDownIntervalKey.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="numericUpDownIntervalKey.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownIntervalKey.Name" xml:space="preserve">
+    <value>numericUpDownIntervalKey</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownIntervalKey.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownIntervalKey.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownIntervalKey.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="labelKey2Press.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelKey2Press.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelKey2Press.Location" type="System.Drawing.Point, System.Drawing">
+    <value>35, 123</value>
+  </data>
+  <data name="labelKey2Press.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 16</value>
+  </data>
+  <data name="labelKey2Press.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="labelKey2Press.Text" xml:space="preserve">
+    <value>Key to press:</value>
+  </data>
+  <data name="&gt;&gt;labelKey2Press.Name" xml:space="preserve">
+    <value>labelKey2Press</value>
+  </data>
+  <data name="&gt;&gt;labelKey2Press.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelKey2Press.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;labelKey2Press.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="labelIntervalKey.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelIntervalKey.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelIntervalKey.Location" type="System.Drawing.Point, System.Drawing">
+    <value>32, 166</value>
+  </data>
+  <data name="labelIntervalKey.Size" type="System.Drawing.Size, System.Drawing">
+    <value>170, 16</value>
+  </data>
+  <data name="labelIntervalKey.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="labelIntervalKey.Text" xml:space="preserve">
+    <value>Press key every (seconds):</value>
+  </data>
+  <data name="&gt;&gt;labelIntervalKey.Name" xml:space="preserve">
+    <value>labelIntervalKey</value>
+  </data>
+  <data name="&gt;&gt;labelIntervalKey.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelIntervalKey.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;labelIntervalKey.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="comboBoxMidClickTray.Location" type="System.Drawing.Point, System.Drawing">
+    <value>236, 138</value>
+  </data>
+  <data name="comboBoxMidClickTray.Size" type="System.Drawing.Size, System.Drawing">
+    <value>119, 24</value>
+  </data>
+  <data name="comboBoxMidClickTray.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
+  </data>
+  <data name="&gt;&gt;comboBoxMidClickTray.Name" xml:space="preserve">
+    <value>comboBoxMidClickTray</value>
+  </data>
+  <data name="&gt;&gt;comboBoxMidClickTray.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBoxMidClickTray.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;comboBoxMidClickTray.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="comboBoxRighClickTray.Location" type="System.Drawing.Point, System.Drawing">
+    <value>236, 104</value>
+  </data>
+  <data name="comboBoxRighClickTray.Size" type="System.Drawing.Size, System.Drawing">
+    <value>119, 24</value>
+  </data>
+  <data name="comboBoxRighClickTray.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
+  <data name="&gt;&gt;comboBoxRighClickTray.Name" xml:space="preserve">
+    <value>comboBoxRighClickTray</value>
+  </data>
+  <data name="&gt;&gt;comboBoxRighClickTray.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBoxRighClickTray.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;comboBoxRighClickTray.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="comboBoxLeftClickTray.Location" type="System.Drawing.Point, System.Drawing">
+    <value>236, 70</value>
+  </data>
+  <data name="comboBoxLeftClickTray.Size" type="System.Drawing.Size, System.Drawing">
+    <value>119, 24</value>
+  </data>
+  <data name="comboBoxLeftClickTray.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="&gt;&gt;comboBoxLeftClickTray.Name" xml:space="preserve">
+    <value>comboBoxLeftClickTray</value>
+  </data>
+  <data name="&gt;&gt;comboBoxLeftClickTray.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBoxLeftClickTray.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;comboBoxLeftClickTray.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>30, 141</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 16</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Middle-click tray icon action:</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="&gt;&gt;timerAutoCursor.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="labelRightClickTray.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="&gt;&gt;checkBoxSendKeyService.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="labelRightClickTray.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;numericUpDownIntervalMouse.Parent" xml:space="preserve">
-    <value>groupBox1</value>
+  <data name="labelRightClickTray.Location" type="System.Drawing.Point, System.Drawing">
+    <value>30, 107</value>
   </data>
-  <data name="checkBoxTrayIcon.TabIndex" type="System.Int32, mscorlib">
-    <value>27</value>
+  <data name="labelRightClickTray.Size" type="System.Drawing.Size, System.Drawing">
+    <value>164, 16</value>
   </data>
-  <data name="comboBoxKeys.Location" type="System.Drawing.Point, System.Drawing">
-    <value>235, 120</value>
+  <data name="labelRightClickTray.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
   </data>
-  <metadata name="timerAutoCursor.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>138, 21</value>
-  </metadata>
+  <data name="labelRightClickTray.Text" xml:space="preserve">
+    <value>Right-click tray icon action:</value>
+  </data>
+  <data name="&gt;&gt;labelRightClickTray.Name" xml:space="preserve">
+    <value>labelRightClickTray</value>
+  </data>
+  <data name="&gt;&gt;labelRightClickTray.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelRightClickTray.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;labelRightClickTray.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="labelLeftClickTray.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelLeftClickTray.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelLeftClickTray.Location" type="System.Drawing.Point, System.Drawing">
+    <value>30, 73</value>
+  </data>
+  <data name="labelLeftClickTray.Size" type="System.Drawing.Size, System.Drawing">
+    <value>154, 16</value>
+  </data>
+  <data name="labelLeftClickTray.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="labelLeftClickTray.Text" xml:space="preserve">
+    <value>Left-click tray icon action:</value>
+  </data>
+  <data name="&gt;&gt;labelLeftClickTray.Name" xml:space="preserve">
+    <value>labelLeftClickTray</value>
+  </data>
+  <data name="&gt;&gt;labelLeftClickTray.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelLeftClickTray.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;labelLeftClickTray.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="groupBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 442</value>
+  </data>
+  <data name="groupBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>385, 181</value>
+  </data>
+  <data name="groupBox3.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="groupBox3.Text" xml:space="preserve">
+    <value>Option</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.Name" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <metadata name="timerAutoKey.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>277, 22</value>
   </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="notifyIconTray.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>25, 21</value>
-  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>96, 96</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>409, 635</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Anti Idol</value>
+  </data>
+  <data name="&gt;&gt;notifyIconTray.Name" xml:space="preserve">
+    <value>notifyIconTray</value>
+  </data>
+  <data name="&gt;&gt;notifyIconTray.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NotifyIcon, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;timerAutoCursor.Name" xml:space="preserve">
+    <value>timerAutoCursor</value>
+  </data>
+  <data name="&gt;&gt;timerAutoCursor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;timerAutoKey.Name" xml:space="preserve">
+    <value>timerAutoKey</value>
+  </data>
+  <data name="&gt;&gt;timerAutoKey.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>AutoMouse</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

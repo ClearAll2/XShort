@@ -49,6 +49,12 @@
             this.labelIntervalKey = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.timerAutoKey = new System.Windows.Forms.Timer(this.components);
+            this.labelLeftClickTray = new System.Windows.Forms.Label();
+            this.labelRightClickTray = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.comboBoxLeftClickTray = new System.Windows.Forms.ComboBox();
+            this.comboBoxRighClickTray = new System.Windows.Forms.ComboBox();
+            this.comboBoxMidClickTray = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownIntervalMouse)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownOffset)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -115,9 +121,9 @@
             // 
             // comboBoxKeys
             // 
-            resources.ApplyResources(this.comboBoxKeys, "comboBoxKeys");
             this.comboBoxKeys.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxKeys.FormattingEnabled = true;
+            resources.ApplyResources(this.comboBoxKeys, "comboBoxKeys");
             this.comboBoxKeys.Name = "comboBoxKeys";
             // 
             // labelExplainAutoMouse
@@ -159,25 +165,25 @@
             // 
             // groupBox1
             // 
-            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Controls.Add(this.labelExplainAutoMouse);
             this.groupBox1.Controls.Add(this.checkBoxMoveMouseService);
             this.groupBox1.Controls.Add(this.numericUpDownOffset);
             this.groupBox1.Controls.Add(this.numericUpDownIntervalMouse);
             this.groupBox1.Controls.Add(this.labelOffset);
             this.groupBox1.Controls.Add(this.labelIntervalMouse);
+            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             // 
             // groupBox2
             // 
-            resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Controls.Add(this.numericUpDownIntervalKey);
             this.groupBox2.Controls.Add(this.labelKey2Press);
             this.groupBox2.Controls.Add(this.labelIntervalKey);
             this.groupBox2.Controls.Add(this.labelExplainAutoKey);
             this.groupBox2.Controls.Add(this.comboBoxKeys);
             this.groupBox2.Controls.Add(this.checkBoxSendKeyService);
+            resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.TabStop = false;
             // 
@@ -213,8 +219,14 @@
             // 
             // groupBox3
             // 
-            resources.ApplyResources(this.groupBox3, "groupBox3");
+            this.groupBox3.Controls.Add(this.comboBoxMidClickTray);
+            this.groupBox3.Controls.Add(this.comboBoxRighClickTray);
+            this.groupBox3.Controls.Add(this.comboBoxLeftClickTray);
             this.groupBox3.Controls.Add(this.checkBoxTrayIcon);
+            this.groupBox3.Controls.Add(this.label1);
+            this.groupBox3.Controls.Add(this.labelRightClickTray);
+            this.groupBox3.Controls.Add(this.labelLeftClickTray);
+            resources.ApplyResources(this.groupBox3, "groupBox3");
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.TabStop = false;
             // 
@@ -222,6 +234,42 @@
             // 
             this.timerAutoKey.Interval = 5000;
             this.timerAutoKey.Tick += new System.EventHandler(this.timerAutoKey_Tick);
+            // 
+            // labelLeftClickTray
+            // 
+            resources.ApplyResources(this.labelLeftClickTray, "labelLeftClickTray");
+            this.labelLeftClickTray.Name = "labelLeftClickTray";
+            // 
+            // labelRightClickTray
+            // 
+            resources.ApplyResources(this.labelRightClickTray, "labelRightClickTray");
+            this.labelRightClickTray.Name = "labelRightClickTray";
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.Name = "label1";
+            // 
+            // comboBoxLeftClickTray
+            // 
+            this.comboBoxLeftClickTray.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxLeftClickTray.FormattingEnabled = true;
+            resources.ApplyResources(this.comboBoxLeftClickTray, "comboBoxLeftClickTray");
+            this.comboBoxLeftClickTray.Name = "comboBoxLeftClickTray";
+            // 
+            // comboBoxRighClickTray
+            // 
+            this.comboBoxRighClickTray.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxRighClickTray.FormattingEnabled = true;
+            resources.ApplyResources(this.comboBoxRighClickTray, "comboBoxRighClickTray");
+            this.comboBoxRighClickTray.Name = "comboBoxRighClickTray";
+            // 
+            // comboBoxMidClickTray
+            // 
+            this.comboBoxMidClickTray.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxMidClickTray.FormattingEnabled = true;
+            resources.ApplyResources(this.comboBoxMidClickTray, "comboBoxMidClickTray");
+            this.comboBoxMidClickTray.Name = "comboBoxMidClickTray";
             // 
             // AutoMouse
             // 
@@ -270,5 +318,11 @@
         private System.Windows.Forms.Label labelIntervalKey;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Timer timerAutoKey;
+        private System.Windows.Forms.ComboBox comboBoxMidClickTray;
+        private System.Windows.Forms.ComboBox comboBoxRighClickTray;
+        private System.Windows.Forms.ComboBox comboBoxLeftClickTray;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelRightClickTray;
+        private System.Windows.Forms.Label labelLeftClickTray;
     }
 }
