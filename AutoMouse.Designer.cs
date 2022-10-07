@@ -121,9 +121,9 @@
             // 
             // comboBoxKeys
             // 
-            resources.ApplyResources(this.comboBoxKeys, "comboBoxKeys");
             this.comboBoxKeys.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxKeys.FormattingEnabled = true;
+            resources.ApplyResources(this.comboBoxKeys, "comboBoxKeys");
             this.comboBoxKeys.Name = "comboBoxKeys";
             // 
             // labelExplainAutoMouse
@@ -165,25 +165,25 @@
             // 
             // groupBox1
             // 
-            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Controls.Add(this.labelExplainAutoMouse);
             this.groupBox1.Controls.Add(this.checkBoxMoveMouseService);
             this.groupBox1.Controls.Add(this.numericUpDownOffset);
             this.groupBox1.Controls.Add(this.numericUpDownIntervalMouse);
             this.groupBox1.Controls.Add(this.labelOffset);
             this.groupBox1.Controls.Add(this.labelIntervalMouse);
+            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             // 
             // groupBox2
             // 
-            resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Controls.Add(this.numericUpDownIntervalKey);
             this.groupBox2.Controls.Add(this.labelKey2Press);
             this.groupBox2.Controls.Add(this.labelIntervalKey);
             this.groupBox2.Controls.Add(this.labelExplainAutoKey);
             this.groupBox2.Controls.Add(this.comboBoxKeys);
             this.groupBox2.Controls.Add(this.checkBoxSendKeyService);
+            resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.TabStop = false;
             // 
@@ -219,7 +219,6 @@
             // 
             // groupBox3
             // 
-            resources.ApplyResources(this.groupBox3, "groupBox3");
             this.groupBox3.Controls.Add(this.comboBoxMidClickTray);
             this.groupBox3.Controls.Add(this.comboBoxRighClickTray);
             this.groupBox3.Controls.Add(this.comboBoxLeftClickTray);
@@ -227,28 +226,29 @@
             this.groupBox3.Controls.Add(this.label1);
             this.groupBox3.Controls.Add(this.labelRightClickTray);
             this.groupBox3.Controls.Add(this.labelLeftClickTray);
+            resources.ApplyResources(this.groupBox3, "groupBox3");
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.TabStop = false;
             // 
             // comboBoxMidClickTray
             // 
-            resources.ApplyResources(this.comboBoxMidClickTray, "comboBoxMidClickTray");
             this.comboBoxMidClickTray.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxMidClickTray.FormattingEnabled = true;
+            resources.ApplyResources(this.comboBoxMidClickTray, "comboBoxMidClickTray");
             this.comboBoxMidClickTray.Name = "comboBoxMidClickTray";
             // 
             // comboBoxRighClickTray
             // 
-            resources.ApplyResources(this.comboBoxRighClickTray, "comboBoxRighClickTray");
             this.comboBoxRighClickTray.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxRighClickTray.FormattingEnabled = true;
+            resources.ApplyResources(this.comboBoxRighClickTray, "comboBoxRighClickTray");
             this.comboBoxRighClickTray.Name = "comboBoxRighClickTray";
             // 
             // comboBoxLeftClickTray
             // 
-            resources.ApplyResources(this.comboBoxLeftClickTray, "comboBoxLeftClickTray");
             this.comboBoxLeftClickTray.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxLeftClickTray.FormattingEnabled = true;
+            resources.ApplyResources(this.comboBoxLeftClickTray, "comboBoxLeftClickTray");
             this.comboBoxLeftClickTray.Name = "comboBoxLeftClickTray";
             // 
             // label1

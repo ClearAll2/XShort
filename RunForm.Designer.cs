@@ -203,7 +203,7 @@
             // 
             this.AcceptButton = this.button1;
             resources.ApplyResources(this, "$this");
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
             this.CancelButton = this.button2;
             this.Controls.Add(this.panelClipboard);

@@ -118,94 +118,22 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="panelAbout.Size" type="System.Drawing.Size, System.Drawing">
-    <value>512, 382</value>
-  </data>
-  <data name="labelInfo.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Times New Roman, 12pt, style=Bold</value>
-  </data>
-  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>117, 108</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>512, 382</value>
-  </data>
-  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>35, 50</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>About</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
-    <value>pictureBox1</value>
+  <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>35, 167</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="buttonCheckUpdate.Text" xml:space="preserve">
-    <value>Check for update</value>
-  </data>
-  <data name="&gt;&gt;panelAbout.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="panelAbout.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="buttonCheckUpdate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>259, 332</value>
-  </data>
-  <data name="&gt;&gt;labelInfo.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;imageList1.Name" xml:space="preserve">
-    <value>imageList1</value>
-  </data>
-  <data name="buttonCheckUpdate.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="labelInfo.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;labelInfo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="textBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="labelInfo.AutoSize" type="System.Boolean, mscorlib">
+  <data name="textBox1.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
-  </data>
-  <data name="labelInfo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>131, 57</value>
-  </data>
-  <data name="labelInfo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>About</value>
-  </data>
-  <data name="buttonCheckUpdate.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9.75pt</value>
-  </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterParent</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
-    <value>3</value>
   </data>
   <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>460, 157</value>
   </data>
-  <data name="&gt;&gt;panelAbout.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>35, 167</value>
-  </data>
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="&gt;&gt;textBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="textBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
   </data>
   <data name="textBox1.Text" xml:space="preserve">
     <value>Icons made by Freepik from Flaticon.
@@ -214,15 +142,152 @@ https://www.flaticon.com/authors/freepik
 This app is made possible by auto_mouse_mover project of ebellocchia.
 https://github.com/ebellocchia/auto_mouse_mover</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;textBox1.Name" xml:space="preserve">
+    <value>textBox1</value>
   </data>
+  <data name="&gt;&gt;textBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox1.Parent" xml:space="preserve">
+    <value>panelAbout</value>
+  </data>
+  <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="buttonCheckUpdate.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="buttonCheckUpdate.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt</value>
+  </data>
+  <data name="buttonCheckUpdate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>259, 332</value>
+  </data>
+  <data name="buttonCheckUpdate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="buttonCheckUpdate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>237, 34</value>
+  </data>
+  <data name="buttonCheckUpdate.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="buttonCheckUpdate.Text" xml:space="preserve">
+    <value>Check for update</value>
+  </data>
+  <data name="&gt;&gt;buttonCheckUpdate.Name" xml:space="preserve">
+    <value>buttonCheckUpdate</value>
+  </data>
+  <data name="&gt;&gt;buttonCheckUpdate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonCheckUpdate.Parent" xml:space="preserve">
+    <value>panelAbout</value>
+  </data>
+  <data name="&gt;&gt;buttonCheckUpdate.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="labelInfo.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelInfo.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Times New Roman, 12pt, style=Bold</value>
+  </data>
+  <data name="labelInfo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>182, 68</value>
+  </data>
+  <data name="labelInfo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="labelInfo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 57</value>
+  </data>
+  <data name="labelInfo.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="labelInfo.Text" xml:space="preserve">
+    <value>XShort v1.0
+Copyright ©  2017
+Clear All Soft</value>
+  </data>
+  <data name="labelInfo.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;labelInfo.Name" xml:space="preserve">
+    <value>labelInfo</value>
+  </data>
+  <data name="&gt;&gt;labelInfo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelInfo.Parent" xml:space="preserve">
+    <value>panelAbout</value>
+  </data>
+  <data name="&gt;&gt;labelInfo.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>35, 50</value>
+  </data>
+  <data name="pictureBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>117, 108</value>
+  </data>
+  <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
+    <value>pictureBox1</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
+    <value>panelAbout</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="panelAbout.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="panelAbout.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="panelAbout.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="panelAbout.Size" type="System.Drawing.Size, System.Drawing">
+    <value>512, 382</value>
+  </data>
+  <data name="panelAbout.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="&gt;&gt;panelAbout.Name" xml:space="preserve">
+    <value>panelAbout</value>
+  </data>
+  <data name="&gt;&gt;panelAbout.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelAbout.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panelAbout.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="imageList1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <data name="imageList1.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
-        ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAADo
-        DgAAAk1TRnQBSQFMAwEBAAGMAQoBlAEKARkBAAEZAQAE/wEhARAI/wFCAU0BNgcAATYDAAEoAwABZAMA
+        ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAADk
+        DgAAAk1TRnQBSQFMAwEBAAGcAQoBnAEKARkBAAEZAQAE/wEhAQAI/wFCAU0BNgcAATYDAAEoAwABZAMA
         ARkDAAEBAQABIAUAARABJyoABAEDAgEDAwQBBQMGAQcDBgEIAwcBCQMHAQkDBwEJAwYBCAMGAQcDBAEF
         AwIBAwQB/wBVAAQCAwYBCAMMARADEwEZAxgBIAMaASQDHAEnAx0BKAMdASgDHQEoAxwBJwMaASQDGAEh
         AxMBGgMPARMDBwEJAwIBA/8ASQADAgEDAw4BEgMaASQDKQE9A0IBdANRAZ4CWQFXAbkCXQFbAcoCYAFd
@@ -233,99 +298,72 @@ https://github.com/ebellocchia/auto_mouse_mover</value>
         AbkCAAH/AcICAAH/AcsCAAH/AdECAAH/AdICAAH/AdICAAH/AmUBXAHnA0UBfAMSARcDAgED/wA1AAME
         AQUDLAFDAl4BXAHZAdMCAAH/AdMCAAH/AdECAAH/AcgCAAH/AbcCAAH/AboCAAH/Ac8BoAEAAf8B3gG3
         AZkB/wHjAb0BoAH/AeABuQGbAf8B1AGnAYMB/wG/AYYBAAH/AbQCAAH/AcMCAAH/AdECAAH/AdICAAH/
-        AdMCAAH/Al4BUgHwAzgBXQMIAQoEAf8AMQADDAEPA04BlQMrAfwB0wIAAf8B0QIAAf8BxQIAAf8BrQIA
+        AdMCAAH/Al4BUwHwAzgBXQMIAQoEAf8AMQADDAEPA04BlQMrAfwB0wIAAf8B0QIAAf8BxQIAAf8BrQIA
         Af8B2AGwAY4B/wH6AeEB0AH/Af4B5QHXAv8B5wHZAv8B5wHZAv8B5wHZAf8B/gHmAdcB/wH8AeMB0wH/
         AeMBwAGkAf8BswIAAf8BwgIAAf8B0QIAAf8B0wIAAf8B0wIAAf8CXwFdAc4DEgEYBAL/ADEAAx4BKwNa
         AccB0wIAAf8B0wIAAf8BygIAAf8BvwGBAQAB/wHsAc4BuAH/AfgB3QHLAf8B9gHaAcYC/wHqAd0C/wHq
         Ad4C/wHqAd4C/wHqAd4C/wHqAd4C/wHqAd4C/wHqAd4B/wHyAdgBxQH/Ab8BhgEAAf8BxQIAAf8B0gIA
-        Af8B0wIAAf8CYQFgAesDMAFMAwIBA/8ALQAEAQMsAUMCZQFcAecB1AGBAQAB/wHQAgAB/wHGAYMBAAH/
-        AegByAGvAv8B7QHhAf8B7QHNAbIB/wHlAbgBkgH/Af0B6gHdAv8B7QHiAv8B7QHiAv8B7QHiAv8B7QHi
-        Av8B7QHiAv8B7QHiAv8B7QHiAf8B9AHcAcwB/wHHAYsBAAH/AcwCAAH/AdQBgQEAAf8CbQFRAfcDRAF4
-        AwUBBv8ALQAEAgM1AVYCXwEyAfsB0wGBAQAB/wHNAgAB/wHXAasBhQH/Af0B7QHjAv8B8AHnAf8B8gHW
-        Ab8B/wHTAYwBAAH/AfEBzQGwAv8B8AHnAv8B8AHnAv8B8AHnAv8B8AHnAf8B+gHlAdYB/wHoAboBkwH/
-        AfkB5AHTAv8B8AHnAf8B5gHGAawB/wHJAYABAAH/AdIBgQEAAf8CgAE8Af4DTgGVAwYBCP8ALQADAgED
-        Az8BbAHUAYMBAAH/AdQBggEAAf8BywGEAQAB/wHwAdoByQL/AfMB7AL/AfMB7AH/AfUB2wHHAf8B1wGM
-        AQAB/wHYAY4BAAH/AfcB4gHTAv8B8wHsAv8B8wHsAv8B8wHsAf8B9AHZAcQB/wHQAYIBAAH/Ae0ByAGp
-        Af8B4wHHAa8B/wH3AeYB2QH/AdQBmgEAAf8B0gGBAQAB/wHUAYIBAAH/AlQBUwGmAwwBEP8ALQADAgED
-        A0QBewHVAYMBAAH/AdMBggEAAf8BzwGSAQAB/wH+AfUB7wL/AfYB8QL/AfYB8QH/AeIBswGLAf8BzwGB
-        AQAB/wHDAgAB/wHRAacBgQL/AfYB8QL/AfYB8QL/AfYB8QH/Ae4BzwG1Af8B0QGBAQAB/wHbAZ8BAAH/
-        Ae4B3QHNAf8B/gH1AfAB/wHeAbIBjAH/AdIBggEAAf8B1QGDAQAB/wNVAa8DEQEW/wAtAAMCAQMCSAFH
-        AYMB1QGEAQAB/wHTAYMBAAH/AdsBrAGDAv8B+QH2Av8B+QH2Af8B/gH5AfUB/wHJAZEBAAH/AbgCAAH/
-        AcYBmAEAAf8B5gHSAcAC/wH5AfYC/wH5AfYC/wH5AfYB/wHpAb4BmQH/AdQBhQEAAf8B1gGSAQAB/wH4
-        AesB4AL/AfkB9gH/AecBxQGoAf8B1AGHAQAB/wHVAYQBAAH/AlcBVQG0AxMBGf8ALQADAgEDA0kBhQHV
-        AYUBAAH/AdQBhAEAAf8B4gG4AZMC/wH8AfsC/wH8AfsB/wHyAeYB3AH/AdIBsQGUAf8BzQGrAYsB/wH2
-        Ae4B6AL/AfwB+gH/Af4B+wH5Af8B5wHBAZ8B/wHbAZgBAAH/AdcBiwEAAf8B1AGEAQAB/wHOAYIBAAH/
-        AeIBuwGWAv8B/AH7Af8B6wHPAbQB/wHVAYkBAAH/AdUBhQEAAf8DVgG1AxMBGv8ALQADAgEDA0cBggHW
-        AYYBAAH/AdUBhQEAAf8B4QGxAYYB/wH5AfIB7AH/AecBywGzAf8B4gHIAbIB/wH6AfYB8wH/AfwB+gH5
-        Av8C/gL/Av4B/wH7AfYB9AH/AdMBowEAAf8BzgGBAQAB/wHMAYABAAH/AccCAAH/AdYBmQEAAf8B1QGV
-        AQAB/wHxAeIB1gH/AeoBygGtAf8B1gGJAQAB/wHWAYYBAAH/A1YBsgMSARj/AC0ABAIDQwF3AdYBhwEA
-        Af8B1QGGAQAB/wHbAZwBAAH/Ae0B3AHMAf8B1gGoAQAB/wHnAcUBpgH/AfUB6AHdDf8B/gL9Af8B4AHF
-        Aa0B/wHGAYYBAAH/AccBigEAAf8B0AGiAQAB/wHSAZkBAAH/AckBiAEAAf8B4wHMAbgB/wHmAboBkwH/
-        AdUBiAEAAf8B1gGHAQAB/wNVAawDDwEU/wAtAAQBAzsBZQHWAYkBAAH/AdYBiAEAAf8B2AGQAQAB/wHu
-        AdcBxAH/AcsBnAEAAf8ByQGIAQAB/wHiAbgBlAH/AfsB9gHyDf8B8AHkAdkB/wHPAaIBAAH/AeQBxgGq
-        Af8B4gG6AZYB/wHYAaUBAAH/Ac8BoQEAAf8B8QHiAdQB/wHfAaUBAAH/AdYBiAEAAf8B1gGIAQAB/wJS
-        AVEBoQMJAQz/ADEAAzABSwNNAfoB1wGJAQAB/wHXAYoBAAH/AecBuQGQAf8B5wHTAcIB/wG+AY8BAAH/
-        AcEBgwEAAf8B1AGuAYoB/wH4AfMB7wn/AfwB+wH5Af8BzwGuAY8B/wG8AgAB/wHEAYABAAH/Ab0CAAH/
-        Ad8ByAG0Af8B8AHVAb0B/wHYAY0BAAH/AdcBiQEAAf8CgAFHAf4DTAGOAwIBA/8AMQADJQE3AmIBXwHh
-        AdcBigEAAf8B1wGKAQAB/wHaAZUBAAH/AfAB1gG+Af8B7gHiAdcB/wHWAbcBmwH/Ad0BxQGuAf8B7wHf
-        AdAB/wH0AegB3gH/AfsB+AH1Af8B+gH2AfMB/wHzAewB5gH/AdwBwgGrAf8BywGhAQAB/wHVAbYBmQH/
-        AfcB6gHdAf8B3QGdAQAB/wHXAYoBAAH/AdcBigEAAf8CZQFTAfQDPgFrBAL/ADEAAxUBHANYAboB1wGL
-        AQAB/wHXAYsBAAH/AdcBiwEAAf8B3AGbAQAB/wHwAdUBvQH/AfYB7wHoAf8B8QHoAd4B/wHKAZwBAAH/
-        AcMBjwEAAf8B2QG6AZ8B/wH3AfIB7QX/AfEB5wHfAf8B6QHZAcsB/wHwAdoBxgH/Ad8BogEAAf8B1wGL
-        AQAB/wHXAYsBAAH/AdcBiwEAAf8CZQFcAecDJgE4/wA1AAMCAQMDRgF+AmoBRwH5AdgBjAEAAf8B2AGM
-        AQAB/wHYAYwBAAH/AdoBkgEAAf8B5gG3AY0B/wH5Ae4B5QH/AfQB7AHkAf8B4wHNAbcB/wHkAc0BuQH/
-        AfoB9gHxBf8B/AH4AfUB/wHrAccBpgH/AdsBmAEAAf8B2AGMAQAB/wHYAYwBAAH/AdgBjAEAAf8B2AGM
-        AQAB/wNYAbgDBQEG/wA5AAMYASEDXQHMAdgBjAEAAf8B2AGMAQAB/wHYAYwBAAH/AdgBjAEAAf8B2AGM
-        AQAB/wHaAZMBAAH/AeQBrwGAAf8B7AHJAagB/wHvAdEBtgH/Ae0BzAGuAf8B5gG4AY0B/wHbAZYBAAH/
-        AdgBjAEAAf8B2AGMAQAB/wHYAYwBAAH/AdgBjAEAAf8B2AGMAQAB/wJdAVwB6gMiATH/AEEAAyUBNwJa
-        AVgBvQNNAfoB2AGNAQAB/wHYAY0BAAH/AdgBjQEAAf8B2AGNAQAB/wHYAY0BAAH/AdgBjQEAAf8B2AGN
-        AQAB/wHYAY0BAAH/AdgBjQEAAf8B2AGNAQAB/wHYAY0BAAH/AdgBjQEAAf8B2AGNAQAB/wMrAfwDXQHP
-        AzMBUP8ASQADFwEfAz4BawJbAVoBxAJfAVQB+wHZAY8BAAH/AdkBjwEAAf8B2QGPAQAB/wHZAY8BAAH/
-        AdkBjwEAAf8B2QGPAQAB/wHZAY8BAAH/AdkBjwEAAf8B2QGPAQAB/wKAAVQB/gNeAdcDRwGAAyABLQMC
-        AQP/AFUAAwsBDgMuAUcDQAFwA0oBigNPAZkDUAGdA1ABmgNMAY8DQwF3AzMBUQMTARr/AEkAAUIBTQE+
-        BwABPgMAASgDAAFkAwABGQMAAQEBAAEBBQABkAEBFgAD/wEAAfwBAAEfAYAMAAHwAQABBwGADAAB4AEA
-        AQMBgAwAAcABAAEBAYAMAAGAAgABgAwAAYAPAAGADwABgJ8AAYAPAAGADwABgAIAAYAMAAGAAgABgAwA
-        AcABAAEBAYAMAAHgAQABAwGADAAB8AEAAQMBgAwAAf4BAAE/AYAiAAs=
+        Af8B0wIAAf8DYQHrAzABTAMCAQP/AC0ABAEDLAFDAmUBXAHnAdQBgQEAAf8B0AIAAf8BxgGDAQAB/wHo
+        AcgBrwL/Ae0B4QH/Ae0BzQGyAf8B5QG4AZIB/wH9AeoB3QL/Ae0B4gL/Ae0B4gL/Ae0B4gL/Ae0B4gL/
+        Ae0B4gL/Ae0B4gL/Ae0B4gH/AfQB3AHMAf8BxwGLAQAB/wHMAgAB/wHUAYEBAAH/Am0BUQH3A0QBeAMF
+        AQb/AC0ABAIDNQFWAl8BMgH7AdMBgQEAAf8BzQIAAf8B1wGrAYUB/wH9Ae0B4wL/AfAB5wH/AfIB1gG/
+        Af8B0wGMAQAB/wHxAc0BsAL/AfAB5wL/AfAB5wL/AfAB5wL/AfAB5wH/AfoB5QHWAf8B6AG6AZMB/wH5
+        AeQB0wL/AfAB5wH/AeYBxgGsAf8ByQGAAQAB/wHSAYEBAAH/AoABPQH+A04BlQMGAQj/AC0AAwIBAwM/
+        AWwB1AGDAQAB/wHUAYIBAAH/AcsBhAEAAf8B8AHaAckC/wHzAewC/wHzAewB/wH1AdsBxwH/AdcBjAEA
+        Af8B2AGOAQAB/wH3AeIB0wL/AfMB7AL/AfMB7AL/AfMB7AH/AfQB2QHEAf8B0AGCAQAB/wHtAcgBqQH/
+        AeMBxwGvAf8B9wHmAdkB/wHUAZoBAAH/AdIBgQEAAf8B1AGCAQAB/wJUAVMBpgMMARD/AC0AAwIBAwNE
+        AXsB1QGDAQAB/wHTAYIBAAH/Ac8BkgEAAf8B/gH1Ae8C/wH2AfEC/wH2AfEB/wHiAbMBiwH/Ac8BgQEA
+        Af8BwwIAAf8B0QGnAYEC/wH2AfEC/wH2AfEC/wH2AfEB/wHuAc8BtQH/AdEBgQEAAf8B2wGfAQAB/wHu
+        Ad0BzQH/Af4B9QHwAf8B3gGyAYwB/wHSAYIBAAH/AdUBgwEAAf8DVQGvAxEBFv8ALQADAgEDAkgBRwGD
+        AdUBhAEAAf8B0wGDAQAB/wHbAawBgwL/AfkB9gL/AfkB9gH/Af4B+QH1Af8ByQGRAQAB/wG4AgAB/wHG
+        AZgBAAH/AeYB0gHAAv8B+QH2Av8B+QH2Av8B+QH2Af8B6QG+AZkB/wHUAYUBAAH/AdYBkgEAAf8B+AHr
+        AeAC/wH5AfYB/wHnAcUBqAH/AdQBhwEAAf8B1QGEAQAB/wJXAVUBtAMTARn/AC0AAwIBAwNJAYUB1QGF
+        AQAB/wHUAYQBAAH/AeIBuAGTAv8B/AH7Av8B/AH7Af8B8gHmAdwB/wHSAbEBlAH/Ac0BqwGLAf8B9gHu
+        AegC/wH8AfoB/wH+AfsB+QH/AecBwQGfAf8B2wGYAQAB/wHXAYsBAAH/AdQBhAEAAf8BzgGCAQAB/wHi
+        AbsBlgL/AfwB+wH/AesBzwG0Af8B1QGJAQAB/wHVAYUBAAH/A1YBtQMTARr/AC0AAwIBAwNHAYIB1gGG
+        AQAB/wHVAYUBAAH/AeEBsQGGAf8B+QHyAewB/wHnAcsBswH/AeIByAGyAf8B+gH2AfMB/wH8AfoB+QL/
+        Av4C/wL+Af8B+wH2AfQB/wHTAaMBAAH/Ac4BgQEAAf8BzAGAAQAB/wHHAgAB/wHWAZkBAAH/AdUBlQEA
+        Af8B8QHiAdYB/wHqAcoBrQH/AdYBiQEAAf8B1gGGAQAB/wNWAbIDEgEY/wAtAAQCA0MBdwHWAYcBAAH/
+        AdUBhgEAAf8B2wGcAQAB/wHtAdwBzAH/AdYBqAEAAf8B5wHFAaYB/wH1AegB3Q3/Af4C/QH/AeABxQGt
+        Af8BxgGGAQAB/wHHAYoBAAH/AdABogEAAf8B0gGZAQAB/wHJAYgBAAH/AeMBzAG4Af8B5gG6AZMB/wHV
+        AYgBAAH/AdYBhwEAAf8DVQGsAw8BFP8ALQAEAQM7AWUB1gGJAQAB/wHWAYgBAAH/AdgBkAEAAf8B7gHX
+        AcQB/wHLAZwBAAH/AckBiAEAAf8B4gG4AZQB/wH7AfYB8g3/AfAB5AHZAf8BzwGiAQAB/wHkAcYBqgH/
+        AeIBugGWAf8B2AGlAQAB/wHPAaEBAAH/AfEB4gHUAf8B3wGlAQAB/wHWAYgBAAH/AdYBiAEAAf8CUgFR
+        AaEDCQEM/wAxAAMwAUsDTQH6AdcBiQEAAf8B1wGKAQAB/wHnAbkBkAH/AecB0wHCAf8BvgGPAQAB/wHB
+        AYMBAAH/AdQBrgGKAf8B+AHzAe8J/wH8AfsB+QH/Ac8BrgGPAf8BvAIAAf8BxAGAAQAB/wG9AgAB/wHf
+        AcgBtAH/AfAB1QG9Af8B2AGNAQAB/wHXAYkBAAH/AoABSAH+A0wBjgMCAQP/ADEAAyUBNwJiAWAB4QHX
+        AYoBAAH/AdcBigEAAf8B2gGVAQAB/wHwAdYBvgH/Ae4B4gHXAf8B1gG3AZsB/wHdAcUBrgH/Ae8B3wHQ
+        Af8B9AHoAd4B/wH7AfgB9QH/AfoB9gHzAf8B8wHsAeYB/wHcAcIBqwH/AcsBoQEAAf8B1QG2AZkB/wH3
+        AeoB3QH/Ad0BnQEAAf8B1wGKAQAB/wHXAYoBAAH/AmUBUwH0Az4BawQC/wAxAAMVARwDWAG6AdcBiwEA
+        Af8B1wGLAQAB/wHXAYsBAAH/AdwBmwEAAf8B8AHVAb0B/wH2Ae8B6AH/AfEB6AHeAf8BygGcAQAB/wHD
+        AY8BAAH/AdkBugGfAf8B9wHyAe0F/wHxAecB3wH/AekB2QHLAf8B8AHaAcYB/wHfAaIBAAH/AdcBiwEA
+        Af8B1wGLAQAB/wHXAYsBAAH/AmUBXAHnAyYBOP8ANQADAgEDA0YBfgJqAUcB+QHYAYwBAAH/AdgBjAEA
+        Af8B2AGMAQAB/wHaAZIBAAH/AeYBtwGNAf8B+QHuAeUB/wH0AewB5AH/AeMBzQG3Af8B5AHNAbkB/wH6
+        AfYB8QX/AfwB+AH1Af8B6wHHAaYB/wHbAZgBAAH/AdgBjAEAAf8B2AGMAQAB/wHYAYwBAAH/AdgBjAEA
+        Af8DWAG4AwUBBv8AOQADGAEhA10BzAHYAYwBAAH/AdgBjAEAAf8B2AGMAQAB/wHYAYwBAAH/AdgBjAEA
+        Af8B2gGTAQAB/wHkAa8BgAH/AewByQGoAf8B7wHRAbYB/wHtAcwBrgH/AeYBuAGNAf8B2wGWAQAB/wHY
+        AYwBAAH/AdgBjAEAAf8B2AGMAQAB/wHYAYwBAAH/AdgBjAEAAf8DXQHqAyIBMf8AQQADJQE3AloBWAG9
+        A00B+gHYAY0BAAH/AdgBjQEAAf8B2AGNAQAB/wHYAY0BAAH/AdgBjQEAAf8B2AGNAQAB/wHYAY0BAAH/
+        AdgBjQEAAf8B2AGNAQAB/wHYAY0BAAH/AdgBjQEAAf8B2AGNAQAB/wHYAY0BAAH/AysB/ANdAc8DMwFQ
+        /wBJAAMXAR8DPgFrAlsBWgHEAl8BVQH7AdkBjwEAAf8B2QGPAQAB/wHZAY8BAAH/AdkBjwEAAf8B2QGP
+        AQAB/wHZAY8BAAH/AdkBjwEAAf8B2QGPAQAB/wHZAY8BAAH/AoABVQH+A14B1wNHAYADIAEtAwIBA/8A
+        VQADCwEOAy4BRwNAAXADSgGKA08BmQNQAZ0DUAGaA0wBjwNDAXcDMwFRAxMBGv8ASQABQgFNAT4HAAE+
+        AwABKAMAAWQDAAEZAwABAQEAAQEFAAGQAQEWAAP/AQAB/AEAAR8BgAwAAfABAAEHAYAMAAHgAQABAwGA
+        DAABwAEAAQEBgAwAAYACAAGADAABgA8AAYAPAAGAnwABgA8AAYAPAAGAAgABgAwAAYACAAGADAABwAEA
+        AQEBgAwAAeABAAEDAYAMAAHwAQABAwGADAAB/gEAAT8BgAwACw==
 </value>
   </data>
-  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>96, 96</value>
   </data>
-  <data name="panelAbout.TabIndex" type="System.Int32, mscorlib">
-    <value>29</value>
-  </data>
-  <data name="textBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>25</value>
-  </data>
-  <data name="&gt;&gt;labelInfo.Name" xml:space="preserve">
-    <value>labelInfo</value>
-  </data>
-  <data name="&gt;&gt;panelAbout.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="labelInfo.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
-    <value>panelAbout</value>
-  </data>
-  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
-  </data>
-  <data name="panelAbout.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>512, 382</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9.75pt</value>
-  </data>
-  <data name="&gt;&gt;buttonCheckUpdate.Parent" xml:space="preserve">
-    <value>panelAbout</value>
-  </data>
-  <data name="&gt;&gt;buttonCheckUpdate.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;labelInfo.Parent" xml:space="preserve">
-    <value>panelAbout</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2527,63 +2565,25 @@ https://github.com/ebellocchia/auto_mouse_mover</value>
         HwKOYKvnHAAeAPaJyNh6r0EHS8f/ByWJFoofbmzKAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="pictureBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
-  <data name="buttonCheckUpdate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>237, 34</value>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
   </data>
-  <data name="textBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+  <data name="$this.Text" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="&gt;&gt;imageList1.Name" xml:space="preserve">
+    <value>imageList1</value>
   </data>
   <data name="&gt;&gt;imageList1.Type" xml:space="preserve">
     <value>System.Windows.Forms.ImageList, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;panelAbout.Name" xml:space="preserve">
-    <value>panelAbout</value>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>About</value>
   </data>
-  <data name="labelInfo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>182, 68</value>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="buttonCheckUpdate.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
-  </data>
-  <data name="&gt;&gt;textBox1.Name" xml:space="preserve">
-    <value>textBox1</value>
-  </data>
-  <data name="panelAbout.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="buttonCheckUpdate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="&gt;&gt;textBox1.Parent" xml:space="preserve">
-    <value>panelAbout</value>
-  </data>
-  <data name="textBox1.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;buttonCheckUpdate.Name" xml:space="preserve">
-    <value>buttonCheckUpdate</value>
-  </data>
-  <data name="labelInfo.Text" xml:space="preserve">
-    <value>XShort v1.0
-Copyright ©  2017
-Clear All Soft</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>8, 16</value>
-  </data>
-  <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;buttonCheckUpdate.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <metadata name="imageList1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
 </root>

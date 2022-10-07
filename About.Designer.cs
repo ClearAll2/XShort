@@ -42,28 +42,28 @@
             // 
             // panelAbout
             // 
-            resources.ApplyResources(this.panelAbout, "panelAbout");
             this.panelAbout.BackColor = System.Drawing.Color.White;
             this.panelAbout.Controls.Add(this.textBox1);
             this.panelAbout.Controls.Add(this.buttonCheckUpdate);
             this.panelAbout.Controls.Add(this.labelInfo);
             this.panelAbout.Controls.Add(this.pictureBox1);
+            resources.ApplyResources(this.panelAbout, "panelAbout");
             this.panelAbout.Name = "panelAbout";
             // 
             // textBox1
             // 
-            resources.ApplyResources(this.textBox1, "textBox1");
             this.textBox1.BackColor = System.Drawing.Color.White;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.textBox1, "textBox1");
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
             // 
             // buttonCheckUpdate
             // 
-            resources.ApplyResources(this.buttonCheckUpdate, "buttonCheckUpdate");
             this.buttonCheckUpdate.BackColor = System.Drawing.SystemColors.Control;
             this.buttonCheckUpdate.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
             this.buttonCheckUpdate.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.buttonCheckUpdate, "buttonCheckUpdate");
             this.buttonCheckUpdate.Name = "buttonCheckUpdate";
             this.buttonCheckUpdate.UseVisualStyleBackColor = false;
             this.buttonCheckUpdate.Click += new System.EventHandler(this.buttonCheckUpdate_Click);
@@ -76,8 +76,8 @@
             // 
             // pictureBox1
             // 
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.Image = global::XShort.Properties.Resources.newlogo;
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;
             // 
@@ -90,7 +90,7 @@
             // About
             // 
             resources.ApplyResources(this, "$this");
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.Controls.Add(this.panelAbout);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
