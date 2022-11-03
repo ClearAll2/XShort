@@ -390,6 +390,7 @@ namespace XShort
 
         private void timerSuggestions_Tick(object sender, EventArgs e)
         {
+            SaveSuggestions();
             ReloadSuggestions();
         }
 
@@ -1215,6 +1216,11 @@ namespace XShort
 
         private void Form2_FormClosing(object sender, FormClosingEventArgs e)
         {
+            SaveSuggestions();
+        }
+
+        private void SaveSuggestions()
+        {
             for (int i = 0; i < suggestions.Time.Count; i++)
             {
                 string path = Path.Combine(suggestPath, i.ToString());
@@ -1226,7 +1232,6 @@ namespace XShort
                 }
             }
         }
-
 
         private void button2_Click(object sender, EventArgs e)
         {
