@@ -97,6 +97,7 @@
     <Compile Include="CursorWrapper.cs" />
     <Compile Include="DesktopHelper.cs" />
     <Compile Include="GetWindowRectWrapper.cs" />
+    <Compile Include="ListSuggestions.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,6 +135,7 @@
     <Compile Include="Shortcut.cs" />
     <Compile Include="Suggestions.cs" />
     <Compile Include="SysCommand.cs" />
+    <Compile Include="TimeSuggestions.cs" />
     <Compile Include="WinBool.cs" />
     <Compile Include="WinPoint.cs" />
     <Compile Include="WinRect.cs" />
@@ -253,22 +255,22 @@
   <ItemGroup>
     <PublishFile Include="XShort.exe.config">
       <Visible>False</Visible>
-      <PublishState>Auto</PublishState>
-      <IncludeHash>False</IncludeHash>
       <Group>
       </Group>
       <TargetPath>
       </TargetPath>
+      <PublishState>Auto</PublishState>
+      <IncludeHash>False</IncludeHash>
       <FileType>File</FileType>
     </PublishFile>
     <PublishFile Include="XShort.exe.manifest">
       <Visible>False</Visible>
-      <PublishState>Auto</PublishState>
-      <IncludeHash>False</IncludeHash>
       <Group>
       </Group>
       <TargetPath>
       </TargetPath>
+      <PublishState>Auto</PublishState>
+      <IncludeHash>False</IncludeHash>
       <FileType>ManifestEntryPoint</FileType>
     </PublishFile>
   </ItemGroup>

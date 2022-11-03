@@ -4,25 +4,19 @@ namespace XShort
 {
     class Suggestions
     {
-        public string loc;
-        public int count;
-        public DateTime lasttime;
-        public string nextcall;
+        private string loc;
+        private int amount;
+        private DateTime lasttime;
 
-        public Suggestions(string _loc, int _count, DateTime _lastime)
-        {
-            loc = _loc;
-            count = _count;
-            lasttime = _lastime;
-            nextcall = String.Empty;
-        }
+        public string Loc { get => loc; set => loc = value; }
+        public int Amount { get => amount; set => amount = value; }
+        public DateTime Lasttime { get => lasttime; set => lasttime = value; }
 
-        public Suggestions(string _loc, int _count, DateTime _lastime, string _nextcall)
+        public Suggestions(string _loc, int _amount, DateTime _lastime)
         {
-            loc = _loc;
-            count = _count;
-            lasttime = _lastime;
-            nextcall = _nextcall;
+            Loc = _loc;
+            Amount = _amount;
+            Lasttime = _lastime;
         }
     }
 }
