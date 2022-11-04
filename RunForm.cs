@@ -403,6 +403,10 @@ namespace XShort
             {
                 List<String> addedSuggestions = new List<string>();
                 rel = 0;
+                foreach (Control c in panelSuggestions.Controls)
+                {
+                    c.Dispose();
+                }
                 panelSuggestions.Controls.Clear();
                 for (int i = 0; i < suggestions.Time[DateTime.Now.Hour].List.Count; i++)//time-based suggestions
                 {
@@ -627,17 +631,13 @@ namespace XShort
                     {
                         if (suggestions.Time[DateTime.Now.Hour].List[i].Amount < suggestions.Time[DateTime.Now.Hour].List[j].Amount)
                         {
-                            Suggestions temp = suggestions.Time[DateTime.Now.Hour].List[i];
-                            suggestions.Time[DateTime.Now.Hour].List[i] = suggestions.Time[DateTime.Now.Hour].List[j];
-                            suggestions.Time[DateTime.Now.Hour].List[j] = temp;
+                            (suggestions.Time[DateTime.Now.Hour].List[j], suggestions.Time[DateTime.Now.Hour].List[i]) = (suggestions.Time[DateTime.Now.Hour].List[i], suggestions.Time[DateTime.Now.Hour].List[j]);
                         }
                         else if (suggestions.Time[DateTime.Now.Hour].List[i].Amount == suggestions.Time[DateTime.Now.Hour].List[j].Amount)
                         {
                             if (suggestions.Time[DateTime.Now.Hour].List[i].Lasttime.CompareTo(suggestions.Time[DateTime.Now.Hour].List[j].Lasttime) < 0)
                             {
-                                Suggestions temp = suggestions.Time[DateTime.Now.Hour].List[i];
-                                suggestions.Time[DateTime.Now.Hour].List[i] = suggestions.Time[DateTime.Now.Hour].List[j];
-                                suggestions.Time[DateTime.Now.Hour].List[j] = temp;
+                                (suggestions.Time[DateTime.Now.Hour].List[j], suggestions.Time[DateTime.Now.Hour].List[i]) = (suggestions.Time[DateTime.Now.Hour].List[i], suggestions.Time[DateTime.Now.Hour].List[j]);
                             }
                         }
                     }
@@ -650,9 +650,7 @@ namespace XShort
                         {
                             if (suggestions.Time[DateTime.Now.Hour].List[i].Lasttime.CompareTo(suggestions.Time[DateTime.Now.Hour].List[j].Lasttime) < 0)
                             {
-                                Suggestions temp = suggestions.Time[DateTime.Now.Hour].List[i];
-                                suggestions.Time[DateTime.Now.Hour].List[i] = suggestions.Time[DateTime.Now.Hour].List[j];
-                                suggestions.Time[DateTime.Now.Hour].List[j] = temp;
+                                (suggestions.Time[DateTime.Now.Hour].List[j], suggestions.Time[DateTime.Now.Hour].List[i]) = (suggestions.Time[DateTime.Now.Hour].List[i], suggestions.Time[DateTime.Now.Hour].List[j]);
                             }
                         }
                     }
