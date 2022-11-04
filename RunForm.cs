@@ -1223,12 +1223,15 @@ namespace XShort
         {
             for (int i = 0; i < suggestions.Time.Count; i++)
             {
-                string path = Path.Combine(suggestPath, i.ToString());
-                System.IO.File.WriteAllText(path, String.Empty);
-                for (int j = 0; j < suggestions.Time[i].List.Count; j++)
+                if (suggestions.Time[i].List.Count > 0)
                 {
-                    string newline = String.Join("", suggestions.Time[i].List[j].Loc, "|", suggestions.Time[i].List[j].Amount, "|", suggestions.Time[i].List[j].Lasttime.ToString("F", new CultureInfo("en")), Environment.NewLine);
-                    System.IO.File.AppendAllText(path, newline);
+                    string path = Path.Combine(suggestPath, i.ToString());
+                    System.IO.File.WriteAllText(path, String.Empty);
+                    for (int j = 0; j < suggestions.Time[i].List.Count; j++)
+                    {
+                        string newline = String.Join("", suggestions.Time[i].List[j].Loc, "|", suggestions.Time[i].List[j].Amount, "|", suggestions.Time[i].List[j].Lasttime.ToString("F", new CultureInfo("en")), Environment.NewLine);
+                        System.IO.File.AppendAllText(path, newline);
+                    }
                 }
             }
         }
