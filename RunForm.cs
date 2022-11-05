@@ -82,6 +82,12 @@ namespace XShort
             eu = _eu;
             en = _en;
 
+            if (!cb)//if user does not use clipboard feature, move up combobox
+            {
+                panelClipboard.Hide();
+                comboBoxRun.Top = panelClipboard.Top;
+            }
+
             Shortcuts = new List<Shortcut>(shortcuts);
             blockList = new List<string>(blocklist);
             dataPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "XShort");
