@@ -2056,11 +2056,6 @@ namespace XShort
 
         }
 
-        private void homepageToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Process.Start("https://clearallsoft.cf");
-        }
-
         private void autoMouseToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (f4 != null && !f4.IsDisposed)
