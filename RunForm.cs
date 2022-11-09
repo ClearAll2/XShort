@@ -82,12 +82,6 @@ namespace XShort
             eu = _eu;
             en = _en;
 
-            if (!cb)//if user does not use clipboard feature, move up combobox
-            {
-                panelClipboard.Hide();
-                comboBoxRun.Top = panelClipboard.Top;
-            }
-
             Shortcuts = new List<Shortcut>(shortcuts);
             blockList = new List<string>(blocklist);
             dataPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "XShort");
@@ -1716,10 +1710,10 @@ namespace XShort
             {
                 Panel frm = (Panel)sender;
                 ControlPaint.DrawBorder(e.Graphics, frm.ClientRectangle,
-                Color.DodgerBlue, 0, ButtonBorderStyle.Solid,
-                Color.DodgerBlue, 0, ButtonBorderStyle.Solid,
-                Color.DodgerBlue, 0, ButtonBorderStyle.Solid,
-                Color.DodgerBlue, 1, ButtonBorderStyle.Solid);
+                Color.Red, 0, ButtonBorderStyle.Solid,
+                Color.Red, 0, ButtonBorderStyle.Solid,
+                Color.Red, 0, ButtonBorderStyle.Solid,
+                Color.Red, 1, ButtonBorderStyle.Solid);
             }
         }
 
