@@ -1715,10 +1715,10 @@ namespace XShort
             {
                 Panel frm = (Panel)sender;
                 ControlPaint.DrawBorder(e.Graphics, frm.ClientRectangle,
-                Color.Red, 0, ButtonBorderStyle.Solid,
-                Color.Red, 0, ButtonBorderStyle.Solid,
-                Color.Red, 0, ButtonBorderStyle.Solid,
-                Color.Red, 1, ButtonBorderStyle.Solid);
+                Color.DodgerBlue, 0, ButtonBorderStyle.Solid,
+                Color.DodgerBlue, 0, ButtonBorderStyle.Solid,
+                Color.DodgerBlue, 0, ButtonBorderStyle.Solid,
+                Color.DodgerBlue, 1, ButtonBorderStyle.Solid);
             }
         }
 
