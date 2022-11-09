@@ -414,6 +414,7 @@ namespace XShort
                     c.Dispose();
                 }
                 panelSuggestions.Controls.Clear();
+                timeSuggestions.Clear();
                 for (int i = 0; i < suggestions.Time[DateTime.Now.Hour].List.Count; i++)//time-based suggestions
                 {
                     if ((DateTime.Now.Date - suggestions.Time[DateTime.Now.Hour].List[i].Lasttime.Date).TotalDays <= 30)//stop showing items that haven't been called over 1 month
