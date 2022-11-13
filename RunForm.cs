@@ -1213,11 +1213,6 @@ namespace XShort
             comboBoxRun.Text = String.Empty;
         }
 
-        private void Form2_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            SaveSuggestions();
-        }
-
         private void SaveSuggestions()
         {
             for (int i = 0; i < suggestions.Time.Count; i++)

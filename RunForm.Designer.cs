@@ -220,7 +220,6 @@
             this.TopMost = true;
             this.Activated += new System.EventHandler(this.Form2_Activated);
             this.Deactivate += new System.EventHandler(this.RunForm_Deactivate);
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form2_FormClosing);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.RunForm_Paint);
             this.contextMenuStrip1.ResumeLayout(false);
             this.contextMenuStrip2.ResumeLayout(false);
