@@ -90,21 +90,21 @@
     <Compile Include="AutoMouse.Designer.cs">
       <DependentUpon>AutoMouse.cs</DependentUpon>
     </Compile>
-    <Compile Include="BackgroundWordFilter.cs" />
-    <Compile Include="Clipboard.cs" />
-    <Compile Include="CursorHelper.cs" />
-    <Compile Include="CursorPosition.cs" />
-    <Compile Include="CursorWrapper.cs" />
-    <Compile Include="DesktopHelper.cs" />
-    <Compile Include="GetWindowRectWrapper.cs" />
-    <Compile Include="ListSuggestions.cs" />
+    <Compile Include="Hook\BackgroundWordFilter.cs" />
+    <Compile Include="Shortcut\Clipboard.cs" />
+    <Compile Include="InputWrapper\CursorHelper.cs" />
+    <Compile Include="InputWrapper\CursorPosition.cs" />
+    <Compile Include="InputWrapper\CursorWrapper.cs" />
+    <Compile Include="InputWrapper\DesktopHelper.cs" />
+    <Compile Include="InputWrapper\GetWindowRectWrapper.cs" />
+    <Compile Include="Suggestions\ListSuggestions.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ResolutionInfo.cs" />
+    <Compile Include="InputWrapper\ResolutionInfo.cs" />
     <Compile Include="RunForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,7 +117,7 @@
     <Compile Include="ProgressForm.Designer.cs">
       <DependentUpon>ProgressForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Hook.cs" />
+    <Compile Include="Hook\Hook.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -125,20 +125,20 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="SendInputWrapper.cs" />
+    <Compile Include="InputWrapper\SendInputWrapper.cs" />
     <Compile Include="Settings.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Settings.Designer.cs">
       <DependentUpon>Settings.cs</DependentUpon>
     </Compile>
-    <Compile Include="Shortcut.cs" />
-    <Compile Include="Suggestions.cs" />
-    <Compile Include="SysCommand.cs" />
-    <Compile Include="TimeSuggestions.cs" />
-    <Compile Include="WinBool.cs" />
-    <Compile Include="WinPoint.cs" />
-    <Compile Include="WinRect.cs" />
+    <Compile Include="Shortcut\Shortcut.cs" />
+    <Compile Include="Suggestions\Suggestions.cs" />
+    <Compile Include="Shortcut\SysCommand.cs" />
+    <Compile Include="Suggestions\TimeSuggestions.cs" />
+    <Compile Include="InputWrapper\WinBool.cs" />
+    <Compile Include="InputWrapper\WinPoint.cs" />
+    <Compile Include="InputWrapper\WinRect.cs" />
     <EmbeddedResource Include="About.en.resx">
       <DependentUpon>About.cs</DependentUpon>
     </EmbeddedResource>
