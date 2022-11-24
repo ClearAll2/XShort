@@ -26,9 +26,10 @@ namespace XShort
         private List<String> blockList;
         private ImageList sImage = new ImageList();
         private Queue<ClipboardItem> cB = new Queue<ClipboardItem>();
-        private List<Suggestions> suggestions = new List<Suggestions>();
-        private List<Suggestions> timeSuggestions = new List<Suggestions>();
+        private TimeSuggestions suggestions = new TimeSuggestions();
+        private List<String> timeSuggestions = new List<string>();
         private string dataPath;
+        private string suggestPath;
         private bool ggSearch = true;
         private bool csen = false;
         private bool ss = false;
@@ -84,6 +85,8 @@ namespace XShort
             Shortcuts = new List<Shortcut>(shortcuts);
             blockList = new List<string>(blocklist);
             dataPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "XShort");
+            suggestPath = Path.Combine(dataPath, "Suggestions Data");
+            System.IO.Directory.CreateDirectory(suggestPath);
             comboBoxRun.DropDownHeight = comboBoxRun.Font.Height * 5;
             originalSize = this.Height;
 
@@ -238,12 +241,10 @@ namespace XShort
         /// </summary>
         public void MaintainSuggestions()
         {
-            for (int i = 0; i < suggestions.Count; i++)
+            for (int i = 0; i < suggestions.Time[DateTime.Now.Hour].List.Count; i++)
             {
-                if (Shortcuts.FindIndex(f => f.Name == suggestions[i].loc) < 0 && ! SysCommand.sysCmd.Contains(suggestions[i].loc))
-                    suggestions.RemoveAt(i);
-                if (Shortcuts.FindIndex(f => f.Name == suggestions[i].nextcall) < 0 && !SysCommand.sysCmd.Contains(suggestions[i].nextcall))
-                    suggestions[i].nextcall = String.Empty;
+                if (Shortcuts.FindIndex(f => f.Name == suggestions.Time[DateTime.Now.Hour].List[i].Loc) < 0 && ! SysCommand.sysCmd.Contains(suggestions.Time[DateTime.Now.Hour].List[i].Loc))
+                    suggestions.Time[DateTime.Now.Hour].List.RemoveAt(i);
             }
             LoadIcon();
             ReloadSuggestions();
@@ -389,6 +390,7 @@ namespace XShort
 
         private void timerSuggestions_Tick(object sender, EventArgs e)
         {
+            SaveSuggestions();
             ReloadSuggestions();
         }
 
@@ -401,81 +403,47 @@ namespace XShort
             {
                 List<String> addedSuggestions = new List<string>();
                 rel = 0;
+                foreach (Control c in panelSuggestions.Controls)
+                {
+                    c.Dispose();
+                }
                 panelSuggestions.Controls.Clear();
                 timeSuggestions.Clear();
-                for (int i = 0; i < suggestions.Count; i++)//time-based suggestions
+                for (int i = 0; i < suggestions.Time[DateTime.Now.Hour].List.Count; i++)//time-based suggestions
                 {
-                    if (suggestions[i].lasttime.Hour == DateTime.Now.Hour || suggestions[i].lasttime.Hour == DateTime.Now.Hour + 1 && suggestions[i].lasttime.Minute <= 30 || suggestions[i].lasttime.Hour == DateTime.Now.Hour - 1 && suggestions[i].lasttime.Minute >= 30)
-                    {
-                        if ((DateTime.Now.Date - suggestions[i].lasttime.Date).TotalDays <= 30 && File.Exists(Path.Combine(dataPath, "30ds")))//stop showing items that haven't been called over 1 month
-                            if (!blockList.Contains(suggestions[i].loc))//if it's not in blocklist
-                                timeSuggestions.Add(suggestions[i]);
-                    }
+                    if ((DateTime.Now.Date - suggestions.Time[DateTime.Now.Hour].List[i].Lasttime.Date).TotalDays <= 30)//stop showing items that haven't been called over 1 month
+                        if (!blockList.Contains(suggestions.Time[DateTime.Now.Hour].List[i].Loc))//if it's not in blocklist
+                            timeSuggestions.Add(suggestions.Time[DateTime.Now.Hour].List[i].Loc);
                 }
 
                 if (timeSuggestions.Count > 0)
                 {
                     for (int i = 0; i < timeSuggestions.Count; i++)
                     {
-                        if (!addedSuggestions.Contains(timeSuggestions[i].loc))
+                        if (!addedSuggestions.Contains(timeSuggestions[i]))
                         {
-                            AddNewSuggestionsItems(timeSuggestions[i].loc, Shortcuts.FindIndex(f => f.Name == timeSuggestions[i].loc) >= 0);
-                            addedSuggestions.Add(timeSuggestions[i].loc);
-                        }
-                        if (timeSuggestions[i].nextcall != String.Empty)
-                        {
-                            if (!addedSuggestions.Contains(timeSuggestions[i].nextcall))//prevent duplicate 
-                            {
-                                if (!blockList.Contains(timeSuggestions[i].nextcall) && rel < suggestNum)//if it's not in blocklist
-                                {
-                                    AddNewSuggestionsItems(timeSuggestions[i].nextcall, Shortcuts.FindIndex(f => f.Name == timeSuggestions[i].nextcall) >= 0);
-                                    addedSuggestions.Add(timeSuggestions[i].nextcall);
-                                }
-                            }
+                            AddNewSuggestionsItems(timeSuggestions[i], Shortcuts.FindIndex(f => f.Name == timeSuggestions[i]) >= 0);
+                            addedSuggestions.Add(timeSuggestions[i]);
                         }
                         if (rel >= suggestNum)
                             break;
                     }
-                    //if (rel < suggestNum)
-                    //{
-                    //    int remain = suggestNum - rel;
-                    //    if (suggestions.Count >= remain)
-                    //    {
-                    //        for (int i = 0; i < timeSuggestions.Count; i++)
-                    //        {
-                    //            if (timeSuggestions[i].nextcall != String.Empty)
-                    //            {
-                    //                if (!addedSuggestions.Contains(timeSuggestions[i].nextcall))//prevent duplicate 
-                    //                {
-                    //                    if (!blockList.Contains(timeSuggestions[i].nextcall))//if it's not in blocklist
-                    //                    {
-                    //                        AddNewSuggestionsItems(timeSuggestions[i].nextcall, Shortcuts.FindIndex(f => f.Name == timeSuggestions[i].nextcall) >= 0);
-                    //                        addedSuggestions.Add(timeSuggestions[i].nextcall);
-                    //                        if (remain > 0)
-                    //                            remain -= 1;
-                    //                        else
-                    //                            break;
-                    //                    }
-                    //                }
-                    //            }
-                    //        }
-                    //    }
-                    //}
+                    
                 }
                 
                 if (rel < suggestNum)
                 {
                     int remain = suggestNum - rel;
-                    if (suggestions.Count >= remain)
+                    if (suggestions.Time[DateTime.Now.Hour].List.Count >= remain)
                     {
-                        for (int i = 0; i < suggestions.Count; i++)
+                        for (int i = 0; i < suggestions.Time[DateTime.Now.Hour].List.Count; i++)
                         {
-                            if (!addedSuggestions.Contains(suggestions[i].loc))//prevent duplicate 
+                            if (!addedSuggestions.Contains(suggestions.Time[DateTime.Now.Hour].List[i].Loc))//prevent duplicate 
                             {
-                                if (!blockList.Contains(suggestions[i].loc))//if it's not in blocklist
+                                if (!blockList.Contains(suggestions.Time[DateTime.Now.Hour].List[i].Loc))//if it's not in blocklist
                                 {
-                                    AddNewSuggestionsItems(suggestions[i].loc, Shortcuts.FindIndex(f => f.Name == suggestions[i].loc) >= 0);
-                                    addedSuggestions.Add(suggestions[i].loc);
+                                    AddNewSuggestionsItems(suggestions.Time[DateTime.Now.Hour].List[i].Loc, Shortcuts.FindIndex(f => f.Name == suggestions.Time[DateTime.Now.Hour].List[i].Loc) >= 0);
+                                    addedSuggestions.Add(suggestions.Time[DateTime.Now.Hour].List[i].Loc);
                                     if (remain > 0)
                                         remain -= 1;
                                     else
@@ -496,9 +464,9 @@ namespace XShort
         /// <returns></returns>
         private int CheckExistSuggestion(string loc)
         {
-            for (int i = 0; i < suggestions.Count; i++)
+            for (int i = 0; i < suggestions.Time[DateTime.Now.Hour].List.Count; i++)
             {
-                if (loc.Equals(suggestions[i].loc))
+                if (loc.Equals(suggestions.Time[DateTime.Now.Hour].List[i].Loc))
                 {
                     return i;
                 }
@@ -512,22 +480,24 @@ namespace XShort
         /// </summary>
         private void LoadSuggestions()
         {
-            if (System.IO.File.Exists(dataPath + "\\suggestions"))
+            if (Directory.Exists(suggestPath))
             {
-                FileStream fs = new FileStream(dataPath + "\\suggestions", FileMode.Open, FileAccess.Read);
-                StreamReader sr = new StreamReader(fs);
-                while (!sr.EndOfStream)
+                for (int i = 0; i < suggestions.Time.Count; i++)
                 {
-                    string read = sr.ReadLine();
-                    string[] cut = read.Split('|');
-                    if (cut.Length == 3)
-                        suggestions.Add(new Suggestions(cut[0], Int32.Parse(cut[1]), DateTime.Parse(cut[2])));
-                    else
-                        suggestions.Add(new Suggestions(cut[0], Int32.Parse(cut[1]), DateTime.Parse(cut[2]), cut[3]));
+                    if (File.Exists(Path.Combine(suggestPath, i.ToString())))
+                    {
+                        FileStream fs = new FileStream(Path.Combine(suggestPath, i.ToString()), FileMode.Open, FileAccess.Read);
+                        StreamReader sr = new StreamReader(fs);
+                        while (!sr.EndOfStream)
+                        {
+                            string read = sr.ReadLine();
+                            string[] cut = read.Split('|');
+                            suggestions.Time[i].List.Add(new Suggestions(cut[0], Int32.Parse(cut[1]), DateTime.Parse(cut[2])));
+                        }
+                        sr.Close();
+                        fs.Close();
+                    }
                 }
-                sr.Close();
-                fs.Close();
-                
                 ReloadSuggestions();
             }
         }
@@ -654,40 +624,34 @@ namespace XShort
         /// </summary>
         private void SortSuggestions()
         {
-            if (suggestions.Count > 1)
+            if (suggestions.Time[DateTime.Now.Hour].List.Count > 1)
             {
-                for (int i = 0; i < suggestions.Count - 1; i++)//sort by number for all items first
+                for (int i = 0; i < suggestions.Time[DateTime.Now.Hour].List.Count - 1; i++)//sort by number for all items first
                 {
-                    for (int j = i + 1; j < suggestions.Count; j++)
+                    for (int j = i + 1; j < suggestions.Time[DateTime.Now.Hour].List.Count; j++)
                     {
-                        if (suggestions[i].count < suggestions[j].count)
+                        if (suggestions.Time[DateTime.Now.Hour].List[i].Amount < suggestions.Time[DateTime.Now.Hour].List[j].Amount)
                         {
-                            Suggestions temp = suggestions[i];
-                            suggestions[i] = suggestions[j];
-                            suggestions[j] = temp;
+                            (suggestions.Time[DateTime.Now.Hour].List[j], suggestions.Time[DateTime.Now.Hour].List[i]) = (suggestions.Time[DateTime.Now.Hour].List[i], suggestions.Time[DateTime.Now.Hour].List[j]);
                         }
-                        else if (suggestions[i].count == suggestions[j].count)
+                        else if (suggestions.Time[DateTime.Now.Hour].List[i].Amount == suggestions.Time[DateTime.Now.Hour].List[j].Amount)
                         {
-                            if (suggestions[i].lasttime.CompareTo(suggestions[j].lasttime) < 0)
+                            if (suggestions.Time[DateTime.Now.Hour].List[i].Lasttime.CompareTo(suggestions.Time[DateTime.Now.Hour].List[j].Lasttime) < 0)
                             {
-                                Suggestions temp = suggestions[i];
-                                suggestions[i] = suggestions[j];
-                                suggestions[j] = temp;
+                                (suggestions.Time[DateTime.Now.Hour].List[j], suggestions.Time[DateTime.Now.Hour].List[i]) = (suggestions.Time[DateTime.Now.Hour].List[i], suggestions.Time[DateTime.Now.Hour].List[j]);
                             }
                         }
                     }
                 }
-                if (suggestions.Count >= 5)//fix recent < 5
+                if (suggestions.Time[DateTime.Now.Hour].List.Count >= 5)//fix recent < 5
                 {
                     for (int i = 0; i < 4; i++)//sort by time for 5 first items
                     {
                         for (int j = i + 1; j < 5; j++)
                         {
-                            if (suggestions[i].lasttime.CompareTo(suggestions[j].lasttime) < 0)
+                            if (suggestions.Time[DateTime.Now.Hour].List[i].Lasttime.CompareTo(suggestions.Time[DateTime.Now.Hour].List[j].Lasttime) < 0)
                             {
-                                Suggestions temp = suggestions[i];
-                                suggestions[i] = suggestions[j];
-                                suggestions[j] = temp;
+                                (suggestions.Time[DateTime.Now.Hour].List[j], suggestions.Time[DateTime.Now.Hour].List[i]) = (suggestions.Time[DateTime.Now.Hour].List[i], suggestions.Time[DateTime.Now.Hour].List[j]);
                             }
                         }
                     }
@@ -706,37 +670,22 @@ namespace XShort
         /// <param name="name">Shortcut name</param>
         private void UpdateSuggestions(string name)
         {
-            string current;
-            if (suggestions.Count > 0)
+            if (suggestions.Time[DateTime.Now.Hour].List.Count > 0)
             {
                 int position = CheckExistSuggestion(name);
                 if (position != -1)
                 {
-                    suggestions[position].count += 1;
-                    suggestions[position].lasttime = DateTime.Now;
-                    current = suggestions[position].loc;
+                    suggestions.Time[DateTime.Now.Hour].List[position].Amount += 1;
+                    suggestions.Time[DateTime.Now.Hour].List[position].Lasttime = DateTime.Now;
                 }
                 else
                 {
-                    suggestions.Add(new Suggestions(name, 1, DateTime.Now));
-                    current = name;
+                    suggestions.Time[DateTime.Now.Hour].List.Add(new Suggestions(name, 1, DateTime.Now));
                 }
             }
             else
             {
-                suggestions.Add(new Suggestions(name, 1, DateTime.Now));
-                current = name;
-            }
-            if (lastcalled != String.Empty)
-            {
-                int previous = CheckExistSuggestion(lastcalled);//find position of last called shorcut
-                lastcalled = current;                           //set last called = current called
-                if (lastcalled != suggestions[previous].loc)    //prevent next called is itself
-                    suggestions[previous].nextcall = lastcalled;    //set last called shortcut's next call = last called = current
-            }
-            else
-            {
-                lastcalled = current;
+                suggestions.Time[DateTime.Now.Hour].List.Add(new Suggestions(name, 1, DateTime.Now));
             }
             SortSuggestions();
         }
@@ -1264,23 +1213,22 @@ namespace XShort
             comboBoxRun.Text = String.Empty;
         }
 
-        private void Form2_FormClosing(object sender, FormClosingEventArgs e)
+        private void SaveSuggestions()
         {
-            if (suggestions.Count > 0)
+            for (int i = 0; i < suggestions.Time.Count; i++)
             {
-                string path = Path.Combine(dataPath, "suggestions");
-                System.IO.File.WriteAllText(path, String.Empty);
-                for (int i = 0; i < suggestions.Count; i++)
+                if (suggestions.Time[i].List.Count > 0)
                 {
-                    string newline = String.Join("", suggestions[i].loc, "|", suggestions[i].count, "|", suggestions[i].lasttime.ToString("F", new CultureInfo("en")), "|", suggestions[i].nextcall, Environment.NewLine);
-                    //System.IO.File.AppendAllText(dataPath + "\\suggestions", suggestions[i].loc + "|" + suggestions[i].count + "|" + suggestions[i].lasttime + Environment.NewLine);
-                    System.IO.File.AppendAllText(path, newline);
+                    string path = Path.Combine(suggestPath, i.ToString());
+                    System.IO.File.WriteAllText(path, String.Empty);
+                    for (int j = 0; j < suggestions.Time[i].List.Count; j++)
+                    {
+                        string newline = String.Join("", suggestions.Time[i].List[j].Loc, "|", suggestions.Time[i].List[j].Amount, "|", suggestions.Time[i].List[j].Lasttime.ToString("F", new CultureInfo("en")), Environment.NewLine);
+                        System.IO.File.AppendAllText(path, newline);
+                    }
                 }
-                
             }
-
         }
-
 
         private void button2_Click(object sender, EventArgs e)
         {
