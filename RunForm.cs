@@ -452,6 +452,42 @@ namespace XShort
                             }
                         }
                     }
+                    if (suggestions.Time[DateTime.Now.Hour + 1].List.Count >= remain)
+                    {
+                        for (int i = 0; i < suggestions.Time[DateTime.Now.Hour + 1].List.Count; i++)
+                        {
+                            if (!addedSuggestions.Contains(suggestions.Time[DateTime.Now.Hour + 1].List[i].Loc))//prevent duplicate 
+                            {
+                                if (!blockList.Contains(suggestions.Time[DateTime.Now.Hour + 1].List[i].Loc))//if it's not in blocklist
+                                {
+                                    AddNewSuggestionsItems(suggestions.Time[DateTime.Now.Hour + 1].List[i].Loc, Shortcuts.FindIndex(f => f.Name == suggestions.Time[DateTime.Now.Hour + 1].List[i].Loc) >= 0);
+                                    addedSuggestions.Add(suggestions.Time[DateTime.Now.Hour + 1].List[i].Loc);
+                                    if (remain > 0)
+                                        remain -= 1;
+                                    else
+                                        break;
+                                }
+                            }
+                        }
+                    }
+                    if (suggestions.Time[DateTime.Now.Hour - 1].List.Count >= remain)
+                    {
+                        for (int i = 0; i < suggestions.Time[DateTime.Now.Hour - 1].List.Count; i++)
+                        {
+                            if (!addedSuggestions.Contains(suggestions.Time[DateTime.Now.Hour - 1].List[i].Loc))//prevent duplicate 
+                            {
+                                if (!blockList.Contains(suggestions.Time[DateTime.Now.Hour - 1].List[i].Loc))//if it's not in blocklist
+                                {
+                                    AddNewSuggestionsItems(suggestions.Time[DateTime.Now.Hour - 1].List[i].Loc, Shortcuts.FindIndex(f => f.Name == suggestions.Time[DateTime.Now.Hour - 1].List[i].Loc) >= 0);
+                                    addedSuggestions.Add(suggestions.Time[DateTime.Now.Hour - 1].List[i].Loc);
+                                    if (remain > 0)
+                                        remain -= 1;
+                                    else
+                                        break;
+                                }
+                            }
+                        }
+                    }
                 }
             }
             CheckClipboard();
