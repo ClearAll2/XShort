@@ -15,7 +15,7 @@ namespace XShort
         public About()
         {
             InitializeComponent();
-            labelInfo.Text = "XShort Core v" + Application.ProductVersion + " build " + this.AssemblyDescription + "\nXShort Core Project\nBuilt by Duc Nguyen";
+            labelInfo.Text = "XShort Core v" + Application.ProductVersion + " build " + this.AssemblyDescription + "\nXShort Core Project\nBuilt by Đức Nguyễn";
         }
 
         public string AssemblyDescription
