@@ -1181,7 +1181,7 @@ namespace XShort
                 f2.Close();
             }
             LoadRunForm();
-            f2.ReloadSuggestions();
+            f2.MaintainSuggestions();
         }
 
         private void Bwt_DoWork(object sender, DoWorkEventArgs e)

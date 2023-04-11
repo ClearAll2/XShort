@@ -391,7 +391,7 @@ namespace XShort
         private void timerSuggestions_Tick(object sender, EventArgs e)
         {
             SaveSuggestions();
-            ReloadSuggestions();
+            MaintainSuggestions();
         }
 
         /// <summary>
@@ -540,7 +540,6 @@ namespace XShort
                         fs.Close();
                     }
                 }
-                ReloadSuggestions();
             }
         }
 
