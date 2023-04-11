@@ -86,22 +86,25 @@
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panelData = new System.Windows.Forms.Panel();
             this.panelEditShortcut = new System.Windows.Forms.Panel();
-            this.checkBoxIsInBlocklist = new System.Windows.Forms.CheckBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.labelPara = new System.Windows.Forms.Label();
-            this.labelPath = new System.Windows.Forms.Label();
-            this.labelName = new System.Windows.Forms.Label();
-            this.textBoxPara = new System.Windows.Forms.TextBox();
-            this.textBoxPath = new System.Windows.Forms.TextBox();
-            this.textBoxName = new System.Windows.Forms.TextBox();
-            this.buttonCancelEdit = new System.Windows.Forms.Button();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.buttonOkEdit = new System.Windows.Forms.Button();
+            this.buttonCancelEdit = new System.Windows.Forms.Button();
+            this.checkBoxIsInBlocklist = new System.Windows.Forms.CheckBox();
+            this.checkBoxRunAtWindowsStartup = new System.Windows.Forms.CheckBox();
+            this.labelPara = new System.Windows.Forms.Label();
+            this.textBoxPara = new System.Windows.Forms.TextBox();
+            this.labelPath = new System.Windows.Forms.Label();
+            this.textBoxPath = new System.Windows.Forms.TextBox();
+            this.labelName = new System.Windows.Forms.Label();
+            this.textBoxName = new System.Windows.Forms.TextBox();
             this.labelShortcutType = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.contextMenuStrip1.SuspendLayout();
             this.contextMenuStrip2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.panelData.SuspendLayout();
             this.panelEditShortcut.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // notifyIcon1
@@ -550,25 +553,100 @@
             // 
             resources.ApplyResources(this.panelEditShortcut, "panelEditShortcut");
             this.panelEditShortcut.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelEditShortcut.Controls.Add(this.checkBoxIsInBlocklist);
-            this.panelEditShortcut.Controls.Add(this.comboBox1);
-            this.panelEditShortcut.Controls.Add(this.buttonBrowseDirectory);
-            this.panelEditShortcut.Controls.Add(this.labelPara);
-            this.panelEditShortcut.Controls.Add(this.labelPath);
-            this.panelEditShortcut.Controls.Add(this.labelName);
-            this.panelEditShortcut.Controls.Add(this.textBoxPara);
-            this.panelEditShortcut.Controls.Add(this.textBoxPath);
-            this.panelEditShortcut.Controls.Add(this.textBoxName);
-            this.panelEditShortcut.Controls.Add(this.buttonCancelEdit);
-            this.panelEditShortcut.Controls.Add(this.buttonOkEdit);
-            this.panelEditShortcut.Controls.Add(this.labelShortcutType);
+            this.panelEditShortcut.Controls.Add(this.tableLayoutPanel1);
             this.panelEditShortcut.Name = "panelEditShortcut";
+            // 
+            // tableLayoutPanel1
+            // 
+            resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
+            this.tableLayoutPanel1.Controls.Add(this.buttonOkEdit, 1, 7);
+            this.tableLayoutPanel1.Controls.Add(this.buttonCancelEdit, 2, 7);
+            this.tableLayoutPanel1.Controls.Add(this.checkBoxIsInBlocklist, 1, 6);
+            this.tableLayoutPanel1.Controls.Add(this.checkBoxRunAtWindowsStartup, 1, 5);
+            this.tableLayoutPanel1.Controls.Add(this.labelPara, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.textBoxPara, 1, 4);
+            this.tableLayoutPanel1.Controls.Add(this.labelPath, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.textBoxPath, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.labelName, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.textBoxName, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.labelShortcutType, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.buttonBrowseDirectory, 2, 3);
+            this.tableLayoutPanel1.Controls.Add(this.comboBox1, 1, 1);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            // 
+            // buttonOkEdit
+            // 
+            resources.ApplyResources(this.buttonOkEdit, "buttonOkEdit");
+            this.buttonOkEdit.BackColor = System.Drawing.SystemColors.Control;
+            this.buttonOkEdit.FlatAppearance.BorderSize = 0;
+            this.buttonOkEdit.Name = "buttonOkEdit";
+            this.buttonOkEdit.TabStop = false;
+            this.buttonOkEdit.UseVisualStyleBackColor = false;
+            this.buttonOkEdit.Click += new System.EventHandler(this.button10_Click_1);
+            // 
+            // buttonCancelEdit
+            // 
+            resources.ApplyResources(this.buttonCancelEdit, "buttonCancelEdit");
+            this.buttonCancelEdit.BackColor = System.Drawing.SystemColors.Control;
+            this.buttonCancelEdit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.buttonCancelEdit.FlatAppearance.BorderSize = 0;
+            this.buttonCancelEdit.Name = "buttonCancelEdit";
+            this.buttonCancelEdit.TabStop = false;
+            this.buttonCancelEdit.UseVisualStyleBackColor = false;
+            this.buttonCancelEdit.Click += new System.EventHandler(this.button12_Click);
             // 
             // checkBoxIsInBlocklist
             // 
             resources.ApplyResources(this.checkBoxIsInBlocklist, "checkBoxIsInBlocklist");
             this.checkBoxIsInBlocklist.Name = "checkBoxIsInBlocklist";
             this.checkBoxIsInBlocklist.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxRunAtWindowsStartup
+            // 
+            resources.ApplyResources(this.checkBoxRunAtWindowsStartup, "checkBoxRunAtWindowsStartup");
+            this.checkBoxRunAtWindowsStartup.Name = "checkBoxRunAtWindowsStartup";
+            this.checkBoxRunAtWindowsStartup.UseVisualStyleBackColor = true;
+            // 
+            // labelPara
+            // 
+            resources.ApplyResources(this.labelPara, "labelPara");
+            this.labelPara.Name = "labelPara";
+            // 
+            // textBoxPara
+            // 
+            resources.ApplyResources(this.textBoxPara, "textBoxPara");
+            this.textBoxPara.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxPara.Name = "textBoxPara";
+            this.textBoxPara.TabStop = false;
+            // 
+            // labelPath
+            // 
+            resources.ApplyResources(this.labelPath, "labelPath");
+            this.labelPath.Name = "labelPath";
+            // 
+            // textBoxPath
+            // 
+            resources.ApplyResources(this.textBoxPath, "textBoxPath");
+            this.textBoxPath.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxPath.Name = "textBoxPath";
+            this.textBoxPath.TabStop = false;
+            // 
+            // labelName
+            // 
+            resources.ApplyResources(this.labelName, "labelName");
+            this.labelName.Name = "labelName";
+            // 
+            // textBoxName
+            // 
+            resources.ApplyResources(this.textBoxName, "textBoxName");
+            this.textBoxName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxName.Name = "textBoxName";
+            this.textBoxName.TabStop = false;
+            // 
+            // labelShortcutType
+            // 
+            resources.ApplyResources(this.labelShortcutType, "labelShortcutType");
+            this.labelShortcutType.Name = "labelShortcutType";
             // 
             // comboBox1
             // 
@@ -582,68 +660,6 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.TabStop = false;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            // 
-            // labelPara
-            // 
-            resources.ApplyResources(this.labelPara, "labelPara");
-            this.labelPara.Name = "labelPara";
-            // 
-            // labelPath
-            // 
-            resources.ApplyResources(this.labelPath, "labelPath");
-            this.labelPath.Name = "labelPath";
-            // 
-            // labelName
-            // 
-            resources.ApplyResources(this.labelName, "labelName");
-            this.labelName.Name = "labelName";
-            // 
-            // textBoxPara
-            // 
-            resources.ApplyResources(this.textBoxPara, "textBoxPara");
-            this.textBoxPara.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxPara.Name = "textBoxPara";
-            this.textBoxPara.TabStop = false;
-            // 
-            // textBoxPath
-            // 
-            resources.ApplyResources(this.textBoxPath, "textBoxPath");
-            this.textBoxPath.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxPath.Name = "textBoxPath";
-            this.textBoxPath.TabStop = false;
-            // 
-            // textBoxName
-            // 
-            resources.ApplyResources(this.textBoxName, "textBoxName");
-            this.textBoxName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxName.Name = "textBoxName";
-            this.textBoxName.TabStop = false;
-            // 
-            // buttonCancelEdit
-            // 
-            resources.ApplyResources(this.buttonCancelEdit, "buttonCancelEdit");
-            this.buttonCancelEdit.BackColor = System.Drawing.SystemColors.Control;
-            this.buttonCancelEdit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.buttonCancelEdit.FlatAppearance.BorderSize = 0;
-            this.buttonCancelEdit.Name = "buttonCancelEdit";
-            this.buttonCancelEdit.TabStop = false;
-            this.buttonCancelEdit.UseVisualStyleBackColor = false;
-            this.buttonCancelEdit.Click += new System.EventHandler(this.button12_Click);
-            // 
-            // buttonOkEdit
-            // 
-            resources.ApplyResources(this.buttonOkEdit, "buttonOkEdit");
-            this.buttonOkEdit.BackColor = System.Drawing.SystemColors.Control;
-            this.buttonOkEdit.FlatAppearance.BorderSize = 0;
-            this.buttonOkEdit.Name = "buttonOkEdit";
-            this.buttonOkEdit.TabStop = false;
-            this.buttonOkEdit.UseVisualStyleBackColor = false;
-            this.buttonOkEdit.Click += new System.EventHandler(this.button10_Click_1);
-            // 
-            // labelShortcutType
-            // 
-            resources.ApplyResources(this.labelShortcutType, "labelShortcutType");
-            this.labelShortcutType.Name = "labelShortcutType";
             // 
             // MainForm
             // 
@@ -669,7 +685,8 @@
             this.menuStrip1.PerformLayout();
             this.panelData.ResumeLayout(false);
             this.panelEditShortcut.ResumeLayout(false);
-            this.panelEditShortcut.PerformLayout();
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -743,6 +760,8 @@
         private System.Windows.Forms.CheckBox checkBoxIsInBlocklist;
         private System.Windows.Forms.ToolStripMenuItem autoMouseToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem autoMouseToolStripMenuItem1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.CheckBox checkBoxRunAtWindowsStartup;
     }
 }
 

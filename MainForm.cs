@@ -1003,6 +1003,24 @@ namespace XShort
                     yet = "rm";
                 }
             }
+            if (checkBoxRunAtWindowsStartup.Checked)
+            {
+                if (!startup.Contains(listViewData.FocusedItem.SubItems[0].Text))
+                {
+                    startup.Add(listViewData.FocusedItem.SubItems[0].Text);
+                    listViewData.FocusedItem.ForeColor = Color.SlateBlue;
+                    yet = "edit";
+                }
+            }
+            else
+            {
+                if (startup.Contains(listViewData.FocusedItem.SubItems[0].Text))
+                {
+                    startup.Remove(listViewData.FocusedItem.SubItems[0].Text);
+                    listViewData.FocusedItem.ForeColor = Color.Black;
+                    yet = "rm";
+                }
+            }
             if (edit)
             {
                 panelEditShortcut.Hide();
@@ -1834,6 +1852,10 @@ namespace XShort
                 checkBoxIsInBlocklist.Checked = true;
             else
                 checkBoxIsInBlocklist.Checked = false;
+            if (startup.Contains(listViewData.FocusedItem.SubItems[0].Text))
+                checkBoxRunAtWindowsStartup.Checked = true;
+            else
+                checkBoxRunAtWindowsStartup.Checked = false;
 
             //this for checking changes in edit
             old_Name = textBoxName.Text;
@@ -2051,10 +2073,6 @@ namespace XShort
                 listViewData.Columns[i].Width = listViewData.Width / listViewData.Columns.Count;
         }
 
-        private void openAboutToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void autoMouseToolStripMenuItem_Click(object sender, EventArgs e)
         {
