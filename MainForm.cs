@@ -55,6 +55,7 @@ namespace XShort
         private bool useClipboard = false;
         private bool extractUrl = false;
         private bool extractNum = false;
+        private bool showName = true;
 
         private bool detect = false;
         private bool hide = false;
@@ -134,7 +135,7 @@ namespace XShort
         {
             if (forceClose)
                 f2.Close();
-            f2 = new RunForm(Shortcuts, blockList, ggs, cases, suggestions, showResult, excludeResult, suggestNum, resultNum, useIndex, useClipboard, extractUrl, extractNum);
+            f2 = new RunForm(Shortcuts, blockList, ggs, cases, suggestions, showResult, excludeResult, suggestNum, resultNum, useIndex, useClipboard, extractUrl, extractNum, showName);
         }
 
         private void Bw2_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
@@ -315,6 +316,10 @@ namespace XShort
                 excludeResult = true;
             else
                 excludeResult = false;
+            if (r.GetValue("ShowName") != null)
+                showName = false;
+            else
+                showName = true;
 
             if (r.GetValue("MaxSuggest") != null)
             {

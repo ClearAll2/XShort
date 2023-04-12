@@ -121,10 +121,1044 @@
   <data name="groupBox4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
   </data>
+  <data name="&gt;&gt;buttonBackIndex.Name" xml:space="preserve">
+    <value>buttonBackIndex</value>
+  </data>
+  <data name="&gt;&gt;buttonBackIndex.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonBackIndex.Parent" xml:space="preserve">
+    <value>panelIndexOption</value>
+  </data>
+  <data name="&gt;&gt;buttonBackIndex.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;labelExplainAllDrives.Name" xml:space="preserve">
+    <value>labelExplainAllDrives</value>
+  </data>
+  <data name="&gt;&gt;labelExplainAllDrives.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelExplainAllDrives.Parent" xml:space="preserve">
+    <value>panelIndexOption</value>
+  </data>
+  <data name="&gt;&gt;labelExplainAllDrives.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;labelExplainPersonalIndex.Name" xml:space="preserve">
+    <value>labelExplainPersonalIndex</value>
+  </data>
+  <data name="&gt;&gt;labelExplainPersonalIndex.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelExplainPersonalIndex.Parent" xml:space="preserve">
+    <value>panelIndexOption</value>
+  </data>
+  <data name="&gt;&gt;labelExplainPersonalIndex.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;radioButtonAllDrives.Name" xml:space="preserve">
+    <value>radioButtonAllDrives</value>
+  </data>
+  <data name="&gt;&gt;radioButtonAllDrives.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButtonAllDrives.Parent" xml:space="preserve">
+    <value>panelIndexOption</value>
+  </data>
+  <data name="&gt;&gt;radioButtonAllDrives.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;radioButtonPersonal.Name" xml:space="preserve">
+    <value>radioButtonPersonal</value>
+  </data>
+  <data name="&gt;&gt;radioButtonPersonal.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButtonPersonal.Parent" xml:space="preserve">
+    <value>panelIndexOption</value>
+  </data>
+  <data name="&gt;&gt;radioButtonPersonal.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="panelIndexOption.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="panelIndexOption.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 20</value>
+  </data>
+  <data name="panelIndexOption.Size" type="System.Drawing.Size, System.Drawing">
+    <value>498, 313</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="panelIndexOption.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="panelIndexOption.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;panelIndexOption.Name" xml:space="preserve">
+    <value>panelIndexOption</value>
+  </data>
+  <data name="&gt;&gt;panelIndexOption.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelIndexOption.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;panelIndexOption.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="buttonIndexOption.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="buttonIndexOption.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11.25pt</value>
+  </data>
+  <data name="buttonIndexOption.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="buttonIndexOption.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 284</value>
+  </data>
+  <data name="buttonIndexOption.Size" type="System.Drawing.Size, System.Drawing">
+    <value>469, 29</value>
+  </data>
+  <data name="buttonIndexOption.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="buttonIndexOption.Text" xml:space="preserve">
+    <value>Indexing Option</value>
+  </data>
+  <data name="buttonIndexOption.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;buttonIndexOption.Name" xml:space="preserve">
+    <value>buttonIndexOption</value>
+  </data>
+  <data name="&gt;&gt;buttonIndexOption.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonIndexOption.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;buttonIndexOption.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="numericUpDownInterval.Location" type="System.Drawing.Point, System.Drawing">
+    <value>202, 207</value>
+  </data>
+  <data name="numericUpDownInterval.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 20</value>
+  </data>
+  <data name="numericUpDownInterval.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownInterval.Name" xml:space="preserve">
+    <value>numericUpDownInterval</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownInterval.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownInterval.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownInterval.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="labelBuildIndexInterval.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelBuildIndexInterval.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 209</value>
+  </data>
+  <data name="labelBuildIndexInterval.Size" type="System.Drawing.Size, System.Drawing">
+    <value>173, 18</value>
+  </data>
+  <data name="labelBuildIndexInterval.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="labelBuildIndexInterval.Text" xml:space="preserve">
+    <value>Build index every (hours):</value>
+  </data>
+  <data name="&gt;&gt;labelBuildIndexInterval.Name" xml:space="preserve">
+    <value>labelBuildIndexInterval</value>
+  </data>
+  <data name="&gt;&gt;labelBuildIndexInterval.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelBuildIndexInterval.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;labelBuildIndexInterval.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="labelLastUpdate.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt</value>
+  </data>
+  <data name="labelLastUpdate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 254</value>
+  </data>
+  <data name="labelLastUpdate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>452, 20</value>
+  </data>
+  <data name="labelLastUpdate.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="labelLastUpdate.Text" xml:space="preserve">
+    <value>Last update: N/A</value>
+  </data>
+  <data name="&gt;&gt;labelLastUpdate.Name" xml:space="preserve">
+    <value>labelLastUpdate</value>
+  </data>
+  <data name="&gt;&gt;labelLastUpdate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelLastUpdate.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;labelLastUpdate.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="labelError.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt</value>
+  </data>
+  <data name="labelError.Location" type="System.Drawing.Point, System.Drawing">
+    <value>281, 41</value>
+  </data>
+  <data name="labelError.Size" type="System.Drawing.Size, System.Drawing">
+    <value>194, 20</value>
+  </data>
+  <data name="labelError.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="labelError.Text" xml:space="preserve">
+    <value>No XShortCoreIndex.exe found!</value>
+  </data>
+  <data name="labelError.ToolTip" xml:space="preserve">
+    <value>Click to download</value>
+  </data>
+  <data name="labelError.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;labelError.Name" xml:space="preserve">
+    <value>labelError</value>
+  </data>
+  <data name="&gt;&gt;labelError.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelError.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;labelError.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt</value>
+  </data>
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 74</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>452, 116</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>If enabled, an app will run with XShort upon opening. This background app will build index of user's folder. XShort will use that data and add them to result suggestions.
+
+Files and folders can be searched quickly via XShort Run.
+
+If result suggestions is disabled, this feature will not work.</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="checkBoxUseIndex.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBoxUseIndex.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 39</value>
+  </data>
+  <data name="checkBoxUseIndex.Size" type="System.Drawing.Size, System.Drawing">
+    <value>179, 22</value>
+  </data>
+  <data name="checkBoxUseIndex.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="checkBoxUseIndex.Text" xml:space="preserve">
+    <value>Use XShort Core Index</value>
+  </data>
+  <data name="&gt;&gt;checkBoxUseIndex.Name" xml:space="preserve">
+    <value>checkBoxUseIndex</value>
+  </data>
+  <data name="&gt;&gt;checkBoxUseIndex.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBoxUseIndex.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;checkBoxUseIndex.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="groupBox4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11.25pt</value>
+  </data>
+  <data name="groupBox4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>537, 293</value>
+  </data>
+  <data name="groupBox4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>504, 336</value>
+  </data>
+  <data name="groupBox4.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="groupBox4.Text" xml:space="preserve">
+    <value>Index Result</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.Name" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.Parent" xml:space="preserve">
+    <value>panelSetting</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="groupBox3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="&gt;&gt;panelExIntro.Name" xml:space="preserve">
+    <value>panelExIntro</value>
+  </data>
+  <data name="&gt;&gt;panelExIntro.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelExIntro.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;panelExIntro.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;buttonBackExclusion.Name" xml:space="preserve">
+    <value>buttonBackExclusion</value>
+  </data>
+  <data name="&gt;&gt;buttonBackExclusion.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonBackExclusion.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;buttonBackExclusion.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;buttonExBack.Name" xml:space="preserve">
+    <value>buttonExBack</value>
+  </data>
+  <data name="&gt;&gt;buttonExBack.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonExBack.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;buttonExBack.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;comboBoxRunningProcesses.Name" xml:space="preserve">
+    <value>comboBoxRunningProcesses</value>
+  </data>
+  <data name="&gt;&gt;comboBoxRunningProcesses.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBoxRunningProcesses.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;comboBoxRunningProcesses.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;buttonRemoveEx.Name" xml:space="preserve">
+    <value>buttonRemoveEx</value>
+  </data>
+  <data name="&gt;&gt;buttonRemoveEx.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonRemoveEx.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;buttonRemoveEx.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;buttonAddEx.Name" xml:space="preserve">
+    <value>buttonAddEx</value>
+  </data>
+  <data name="&gt;&gt;buttonAddEx.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonAddEx.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;buttonAddEx.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;buttonBrowseExe.Name" xml:space="preserve">
+    <value>buttonBrowseExe</value>
+  </data>
+  <data name="&gt;&gt;buttonBrowseExe.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonBrowseExe.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;buttonBrowseExe.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;listViewExclusion.Name" xml:space="preserve">
+    <value>listViewExclusion</value>
+  </data>
+  <data name="&gt;&gt;listViewExclusion.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;listViewExclusion.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;listViewExclusion.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="groupBox3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11.25pt</value>
+  </data>
+  <data name="groupBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>537, 27</value>
+  </data>
+  <data name="groupBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>507, 260</value>
+  </data>
+  <data name="groupBox3.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="groupBox3.Text" xml:space="preserve">
+    <value>Advanced</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.Name" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.Parent" xml:space="preserve">
+    <value>panelSetting</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="groupBox2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="&gt;&gt;labelExplainBlocklist.Name" xml:space="preserve">
+    <value>labelExplainBlocklist</value>
+  </data>
+  <data name="&gt;&gt;labelExplainBlocklist.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelExplainBlocklist.Parent" xml:space="preserve">
+    <value>panelBlocklist</value>
+  </data>
+  <data name="&gt;&gt;labelExplainBlocklist.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;labelExplainBlocklistBlockResult.Name" xml:space="preserve">
+    <value>labelExplainBlocklistBlockResult</value>
+  </data>
+  <data name="&gt;&gt;labelExplainBlocklistBlockResult.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelExplainBlocklistBlockResult.Parent" xml:space="preserve">
+    <value>panelBlocklist</value>
+  </data>
+  <data name="&gt;&gt;labelExplainBlocklistBlockResult.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;buttonCancelBlocklist.Name" xml:space="preserve">
+    <value>buttonCancelBlocklist</value>
+  </data>
+  <data name="&gt;&gt;buttonCancelBlocklist.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonCancelBlocklist.Parent" xml:space="preserve">
+    <value>panelBlocklist</value>
+  </data>
+  <data name="&gt;&gt;buttonCancelBlocklist.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;checkBoxExcludeResultSuggestion.Name" xml:space="preserve">
+    <value>checkBoxExcludeResultSuggestion</value>
+  </data>
+  <data name="&gt;&gt;checkBoxExcludeResultSuggestion.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBoxExcludeResultSuggestion.Parent" xml:space="preserve">
+    <value>panelBlocklist</value>
+  </data>
+  <data name="&gt;&gt;checkBoxExcludeResultSuggestion.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;listViewBlocklist.Name" xml:space="preserve">
+    <value>listViewBlocklist</value>
+  </data>
+  <data name="&gt;&gt;listViewBlocklist.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;listViewBlocklist.Parent" xml:space="preserve">
+    <value>panelBlocklist</value>
+  </data>
+  <data name="&gt;&gt;listViewBlocklist.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;buttonSaveBlocklist.Name" xml:space="preserve">
+    <value>buttonSaveBlocklist</value>
+  </data>
+  <data name="&gt;&gt;buttonSaveBlocklist.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonSaveBlocklist.Parent" xml:space="preserve">
+    <value>panelBlocklist</value>
+  </data>
+  <data name="&gt;&gt;buttonSaveBlocklist.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="panelBlocklist.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="panelBlocklist.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 20</value>
+  </data>
+  <data name="panelBlocklist.Size" type="System.Drawing.Size, System.Drawing">
+    <value>482, 313</value>
+  </data>
+  <data name="panelBlocklist.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="panelBlocklist.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;panelBlocklist.Name" xml:space="preserve">
+    <value>panelBlocklist</value>
+  </data>
+  <data name="&gt;&gt;panelBlocklist.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelBlocklist.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;panelBlocklist.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="numericUpDownMaxResultNum.Location" type="System.Drawing.Point, System.Drawing">
+    <value>156, 111</value>
+  </data>
+  <data name="numericUpDownMaxResultNum.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 20</value>
+  </data>
+  <data name="numericUpDownMaxResultNum.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="numericUpDownMaxResultNum.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="numericUpDownMaxResultNum.ToolTip" xml:space="preserve">
+    <value>Max result items in Run box</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownMaxResultNum.Name" xml:space="preserve">
+    <value>numericUpDownMaxResultNum</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownMaxResultNum.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownMaxResultNum.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownMaxResultNum.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="labelMaxResultNum.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelMaxResultNum.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelMaxResultNum.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 110</value>
+  </data>
+  <data name="labelMaxResultNum.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 18</value>
+  </data>
+  <data name="labelMaxResultNum.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="labelMaxResultNum.Text" xml:space="preserve">
+    <value>Max result number</value>
+  </data>
+  <data name="&gt;&gt;labelMaxResultNum.Name" xml:space="preserve">
+    <value>labelMaxResultNum</value>
+  </data>
+  <data name="&gt;&gt;labelMaxResultNum.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelMaxResultNum.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;labelMaxResultNum.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="numericUpDownMaxSuggestNum.Location" type="System.Drawing.Point, System.Drawing">
+    <value>268, 239</value>
+  </data>
+  <data name="numericUpDownMaxSuggestNum.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 20</value>
+  </data>
+  <data name="numericUpDownMaxSuggestNum.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="numericUpDownMaxSuggestNum.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="numericUpDownMaxSuggestNum.ToolTip" xml:space="preserve">
+    <value>Max suggestions items in Run box</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownMaxSuggestNum.Name" xml:space="preserve">
+    <value>numericUpDownMaxSuggestNum</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownMaxSuggestNum.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownMaxSuggestNum.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownMaxSuggestNum.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="labelMaxSuggest.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelMaxSuggest.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 238</value>
+  </data>
+  <data name="labelMaxSuggest.Size" type="System.Drawing.Size, System.Drawing">
+    <value>236, 18</value>
+  </data>
+  <data name="labelMaxSuggest.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="labelMaxSuggest.Text" xml:space="preserve">
+    <value>Max shortcut suggestions number:</value>
+  </data>
+  <data name="&gt;&gt;labelMaxSuggest.Name" xml:space="preserve">
+    <value>labelMaxSuggest</value>
+  </data>
+  <data name="&gt;&gt;labelMaxSuggest.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelMaxSuggest.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;labelMaxSuggest.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="buttonBlocklist.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="buttonBlocklist.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 282</value>
+  </data>
+  <data name="buttonBlocklist.Size" type="System.Drawing.Size, System.Drawing">
+    <value>457, 31</value>
+  </data>
+  <data name="buttonBlocklist.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="buttonBlocklist.Text" xml:space="preserve">
+    <value>Blocklist</value>
+  </data>
+  <data name="buttonBlocklist.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="buttonBlocklist.ToolTip" xml:space="preserve">
+    <value>List of shortcuts that you don't want to see them in Suggestions.</value>
+  </data>
+  <data name="&gt;&gt;buttonBlocklist.Name" xml:space="preserve">
+    <value>buttonBlocklist</value>
+  </data>
+  <data name="&gt;&gt;buttonBlocklist.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonBlocklist.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;buttonBlocklist.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="labelInfo1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt</value>
+  </data>
+  <data name="labelInfo1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 74</value>
+  </data>
+  <data name="labelInfo1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>452, 26</value>
+  </data>
+  <data name="labelInfo1.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="labelInfo1.Text" xml:space="preserve">
+    <value>Result suggestions are based on your input.</value>
+  </data>
+  <data name="&gt;&gt;labelInfo1.Name" xml:space="preserve">
+    <value>labelInfo1</value>
+  </data>
+  <data name="&gt;&gt;labelInfo1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelInfo1.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;labelInfo1.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="checkBoxSearchResult.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBoxSearchResult.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 39</value>
+  </data>
+  <data name="checkBoxSearchResult.Size" type="System.Drawing.Size, System.Drawing">
+    <value>189, 22</value>
+  </data>
+  <data name="checkBoxSearchResult.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="checkBoxSearchResult.Text" xml:space="preserve">
+    <value>Show result suggestions</value>
+  </data>
+  <data name="&gt;&gt;checkBoxSearchResult.Name" xml:space="preserve">
+    <value>checkBoxSearchResult</value>
+  </data>
+  <data name="&gt;&gt;checkBoxSearchResult.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBoxSearchResult.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;checkBoxSearchResult.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="labelInfo.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt</value>
+  </data>
+  <data name="labelInfo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 190</value>
+  </data>
+  <data name="labelInfo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>452, 46</value>
+  </data>
+  <data name="labelInfo.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="labelInfo.Text" xml:space="preserve">
+    <value>Shortcut suggestions are based on your recently called shortcuts, most-called shortcuts and routines.</value>
+  </data>
+  <data name="&gt;&gt;labelInfo.Name" xml:space="preserve">
+    <value>labelInfo</value>
+  </data>
+  <data name="&gt;&gt;labelInfo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelInfo.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;labelInfo.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="checkBoxSuggestions.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBoxSuggestions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 153</value>
+  </data>
+  <data name="checkBoxSuggestions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>207, 22</value>
+  </data>
+  <data name="checkBoxSuggestions.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="checkBoxSuggestions.Text" xml:space="preserve">
+    <value>Show shortcut suggestions</value>
+  </data>
+  <data name="&gt;&gt;checkBoxSuggestions.Name" xml:space="preserve">
+    <value>checkBoxSuggestions</value>
+  </data>
+  <data name="&gt;&gt;checkBoxSuggestions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBoxSuggestions.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;checkBoxSuggestions.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="checkBoxHideName.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBoxHideName.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="checkBoxHideName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>268, 153</value>
+  </data>
+  <data name="checkBoxHideName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>156, 22</value>
+  </data>
+  <data name="checkBoxHideName.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="checkBoxHideName.Text" xml:space="preserve">
+    <value>Hide shortcut name</value>
+  </data>
+  <data name="&gt;&gt;checkBoxHideName.Name" xml:space="preserve">
+    <value>checkBoxHideName</value>
+  </data>
+  <data name="&gt;&gt;checkBoxHideName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBoxHideName.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;checkBoxHideName.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="groupBox2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11.25pt</value>
+  </data>
+  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 293</value>
+  </data>
+  <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>488, 336</value>
+  </data>
+  <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value>Suggestions</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Parent" xml:space="preserve">
+    <value>panelSetting</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="groupBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="&gt;&gt;panelHotkey.Name" xml:space="preserve">
+    <value>panelHotkey</value>
+  </data>
+  <data name="&gt;&gt;panelHotkey.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelHotkey.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;panelHotkey.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;checkBox7.Name" xml:space="preserve">
+    <value>checkBox7</value>
+  </data>
+  <data name="&gt;&gt;checkBox7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox7.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;checkBox7.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;checkBox5.Name" xml:space="preserve">
+    <value>checkBox5</value>
+  </data>
+  <data name="&gt;&gt;checkBox5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox5.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;checkBox5.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;checkBox4.Name" xml:space="preserve">
+    <value>checkBox4</value>
+  </data>
+  <data name="&gt;&gt;checkBox4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox4.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;checkBox4.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;checkBox1.Name" xml:space="preserve">
+    <value>checkBox1</value>
+  </data>
+  <data name="&gt;&gt;checkBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox1.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;checkBox1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;checkBox2.Name" xml:space="preserve">
+    <value>checkBox2</value>
+  </data>
+  <data name="&gt;&gt;checkBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox2.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;checkBox2.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;checkBox3.Name" xml:space="preserve">
+    <value>checkBox3</value>
+  </data>
+  <data name="&gt;&gt;checkBox3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox3.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;checkBox3.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;checkBox8.Name" xml:space="preserve">
+    <value>checkBox8</value>
+  </data>
+  <data name="&gt;&gt;checkBox8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox8.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;checkBox8.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;buttonHotkeySetting.Name" xml:space="preserve">
+    <value>buttonHotkeySetting</value>
+  </data>
+  <data name="&gt;&gt;buttonHotkeySetting.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonHotkeySetting.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;buttonHotkeySetting.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="groupBox1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11.25pt</value>
+  </data>
+  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 27</value>
+  </data>
+  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>488, 260</value>
+  </data>
+  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
+    <value>panelSetting</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="panelSetting.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="panelSetting.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="panelSetting.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1069, 663</value>
+  </data>
+  <data name="panelSetting.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;panelSetting.Name" xml:space="preserve">
+    <value>panelSetting</value>
+  </data>
+  <data name="&gt;&gt;panelSetting.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelSetting.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panelSetting.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="buttonBackIndex.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="buttonBackIndex.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9.75pt</value>
   </data>
@@ -137,7 +1171,6 @@
   <data name="buttonBackIndex.Size" type="System.Drawing.Size, System.Drawing">
     <value>93, 29</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="buttonBackIndex.TabIndex" type="System.Int32, mscorlib">
     <value>23</value>
   </data>
@@ -278,270 +1311,101 @@
   <data name="&gt;&gt;radioButtonPersonal.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="panelIndexOption.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
+  <data name="&gt;&gt;checkBoxExtractNum.Name" xml:space="preserve">
+    <value>checkBoxExtractNum</value>
   </data>
-  <data name="panelIndexOption.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 20</value>
-  </data>
-  <data name="panelIndexOption.Size" type="System.Drawing.Size, System.Drawing">
-    <value>498, 313</value>
-  </data>
-  <data name="panelIndexOption.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
-  </data>
-  <data name="panelIndexOption.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;panelIndexOption.Name" xml:space="preserve">
-    <value>panelIndexOption</value>
-  </data>
-  <data name="&gt;&gt;panelIndexOption.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panelIndexOption.Parent" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;panelIndexOption.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="buttonIndexOption.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="buttonIndexOption.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 11.25pt</value>
-  </data>
-  <data name="buttonIndexOption.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="buttonIndexOption.Location" type="System.Drawing.Point, System.Drawing">
-    <value>19, 284</value>
-  </data>
-  <data name="buttonIndexOption.Size" type="System.Drawing.Size, System.Drawing">
-    <value>469, 29</value>
-  </data>
-  <data name="buttonIndexOption.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
-  </data>
-  <data name="buttonIndexOption.Text" xml:space="preserve">
-    <value>Indexing Option</value>
-  </data>
-  <data name="buttonIndexOption.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;buttonIndexOption.Name" xml:space="preserve">
-    <value>buttonIndexOption</value>
-  </data>
-  <data name="&gt;&gt;buttonIndexOption.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;buttonIndexOption.Parent" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;buttonIndexOption.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="numericUpDownInterval.Location" type="System.Drawing.Point, System.Drawing">
-    <value>202, 207</value>
-  </data>
-  <data name="numericUpDownInterval.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 20</value>
-  </data>
-  <data name="numericUpDownInterval.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="&gt;&gt;numericUpDownInterval.Name" xml:space="preserve">
-    <value>numericUpDownInterval</value>
-  </data>
-  <data name="&gt;&gt;numericUpDownInterval.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;numericUpDownInterval.Parent" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;numericUpDownInterval.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="labelBuildIndexInterval.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="labelBuildIndexInterval.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 209</value>
-  </data>
-  <data name="labelBuildIndexInterval.Size" type="System.Drawing.Size, System.Drawing">
-    <value>173, 18</value>
-  </data>
-  <data name="labelBuildIndexInterval.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="labelBuildIndexInterval.Text" xml:space="preserve">
-    <value>Build index every (hours):</value>
-  </data>
-  <data name="&gt;&gt;labelBuildIndexInterval.Name" xml:space="preserve">
-    <value>labelBuildIndexInterval</value>
-  </data>
-  <data name="&gt;&gt;labelBuildIndexInterval.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelBuildIndexInterval.Parent" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;labelBuildIndexInterval.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="labelLastUpdate.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9.75pt</value>
-  </data>
-  <data name="labelLastUpdate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 254</value>
-  </data>
-  <data name="labelLastUpdate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>452, 20</value>
-  </data>
-  <data name="labelLastUpdate.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
-  </data>
-  <data name="labelLastUpdate.Text" xml:space="preserve">
-    <value>Last update: N/A</value>
-  </data>
-  <data name="&gt;&gt;labelLastUpdate.Name" xml:space="preserve">
-    <value>labelLastUpdate</value>
-  </data>
-  <data name="&gt;&gt;labelLastUpdate.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelLastUpdate.Parent" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;labelLastUpdate.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="labelError.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9.75pt</value>
-  </data>
-  <data name="labelError.Location" type="System.Drawing.Point, System.Drawing">
-    <value>281, 41</value>
-  </data>
-  <data name="labelError.Size" type="System.Drawing.Size, System.Drawing">
-    <value>194, 20</value>
-  </data>
-  <data name="labelError.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="labelError.Text" xml:space="preserve">
-    <value>No XShortCoreIndex.exe found!</value>
-  </data>
-  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <data name="labelError.ToolTip" xml:space="preserve">
-    <value>Click to download</value>
-  </data>
-  <data name="labelError.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;labelError.Name" xml:space="preserve">
-    <value>labelError</value>
-  </data>
-  <data name="&gt;&gt;labelError.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelError.Parent" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;labelError.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9.75pt</value>
-  </data>
-  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 74</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>452, 116</value>
-  </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>If enabled, an app will run with XShort upon opening. This background app will build index of user's folder. XShort will use that data and add them to result suggestions.
-
-Files and folders can be searched quickly via XShort Run.
-
-If result suggestions is disabled, this feature will not work.</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="checkBoxUseIndex.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="checkBoxUseIndex.Location" type="System.Drawing.Point, System.Drawing">
-    <value>26, 39</value>
-  </data>
-  <data name="checkBoxUseIndex.Size" type="System.Drawing.Size, System.Drawing">
-    <value>179, 22</value>
-  </data>
-  <data name="checkBoxUseIndex.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="checkBoxUseIndex.Text" xml:space="preserve">
-    <value>Use XShort Core Index</value>
-  </data>
-  <data name="&gt;&gt;checkBoxUseIndex.Name" xml:space="preserve">
-    <value>checkBoxUseIndex</value>
-  </data>
-  <data name="&gt;&gt;checkBoxUseIndex.Type" xml:space="preserve">
+  <data name="&gt;&gt;checkBoxExtractNum.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;checkBoxUseIndex.Parent" xml:space="preserve">
-    <value>groupBox4</value>
+  <data name="&gt;&gt;checkBoxExtractNum.Parent" xml:space="preserve">
+    <value>panelExIntro</value>
   </data>
-  <data name="&gt;&gt;checkBoxUseIndex.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="groupBox4.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 11.25pt</value>
-  </data>
-  <data name="groupBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>537, 293</value>
-  </data>
-  <data name="groupBox4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>504, 336</value>
-  </data>
-  <data name="groupBox4.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
-  </data>
-  <data name="groupBox4.Text" xml:space="preserve">
-    <value>Index Result</value>
-  </data>
-  <data name="&gt;&gt;groupBox4.Name" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;groupBox4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox4.Parent" xml:space="preserve">
-    <value>panelSetting</value>
-  </data>
-  <data name="&gt;&gt;groupBox4.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;checkBoxExtractNum.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="groupBox3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
+  <data name="&gt;&gt;checkBoxExtractUrl.Name" xml:space="preserve">
+    <value>checkBoxExtractUrl</value>
+  </data>
+  <data name="&gt;&gt;checkBoxExtractUrl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBoxExtractUrl.Parent" xml:space="preserve">
+    <value>panelExIntro</value>
+  </data>
+  <data name="&gt;&gt;checkBoxExtractUrl.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>panelExIntro</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;checkBoxClipboard.Name" xml:space="preserve">
+    <value>checkBoxClipboard</value>
+  </data>
+  <data name="&gt;&gt;checkBoxClipboard.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBoxClipboard.Parent" xml:space="preserve">
+    <value>panelExIntro</value>
+  </data>
+  <data name="&gt;&gt;checkBoxClipboard.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;buttonExclusionList.Name" xml:space="preserve">
+    <value>buttonExclusionList</value>
+  </data>
+  <data name="&gt;&gt;buttonExclusionList.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonExclusionList.Parent" xml:space="preserve">
+    <value>panelExIntro</value>
+  </data>
+  <data name="&gt;&gt;buttonExclusionList.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>panelExIntro</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="panelExIntro.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="panelExIntro.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 20</value>
+  </data>
+  <data name="panelExIntro.Size" type="System.Drawing.Size, System.Drawing">
+    <value>501, 237</value>
+  </data>
+  <data name="panelExIntro.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;panelExIntro.Name" xml:space="preserve">
+    <value>panelExIntro</value>
+  </data>
+  <data name="&gt;&gt;panelExIntro.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelExIntro.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;panelExIntro.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="checkBoxExtractNum.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -717,30 +1581,6 @@ If result suggestions is disabled, this feature will not work.</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
     <value>5</value>
-  </data>
-  <data name="panelExIntro.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="panelExIntro.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 20</value>
-  </data>
-  <data name="panelExIntro.Size" type="System.Drawing.Size, System.Drawing">
-    <value>501, 237</value>
-  </data>
-  <data name="panelExIntro.TabIndex" type="System.Int32, mscorlib">
-    <value>26</value>
-  </data>
-  <data name="&gt;&gt;panelExIntro.Name" xml:space="preserve">
-    <value>panelExIntro</value>
-  </data>
-  <data name="&gt;&gt;panelExIntro.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panelExIntro.Parent" xml:space="preserve">
-    <value>groupBox3</value>
-  </data>
-  <data name="&gt;&gt;panelExIntro.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <data name="buttonBackExclusion.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -961,12 +1801,6 @@ or click button ... to add other applications.
   <data name="&gt;&gt;buttonBrowseExe.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="columnHeader2.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="columnHeader2.Width" type="System.Int32, mscorlib">
-    <value>200</value>
-  </data>
   <data name="listViewExclusion.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 11.25pt</value>
   </data>
@@ -991,35 +1825,11 @@ or click button ... to add other applications.
   <data name="&gt;&gt;listViewExclusion.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
-  <data name="groupBox3.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 11.25pt</value>
+  <data name="columnHeader2.Text" xml:space="preserve">
+    <value />
   </data>
-  <data name="groupBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>537, 27</value>
-  </data>
-  <data name="groupBox3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>507, 260</value>
-  </data>
-  <data name="groupBox3.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
-  </data>
-  <data name="groupBox3.Text" xml:space="preserve">
-    <value>Advanced</value>
-  </data>
-  <data name="&gt;&gt;groupBox3.Name" xml:space="preserve">
-    <value>groupBox3</value>
-  </data>
-  <data name="&gt;&gt;groupBox3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox3.Parent" xml:space="preserve">
-    <value>panelSetting</value>
-  </data>
-  <data name="&gt;&gt;groupBox3.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="groupBox2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
+  <data name="columnHeader2.Width" type="System.Int32, mscorlib">
+    <value>200</value>
   </data>
   <data name="labelExplainBlocklist.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9.75pt</value>
@@ -1131,12 +1941,6 @@ or click button ... to add other applications.
   <data name="&gt;&gt;checkBoxExcludeResultSuggestion.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="columnHeader1.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="columnHeader1.Width" type="System.Int32, mscorlib">
-    <value>200</value>
-  </data>
   <data name="listViewBlocklist.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 11.25pt</value>
   </data>
@@ -1160,6 +1964,12 @@ or click button ... to add other applications.
   </data>
   <data name="&gt;&gt;listViewBlocklist.ZOrder" xml:space="preserve">
     <value>4</value>
+  </data>
+  <data name="columnHeader1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="columnHeader1.Width" type="System.Int32, mscorlib">
+    <value>200</value>
   </data>
   <data name="buttonSaveBlocklist.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -1191,314 +2001,140 @@ or click button ... to add other applications.
   <data name="&gt;&gt;buttonSaveBlocklist.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="panelBlocklist.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
+  <data name="&gt;&gt;buttonHotkeyCancel.Name" xml:space="preserve">
+    <value>buttonHotkeyCancel</value>
   </data>
-  <data name="panelBlocklist.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 20</value>
-  </data>
-  <data name="panelBlocklist.Size" type="System.Drawing.Size, System.Drawing">
-    <value>482, 313</value>
-  </data>
-  <data name="panelBlocklist.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="panelBlocklist.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;panelBlocklist.Name" xml:space="preserve">
-    <value>panelBlocklist</value>
-  </data>
-  <data name="&gt;&gt;panelBlocklist.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panelBlocklist.Parent" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="&gt;&gt;panelBlocklist.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="numericUpDownMaxResultNum.Location" type="System.Drawing.Point, System.Drawing">
-    <value>156, 111</value>
-  </data>
-  <data name="numericUpDownMaxResultNum.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 20</value>
-  </data>
-  <data name="numericUpDownMaxResultNum.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="numericUpDownMaxResultNum.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
-    <value>Center</value>
-  </data>
-  <data name="numericUpDownMaxResultNum.ToolTip" xml:space="preserve">
-    <value>Max result items in Run box</value>
-  </data>
-  <data name="&gt;&gt;numericUpDownMaxResultNum.Name" xml:space="preserve">
-    <value>numericUpDownMaxResultNum</value>
-  </data>
-  <data name="&gt;&gt;numericUpDownMaxResultNum.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;numericUpDownMaxResultNum.Parent" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="&gt;&gt;numericUpDownMaxResultNum.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="labelMaxResultNum.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="labelMaxResultNum.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="labelMaxResultNum.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 110</value>
-  </data>
-  <data name="labelMaxResultNum.Size" type="System.Drawing.Size, System.Drawing">
-    <value>130, 18</value>
-  </data>
-  <data name="labelMaxResultNum.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="labelMaxResultNum.Text" xml:space="preserve">
-    <value>Max result number</value>
-  </data>
-  <data name="&gt;&gt;labelMaxResultNum.Name" xml:space="preserve">
-    <value>labelMaxResultNum</value>
-  </data>
-  <data name="&gt;&gt;labelMaxResultNum.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelMaxResultNum.Parent" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="&gt;&gt;labelMaxResultNum.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="numericUpDownMaxSuggestNum.Location" type="System.Drawing.Point, System.Drawing">
-    <value>258, 239</value>
-  </data>
-  <data name="numericUpDownMaxSuggestNum.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 20</value>
-  </data>
-  <data name="numericUpDownMaxSuggestNum.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="numericUpDownMaxSuggestNum.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
-    <value>Center</value>
-  </data>
-  <data name="numericUpDownMaxSuggestNum.ToolTip" xml:space="preserve">
-    <value>Max suggestions items in Run box</value>
-  </data>
-  <data name="&gt;&gt;numericUpDownMaxSuggestNum.Name" xml:space="preserve">
-    <value>numericUpDownMaxSuggestNum</value>
-  </data>
-  <data name="&gt;&gt;numericUpDownMaxSuggestNum.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;numericUpDownMaxSuggestNum.Parent" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="&gt;&gt;numericUpDownMaxSuggestNum.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="labelMaxSuggest.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="labelMaxSuggest.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 238</value>
-  </data>
-  <data name="labelMaxSuggest.Size" type="System.Drawing.Size, System.Drawing">
-    <value>232, 18</value>
-  </data>
-  <data name="labelMaxSuggest.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="labelMaxSuggest.Text" xml:space="preserve">
-    <value>Max shortcut suggestions number</value>
-  </data>
-  <data name="&gt;&gt;labelMaxSuggest.Name" xml:space="preserve">
-    <value>labelMaxSuggest</value>
-  </data>
-  <data name="&gt;&gt;labelMaxSuggest.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelMaxSuggest.Parent" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="&gt;&gt;labelMaxSuggest.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="buttonBlocklist.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="buttonBlocklist.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 282</value>
-  </data>
-  <data name="buttonBlocklist.Size" type="System.Drawing.Size, System.Drawing">
-    <value>457, 31</value>
-  </data>
-  <data name="buttonBlocklist.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="buttonBlocklist.Text" xml:space="preserve">
-    <value>Blocklist</value>
-  </data>
-  <data name="buttonBlocklist.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="buttonBlocklist.ToolTip" xml:space="preserve">
-    <value>List of shortcuts that you don't want to see them in Suggestions.</value>
-  </data>
-  <data name="&gt;&gt;buttonBlocklist.Name" xml:space="preserve">
-    <value>buttonBlocklist</value>
-  </data>
-  <data name="&gt;&gt;buttonBlocklist.Type" xml:space="preserve">
+  <data name="&gt;&gt;buttonHotkeyCancel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;buttonBlocklist.Parent" xml:space="preserve">
-    <value>groupBox2</value>
+  <data name="&gt;&gt;buttonHotkeyCancel.Parent" xml:space="preserve">
+    <value>panelHotkey</value>
   </data>
-  <data name="&gt;&gt;buttonBlocklist.ZOrder" xml:space="preserve">
-    <value>5</value>
+  <data name="&gt;&gt;buttonHotkeyCancel.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="labelInfo1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9.75pt</value>
+  <data name="&gt;&gt;buttonApplyHotkey.Name" xml:space="preserve">
+    <value>buttonApplyHotkey</value>
   </data>
-  <data name="labelInfo1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 74</value>
+  <data name="&gt;&gt;buttonApplyHotkey.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="labelInfo1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>452, 26</value>
+  <data name="&gt;&gt;buttonApplyHotkey.Parent" xml:space="preserve">
+    <value>panelHotkey</value>
   </data>
-  <data name="labelInfo1.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
+  <data name="&gt;&gt;buttonApplyHotkey.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
-  <data name="labelInfo1.Text" xml:space="preserve">
-    <value>Result suggestions are based on your input.</value>
+  <data name="&gt;&gt;labelInfoForNewHotkey.Name" xml:space="preserve">
+    <value>labelInfoForNewHotkey</value>
   </data>
-  <data name="&gt;&gt;labelInfo1.Name" xml:space="preserve">
-    <value>labelInfo1</value>
-  </data>
-  <data name="&gt;&gt;labelInfo1.Type" xml:space="preserve">
+  <data name="&gt;&gt;labelInfoForNewHotkey.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;labelInfo1.Parent" xml:space="preserve">
-    <value>groupBox2</value>
+  <data name="&gt;&gt;labelInfoForNewHotkey.Parent" xml:space="preserve">
+    <value>panelHotkey</value>
   </data>
-  <data name="&gt;&gt;labelInfo1.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="checkBoxSearchResult.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="checkBoxSearchResult.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 39</value>
-  </data>
-  <data name="checkBoxSearchResult.Size" type="System.Drawing.Size, System.Drawing">
-    <value>189, 22</value>
-  </data>
-  <data name="checkBoxSearchResult.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="checkBoxSearchResult.Text" xml:space="preserve">
-    <value>Show result suggestions</value>
-  </data>
-  <data name="&gt;&gt;checkBoxSearchResult.Name" xml:space="preserve">
-    <value>checkBoxSearchResult</value>
-  </data>
-  <data name="&gt;&gt;checkBoxSearchResult.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;checkBoxSearchResult.Parent" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="&gt;&gt;checkBoxSearchResult.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="labelInfo.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9.75pt</value>
-  </data>
-  <data name="labelInfo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 190</value>
-  </data>
-  <data name="labelInfo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>452, 46</value>
-  </data>
-  <data name="labelInfo.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="labelInfo.Text" xml:space="preserve">
-    <value>Shortcut suggestions are based on your recently called shortcuts, most-called shortcuts and routines.</value>
-  </data>
-  <data name="&gt;&gt;labelInfo.Name" xml:space="preserve">
-    <value>labelInfo</value>
-  </data>
-  <data name="&gt;&gt;labelInfo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelInfo.Parent" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="&gt;&gt;labelInfo.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="checkBoxSuggestions.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="checkBoxSuggestions.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 153</value>
-  </data>
-  <data name="checkBoxSuggestions.Size" type="System.Drawing.Size, System.Drawing">
-    <value>207, 22</value>
-  </data>
-  <data name="checkBoxSuggestions.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="checkBoxSuggestions.Text" xml:space="preserve">
-    <value>Show shortcut suggestions</value>
-  </data>
-  <data name="&gt;&gt;checkBoxSuggestions.Name" xml:space="preserve">
-    <value>checkBoxSuggestions</value>
-  </data>
-  <data name="&gt;&gt;checkBoxSuggestions.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;checkBoxSuggestions.Parent" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="&gt;&gt;checkBoxSuggestions.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="groupBox2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 11.25pt</value>
-  </data>
-  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>24, 293</value>
-  </data>
-  <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>488, 336</value>
-  </data>
-  <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
-  </data>
-  <data name="groupBox2.Text" xml:space="preserve">
-    <value>Suggestions</value>
-  </data>
-  <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="&gt;&gt;groupBox2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox2.Parent" xml:space="preserve">
-    <value>panelSetting</value>
-  </data>
-  <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;labelInfoForNewHotkey.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="groupBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
+  <data name="&gt;&gt;radioButtonShift.Name" xml:space="preserve">
+    <value>radioButtonShift</value>
+  </data>
+  <data name="&gt;&gt;radioButtonShift.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButtonShift.Parent" xml:space="preserve">
+    <value>panelHotkey</value>
+  </data>
+  <data name="&gt;&gt;radioButtonShift.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;radioButtonControl.Name" xml:space="preserve">
+    <value>radioButtonControl</value>
+  </data>
+  <data name="&gt;&gt;radioButtonControl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButtonControl.Parent" xml:space="preserve">
+    <value>panelHotkey</value>
+  </data>
+  <data name="&gt;&gt;radioButtonControl.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;radioButtonAlt.Name" xml:space="preserve">
+    <value>radioButtonAlt</value>
+  </data>
+  <data name="&gt;&gt;radioButtonAlt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButtonAlt.Parent" xml:space="preserve">
+    <value>panelHotkey</value>
+  </data>
+  <data name="&gt;&gt;radioButtonAlt.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;comboBoxHotkey.Name" xml:space="preserve">
+    <value>comboBoxHotkey</value>
+  </data>
+  <data name="&gt;&gt;comboBoxHotkey.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBoxHotkey.Parent" xml:space="preserve">
+    <value>panelHotkey</value>
+  </data>
+  <data name="&gt;&gt;comboBoxHotkey.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;label10.Name" xml:space="preserve">
+    <value>label10</value>
+  </data>
+  <data name="&gt;&gt;label10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label10.Parent" xml:space="preserve">
+    <value>panelHotkey</value>
+  </data>
+  <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;label9.Name" xml:space="preserve">
+    <value>label9</value>
+  </data>
+  <data name="&gt;&gt;label9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
+    <value>panelHotkey</value>
+  </data>
+  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="panelHotkey.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="panelHotkey.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 20</value>
+  </data>
+  <data name="panelHotkey.Size" type="System.Drawing.Size, System.Drawing">
+    <value>482, 237</value>
+  </data>
+  <data name="panelHotkey.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="panelHotkey.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;panelHotkey.Name" xml:space="preserve">
+    <value>panelHotkey</value>
+  </data>
+  <data name="&gt;&gt;panelHotkey.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelHotkey.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;panelHotkey.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="buttonHotkeyCancel.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -1851,33 +2487,6 @@ or click button ... to add other applications.
   <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
-  <data name="panelHotkey.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="panelHotkey.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 20</value>
-  </data>
-  <data name="panelHotkey.Size" type="System.Drawing.Size, System.Drawing">
-    <value>482, 237</value>
-  </data>
-  <data name="panelHotkey.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="panelHotkey.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;panelHotkey.Name" xml:space="preserve">
-    <value>panelHotkey</value>
-  </data>
-  <data name="&gt;&gt;panelHotkey.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panelHotkey.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;panelHotkey.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="checkBox7.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -2109,57 +2718,9 @@ or click button ... to add other applications.
   <data name="&gt;&gt;buttonHotkeySetting.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
-  <data name="groupBox1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 11.25pt</value>
-  </data>
-  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>24, 27</value>
-  </data>
-  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>488, 260</value>
-  </data>
-  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="groupBox1.Text" xml:space="preserve">
-    <value>General</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
-    <value>panelSetting</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="panelSetting.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="panelSetting.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="panelSetting.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1069, 663</value>
-  </data>
-  <data name="panelSetting.TabIndex" type="System.Int32, mscorlib">
-    <value>28</value>
-  </data>
-  <data name="&gt;&gt;panelSetting.Name" xml:space="preserve">
-    <value>panelSetting</value>
-  </data>
-  <data name="&gt;&gt;panelSetting.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panelSetting.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panelSetting.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
+  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>

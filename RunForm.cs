@@ -9,7 +9,7 @@ using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using System.Text.RegularExpressions;
 using System.Globalization;
-
+using System.Threading;
 
 namespace XShort
 {
@@ -39,6 +39,7 @@ namespace XShort
         private bool cb = false;
         private bool eu = false;
         private bool en = false;
+        private bool sn = true;
         private string text = String.Empty;
         private string text1, part = String.Empty;
         private string lastcalled = String.Empty;
@@ -49,7 +50,7 @@ namespace XShort
         private readonly BackgroundWordFilter _getdir;
         private List<String> matches = new List<string>();
         public bool loaded = false;
-        public RunForm(List<Shortcut> shortcuts, List<string> blocklist, bool _gg, bool _csen, bool _ss, bool _sr, bool _er, int maxss, int maxrs, bool _ui, bool _cb, bool _eu, bool _en)
+        public RunForm(List<Shortcut> shortcuts, List<string> blocklist, bool _gg, bool _csen, bool _ss, bool _sr, bool _er, int maxss, int maxrs, bool _ui, bool _cb, bool _eu, bool _en, bool _sn = true)
         {
             InitializeComponent();
             if (maxss >= 2 && maxss <= 8)
@@ -81,6 +82,7 @@ namespace XShort
             cb = _cb;
             eu = _eu;
             en = _en;
+            sn = _sn;
 
             Shortcuts = new List<Shortcut>(shortcuts);
             blockList = new List<string>(blocklist);
@@ -563,11 +565,14 @@ namespace XShort
             newsuggestion.FlatAppearance.BorderSize = 0;
             newsuggestion.FlatAppearance.BorderColor = Color.White;
             newsuggestion.Tag = text;
+            newsuggestion.Font = new Font(newsuggestion.Font.FontFamily, 9);
             if (useImageList)
             {
                 newsuggestion.ImageList = sImage;
                 newsuggestion.ImageIndex = Shortcuts.FindIndex(f => f.Name == text);
                 toolTip1.SetToolTip(newsuggestion, Shortcuts[newsuggestion.ImageIndex].Path);
+                if (suggestNum > 6)
+                    newsuggestion.Font = new Font(newsuggestion.Font.FontFamily, 7);
             }
             else
             {
@@ -576,6 +581,7 @@ namespace XShort
                 {
                     size.Height = 20;
                     size.Width = 20;
+                    newsuggestion.Font = new Font(newsuggestion.Font.FontFamily, 7);
                 }
                 Image icon = new Bitmap(Properties.Resources.terminal, size);
                 newsuggestion.Image = icon;
@@ -583,7 +589,8 @@ namespace XShort
             }
             newsuggestion.AutoEllipsis = true;
             newsuggestion.Left = rel * recentWidth;
-            newsuggestion.Text = text;
+            if (sn)
+                newsuggestion.Text = text;
             newsuggestion.TabStop = false;
             newsuggestion.ContextMenuStrip = contextMenuStrip1;
             newsuggestion.TextImageRelation = TextImageRelation.ImageBeforeText;
@@ -620,7 +627,8 @@ namespace XShort
             newsuggestion.AutoEllipsis = true;
             newsuggestion.Left = rel * recentWidth;
             newsuggestion.Tag = text;
-            newsuggestion.Text = text;
+            if (sn)
+                newsuggestion.Text = text;
             newsuggestion.TabStop = false;
             newsuggestion.ContextMenuStrip = contextMenuStrip1;
             newsuggestion.TextImageRelation = TextImageRelation.ImageBeforeText;
@@ -1270,6 +1278,7 @@ namespace XShort
                         string newline = String.Join("", suggestions.Time[i].List[j].Loc, "|", suggestions.Time[i].List[j].Amount, "|", suggestions.Time[i].List[j].Lasttime.ToString("F", new CultureInfo("en")), Environment.NewLine);
                         System.IO.File.AppendAllText(path, newline);
                     }
+                    Thread.Sleep(1);
                 }
             }
         }

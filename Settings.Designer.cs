@@ -100,6 +100,7 @@
             this.checkBox8 = new System.Windows.Forms.CheckBox();
             this.buttonHotkeySetting = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.checkBoxHideName = new System.Windows.Forms.CheckBox();
             this.panelSetting.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.panelIndexOption.SuspendLayout();
@@ -416,6 +417,7 @@
             this.groupBox2.Controls.Add(this.checkBoxSearchResult);
             this.groupBox2.Controls.Add(this.labelInfo);
             this.groupBox2.Controls.Add(this.checkBoxSuggestions);
+            this.groupBox2.Controls.Add(this.checkBoxHideName);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.TabStop = false;
             // 
@@ -776,6 +778,13 @@
             this.buttonHotkeySetting.UseVisualStyleBackColor = false;
             this.buttonHotkeySetting.Click += new System.EventHandler(this.buttonHotkeySetting_Click);
             // 
+            // checkBoxHideName
+            // 
+            resources.ApplyResources(this.checkBoxHideName, "checkBoxHideName");
+            this.checkBoxHideName.Name = "checkBoxHideName";
+            this.checkBoxHideName.UseVisualStyleBackColor = true;
+            this.checkBoxHideName.CheckedChanged += new System.EventHandler(this.checkBoxHideName_CheckedChanged);
+            // 
             // Settings
             // 
             resources.ApplyResources(this, "$this");
@@ -881,5 +890,6 @@
         private System.Windows.Forms.CheckBox checkBoxExtractUrl;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.CheckBox checkBoxClipboard;
+        private System.Windows.Forms.CheckBox checkBoxHideName;
     }
 }

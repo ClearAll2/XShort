@@ -285,6 +285,8 @@ namespace XShort
                 checkBoxExtractUrl.Checked = true;
             if (r.GetValue("ExtractNum") != null)
                 checkBoxExtractNum.Checked = true;
+            if (r.GetValue("ShowName") != null)
+                checkBoxHideName.Checked = true;
 
             if (r.GetValue("Interval") != null)
             {
@@ -738,6 +740,21 @@ namespace XShort
                 else
                 {
                     rk.DeleteValue("ExtractNum", false);
+                }
+            }
+        }
+
+        private void checkBoxHideName_CheckedChanged(object sender, EventArgs e)
+        {
+            using (RegistryKey rk = Registry.CurrentUser.OpenSubKey("SOFTWARE\\ClearAll\\XShort\\Data", true))
+            {
+                if (checkBoxHideName.Checked)
+                {
+                    rk.SetValue("ShowName", true);
+                }
+                else
+                {
+                    rk.DeleteValue("ShowName", false);
                 }
             }
         }
