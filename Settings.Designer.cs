@@ -101,6 +101,7 @@
             this.buttonHotkeySetting = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.checkBoxHideName = new System.Windows.Forms.CheckBox();
+            this.labelExplainIndexingPowerLine = new System.Windows.Forms.Label();
             this.panelSetting.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.panelIndexOption.SuspendLayout();
@@ -141,6 +142,7 @@
             // 
             // panelIndexOption
             // 
+            this.panelIndexOption.Controls.Add(this.labelExplainIndexingPowerLine);
             this.panelIndexOption.Controls.Add(this.buttonBackIndex);
             this.panelIndexOption.Controls.Add(this.labelExplainAllDrives);
             this.panelIndexOption.Controls.Add(this.labelExplainPersonalIndex);
@@ -255,13 +257,13 @@
             resources.ApplyResources(this.groupBox3, "groupBox3");
             this.groupBox3.Controls.Add(this.panelExIntro);
             this.groupBox3.Controls.Add(this.buttonBackExclusion);
-            this.groupBox3.Controls.Add(this.buttonExBack);
-            this.groupBox3.Controls.Add(this.label2);
-            this.groupBox3.Controls.Add(this.comboBoxRunningProcesses);
             this.groupBox3.Controls.Add(this.buttonRemoveEx);
             this.groupBox3.Controls.Add(this.buttonAddEx);
+            this.groupBox3.Controls.Add(this.buttonExBack);
             this.groupBox3.Controls.Add(this.buttonBrowseExe);
             this.groupBox3.Controls.Add(this.listViewExclusion);
+            this.groupBox3.Controls.Add(this.label2);
+            this.groupBox3.Controls.Add(this.comboBoxRunningProcesses);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.TabStop = false;
             // 
@@ -408,7 +410,6 @@
             // 
             resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Controls.Add(this.panelBlocklist);
-            this.groupBox2.Controls.Add(this.numericUpDownMaxResultNum);
             this.groupBox2.Controls.Add(this.labelMaxResultNum);
             this.groupBox2.Controls.Add(this.numericUpDownMaxSuggestNum);
             this.groupBox2.Controls.Add(this.labelMaxSuggest);
@@ -418,6 +419,7 @@
             this.groupBox2.Controls.Add(this.labelInfo);
             this.groupBox2.Controls.Add(this.checkBoxSuggestions);
             this.groupBox2.Controls.Add(this.checkBoxHideName);
+            this.groupBox2.Controls.Add(this.numericUpDownMaxResultNum);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.TabStop = false;
             // 
@@ -785,6 +787,12 @@
             this.checkBoxHideName.UseVisualStyleBackColor = true;
             this.checkBoxHideName.CheckedChanged += new System.EventHandler(this.checkBoxHideName_CheckedChanged);
             // 
+            // labelExplainIndexingPowerLine
+            // 
+            resources.ApplyResources(this.labelExplainIndexingPowerLine, "labelExplainIndexingPowerLine");
+            this.labelExplainIndexingPowerLine.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.labelExplainIndexingPowerLine.Name = "labelExplainIndexingPowerLine";
+            // 
             // Settings
             // 
             resources.ApplyResources(this, "$this");
@@ -891,5 +899,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.CheckBox checkBoxClipboard;
         private System.Windows.Forms.CheckBox checkBoxHideName;
+        private System.Windows.Forms.Label labelExplainIndexingPowerLine;
     }
 }
