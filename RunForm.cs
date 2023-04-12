@@ -411,7 +411,7 @@ namespace XShort
                 timeSuggestions.Clear();
                 for (int i = 0; i < suggestions.Time[DateTime.Now.Hour].List.Count; i++)//time-based suggestions
                 {
-                    if ((DateTime.Now.Date - suggestions.Time[DateTime.Now.Hour].List[i].Lasttime.Date).TotalDays <= 7)//stop showing items that haven't been called over 7 days
+                    if ((DateTime.Now - suggestions.Time[DateTime.Now.Hour].List[i].Lasttime).TotalDays <= 7)//stop showing items that haven't been called over 7 days
                         if (!blockList.Contains(suggestions.Time[DateTime.Now.Hour].List[i].Loc))//if it's not in blocklist
                             timeSuggestions.Add(suggestions.Time[DateTime.Now.Hour].List[i].Loc);
                 }
@@ -440,14 +440,17 @@ namespace XShort
                         {
                             if (!addedSuggestions.Contains(suggestions.Time[DateTime.Now.Hour].List[i].Loc))//prevent duplicate 
                             {
-                                if (!blockList.Contains(suggestions.Time[DateTime.Now.Hour].List[i].Loc))//if it's not in blocklist
+                                if ((DateTime.Now - suggestions.Time[DateTime.Now.Hour].List[i].Lasttime).TotalDays <= 7)
                                 {
-                                    AddNewSuggestionsItems(suggestions.Time[DateTime.Now.Hour].List[i].Loc, Shortcuts.FindIndex(f => f.Name == suggestions.Time[DateTime.Now.Hour].List[i].Loc) >= 0);
-                                    addedSuggestions.Add(suggestions.Time[DateTime.Now.Hour].List[i].Loc);
-                                    if (remain > 0)
-                                        remain -= 1;
-                                    else
-                                        break;
+                                    if (!blockList.Contains(suggestions.Time[DateTime.Now.Hour].List[i].Loc))//if it's not in blocklist
+                                    {
+                                        AddNewSuggestionsItems(suggestions.Time[DateTime.Now.Hour].List[i].Loc, Shortcuts.FindIndex(f => f.Name == suggestions.Time[DateTime.Now.Hour].List[i].Loc) >= 0);
+                                        addedSuggestions.Add(suggestions.Time[DateTime.Now.Hour].List[i].Loc);
+                                        if (remain > 0)
+                                            remain -= 1;
+                                        else
+                                            break;
+                                    }
                                 }
                             }
                         }
