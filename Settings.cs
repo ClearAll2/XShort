@@ -46,10 +46,10 @@ namespace XShort
             }
             if (File.Exists(Path.Combine(dataPath, "index")))
             {
-                if (culture.Name == "en")
-                    labelLastUpdate.Text = "Last update: " + new FileInfo(Path.Combine(dataPath, "index")).LastWriteTime;
-                else
+                if (culture.Name == "vi")
                     labelLastUpdate.Text = "Cập nhật lần cuối: " + new FileInfo(Path.Combine(dataPath, "index")).LastWriteTime;
+                else
+                    labelLastUpdate.Text = "Last update: " + new FileInfo(Path.Combine(dataPath, "index")).LastWriteTime;
 
             }
         }
@@ -135,7 +135,7 @@ namespace XShort
         {
             if (blockList.Count > 0)
             {
-                if (culture.Name == "en")
+                if (culture.Name != "vi")
                     buttonBlocklist.Text = "Blocklist - " + blockList.Count.ToString() + " shortcut(s) selected";
                 else
                     buttonBlocklist.Text = "Dánh sách chặn - " + blockList.Count.ToString() + " lối tắt đã chọn";
@@ -143,7 +143,7 @@ namespace XShort
             }
             else
             {
-                if (culture.Name == "en")
+                if (culture.Name != "vi")
                     buttonBlocklist.Text = "Blocklist";
                 else
                     buttonBlocklist.Text = "Dánh sách chặn";

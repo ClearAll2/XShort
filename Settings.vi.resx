@@ -117,16 +117,34 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="groupBox4.Text" xml:space="preserve">
+    <value>Kết quả mục lục</value>
+  </data>
+  <data name="groupBox3.Text" xml:space="preserve">
+    <value>Loại trừ</value>
+  </data>
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value>Gợi ý</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>Chung</value>
+  </data>
+  <data name="labelExplainIndexingPowerLine.Text" xml:space="preserve">
+    <value>Máy tính cần phải cắm nguồn.</value>
+  </data>
   <data name="buttonBackIndex.Text" xml:space="preserve">
     <value>Quay lại</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="labelExplainAllDrives.Size" type="System.Drawing.Size, System.Drawing">
+    <value>460, 40</value>
+  </data>
   <data name="labelExplainAllDrives.Text" xml:space="preserve">
-    <value>Tìm kiếm toàn bộ máy tính</value>
+    <value>Tìm kiếm toàn bộ máy tính (có thể sẽ mất thời gian và ảnh hưởng đến hoạt động CPU).</value>
   </data>
   <data name="labelExplainPersonalIndex.Text" xml:space="preserve">
     <value>Chỉ tìm kiếm thư mục cá nhân</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="radioButtonAllDrives.Size" type="System.Drawing.Size, System.Drawing">
     <value>116, 22</value>
   </data>
@@ -173,9 +191,6 @@ Nếu gợi ý kết quả bị tắt, chức năng này sẽ không hoạt đ�
   <data name="checkBoxUseIndex.Text" xml:space="preserve">
     <value>Sử dụng XShort Core Index</value>
   </data>
-  <data name="groupBox4.Text" xml:space="preserve">
-    <value>Kết quả mục lục</value>
-  </data>
   <data name="checkBoxExtractNum.Size" type="System.Drawing.Size, System.Drawing">
     <value>233, 22</value>
   </data>
@@ -189,8 +204,7 @@ Nếu gợi ý kết quả bị tắt, chức năng này sẽ không hoạt đ�
     <value>Tách địa chỉ web từ bộ nhớ đệm</value>
   </data>
   <data name="label4.Text" xml:space="preserve">
-    <value>XShort sẽ hiển thị nhưng gì bạn sao chép trên cửa sổ Run.
-
+    <value>Bạn sẽ thấy lịch sử khay nhớ tạm trên cửa sổ Run khi bạn sao chép gì đó.
 </value>
   </data>
   <data name="checkBoxClipboard.Text" xml:space="preserve">
@@ -200,33 +214,42 @@ Nếu gợi ý kết quả bị tắt, chức năng này sẽ không hoạt đ�
     <value>Mở danh sách loại trừ</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
-    <value>Loại trừ những ứng dụng &amp;&amp; game được chọn tránh gọi nhầm XShort Run.
+    <value>Loại trừ những ứng dụng &amp;&amp; game được chọn tránh gọi nhầm cửa sổ Run.
 
 </value>
   </data>
   <data name="buttonBackExclusion.Text" xml:space="preserve">
     <value>Quay lại</value>
   </data>
-  <data name="buttonExBack.Text" xml:space="preserve">
-    <value>Lưu</value>
-  </data>
-  <data name="label2.Text" xml:space="preserve">
-    <value>Tìm và chọn những ứng dụng đang chạy ở danh sách trên
-
-hoặc bấm nút ... để thêm những ứng dụng khác.
-</value>
+  <data name="buttonRemoveEx.Text" xml:space="preserve">
+    <value>Xóa</value>
   </data>
   <data name="buttonRemoveEx.ToolTip" xml:space="preserve">
     <value>Xoá ứng dụng được chọn</value>
   </data>
+  <data name="buttonAddEx.Text" xml:space="preserve">
+    <value>Thêm</value>
+  </data>
   <data name="buttonAddEx.ToolTip" xml:space="preserve">
     <value>Thêm</value>
+  </data>
+  <data name="buttonExBack.Text" xml:space="preserve">
+    <value>Lưu</value>
+  </data>
+  <data name="buttonBrowseExe.Text" xml:space="preserve">
+    <value>Tìm</value>
   </data>
   <data name="buttonBrowseExe.ToolTip" xml:space="preserve">
     <value>Tìm và chọn những ứng dụng khác</value>
   </data>
-  <data name="groupBox3.Text" xml:space="preserve">
-    <value>Loại trừ</value>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>171, 125</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Tìm và chọn những ứng dụng đang chạy ở danh sách trên
+
+hoặc bấm nút 'Tìm' để thêm những ứng dụng khác.
+</value>
   </data>
   <data name="labelExplainBlocklist.Text" xml:space="preserve">
     <value>Khi một lối tắt được chọn vào danh sách này, nó sẽ không hiển thị trên cửa sổ Run.
@@ -245,23 +268,20 @@ hoặc bấm nút ... để thêm những ứng dụng khác.
   <data name="buttonSaveBlocklist.Text" xml:space="preserve">
     <value>Lưu</value>
   </data>
-  <data name="numericUpDownMaxResultNum.ToolTip" xml:space="preserve">
-    <value>Số kết quả tối đa trên cửa sổ Run</value>
-  </data>
   <data name="labelMaxResultNum.Size" type="System.Drawing.Size, System.Drawing">
-    <value>119, 18</value>
+    <value>123, 18</value>
   </data>
   <data name="labelMaxResultNum.Text" xml:space="preserve">
-    <value>Số kết quả tối đa</value>
+    <value>Số kết quả tối đa:</value>
   </data>
   <data name="numericUpDownMaxSuggestNum.ToolTip" xml:space="preserve">
     <value>Số gợi ý tối đa trên cửa sổ Run</value>
   </data>
   <data name="labelMaxSuggest.Size" type="System.Drawing.Size, System.Drawing">
-    <value>141, 18</value>
+    <value>145, 18</value>
   </data>
   <data name="labelMaxSuggest.Text" xml:space="preserve">
-    <value>Số lối tắt gợi ý tối đa</value>
+    <value>Số lối tắt gợi ý tối đa:</value>
   </data>
   <data name="buttonBlocklist.Text" xml:space="preserve">
     <value>Danh sách chặn</value>
@@ -287,8 +307,14 @@ hoặc bấm nút ... để thêm những ứng dụng khác.
   <data name="checkBoxSuggestions.Text" xml:space="preserve">
     <value>Hiển thị gợi ý lối tắt</value>
   </data>
-  <data name="groupBox2.Text" xml:space="preserve">
-    <value>Gợi ý</value>
+  <data name="checkBoxHideName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>191, 22</value>
+  </data>
+  <data name="checkBoxHideName.Text" xml:space="preserve">
+    <value>Chỉ hiện biểu tượng lối tắt</value>
+  </data>
+  <data name="numericUpDownMaxResultNum.ToolTip" xml:space="preserve">
+    <value>Số kết quả tối đa trên cửa sổ Run</value>
   </data>
   <data name="buttonHotkeyCancel.Text" xml:space="preserve">
     <value>Huỷ</value>
@@ -346,9 +372,6 @@ hoặc bấm nút ... để thêm những ứng dụng khác.
   </data>
   <data name="buttonHotkeySetting.Text" xml:space="preserve">
     <value>Cài đặt phím</value>
-  </data>
-  <data name="groupBox1.Text" xml:space="preserve">
-    <value>Chung</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
