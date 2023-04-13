@@ -569,24 +569,6 @@ namespace XShort
             
         }
 
-        private void buttonHotkeySetting_Click(object sender, EventArgs e)
-        {
-            panelHotkey.Show();
-        }
-
-        private void buttonHotkeyCancel_Click(object sender, EventArgs e)
-        {
-            panelHotkey.Hide();
-        }
-
-        private void buttonApplyHotkey_Click(object sender, EventArgs e)
-        {
-            panelHotkey.Hide();
-            r1 = Registry.CurrentUser.OpenSubKey("SOFTWARE\\ClearAll\\XShort\\Data", true);
-            r1.SetValue("HKey", comboBoxHotkey.Text);
-            r1.Close();
-            r1.Dispose();
-        }
 
         private void buttonBrowseExe_Click(object sender, EventArgs e)
         {
@@ -757,6 +739,14 @@ namespace XShort
                     rk.DeleteValue("ShowName", false);
                 }
             }
+        }
+
+        private void comboBoxHotkey_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            r1 = Registry.CurrentUser.OpenSubKey("SOFTWARE\\ClearAll\\XShort\\Data", true);
+            r1.SetValue("HKey", comboBoxHotkey.Text);
+            r1.Close();
+            r1.Dispose();
         }
     }
 }
