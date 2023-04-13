@@ -99,12 +99,15 @@
             this.textBoxName = new System.Windows.Forms.TextBox();
             this.labelShortcutType = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.checkBoxIsInExclusionList = new System.Windows.Forms.CheckBox();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.contextMenuStrip1.SuspendLayout();
             this.contextMenuStrip2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.panelData.SuspendLayout();
             this.panelEditShortcut.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // notifyIcon1
@@ -559,9 +562,6 @@
             // tableLayoutPanel1
             // 
             resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
-            this.tableLayoutPanel1.Controls.Add(this.buttonOkEdit, 1, 7);
-            this.tableLayoutPanel1.Controls.Add(this.buttonCancelEdit, 2, 7);
-            this.tableLayoutPanel1.Controls.Add(this.checkBoxIsInBlocklist, 1, 6);
             this.tableLayoutPanel1.Controls.Add(this.checkBoxRunAtWindowsStartup, 1, 5);
             this.tableLayoutPanel1.Controls.Add(this.labelPara, 0, 4);
             this.tableLayoutPanel1.Controls.Add(this.textBoxPara, 1, 4);
@@ -572,6 +572,9 @@
             this.tableLayoutPanel1.Controls.Add(this.labelShortcutType, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.buttonBrowseDirectory, 2, 3);
             this.tableLayoutPanel1.Controls.Add(this.comboBox1, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.checkBoxIsInBlocklist, 1, 7);
+            this.tableLayoutPanel1.Controls.Add(this.checkBoxIsInExclusionList, 1, 6);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 1, 8);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             // 
             // buttonOkEdit
@@ -661,6 +664,19 @@
             this.comboBox1.TabStop = false;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
+            // checkBoxIsInExclusionList
+            // 
+            resources.ApplyResources(this.checkBoxIsInExclusionList, "checkBoxIsInExclusionList");
+            this.checkBoxIsInExclusionList.Name = "checkBoxIsInExclusionList";
+            this.checkBoxIsInExclusionList.UseVisualStyleBackColor = true;
+            // 
+            // tableLayoutPanel2
+            // 
+            resources.ApplyResources(this.tableLayoutPanel2, "tableLayoutPanel2");
+            this.tableLayoutPanel2.Controls.Add(this.buttonOkEdit, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.buttonCancelEdit, 1, 0);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            // 
             // MainForm
             // 
             resources.ApplyResources(this, "$this");
@@ -687,6 +703,7 @@
             this.panelEditShortcut.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
+            this.tableLayoutPanel2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -762,6 +779,8 @@
         private System.Windows.Forms.ToolStripMenuItem autoMouseToolStripMenuItem1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.CheckBox checkBoxRunAtWindowsStartup;
+        private System.Windows.Forms.CheckBox checkBoxIsInExclusionList;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
     }
 }
 

@@ -1026,6 +1026,22 @@ namespace XShort
                     yet = "rm";
                 }
             }
+            if (checkBoxIsInExclusionList.Checked)
+            {
+                if (!exclusion.Contains(Path.GetFileNameWithoutExtension(listViewData.FocusedItem.SubItems[1].Text))) 
+                {
+                    exclusion.Add(Path.GetFileNameWithoutExtension(listViewData.FocusedItem.SubItems[1].Text));
+                    yet = "edit";
+                } 
+            }
+            else
+            {
+                if (exclusion.Contains(Path.GetFileNameWithoutExtension(listViewData.FocusedItem.SubItems[1].Text)))
+                {
+                    exclusion.Remove(Path.GetFileNameWithoutExtension(listViewData.FocusedItem.SubItems[1].Text));
+                    yet = "rm";
+                }
+            }
             if (edit)
             {
                 panelEditShortcut.Hide();
@@ -1254,6 +1270,13 @@ namespace XShort
                File.AppendAllText(Path.Combine(dataPath, "blocklist"), blockList[i] + Environment.NewLine);
             }
 
+            //Save exclustion
+            File.WriteAllText(Path.Combine(dataPath, "exclusion"), String.Empty);
+            for (int i = 0; i < exclusion.Count; i++)
+            {
+                File.AppendAllText(Path.Combine(dataPath, "exclusion"), exclusion[i] + Environment.NewLine);
+            }
+
             if (detect)
                 AutoCheckValid();
 
@@ -1301,56 +1324,91 @@ namespace XShort
             if (yet != String.Empty)
             {
                 bool done = false;
-                if (yet == "rm")
+                if (lang == "en")
                 {
-                    if (MessageBox.Show("You just remove shortcuts, you need to save the new list. Do you want to save before quiting?", "What say you", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
+                    switch (yet)
                     {
-                        saveShortcutsToolStripMenuItem_Click(null, null);
-                        done = true;
+                        case "rm":
+                            if (MessageBox.Show("You just remove shortcuts, you need to save the new list. Do you want to save before quitting?", "What say you", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
+                            {
+                                saveShortcutsToolStripMenuItem_Click(null, null);
+                            }
+                            break;
+                        case "cl":
+                            if (MessageBox.Show("You just clone shortcuts, you need to save the new list. Do you want to save before quitting?", "What say you", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
+                            {
+                                saveShortcutsToolStripMenuItem_Click(null, null);
+                            }
+                            break;
+                        case "app":
+                            if (MessageBox.Show("You just add new app(s), you need to save the new list. Do you want to save before quitting?", "What say you", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
+                            {
+                                saveShortcutsToolStripMenuItem_Click(null, null);
+                            }
+                            break;
+                        case "dir":
+                            if (MessageBox.Show("You just add new directories, you need to save the new list. Do you want to save before quitting?", "What say you", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
+                            {
+                                saveShortcutsToolStripMenuItem_Click(null, null);
+                            }
+                            break;
+                        case "url":
+                            if (MessageBox.Show("You just add new url(s), you need to save the new list. Do you want to save before quitting?", "What say you", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
+                            {
+                                saveShortcutsToolStripMenuItem_Click(null, null);
+                            }
+                            break;
+                        case "edit":
+                            if (MessageBox.Show("You just edit shortcut(s), you need to save the new list. Do you want to save before quitting?", "What say you", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
+                            {
+                                saveShortcutsToolStripMenuItem_Click(null, null);
+                            }
+                            break;
                     }
                 }
-                else if (yet == "cl")
+                else
                 {
-                    if (MessageBox.Show("You just clone shortcuts, you need to save the new list. Do you want to save before quiting?", "What say you", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
+                    switch (yet)
                     {
-                        saveShortcutsToolStripMenuItem_Click(null, null); done = true;
+                        case "rm":
+                            if (MessageBox.Show("Bạn vừa xóa lối tắt, bạn cần lưu lại danh sách. Bạn có muốn lưu trước khi thoát?", "Từ từ đã", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
+                            {
+                                saveShortcutsToolStripMenuItem_Click(null, null);
+                            }
+                            break;
+                        case "cl":
+                            if (MessageBox.Show("Bạn vừa nhân bản lối tắt, bạn cần lưu lại danh sách. Bạn có muốn lưu trước khi thoát?", "Từ từ đã", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
+                            {
+                                saveShortcutsToolStripMenuItem_Click(null, null);
+                            }
+                            break;
+                        case "app":
+                            if (MessageBox.Show("Bạn vừa thêm lối tắt ứng dụng, bạn cần lưu lại danh sách. Bạn có muốn lưu trước khi thoát?", "Từ từ đã", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
+                            {
+                                saveShortcutsToolStripMenuItem_Click(null, null);
+                            }
+                            break;
+                        case "dir":
+                            if (MessageBox.Show("Bạn vừa thêm lối tắt thư mục, bạn cần lưu lại danh sách. Bạn có muốn lưu trước khi thoát?", "Từ từ đã", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
+                            {
+                                saveShortcutsToolStripMenuItem_Click(null, null);
+                            }
+                            break;
+                        case "url":
+                            if (MessageBox.Show("Bạn vừa thêm lối tắt địa chỉ web, bạn cần lưu lại danh sách. Bạn có muốn lưu trước khi thoát?", "Từ từ đã", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
+                            {
+                                saveShortcutsToolStripMenuItem_Click(null, null);
+                            }
+                            break;
+                        case "edit":
+                            if (MessageBox.Show("Bạn vừa sửa lối tắt, bạn cần lưu lại danh sách.Bạn có muốn lưu trước khi thoát?", "Từ từ đã", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
+                            {
+                                saveShortcutsToolStripMenuItem_Click(null, null);
+                            }
+                            break;
                     }
                 }
-                else if (yet == "app")
-                {
-                    if (MessageBox.Show("You just add new app(s), you need to save the new list. Do you want to save before quiting?", "What say you", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
-                    {
-                        saveShortcutsToolStripMenuItem_Click(null, null); done = true;
-                    }
-                }
-                else if (yet == "dir")
-                {
-                    if (MessageBox.Show("You just add new directories, you need to save the new list. Do you want to save before quiting?", "What say you", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
-                    {
-                        saveShortcutsToolStripMenuItem_Click(null, null); done = true;
-                    }
-                }
-                else if (yet == "url")
-                {
-                    if (MessageBox.Show("You just add new url(s), you need to save the new list. Do you want to save before quiting?", "What say you", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
-                    {
-                        saveShortcutsToolStripMenuItem_Click(null, null); done = true;
-                    }
-                }
-                else if (yet == "edit")
-                {
-                    if (MessageBox.Show("You just edit shortcut(s), you need to save the new list. Do you want to save before quiting?", "What say you", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
-                    {
-                        saveShortcutsToolStripMenuItem_Click(null, null); done = true;
-                    }
-                }
-                else if (yet == "undo")
-                {
-                    if (MessageBox.Show("You just undo something, you need to save the new list. Do you want to save before quiting?", "What say you", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
-                    {
-                        saveShortcutsToolStripMenuItem_Click(null, null); done = true;
-                    }
-                }
+
                 if (done)
                 {
                     exit = true;
@@ -1552,49 +1610,90 @@ namespace XShort
         {
             if (yet != String.Empty)
             {
-                if (yet == "rm")
+                if (lang == "en")
                 {
-                    if (MessageBox.Show("You just remove shortcuts, you need to save the new list. Do you want to save before hiding?", "What say you", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
+                    switch (yet)
                     {
-                        saveShortcutsToolStripMenuItem_Click(null, null);
+                        case "rm":
+                            if (MessageBox.Show("You just remove shortcuts, you need to save the new list. Do you want to save before hiding?", "What say you", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
+                            {
+                                saveShortcutsToolStripMenuItem_Click(null, null);
+                            }
+                            break;
+                        case "cl":
+                            if (MessageBox.Show("You just clone shortcuts, you need to save the new list. Do you want to save before hiding?", "What say you", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
+                            {
+                                saveShortcutsToolStripMenuItem_Click(null, null);
+                            }
+                            break;
+                        case "app":
+                            if (MessageBox.Show("You just add new app(s), you need to save the new list. Do you want to save before hiding?", "What say you", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
+                            {
+                                saveShortcutsToolStripMenuItem_Click(null, null);
+                            }
+                            break;
+                        case "dir":
+                            if (MessageBox.Show("You just add new directories, you need to save the new list. Do you want to save before hiding?", "What say you", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
+                            {
+                                saveShortcutsToolStripMenuItem_Click(null, null);
+                            }
+                            break;
+                        case "url":
+                            if (MessageBox.Show("You just add new url(s), you need to save the new list. Do you want to save before hiding?", "What say you", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
+                            {
+                                saveShortcutsToolStripMenuItem_Click(null, null);
+                            }
+                            break;
+                        case "edit":
+                            if (MessageBox.Show("You just edit shortcut(s), you need to save the new list. Do you want to save before hiding?", "What say you", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
+                            {
+                                saveShortcutsToolStripMenuItem_Click(null, null);
+                            }
+                            break;
                     }
                 }
-                else if (yet == "cl")
+                else
                 {
-                    if (MessageBox.Show("You just clone shortcuts, you need to save the new list. Do you want to save before hiding?", "What say you", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
+                    switch (yet)
                     {
-                        saveShortcutsToolStripMenuItem_Click(null, null);
+                        case "rm":
+                            if (MessageBox.Show("Bạn vừa xóa lối tắt, bạn cần lưu lại danh sách. Bạn có muốn lưu trước khi ẩn?", "Từ từ đã", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
+                            {
+                                saveShortcutsToolStripMenuItem_Click(null, null);
+                            }
+                            break;
+                        case "cl":
+                            if (MessageBox.Show("Bạn vừa nhân bản lối tắt, bạn cần lưu lại danh sách. Bạn có muốn lưu trước khi ẩn?", "Từ từ đã", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
+                            {
+                                saveShortcutsToolStripMenuItem_Click(null, null);
+                            }
+                            break;
+                        case "app":
+                            if (MessageBox.Show("Bạn vừa thêm lối tắt ứng dụng, bạn cần lưu lại danh sách. Bạn có muốn lưu trước khi ẩn?", "Từ từ đã", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
+                            {
+                                saveShortcutsToolStripMenuItem_Click(null, null);
+                            }
+                            break;
+                        case "dir":
+                            if (MessageBox.Show("Bạn vừa thêm lối tắt thư mục, bạn cần lưu lại danh sách. Bạn có muốn lưu trước khi ẩn?", "Từ từ đã", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
+                            {
+                                saveShortcutsToolStripMenuItem_Click(null, null);
+                            }
+                            break;
+                        case "url":
+                            if (MessageBox.Show("Bạn vừa thêm lối tắt địa chỉ web, bạn cần lưu lại danh sách. Bạn có muốn lưu trước khi ẩn?", "Từ từ đã", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
+                            {
+                                saveShortcutsToolStripMenuItem_Click(null, null);
+                            }
+                            break;
+                        case "edit":
+                            if (MessageBox.Show("Bạn vừa sửa lối tắt, bạn cần lưu lại danh sách.Bạn có muốn lưu trước khi ẩn?", "Từ từ đã", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
+                            {
+                                saveShortcutsToolStripMenuItem_Click(null, null);
+                            }
+                            break;
                     }
                 }
-                else if (yet == "app")
-                {
-                    if (MessageBox.Show("You just add new app(s), you need to save the new list. Do you want to save before hiding?", "What say you", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
-                    {
-                        saveShortcutsToolStripMenuItem_Click(null, null);
-                    }
-                }
-                else if (yet == "dir")
-                {
-                    if (MessageBox.Show("You just add new directories, you need to save the new list. Do you want to save before hiding?", "What say you", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
-                    {
-                        saveShortcutsToolStripMenuItem_Click(null, null);
-                    }
-                }
-                else if (yet == "url")
-                {
-                    if (MessageBox.Show("You just add new url(s), you need to save the new list. Do you want to save before hiding?", "What say you", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
-                    {
-                        saveShortcutsToolStripMenuItem_Click(null, null);
-                    }
-                }
-                else if (yet == "edit")
-                {
-                    if (MessageBox.Show("You just edit shortcut(s), you need to save the new list. Do you want to save before hiding?", "What say you", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
-                    {
-                        saveShortcutsToolStripMenuItem_Click(null, null);
-                    }
-                }
-
             }
             
         }
@@ -1861,6 +1960,10 @@ namespace XShort
                 checkBoxRunAtWindowsStartup.Checked = true;
             else
                 checkBoxRunAtWindowsStartup.Checked = false;
+            if (exclusion.Contains(Path.GetFileNameWithoutExtension(listViewData.FocusedItem.SubItems[1].Text)))
+                checkBoxIsInExclusionList.Checked = true;
+            else
+                checkBoxIsInExclusionList.Checked = false;
 
             //this for checking changes in edit
             old_Name = textBoxName.Text;
@@ -1880,6 +1983,7 @@ namespace XShort
                 buttonBrowseDirectory.Enabled = true;
                 textBoxPara.ReadOnly = false;
                 textBoxPara.Text = String.Empty;
+                checkBoxIsInExclusionList.Enabled = true;
             }
             else if (comboBox1.SelectedIndex == 1)
             {
@@ -1887,6 +1991,7 @@ namespace XShort
                 buttonBrowseDirectory.Enabled = true;
                 textBoxPara.Text = "Not Available";
                 textBoxPara.ReadOnly = true;
+                checkBoxIsInExclusionList.Enabled = false;
             }
             else if (comboBox1.SelectedIndex == 2)
             {
@@ -1896,6 +2001,7 @@ namespace XShort
                 textBoxPara.ReadOnly = true;
                 if (textBoxPath.Text == String.Empty)
                     textBoxPath.Text = "https://";
+                checkBoxIsInExclusionList.Enabled = false;
             }
 
 
