@@ -117,18 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="groupBox4.Text" xml:space="preserve">
-    <value>Kết quả mục lục</value>
-  </data>
-  <data name="groupBox3.Text" xml:space="preserve">
-    <value>Loại trừ</value>
-  </data>
-  <data name="groupBox2.Text" xml:space="preserve">
-    <value>Gợi ý</value>
-  </data>
-  <data name="groupBox1.Text" xml:space="preserve">
-    <value>Chung</value>
-  </data>
   <data name="labelExplainIndexingPowerLine.Text" xml:space="preserve">
     <value>Máy tính cần phải cắm nguồn.</value>
   </data>
@@ -181,7 +169,7 @@
   <data name="label1.Text" xml:space="preserve">
     <value>Nếu bật, một chương trình sẽ chạy cũng XShort khi mở. Chương trình này sẽ chạy ngầm và tạo mục lục cho thư mục của người dùng. XShort sẽ dùng dữ liệu đó để hiển thị gợi ý kết quả.
 
-Có thể tìm tập tin và thư mục nhanh chóng bằng XShort Run.
+Có thể tìm tập tin và thư mục nhanh chóng bằng cửa sổ Run.
 
 Nếu gợi ý kết quả bị tắt, chức năng này sẽ không hoạt động.</value>
   </data>
@@ -190,6 +178,9 @@ Nếu gợi ý kết quả bị tắt, chức năng này sẽ không hoạt đ�
   </data>
   <data name="checkBoxUseIndex.Text" xml:space="preserve">
     <value>Sử dụng XShort Core Index</value>
+  </data>
+  <data name="groupBox4.Text" xml:space="preserve">
+    <value>Kết quả mục lục</value>
   </data>
   <data name="checkBoxExtractNum.Size" type="System.Drawing.Size, System.Drawing">
     <value>233, 22</value>
@@ -250,6 +241,9 @@ Nếu gợi ý kết quả bị tắt, chức năng này sẽ không hoạt đ�
 
 hoặc bấm nút 'Tìm' để thêm những ứng dụng khác.
 </value>
+  </data>
+  <data name="groupBox3.Text" xml:space="preserve">
+    <value>Loại trừ</value>
   </data>
   <data name="labelExplainBlocklist.Text" xml:space="preserve">
     <value>Khi một lối tắt được chọn vào danh sách này, nó sẽ không hiển thị trên cửa sổ Run.
@@ -316,6 +310,9 @@ hoặc bấm nút 'Tìm' để thêm những ứng dụng khác.
   <data name="numericUpDownMaxResultNum.ToolTip" xml:space="preserve">
     <value>Số kết quả tối đa trên cửa sổ Run</value>
   </data>
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value>Gợi ý</value>
+  </data>
   <data name="buttonHotkeyCancel.Text" xml:space="preserve">
     <value>Huỷ</value>
   </data>
@@ -372,6 +369,9 @@ hoặc bấm nút 'Tìm' để thêm những ứng dụng khác.
   </data>
   <data name="buttonHotkeySetting.Text" xml:space="preserve">
     <value>Cài đặt phím</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>Chung</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
