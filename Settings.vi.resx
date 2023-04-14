@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="tabPageGeneral.Text" xml:space="preserve">
+    <value>Chung</value>
+  </data>
   <data name="labelExplainClipboard.Text" xml:space="preserve">
     <value>Bạn sẽ thấy lịch sử bộ nhớ đệm ở cửa sổ Run khi sao chép gì đó.
 
@@ -174,6 +177,9 @@
   <data name="checkBoxExtractUrl.Text" xml:space="preserve">
     <value>Tách địa chỉ web từ bộ nhớ đệm</value>
   </data>
+  <data name="tabPageHotkey.Text" xml:space="preserve">
+    <value>Phím tắt</value>
+  </data>
   <data name="labelInfoForNewHotkey.Size" type="System.Drawing.Size, System.Drawing">
     <value>371, 22</value>
   </data>
@@ -185,6 +191,9 @@
   </data>
   <data name="label10.Text" xml:space="preserve">
     <value>Phím:</value>
+  </data>
+  <data name="tabPageSuggestions.Text" xml:space="preserve">
+    <value>Gợi ý</value>
   </data>
   <data name="labelExplainBlocklist.Text" xml:space="preserve">
     <value>Khi một lối tắt được chọn vào danh sách này, nó sẽ không hiển thị trên cửa sổ Run.
@@ -251,6 +260,9 @@
   <data name="labelMaxSuggest.Text" xml:space="preserve">
     <value>Số lối tắt gợi ý tối đa:</value>
   </data>
+  <data name="tabPageIndexResult.Text" xml:space="preserve">
+    <value>Kết quả mục lục</value>
+  </data>
   <data name="labelExplainIndexingPowerLine.Text" xml:space="preserve">
     <value>Máy tính cần phải cắm nguồn.</value>
   </data>
@@ -311,6 +323,9 @@
 Tập tin và thư mục có thể được tìm kiếm một cách nhanh chóng thông qua cửa sổ Run.
 
 Nếu tùy chọn hiển thị gợi ý kết quả bị tắt, chức năng này sẽ không hoạt động.</value>
+  </data>
+  <data name="tabPageExclusion.Text" xml:space="preserve">
+    <value>Loại trừ</value>
   </data>
   <data name="buttonExclusionList.Text" xml:space="preserve">
     <value>Mở danh sách loại trừ</value>
