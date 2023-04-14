@@ -183,7 +183,7 @@
             // 
             // panelClipboard
             // 
-            this.panelClipboard.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.panelClipboard.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.panelClipboard, "panelClipboard");
             this.panelClipboard.Name = "panelClipboard";
             // 

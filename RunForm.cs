@@ -133,43 +133,6 @@ namespace XShort
             );
         }
 
-        //public void ChangeSetting(bool _gg, bool _csen, bool _ss, bool _sr, bool _er, int maxss, bool _ui)
-        //{
-        //    if (maxss >= 2 && maxss <= 8)
-        //        suggestNum = maxss;
-        //    else
-        //        suggestNum = 4;
-        //    if (suggestNum > 6)
-        //    {
-        //        sImage.Images.Clear();
-        //        sImage.ImageSize = new Size(20, 20);
-        //        LoadIcon();
-        //    }
-        //    else
-        //    {
-        //        if (sImage.ImageSize.Height != 30)
-        //        {
-        //            sImage.Images.Clear();
-        //            sImage.ImageSize = new Size(30, 30);
-        //            LoadIcon();
-        //        }
-        //    }
-        //    ggSearch = _gg;
-        //    csen = _csen;
-        //    sr = _sr;
-        //    er = _er;
-        //    ss = _ss;
-        //    ui = _ui;
-        //    if (loaded)//should fix startup error
-        //    {
-        //        if (ss)
-        //            ReloadSuggestions();
-        //        else
-        //        {
-        //            panelSuggestions.Controls.Clear();
-        //        }
-        //    }
-        //}
 
         private void Bw_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
