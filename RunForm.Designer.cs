@@ -18,7 +18,8 @@
             {
                 if (_filter != null)
                     _filter.Dispose();
-
+                if (_getdir != null)
+                    _getdir.Dispose();
                 // this part is added by Visual Studio designer
                 if (components != null)
                     components.Dispose();
