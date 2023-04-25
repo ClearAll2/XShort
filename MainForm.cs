@@ -1217,10 +1217,10 @@ namespace XShort
         {
             if (f2 != null && !f2.IsDisposed)
             {
+                f2.SaveAndMaintainSuggestions();
                 f2.Close();
             }
             LoadRunForm();
-            f2.MaintainSuggestions();
         }
 
         private void Bwt_DoWork(object sender, DoWorkEventArgs e)

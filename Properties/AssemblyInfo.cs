@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("XShort Core")]
-[assembly: AssemblyDescription("B230414")]
+[assembly: AssemblyDescription("B230425")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Đức Nguyễn - nguyenduc@myfreedom.cf")]
 [assembly: AssemblyProduct("XShort Core")]
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.9.1.0")]
-[assembly: AssemblyFileVersion("1.9.1.0")]
+[assembly: AssemblyVersion("1.9.2.0")]
+[assembly: AssemblyFileVersion("1.9.2.0")]

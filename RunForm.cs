@@ -204,7 +204,7 @@ namespace XShort
         /// <summary>
         /// Check and remove invalid shortcuts from suggestions
         /// </summary>
-        public void MaintainSuggestions()
+        private void MaintainSuggestions()
         {
             for (int i = 0; i < suggestions.Time[DateTime.Now.Hour].List.Count; i++)
             {
@@ -354,6 +354,11 @@ namespace XShort
         }
 
         private void timerSuggestions_Tick(object sender, EventArgs e)
+        {
+            SaveAndMaintainSuggestions();
+        }
+
+        public void SaveAndMaintainSuggestions()
         {
             SaveSuggestions();
             MaintainSuggestions();
